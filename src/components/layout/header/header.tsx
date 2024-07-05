@@ -13,16 +13,20 @@ import Link from 'next/link';
 
 import './Header.css';
 import { Progress } from '@/components/ui/progress';
+import HeroParticles from './particles';
 
 type HeaderProps = {
     settings: TSettings;
+    particles: string;
 };
 
-export const Header: FC<HeaderProps> = ({ settings }) => {
+export const Header: FC<HeaderProps> = ({ settings, particles }) => {
     const { user } = useUserStore();
 
     return (
-        <header>
+        <header className="relative">
+            {particles === 'Enabled' ? <HeroParticles /> : null}
+
             <div className="absolute inset-0 -z-20 h-[525px] w-full">
                 <div className="hero-image before:bg-primary/20 dark:before:bg-transparent">
                     <Image

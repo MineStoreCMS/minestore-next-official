@@ -20,14 +20,15 @@ export type Config = {
             description: string;
             type: string;
             values?: string[];
+            value?: string;
         }[];
     }[];
 };
 
 export function ConfigProvider({ children, config }: ConfigProviderProps) {
     const configData = config as Config;
-    const mainColor = extractConfigValue('main-color', configData);
 
+    const mainColor = extractConfigValue('main-color', configData);
     const { h, l, s } = hexToHsl(mainColor as string);
 
     return (

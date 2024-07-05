@@ -73,7 +73,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ settings }) => {
     };
 
     return (
-        <div className="w-full flex-row items-center justify-center">
+        <div className="relative w-full flex-row items-center justify-center">
             <div
                 onClick={handleCopyServerIP}
                 className="-mt-20 hidden cursor-pointer items-center gap-2 transition duration-300 hover:scale-110 lg:flex"

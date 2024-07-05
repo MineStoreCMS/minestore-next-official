@@ -29,6 +29,7 @@ export const App: FC<PropsWithChildren> = async ({ children }) => {
     const data = JSON.parse(file);
 
     const defaultTheme = extractConfigValue('theme', data) || ('system' as string);
+    const particles = extractConfigValue('particles', data) || ('Enabled' as string);
 
     return (
         <ConfigProvider config={data}>
@@ -41,7 +42,7 @@ export const App: FC<PropsWithChildren> = async ({ children }) => {
                 <AuthProvider initialUser={user}>
                     <LocaleProvider initialMessages={messages}>
                         <Suspense>
-                            <Header settings={settings} />
+                            <Header settings={settings} particles={particles} />
                             <Container className="mt-4 flex-col gap-5 lg:flex-row">
                                 <Sidebar settings={settings} categories={categories} />
                                 <main className="w-full flex-1 overflow-x-scroll">{children}</main>

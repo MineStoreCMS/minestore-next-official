@@ -18,12 +18,17 @@
                     "description": "Select the default theme for your website.",
                     "type": "select",
                     "default": "system",
-                    "values": [
-                        "system",
-                        "light",
-                        "dark"
-                    ],
+                    "values": ["system", "light", "dark"],
                     "value": "dark"
+                },
+                {
+                    "id": "particles",
+                    "name": "Header Particles Animation",
+                    "description": "Display header particles animation in your webstore header?",
+                    "type": "select",
+                    "default": "Enabled",
+                    "values": ["Enabled", "Disabled"],
+                    "value": "Enabled"
                 }
             ]
         }
