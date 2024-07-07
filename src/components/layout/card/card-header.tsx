@@ -17,6 +17,8 @@ export function CardHeader({ item, direction }: CardHeaderProps) {
     const price = item.is_virtual_currency_only ? item.virtual_price || 0 : item.price;
     const isPriceVirtual = item.is_virtual_currency_only;
 
+    console.log(item);
+
     const cardHeaderClasses = joinClasses(
         'gap-4',
         direction === 'col' && 'grid',
@@ -53,7 +55,7 @@ export function CardHeader({ item, direction }: CardHeaderProps) {
 function QuantityBadge({ item, className }: { item: TItem; className?: string }) {
     const t = useTranslations('card');
 
-    if (!item.quantityGlobalLimit || !item.quantityGlobalCurrentLimit) return null;
+    if (item.quantityGlobalLimit == null || item.quantityGlobalCurrentLimit == null) return null;
 
     const { quantityGlobalLimit, quantityGlobalCurrentLimit } = item;
     const quantityLeft = quantityGlobalLimit - quantityGlobalCurrentLimit;

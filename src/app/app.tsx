@@ -23,7 +23,7 @@ export const App: FC<PropsWithChildren> = async ({ children }) => {
 
     const user = await getUser().catch(() => undefined);
 
-    const messages = await getDictionary('en');
+    const messages = await getDictionary(settings.system_language.code || 'en');
 
     const file = await fs.readFile(process.cwd() + '/config.json', 'utf8');
     const data = JSON.parse(file);
@@ -43,9 +43,9 @@ export const App: FC<PropsWithChildren> = async ({ children }) => {
                     <LocaleProvider initialMessages={messages}>
                         <Suspense>
                             <Header settings={settings} particles={particles} />
-                            <Container className="mt-4 flex-col gap-5 lg:flex-row">
+                            <Container className="mt-4 flex-col items-start gap-5 lg:flex-row">
                                 <Sidebar settings={settings} categories={categories} />
-                                <main className="w-full flex-1 overflow-x-scroll">{children}</main>
+                                <main className="w-full flex-1">{children}</main>
                             </Container>
                             <Footer settings={settings} />
                             <Init settings={settings} />

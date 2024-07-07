@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+import type { PluginUtils } from 'tailwindcss/types/config';
 
 const config = {
     darkMode: ['class'],
@@ -19,67 +20,41 @@ const config = {
         },
         extend: {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            typography: (theme: any) => ({
+            typography: ({ theme }: PluginUtils) => ({
                 DEFAULT: {
                     css: {
-                        color: theme('colors.foreground'),
-                        a: {
-                            color: theme('colors.primary.DEFAULT'),
-                            textDecoration: 'none',
-                            '&:hover': {
-                                color: theme('colors.primary.foreground')
-                            }
-                        },
-                        'h1, h2, h3, h4': {
-                            color: theme('colors.foreground')
-                        },
-                        'ul > li::before': {
-                            backgroundColor: theme('colors.primary.DEFAULT')
-                        },
-                        'ol > li::before': {
-                            color: theme('colors.primary.DEFAULT')
-                        },
-                        'a code': {
-                            color: theme('colors.primary.DEFAULT')
-                        },
-                        code: {
-                            color: theme('colors.primary.DEFAULT')
-                        },
-                        'pre code': {
-                            color: theme('colors.primary.DEFAULT')
-                        },
-                        'blockquote p:first-of-type::before': {
-                            content: 'none'
-                        },
-                        'blockquote p:last-of-type::after': {
-                            content: 'none'
-                        },
-                        img: {
-                            borderRadius: theme('borderRadius.lg')
-                        },
-                        'figure figcaption': {
-                            color: theme('colors.foreground')
-                        },
-                        'figure figcaption a': {
-                            color: theme('colors.primary.DEFAULT')
-                        },
-                        'figure figcaption a:hover': {
-                            color: theme('colors.primary.foreground')
-                        },
-                        table: {
-                            color: theme('colors.foreground')
-                        },
-                        th: {
-                            color: theme('colors.foreground')
-                        },
-                        td: {
-                            color: theme('colors.foreground')
-                        },
-                        'th, td': {
-                            borderColor: theme('colors.border')
-                        },
-                        '--tw-prose-bullets': theme('colors.foreground'),
-                        '--tw-prose-counters': theme('colors.foreground')
+                        '--tw-prose-body': theme('colors.muted.foreground'),
+                        '--tw-prose-headings': theme('colors.foreground'),
+                        '--tw-prose-lead': theme('colors.secondary'),
+                        '--tw-prose-links': theme('colors.primary.DEFAULT'),
+                        '--tw-prose-bold': theme('colors.foreground'),
+                        '--tw-prose-counters': theme('colors.muted.foreground'),
+                        '--tw-prose-bullets': theme('colors.muted.DEFAULT'),
+                        '--tw-prose-hr': theme('colors.muted.DEFAULT'),
+                        '--tw-prose-quotes': theme('colors.foreground'),
+                        '--tw-prose-quote-borders': theme('colors.muted.DEFAULT'),
+                        '--tw-prose-captions': theme('colors.muted.foreground'),
+                        '--tw-prose-code': theme('colors.foreground'),
+                        '--tw-prose-pre-code': theme('colors.background'),
+                        '--tw-prose-pre-bg': theme('colors.foreground'),
+                        '--tw-prose-th-borders': theme('colors.muted.DEFAULT'),
+                        '--tw-prose-td-borders': theme('colors.muted.DEFAULT'),
+                        '--tw-prose-invert-body': theme('colors.muted.foreground'),
+                        '--tw-prose-invert-headings': theme('colors.foreground'),
+                        '--tw-prose-invert-lead': theme('colors.secondary.foreground'),
+                        '--tw-prose-invert-links': theme('colors.primary.foreground'),
+                        '--tw-prose-invert-bold': theme('colors.foreground'),
+                        '--tw-prose-invert-counters': theme('colors.muted.foreground'),
+                        '--tw-prose-invert-bullets': theme('colors.muted.DEFAULT'),
+                        '--tw-prose-invert-hr': theme('colors.muted.DEFAULT'),
+                        '--tw-prose-invert-quotes': theme('colors.foreground'),
+                        '--tw-prose-invert-quote-borders': theme('colors.muted.DEFAULT'),
+                        '--tw-prose-invert-captions': theme('colors.muted.foreground'),
+                        '--tw-prose-invert-code': theme('colors.foreground'),
+                        '--tw-prose-invert-pre-code': theme('colors.card.DEFAULT'),
+                        '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+                        '--tw-prose-invert-th-borders': theme('colors.muted.DEFAULT'),
+                        '--tw-prose-invert-td-borders': theme('colors.muted.DEFAULT')
                     }
                 }
             }),
