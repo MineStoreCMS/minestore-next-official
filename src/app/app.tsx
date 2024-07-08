@@ -45,7 +45,7 @@ export const App: FC<PropsWithChildren> = async ({ children }) => {
                             <Header settings={settings} particles={particles} />
                             <Container className="mt-4 flex-col items-start gap-5 lg:flex-row">
                                 <Sidebar settings={settings} categories={categories} />
-                                <main className="w-full flex-1">{children}</main>
+                                <main className="w-full flex-1 overflow-x-auto">{children}</main>
                             </Container>
                             <Footer settings={settings} />
                             <Init settings={settings} />

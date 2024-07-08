@@ -77,5 +77,5 @@ function ComparisonIcon({ value }: { value: string }) {
         }
     }
 
-    return value;
+    return <span dangerouslySetInnerHTML={{ __html: value }}></span>;
 }
