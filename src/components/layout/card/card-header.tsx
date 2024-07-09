@@ -21,7 +21,7 @@ export function CardHeader({ item, direction }: CardHeaderProps) {
 
     const cardHeaderClasses = joinClasses(
         'gap-4',
-        direction === 'col' && 'grid',
+        direction === 'col' && 'grid mt-auto',
         direction === 'col' && !item.image && 'mt-auto',
         direction === 'row' && 'flex-col md:flex-row items-center'
     );

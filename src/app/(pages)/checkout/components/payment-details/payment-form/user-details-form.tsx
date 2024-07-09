@@ -35,8 +35,8 @@ export const UserDetailsForm = () => {
     }
 
     return (
-        <div className="grid grid-cols-[400px,1fr] gap-8">
-            <div className="m-auto">
+        <div className="grid gap-8 xl:grid-cols-[300px,1fr]">
+            <div className="m-auto hidden xl:block">
                 <UserAvatar />
             </div>
             <div className="space-y-4">
@@ -74,7 +74,7 @@ export const UserDetailsForm = () => {
                         defaultValue=""
                         name="details.address1"
                         render={({ field }) => (
-                            <FormItem>
+                            <FormItem className="col-span-2 md:col-span-1">
                                 <FormLabel>*{t('address-line-1')}</FormLabel>
                                 <FormControl>
                                     <Input placeholder="1234 Main St" {...field} />
@@ -88,7 +88,7 @@ export const UserDetailsForm = () => {
                         defaultValue=""
                         name="details.address2"
                         render={({ field }) => (
-                            <FormItem>
+                            <FormItem className="col-span-2 md:col-span-1">
                                 <FormLabel>{t('address-line-2')}</FormLabel>
                                 <FormControl>
                                     <Input placeholder="Apartment, studio, or floor" {...field} />

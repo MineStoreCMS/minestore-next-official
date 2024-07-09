@@ -72,11 +72,11 @@ export const Header: FC<HeaderProps> = ({ settings, particles }) => {
 
                     {user && (
                         <>
-                            <div className="relative ml-auto mr-8 flex-col">
-                                <span className="text-[25px] font-bold text-white dark:text-accent-foreground">
+                            <div className="relative ml-auto mr-8 flex-col text-right">
+                                <span className="text-base font-bold text-white sm:text-2xl dark:text-accent-foreground">
                                     {user.username}
                                 </span>
-                                <span className="ml-4 text-accent-foreground/80">
+                                <span className="ml-4 text-sm text-accent-foreground/80 sm:text-base">
                                     {user.virtual_currency} {settings.virtual_currency}
                                 </span>
                             </div>
@@ -116,11 +116,11 @@ function DonationGoal({ goal }: { goal: TSettings['goals'] }) {
         <div className="relative flex-col gap-2">
             <div className="flex items-center gap-6">
                 <div>
-                    <p className="text-xl font-bold text-white dark:text-accent-foreground">
+                    <p className="text-lg font-bold text-white sm:text-2xl dark:text-accent-foreground">
                         <span className="sr-only">Donation Goal</span>
                         {name}
                     </p>
-                    <p className="text-accent-foreground/80">
+                    <p className="text-sm text-accent-foreground/80 sm:text-base">
                         <span className="sr-only">
                             The goal is {name} and the current amount is {filled} out of {goalValue}{' '}
                             {currency?.name || 'USD'}

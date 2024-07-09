@@ -27,7 +27,7 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
             <Button
                 type="submit"
                 disabled={loading}
-                className="mt-4 flex items-center justify-center gap-2"
+                className="mt-4 flex w-full items-center justify-center gap-2 md:w-auto"
             >
                 {loading && <Loader2 className="animate-spin" size={24} />}
                 {t('purchase')}
