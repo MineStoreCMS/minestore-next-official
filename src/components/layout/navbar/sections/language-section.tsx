@@ -37,7 +37,7 @@ export const LanguageSection: FC<LanguageSectionProps> = ({ settings }) => {
             >
                 <DropdownMenuTrigger>
                     <div className="flex-row items-center">
-                        <CountryFlag lang={lang} />
+                        <CountryFlag lang={lang as string} />
                         <div className="flex-row items-center gap-1 text-white dark:text-accent-foreground">
                             <span className="ml-1 font-bold uppercase">
                                 {languages?.find((x) => x.code === lang)?.name}

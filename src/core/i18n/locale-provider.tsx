@@ -8,13 +8,22 @@ import { getDictionary } from '.';
 interface LocaleProviderProps {
     children: React.ReactNode;
     initialMessages: Record<string, string>;
+    systemLanguage: string;
 }
 
-export const LocaleProvider: FC<LocaleProviderProps> = ({ children, initialMessages }) => {
-    const { lang } = useLangStore();
+export const LocaleProvider: FC<LocaleProviderProps> = ({
+    children,
+    initialMessages,
+    systemLanguage
+}) => {
+    const { lang, setLang } = useLangStore();
 
     const [messages, setMessages] = useState(initialMessages);
     const [isMounted, setIsMounted] = useState(false);
+
+    if (!lang) {
+        setLang(systemLanguage);
+    }
 
     useLayoutEffect(() => {
         const load = async () => {

@@ -14,6 +14,7 @@ import { promises as fs } from 'fs';
 import { ConfigProvider } from './providers/config-provider';
 import { ThemeProvider } from './providers/theme-provider';
 import { extractConfigValue } from '@helpers/extract-config-value';
+import { langStorage } from '@helpers/lang-storage';
 
 const { getUser, getSettings, getCategories } = getEndpoints(fetcher);
 
@@ -23,13 +24,15 @@ export const App: FC<PropsWithChildren> = async ({ children }) => {
 
     const user = await getUser().catch(() => undefined);
 
-    const messages = await getDictionary(settings.system_language.code || 'en');
+    const messages = await getDictionary(langStorage.get() || 'en');
 
     const file = await fs.readFile(process.cwd() + '/config.json', 'utf8');
     const data = JSON.parse(file);
 
     const defaultTheme = extractConfigValue('theme', data) || ('system' as string);
     const particles = extractConfigValue('particles', data) || ('Enabled' as string);
+
+    const systemLanguage = settings.system_language.code || 'en';
 
     return (
         <ConfigProvider config={data}>
@@ -40,7 +43,7 @@ export const App: FC<PropsWithChildren> = async ({ children }) => {
                 disableTransitionOnChange
             >
                 <AuthProvider initialUser={user}>
-                    <LocaleProvider initialMessages={messages}>
+                    <LocaleProvider initialMessages={messages} systemLanguage={systemLanguage}>
                         <Suspense>
                             <Header settings={settings} particles={particles} />
                             <Container className="mt-4 flex-col items-start gap-5 lg:flex-row">
