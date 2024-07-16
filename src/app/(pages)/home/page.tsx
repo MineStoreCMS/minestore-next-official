@@ -5,16 +5,17 @@ import { FeaturedDeals } from './components/featured-deals';
 import { Content } from './components/content';
 import { Modules } from './components/modules';
 
-const { getFeaturedDeals } = getEndpoints(fetcher);
+const { getFeaturedDeals, getSettings } = getEndpoints(fetcher);
 
 export default async function Home() {
     const featuredDeals = await getFeaturedDeals();
+    const settings = await getSettings();
 
     return (
         <>
-            <FeaturedDeals featuredDeals={featuredDeals} />
+            {settings?.is_FeaturedDeal && <FeaturedDeals featuredDeals={featuredDeals} />}
 
-            <div className="flex-col rounded-[10px] bg-card">
+            < div className="flex-col rounded-[10px] bg-card">
                 <div className="p-4">
                     <Alert />
 
@@ -22,7 +23,7 @@ export default async function Home() {
                 </div>
 
                 <Modules />
-            </div>
+            </div >
         </>
     );
 }
