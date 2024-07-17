@@ -25,7 +25,7 @@ export const MenuItem: FC<MenuItemProps> = ({ name, image, url, subItems = [], i
 
     const handleClick = () => {
         if (isSubMenu === false) {
-            router.push(url);
+            router.push(url, { scroll: false });
         }
 
         setExpand((prevExpand) => !prevExpand);

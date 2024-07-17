@@ -48,7 +48,7 @@ const PriceTag: FC<PriceTagProps> = ({
 
     return (
         <p className={className}>
-            {discountedPrice ? (
+            {discountedPrice && discountedPrice !== displayPrice ? (
                 <>
                     <s className="text-red-400 line-through">{discountedPrice}</s>
                     <span className="text-green-400">{displayPrice}</span>
