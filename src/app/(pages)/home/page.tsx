@@ -13,7 +13,7 @@ export default async function Home() {
 
     return (
         <>
-            {settings?.is_FeaturedDeal && <FeaturedDeals featuredDeals={featuredDeals} />}
+            {settings?.is_featuredDeal ? <FeaturedDeals featuredDeals={featuredDeals} /> : null}
 
             < div className="flex-col rounded-[10px] bg-card">
                 <div className="p-4">
