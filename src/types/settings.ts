@@ -22,7 +22,7 @@ export type TSettings = {
         ip: string;
         port: string;
     };
-    is_FeaturedDeal: number | boolean;
+    is_featuredDeal: number | boolean;
     is_profile_enabled: number | boolean;
     featuredDeal_items: Array<{
         name: string;
