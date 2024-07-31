@@ -12,7 +12,7 @@ import { useSettingsStore } from '@/stores/settings';
 export const Cart: FC = () => {
     const t = useTranslations('checkout');
     const { cart, items } = useCartStore();
-    const {settings} = useSettingsStore();
+    const { settings } = useSettingsStore();
 
     return (
         <>
@@ -20,11 +20,13 @@ export const Cart: FC = () => {
                 <p className="text-2xl font-bold text-white dark:text-accent-foreground">
                     {t('title')}
                 </p>
-                <span className="ml-auto text-[25px] font-bold">
+                <span className="ml-auto flex items-center gap-2 text-[25px] font-bold">
                     <Price value={cart?.price || 0} />
-                    {cart?.virtual_price ? ` / ${cart.virtual_price} ${settings?.virtual_currency}` : ''}
+                    {cart?.virtual_price
+                        ? ` / ${cart.virtual_price} ${settings?.virtual_currency}`
+                        : ''}
                     {cart?.tax ? (
-                        <span>
+                        <span className="flex gap-2">
                             {' '}
                             + <Price value={cart.tax} /> (tax)
                         </span>
