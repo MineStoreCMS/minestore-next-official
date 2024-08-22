@@ -1,0 +1,164 @@
+{
+    "navbar": {
+        "currency": "Valuta",
+        "language": "Språk",
+        "cart": "Varukorg",
+        "cart-hint": "artiklar för",
+        "not-logged": "Inte inloggad",
+        "logout": "Logga ut",
+        "empty-cart": "Töm varukorgen",
+        "guest": "Gäst"
+    },
+    "staff": {
+        "title": "Personal"
+    },
+    "header": {
+        "players-online": "Spelare online",
+        "members-online": "Medlemmar online",
+        "donation-goal": "Donationsmål",
+        "discord-server": "Discord-server",
+        "copied-to-clipboard": "Kopierad till urklipp"
+    },
+    "sidebar": {
+        "home": "Hem",
+        "top-donator": "Top Donator",
+        "top-donator-hint": "Donerade mest denna månad",
+        "no-top-donor": "Bli en Supporter",
+        "no-top-donor-description": "Bli en supporter för att låsa upp exklusiva förmåner!"
+    },
+    "card": {
+        "buy": "Köp",
+        "remove": "Ta bort",
+        "subscribe": "Prenumerera",
+        "unavailable": "Ej tillgänglig",
+        "items-left": "artiklar kvar",
+        "featured": "Utvald"
+    },
+    "recent-purchases": "Senaste betalningar",
+    "home": {
+        "welcome": "Välkommen till den officiella MinestoreCMS-webbutiken!",
+        "welcome-description": "För att börja handla, välj en kategori från sidofältet. Observera att rangerna kostar en engångsavgift och är permanenta.",
+        "featured-packages": "UTVALDA PAKET",
+        "to-the-official-server-store": "till den officiella RAviRai Server Store.",
+        "recent-purchases": "Senaste köp",
+        "gift-card": "Presentkort",
+        "gift-card-not-found": "Presentkort hittades inte!",
+        "gift-card-with-balance": "Presentkort med saldo:",
+        "gift-card-check": "Kontrollera",
+        "gift-card-placeholder": "Kortkod",
+        "paypal-balance-banks-all-credit-debit-cards": "PayPal-saldo, Banker, Alla kredit-/betalkort",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Mobilbetalningar, +600 fler",
+        "all-credit-debit-cards": "Alla kredit- och betalkort",
+        "support-or-questions": "Support / Frågor",
+        "support-or-questions-description": "Behöver du svar på några frågor innan du betalar? Har du väntat mer än 20 minuter men inte fått ditt paket? Fråga gemenskapen eller personalen på vår Discord-server! Vi är här för att hjälpa dig.",
+        "refund-policy": "Återbetalningspolicy",
+        "refund-policy-description": "Vi har en strikt ingen återbetalningspolicy. Alla köp är slutgiltiga och kan inte återbetalas. Se till att du köper rätt artikel innan du betalar.",
+        "payment-processing": "Det kan ta upp till 15 minuter för ditt köp att behandlas. Om du fortfarande inte har fått ditt köp efter 15 minuter, kontakta vårt supportteam på Discord."
+    },
+    "auth": {
+        "title": "Logga in",
+        "label": "Användarnamn",
+        "placeholder": "Minecraft-användarnamn",
+        "description": "För att börja handla, ange ditt Minecraft-användarnamn",
+        "submit": "Fortsätt",
+        "invalid-username": "Ogiltigt användarnamn!",
+        "waiting-for-verification": "Väntar på verifiering 🚀",
+        "check-in-game": "Var god, kontrollera chatten och verifiera dig själv på Minecraft-servern!",
+        "confirm": "Du måste bekräfta att du äger kontot!",
+        "verification-resent": "Verifieringskoden har skickats igen!",
+        "resend-verification": "Skicka verifiering igen",
+        "wait-before-resend": "Vänta 10 sekunder innan du skickar igen..."
+    },
+    "checkout": {
+        "title": "Kassa",
+        "image": "Bild",
+        "name": "Namn",
+        "price": "Pris",
+        "quantity": "Antal",
+        "actions": "Åtgärder",
+        "featured-deal": "Utvalt erbjudande",
+        "this-item-is-popular-among-us-customers": "Den här artikeln är populär bland våra kunder. Prova den!",
+        "empty-cart-title": "Hoppsan! Din varukorg är tom",
+        "empty-cart-description": "Det verkar som att det inte finns något i din varukorg för tillfället. Ta en stund att utforska vår butik och upptäck fantastiska in-game-artiklar, rangordningar och mer! När du hittar något du gillar, lägg helt enkelt till det i varukorgen och gå till kassan.",
+        "details": {
+            "your-details": "Dina uppgifter",
+            "you-are-buying-as": "Du köper som...",
+            "not-correct": "Inte korrekt?",
+            "full-name": "Fullständigt namn",
+            "email": "E-post",
+            "address-line-1": "Adressrad 1",
+            "address-line-2": "Adressrad 2",
+            "city": "Stad",
+            "zip-code": "Postnummer",
+            "state-region": "Stat/Region",
+            "country": "Land",
+            "country-placeholder": "Välj ditt land",
+            "no-country-found": "Inget land hittades"
+        },
+        "you-are-buying-as": "Du köper som",
+        "redeem-coupons-or-gift-cards": "Lösa in kuponger eller presentkort",
+        "active-gift": "Aktivt presentkort",
+        "remove-gift": "Ta bort",
+        "redeem": "Lösa in",
+        "redeem-referral": "Lösa in en hänvisningskod",
+        "referral-code": "Hänvisningskod",
+        "referral-code-placeholder": "Ange hänvisningskod",
+        "redeemed-referral": "Löst in hänvisning",
+        "referral-code-invalid": "Ogiltig hänvisningskod!",
+        "referral-code-already-redeemed": "Hänvisningskoden har redan lösts in!",
+        "payment-method": "Betalningsmetod",
+        "privacy-statement": "Integritetspolicy",
+        "privacy-statement-description": "Alla betalningar är slutgiltiga och kan inte återbetalas. Om du försöker göra en återbetalning eller öppna en tvist via PayPal kommer du att bli permanent och oåterkalleligt förvisad från alla våra servrar och andra Minecraft-butiker.",
+        "agree": "Jag godkänner villkoren för denna köp.",
+        "purchase": "Fortsätt till betalning",
+        "only-one-coupon": "Du kan bara lösa in en kupong och ett presentkort åt gången",
+        "coupon-code": "Kupongkod",
+        "coupons-redeemed": "Inlösta kuponger",
+        "coupon-placeholder": "Ange kupongkod",
+        "coupon-savings": "besparingar"
+    },
+    "profile": {
+        "title": "Profil",
+        "information": "Information",
+        "registration-date": "Registreringsdatum:",
+        "money-spent": "Pengar spenderade:",
+        "recent-purchases": "Senaste köp"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Inte alla detaljfält är ifyllda!",
+        "accept-privacy-statement": "Acceptera integritetspolicyn!",
+        "accept-terms": "Acceptera villkoren!",
+        "subscription-item-should-be-alone-in-the-cart": "Prenumerationsartikeln bör vara ensam i varukorgen!"
+    },
+    "footer": {
+        "useful-links": "Användbara länkar",
+        "about-us": "Om oss",
+        "all-rights-reserved": "Alla rättigheter förbehållna.",
+        "powered-by": "Drivs av",
+        "not-affiliated": "Vi är inte anslutna till Mojang AB.",
+        "description": "är ett Minecraft: Java Edition-nätverk som erbjuder spelare engagerande och unik spelupplevelse. Detta är den enda officiella butiken för nätverket."
+    },
+    "success": {
+        "title": "Grattis!",
+        "thanks": "Betalningen har levererats framgångsrikt!"
+    },
+    "error": {
+        "oops": "OJ!",
+        "somethingWrong": "Något gick fel eller våra servrar är offline!",
+        "youreTheBest": "Du är bäst, men något har hänt 🥺",
+        "contactUs": "Kontakta oss på Discord eller på annat sätt!",
+        "serverIssue": "Våra servrar är förmodligen offline eller något har hänt med din betalning.",
+        "contactWithProof": "Kontakta oss med ditt användarnamn och bifogad köpproof.",
+        "paymentIssue": "Din betalning kan vara markerad som 'väntande'. Se också till att du har angett ditt korrekta Minecraft-användarnamn. Om detta inte är fallet, vänligen meddela detta."
+    },
+    "actions": {
+        "please-authorize": "Vänligen, auktorisera!",
+        "item-not-found": "Objektet hittades inte!",
+        "item-out-of-stock": "Objektet är slut i lager!",
+        "reached-stock-limit": "Du har nått gränsen för detta objekt!",
+        "cant-mix-normal-and-subscription": "Du kan inte blanda vanliga objekt med prenumerationsobjekt!",
+        "cant-add-more-than-one-subscription": "Du kan inte lägga till mer än en prenumeration i korgen!",
+        "item-removed-from-cart": "Objektet borttaget från korgen!",
+        "item-added-to-cart": "Objektet tillagt i korgen!"
+    }
+}

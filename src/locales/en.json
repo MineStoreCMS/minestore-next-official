@@ -1,0 +1,164 @@
+{
+    "navbar": {
+        "currency": "Currency",
+        "language": "Language",
+        "cart": "Shopping Cart",
+        "cart-hint": "items for",
+        "not-logged": "Not logged in",
+        "logout": "Logout",
+        "empty-cart": "Empty Cart",
+        "guest": "Guest"
+    },
+    "staff": {
+        "title": "Staff Members"
+    },
+    "header": {
+        "players-online": "Players Online",
+        "members-online": "Members Online",
+        "donation-goal": "Donation Goal",
+        "discord-server": "Discord Server",
+        "copied-to-clipboard": "Copied to clipboard"
+    },
+    "sidebar": {
+        "home": "Home",
+        "top-donator": "Top Donator",
+        "top-donator-hint": "Donated the most this month",
+        "no-top-donor": "Become a Supporter",
+        "no-top-donor-description": "Become a supporter to unlock exclusive benefits!"
+    },
+    "card": {
+        "buy": "Add to Cart",
+        "remove": "Remove",
+        "subscribe": "Subscribe",
+        "unavailable": "Unavailable",
+        "items-left": "items left",
+        "featured": "Featured"
+    },
+    "recent-purchases": "Recent Payments",
+    "home": {
+        "welcome": "Welcome to the official MinestoreCMS Webstore!",
+        "welcome-description": "To begin shopping, please select a category from the sidebar. Please note that ranks cost a one-time fee and are permanent.",
+        "featured-packages": "FEATURED PACKAGES",
+        "to-the-official-server-store": "to the official RAviRai Server Store.",
+        "recent-purchases": "Recent Purchases",
+        "gift-card": "Gift Card",
+        "gift-card-not-found": "Gift card not found!",
+        "gift-card-with-balance": "Gift card with balance:",
+        "gift-card-check": "Check",
+        "gift-card-placeholder": "Card Code",
+        "paypal-balance-banks-all-credit-debit-cards": "PayPal balance, Banks, All Credit/Debit Cards",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Mobile Payments, +600 More",
+        "all-credit-debit-cards": "All Credit & Debit Cards",
+        "support-or-questions": "Support / Questions",
+        "support-or-questions-description": "Need any questions answered before checkout? Waited more than 20 minutes but your package hasn't arrived? Ask the community or staff on our Discord server! We're here to help you out.",
+        "refund-policy": "Refund Policy",
+        "refund-policy-description": "We have a strict no-refund policy. All purchases are final and non-refundable. Please make sure you are purchasing the correct item before checking out.",
+        "payment-processing": "It could take up to 15 minutes for your purchase to be processed. If you are still not credited after 15 minutes, please contact our support team on Discord."
+    },
+    "auth": {
+        "title": "Log In",
+        "label": "Username",
+        "placeholder": "Minecraft Username",
+        "description": "To start shopping, please enter your Minecraft Username",
+        "submit": "Continue",
+        "invalid-username": "Invalid username!",
+        "waiting-for-verification": "Waiting for verification 🚀",
+        "check-in-game": "Please, check a chat & verify yourself on the Minecraft Server!",
+        "confirm": "You need to confirm that you are the owner of the account!",
+        "verification-resent": "Verification code has been resent!",
+        "resend-verification": "Resend verification",
+        "wait-before-resend": "Wait 10 seconds before sending it again..."
+    },
+    "checkout": {
+        "title": "Checkout",
+        "image": "Image",
+        "name": "Name",
+        "price": "Price",
+        "quantity": "Quantity",
+        "actions": "Actions",
+        "featured-deal": "Featured Deal",
+        "this-item-is-popular-among-us-customers": "This item is popular among us customers. Give it a try!",
+        "empty-cart-title": "Oops! Your Cart is Empty",
+        "empty-cart-description": "Looks like there is nothing in your cart at the moment. Take a moment to explore our store and discover amazing in-game items, ranks, and more! When you find something you like, simply add it to your cart and proceed to checkout.",
+        "details": {
+            "your-details": "Your Details",
+            "you-are-buying-as": "You are buying as...",
+            "not-correct": "Not correct ?",
+            "full-name": "Full name",
+            "email": "E-mail",
+            "address-line-1": "Address Line 1",
+            "address-line-2": "Address Line 2",
+            "city": "City",
+            "zip-code": "Zip Code",
+            "state-region": "State/Region",
+            "country": "Country",
+            "country-placeholder": "Select your country",
+            "no-country-found": "No country found"
+        },
+        "you-are-buying-as": "You are buying as",
+        "redeem-coupons-or-gift-cards": "Redeem Coupons or Gift Cards",
+        "active-gift": "Active gift",
+        "remove-gift": "Remove",
+        "redeem": "Redeem",
+        "redeem-referral": "Redeem a Referral Code",
+        "referral-code": "Referral Code",
+        "referral-code-placeholder": "Enter referral code",
+        "redeemed-referral": "Redeemed Referral",
+        "referral-code-invalid": "Invalid referral code!",
+        "referral-code-already-redeemed": "Referral code already redeemed!",
+        "payment-method": "Payment method",
+        "privacy-statement": "Privacy Statement",
+        "privacy-statement-description": "All payments are final and non-refundable. Attempting a chargeback or opening a PayPal dispute will result in permanent and irreversible banishment from all of our servers, and other minecraft stores.",
+        "agree": "I agree to the terms & conditions of this purchase.",
+        "purchase": "Continue to Payment",
+        "only-one-coupon": "You can only redeem one coupon and one gift card at a time",
+        "coupon-code": "Coupon Code",
+        "coupons-redeemed": "Redeemed Coupons",
+        "coupon-placeholder": "Enter coupon code",
+        "coupon-savings": "savings"
+    },
+    "profile": {
+        "title": "Profile",
+        "information": "Information",
+        "registration-date": "Registration date:",
+        "money-spent": "Money spent:",
+        "recent-purchases": "Recent purchases"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Not all detail fields are filled in!",
+        "accept-privacy-statement": "Accept Privacy Statement!",
+        "accept-terms": "Accept Terms!",
+        "subscription-item-should-be-alone-in-the-cart": "Subscription item should be alone in the cart!"
+    },
+    "footer": {
+        "useful-links": "Useful Links",
+        "about-us": "About Us",
+        "all-rights-reserved": "All rights reserved.",
+        "powered-by": "Powered by",
+        "not-affiliated": "We are not affiliated with Mojang AB.",
+        "description": "is a Minecraft: Java Edition network that provides players with captivating and unique gameplay. This is the only official store for the network."
+    },
+    "success": {
+        "title": "Congratulations!",
+        "thanks": "Payment successfully deliverer!"
+    },
+    "error": {
+        "oops": "OOOPPSS!",
+        "somethingWrong": "Something went wrong or our servers are offline!",
+        "youreTheBest": "You're the best, but something happened 🥺",
+        "contactUs": "Please, contact us at Discord or any other way!",
+        "serverIssue": "Probably our servers are offline or something happened with your payment.",
+        "contactWithProof": "Please contact us with your username and attached proof of purchase.",
+        "paymentIssue": "Maybe your payment marked as 'pending'. Also make sure that you have submitted your correct Minecraft username. If this is not the case, please mention this."
+    },
+    "actions": {
+        "please-authorize": "Please, authorize!",
+        "item-not-found": "Item not found!",
+        "item-out-of-stock": "Item out of stock!",
+        "reached-stock-limit": "You've reached the limit for this item!",
+        "cant-mix-normal-and-subscription": "You can't mix normal items with subscription items!",
+        "cant-add-more-than-one-subscription": "You can't add more than one subscription to the cart!",
+        "item-removed-from-cart": "Item removed from cart!",
+        "item-added-to-cart": "Item added to cart!"
+    }
+}

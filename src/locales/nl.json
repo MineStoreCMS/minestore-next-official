@@ -1,0 +1,164 @@
+{
+    "navbar": {
+        "currency": "Valuta",
+        "language": "Taal",
+        "cart": "Winkelwagen",
+        "cart-hint": "artikelen voor",
+        "not-logged": "Niet ingelogd",
+        "logout": "Uitloggen",
+        "empty-cart": "Winkelwagen leegmaken",
+        "guest": "Gast"
+    },
+    "staff": {
+        "title": "Medewerkers"
+    },
+    "header": {
+        "players-online": "Spelers Online",
+        "members-online": "Leden Online",
+        "donation-goal": "Donatie Doel",
+        "discord-server": "Discord Server",
+        "copied-to-clipboard": "Gekopieerd naar klembord"
+    },
+    "sidebar": {
+        "home": "Home",
+        "top-donator": "Top Donateur",
+        "top-donator-hint": "Heeft deze maand het meest gedoneerd",
+        "no-top-donor": "Word een Supporter",
+        "no-top-donor-description": "Word een supporter om exclusieve voordelen te ontgrendelen!"
+    },
+    "card": {
+        "buy": "Kopen",
+        "remove": "Verwijderen",
+        "subscribe": "Abonneren",
+        "unavailable": "Niet beschikbaar",
+        "items-left": "artikelen over",
+        "featured": "Uitgelicht"
+    },
+    "recent-purchases": "Recente Betalingen",
+    "home": {
+        "welcome": "Welkom bij de officiële MinestoreCMS Webwinkel!",
+        "welcome-description": "Om te beginnen met winkelen, selecteer een categorie in de zijbalk. Houd er rekening mee dat rangen een eenmalige vergoeding kosten en permanent zijn.",
+        "featured-packages": "UITGELICHTE PAKKETTEN",
+        "to-the-official-server-store": "naar de officiële RAviRai Serverwinkel.",
+        "recent-purchases": "Recente Aankopen",
+        "gift-card": "Cadeaubon",
+        "gift-card-not-found": "Cadeaubon niet gevonden!",
+        "gift-card-with-balance": "Cadeaubon met saldo:",
+        "gift-card-check": "Controleren",
+        "gift-card-placeholder": "Kaartcode",
+        "paypal-balance-banks-all-credit-debit-cards": "PayPal-saldo, Banken, Alle Credit-/Debetkaarten",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Mobiele Betalingen, +600 Meer",
+        "all-credit-debit-cards": "Alle Credit- en Debetkaarten",
+        "support-or-questions": "Ondersteuning / Vragen",
+        "support-or-questions-description": "Heeft u vragen die beantwoord moeten worden voordat u afrekent? Heeft u langer dan 20 minuten gewacht maar is uw pakket nog niet aangekomen? Vraag het aan de community of het personeel op onze Discord-server! We staan klaar om u te helpen.",
+        "refund-policy": "Restitutiebeleid",
+        "refund-policy-description": "We hanteren een strikt geen-restitutiebeleid. Alle aankopen zijn definitief en niet-restitueerbaar. Zorg ervoor dat u het juiste item koopt voordat u afrekent.",
+        "payment-processing": "Het kan tot 15 minuten duren voordat uw aankoop is verwerkt. Als u na 15 minuten nog steeds geen tegoed heeft ontvangen, neem dan contact op met ons ondersteuningsteam op Discord."
+    },
+    "auth": {
+        "title": "Inloggen",
+        "label": "Gebruikersnaam",
+        "placeholder": "Minecraft Gebruikersnaam",
+        "description": "Om te beginnen met winkelen, voer uw Minecraft Gebruikersnaam in",
+        "submit": "Doorgaan",
+        "invalid-username": "Ongeldige gebruikersnaam!",
+        "waiting-for-verification": "Wachten op verificatie 🚀",
+        "check-in-game": "Controleer alstublieft de chat en verifieer uzelf op de Minecraft Server!",
+        "confirm": "U moet bevestigen dat u de eigenaar van het account bent!",
+        "verification-resent": "Verificatiecode is opnieuw verzonden!",
+        "resend-verification": "Verificatie opnieuw verzenden",
+        "wait-before-resend": "Wacht 10 seconden voordat u het opnieuw verzendt..."
+    },
+    "checkout": {
+        "title": "Afrekenen",
+        "image": "Afbeelding",
+        "name": "Naam",
+        "price": "Prijs",
+        "quantity": "Hoeveelheid",
+        "actions": "Acties",
+        "featured-deal": "Uitgelichte Deal",
+        "this-item-is-popular-among-us-customers": "Dit item is populair onder onze klanten. Probeer het eens!",
+        "empty-cart-title": "Oeps! Uw winkelwagen is leeg",
+        "empty-cart-description": "Het lijkt erop dat er op dit moment niets in uw winkelwagen zit. Neem even de tijd om onze winkel te verkennen en ontdek geweldige in-game items, rangen en meer! Wanneer u iets leuks vindt, voeg het dan eenvoudig toe aan uw winkelwagen en ga verder met afrekenen.",
+        "details": {
+            "your-details": "Uw Gegevens",
+            "you-are-buying-as": "U koopt als...",
+            "not-correct": "Niet correct?",
+            "full-name": "Volledige naam",
+            "email": "E-mail",
+            "address-line-1": "Adresregel 1",
+            "address-line-2": "Adresregel 2",
+            "city": "Stad",
+            "zip-code": "Postcode",
+            "state-region": "Staat/Regio",
+            "country": "Land",
+            "country-placeholder": "Selecteer uw land",
+            "no-country-found": "Geen land gevonden"
+        },
+        "you-are-buying-as": "U koopt als",
+        "redeem-coupons-or-gift-cards": "Coupons of Cadeaubonnen inwisselen",
+        "active-gift": "Actieve cadeaubon",
+        "remove-gift": "Verwijderen",
+        "redeem": "Inwisselen",
+        "redeem-referral": "Een Verwijzingscode Inwisselen",
+        "referral-code": "Verwijzingscode",
+        "referral-code-placeholder": "Voer verwijzingscode in",
+        "redeemed-referral": "Verwijzingscode Ingewisseld",
+        "referral-code-invalid": "Ongeldige verwijzingscode!",
+        "referral-code-already-redeemed": "Verwijzingscode is al ingewisseld!",
+        "payment-method": "Betalingsmethode",
+        "privacy-statement": "Privacyverklaring",
+        "privacy-statement-description": "Alle betalingen zijn definitief en niet-restitueerbaar. Een chargeback proberen of een PayPal-geschil openen zal resulteren in permanente en onomkeerbare verbanning van al onze servers en andere Minecraft-winkels.",
+        "agree": "Ik ga akkoord met de voorwaarden van deze aankoop.",
+        "purchase": "Doorgaan naar Betaling",
+        "only-one-coupon": "U kunt slechts één coupon en één cadeaubon tegelijk inwisselen",
+        "coupon-code": "Couponcode",
+        "coupons-redeemed": "Ingewisselde Coupons",
+        "coupon-placeholder": "Voer couponcode in",
+        "coupon-savings": "besparing"
+    },
+    "profile": {
+        "title": "Profiel",
+        "information": "Informatie",
+        "registration-date": "Registratiedatum:",
+        "money-spent": "Uitgegeven geld:",
+        "recent-purchases": "Recente aankopen"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Niet alle detailvelden zijn ingevuld!",
+        "accept-privacy-statement": "Accepteer de Privacyverklaring!",
+        "accept-terms": "Accepteer de Voorwaarden!",
+        "subscription-item-should-be-alone-in-the-cart": "Abonnementsartikel moet alleen in de winkelwagen staan!"
+    },
+    "footer": {
+        "useful-links": "Handige Links",
+        "about-us": "Over Ons",
+        "all-rights-reserved": "Alle rechten voorbehouden.",
+        "powered-by": "Aangedreven door",
+        "not-affiliated": "Wij zijn niet verbonden met Mojang AB.",
+        "description": "is een Minecraft: Java Edition-netwerk dat spelers boeiende en unieke gameplay biedt. Dit is de enige officiële winkel voor het netwerk."
+    },
+    "success": {
+        "title": "Gefeliciteerd!",
+        "thanks": "Betaling succesvol afgeleverd!"
+    },
+    "error": {
+        "oops": "OEPS!",
+        "somethingWrong": "Er is iets misgegaan of onze servers zijn offline!",
+        "youreTheBest": "Je bent de beste, maar er is iets gebeurd 🥺",
+        "contactUs": "Neem contact met ons op via Discord of een andere manier!",
+        "serverIssue": "Waarschijnlijk zijn onze servers offline of is er iets misgegaan met uw betaling.",
+        "contactWithProof": "Neem contact met ons op met uw gebruikersnaam en bijgevoegd bewijs van aankoop.",
+        "paymentIssue": "Misschien is uw betaling gemarkeerd als 'in behandeling'. Zorg er ook voor dat u uw juiste Minecraft-gebruikersnaam heeft ingediend. Als dit niet het geval is, vermeld dit dan."
+    },
+    "actions": {
+        "please-authorize": "Gelieve te autoriseren!",
+        "item-not-found": "Item niet gevonden!",
+        "item-out-of-stock": "Item is uitverkocht!",
+        "reached-stock-limit": "U heeft de limiet voor dit item bereikt!",
+        "cant-mix-normal-and-subscription": "U kunt geen normale items mixen met abonnementsitems!",
+        "cant-add-more-than-one-subscription": "U kunt niet meer dan één abonnement aan de winkelwagen toevoegen!",
+        "item-removed-from-cart": "Item verwijderd uit winkelwagen!",
+        "item-added-to-cart": "Item toegevoegd aan winkelwagen!"
+    }
+}

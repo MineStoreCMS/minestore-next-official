@@ -1,0 +1,36 @@
+{
+    "author": "TripleZone & MineStoreCMS",
+    "config": [
+        {
+            "header": "General Settings",
+            "options": [
+                {
+                    "id": "main-color",
+                    "name": "Main Color",
+                    "default": "#ff7300",
+                    "description": "Enter the main color used on your website.",
+                    "type": "color",
+                    "value": "#ff7300"
+                },
+                {
+                    "id": "theme",
+                    "name": "Theme",
+                    "description": "Select the default theme for your website.",
+                    "type": "select",
+                    "default": "system",
+                    "values": ["system", "light", "dark"],
+                    "value": "dark"
+                },
+                {
+                    "id": "particles",
+                    "name": "Header Particles Animation",
+                    "description": "Display header particles animation in your webstore header?",
+                    "type": "select",
+                    "default": "Enabled",
+                    "values": ["Enabled", "Disabled"],
+                    "value": "Enabled"
+                }
+            ]
+        }
+    ]
+}

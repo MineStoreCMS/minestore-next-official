@@ -1,0 +1,164 @@
+{
+    "navbar": {
+        "currency": "Valuta",
+        "language": "Språk",
+        "cart": "Handlekurv",
+        "cart-hint": "ting for",
+        "not-logged": "Ikke logget inn",
+        "logout": "Logg ut",
+        "empty-cart": "Tøm handlekurv",
+        "guest": "Gjest"
+    },
+    "staff": {
+        "title": "Ansatte"
+    },
+    "header": {
+        "players-online": "Spillere på nett",
+        "members-online": "Medlemmer på nett",
+        "donation-goal": "Donasjonsmål",
+        "discord-server": "Discord-server",
+        "copied-to-clipboard": "Kopiert til utklippstavlen"
+    },
+    "sidebar": {
+        "home": "Hjem",
+        "top-donator": "Topp donator",
+        "top-donator-hint": "Donerte mest denne måneden",
+        "no-top-donor": "Bli en supporter",
+        "no-top-donor-description": "Bli en supporter for å få eksklusive fordeler!"
+    },
+    "card": {
+        "buy": "Kjøp",
+        "remove": "Fjern",
+        "subscribe": "Abonner",
+        "unavailable": "Utilgjengelig",
+        "items-left": "ting igjen",
+        "featured": "Utvalgt"
+    },
+    "recent-purchases": "Nylige betalinger",
+    "home": {
+        "welcome": "Velkommen til den offisielle MinestoreCMS nettbutikken!",
+        "welcome-description": "For å begynne å handle, velg en kategori fra sidepanelet. Vær oppmerksom på at rangene har en engangskostnad og er permanente.",
+        "featured-packages": "UTVALGTE PAKKER",
+        "to-the-official-server-store": "til den offisielle RAviRai Server-butikken.",
+        "recent-purchases": "Nylige kjøp",
+        "gift-card": "Gavekort",
+        "gift-card-not-found": "Gavekort ikke funnet!",
+        "gift-card-with-balance": "Gavekort med saldo:",
+        "gift-card-check": "Sjekk",
+        "gift-card-placeholder": "Kortkode",
+        "paypal-balance-banks-all-credit-debit-cards": "PayPal-saldo, banker, alle kreditt-/debetkort",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, mobilbetalinger, +600 flere",
+        "all-credit-debit-cards": "Alle kreditt- og debetkort",
+        "support-or-questions": "Støtte / Spørsmål",
+        "support-or-questions-description": "Trenger du svar på spørsmål før du sjekker ut? Har du ventet mer enn 20 minutter, men pakken har ikke kommet? Spør fellesskapet eller staben på vår Discord-server! Vi er her for å hjelpe deg.",
+        "refund-policy": "Refusjonspolicy",
+        "refund-policy-description": "Vi har en streng ingen-refusjonspolicy. Alle kjøp er endelige og kan ikke refunderes. Vennligst forsikre deg om at du kjøper riktig vare før du sjekker ut.",
+        "payment-processing": "Det kan ta opptil 15 minutter før kjøpet ditt blir behandlet. Hvis du fortsatt ikke har fått kreditt etter 15 minutter, vennligst kontakt vårt supportteam på Discord."
+    },
+    "auth": {
+        "title": "Logg inn",
+        "label": "Brukernavn",
+        "placeholder": "Minecraft-brukernavn",
+        "description": "For å begynne å handle, skriv inn Minecraft-brukernavnet ditt",
+        "submit": "Fortsett",
+        "invalid-username": "Ugyldig brukernavn!",
+        "waiting-for-verification": "Venter på verifisering 🚀",
+        "check-in-game": "Vennligst sjekk chatten og verifiser deg på Minecraft-serveren!",
+        "confirm": "Du må bekrefte at du er eieren av kontoen!",
+        "verification-resent": "Verifiseringskoden er sendt på nytt!",
+        "resend-verification": "Send verifisering på nytt",
+        "wait-before-resend": "Vent 10 sekunder før du sender den på nytt..."
+    },
+    "checkout": {
+        "title": "Betal",
+        "image": "Bilde",
+        "name": "Navn",
+        "price": "Pris",
+        "quantity": "Antall",
+        "actions": "Handlinger",
+        "featured-deal": "Utvalgt tilbud",
+        "this-item-is-popular-among-us-customers": "Denne varen er populær blant våre kunder. Prøv den!",
+        "empty-cart-title": "Oops! Handlekurven din er tom",
+        "empty-cart-description": "Det ser ut som det ikke er noe i handlekurven din for øyeblikket. Ta deg tid til å utforske butikken vår og oppdag fantastiske in-game-ting, rangsystemer og mer! Når du finner noe du liker, legger du det bare til i handlekurven og går videre til betaling.",
+        "details": {
+            "your-details": "Dine detaljer",
+            "you-are-buying-as": "Du kjøper som...",
+            "not-correct": "Ikke riktig?",
+            "full-name": "Fullt navn",
+            "email": "E-post",
+            "address-line-1": "Adresse linje 1",
+            "address-line-2": "Adresse linje 2",
+            "city": "By",
+            "zip-code": "Postnummer",
+            "state-region": "Stat/Region",
+            "country": "Land",
+            "country-placeholder": "Velg landet ditt",
+            "no-country-found": "Ingen land funnet"
+        },
+        "you-are-buying-as": "Du kjøper som",
+        "redeem-coupons-or-gift-cards": "Løs inn kuponger eller gavekort",
+        "active-gift": "Aktivt gavekort",
+        "remove-gift": "Fjern",
+        "redeem": "Løs inn",
+        "redeem-referral": "Løs inn en henvisningskode",
+        "referral-code": "Henvisningskode",
+        "referral-code-placeholder": "Skriv inn henvisningskode",
+        "redeemed-referral": "Henvisning løst inn",
+        "referral-code-invalid": "Ugyldig henvisningskode!",
+        "referral-code-already-redeemed": "Henvisningskode er allerede løst inn!",
+        "payment-method": "Betalingsmetode",
+        "privacy-statement": "Personvernerklæring",
+        "privacy-statement-description": "Alle betalinger er endelige og kan ikke refunderes. Forsøk på å tilbakeføre betalingen eller åpne en PayPal-tvist vil resultere i permanent og uopprettelig utestengelse fra alle våre servere og andre Minecraft-butikker.",
+        "agree": "Jeg godtar vilkårene og betingelsene for dette kjøpet.",
+        "purchase": "Fortsett til betaling",
+        "only-one-coupon": "Du kan bare løse inn én kupong og ett gavekort om gangen",
+        "coupon-code": "Kupongkode",
+        "coupons-redeemed": "Løste inn kuponger",
+        "coupon-placeholder": "Skriv inn kupongkode",
+        "coupon-savings": "besparelser"
+    },
+    "profile": {
+        "title": "Profil",
+        "information": "Informasjon",
+        "registration-date": "Registreringsdato:",
+        "money-spent": "Penger brukt:",
+        "recent-purchases": "Nylige kjøp"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Ikke alle detaljfelt er fylt ut!",
+        "accept-privacy-statement": "Godta personvernerklæringen!",
+        "accept-terms": "Godta vilkårene!",
+        "subscription-item-should-be-alone-in-the-cart": "Abonnementsvaren skal være alene i handlekurven!"
+    },
+    "footer": {
+        "useful-links": "Nyttige lenker",
+        "about-us": "Om oss",
+        "all-rights-reserved": "Alle rettigheter reservert.",
+        "powered-by": "Drevet av",
+        "not-affiliated": "Vi er ikke tilknyttet Mojang AB.",
+        "description": "er et Minecraft: Java Edition-nettverk som gir spillere fengslende og unik gameplay. Dette er den eneste offisielle butikken for nettverket."
+    },
+    "success": {
+        "title": "Gratulerer!",
+        "thanks": "Betalingen ble vellykket levert!"
+    },
+    "error": {
+        "oops": "OOPS!",
+        "somethingWrong": "Noe gikk galt eller serverne våre er nede!",
+        "youreTheBest": "Du er den beste, men noe skjedde 🥺",
+        "contactUs": "Vennligst kontakt oss på Discord eller på annen måte!",
+        "serverIssue": "Sannsynligvis er serverne våre nede eller noe har skjedd med betalingen din.",
+        "contactWithProof": "Vennligst kontakt oss med brukernavnet ditt og vedlagt bevis på kjøpet.",
+        "paymentIssue": "Kanskje betalingen din er merket som 'ventende'. Sørg også for at du har oppgitt riktig Minecraft-brukernavn. Hvis dette ikke er tilfelle, vennligst nevn det."
+    },
+    "actions": {
+        "please-authorize": "Vennligst autoriser!",
+        "item-not-found": "Vare ikke funnet!",
+        "item-out-of-stock": "Vare utsolgt!",
+        "reached-stock-limit": "Du har nådd grensen for denne varen!",
+        "cant-mix-normal-and-subscription": "Du kan ikke blande vanlige varer med abonnementsvarer!",
+        "cant-add-more-than-one-subscription": "Du kan ikke legge til mer enn ett abonnement i handlekurven!",
+        "item-removed-from-cart": "Vare fjernet fra handlekurven!",
+        "item-added-to-cart": "Vare lagt til i handlekurven!"
+    }
+}

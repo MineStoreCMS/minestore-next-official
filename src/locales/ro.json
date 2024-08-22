@@ -1,0 +1,164 @@
+{
+    "navbar": {
+        "currency": "Monedă",
+        "language": "Limba",
+        "cart": "Coș de cumpărături",
+        "cart-hint": "articole pentru",
+        "not-logged": "Nu sunteți autentificat",
+        "logout": "Deconectare",
+        "empty-cart": "Golire coș",
+        "guest": "Vizitator"
+    },
+    "staff": {
+        "title": "Membri ai personalului"
+    },
+    "header": {
+        "players-online": "Jucători online",
+        "members-online": "Membri online",
+        "donation-goal": "Obiectiv de donație",
+        "discord-server": "Server Discord",
+        "copied-to-clipboard": "Copiat în clipboard"
+    },
+    "sidebar": {
+        "home": "Acasă",
+        "top-donator": "Cel mai mare donator",
+        "top-donator-hint": "A donat cel mai mult în acest lună",
+        "no-top-donor": "Deveniți un susținător",
+        "no-top-donor-description": "Deveniți un susținător pentru a debloca beneficii exclusive!"
+    },
+    "card": {
+        "buy": "Adăugare în coș",
+        "remove": "Eliminare",
+        "subscribe": "Abonare",
+        "unavailable": "Indisponibil",
+        "items-left": "articole rămase",
+        "featured": "Recomandat"
+    },
+    "recent-purchases": "Plăți recente",
+    "home": {
+        "welcome": "Bine ați venit la Magazinul oficial MinestoreCMS!",
+        "welcome-description": "Pentru a începe cumpărăturile, vă rugăm să selectați o categorie din bara laterală. Vă rugăm să rețineți că rangurile au o taxă unică și sunt permanente.",
+        "featured-packages": "PACHETE RECOMANDATE",
+        "to-the-official-server-store": "la Magazinul oficial al serverului RAviRai.",
+        "recent-purchases": "Cumpărături recente",
+        "gift-card": "Card cadou",
+        "gift-card-not-found": "Card cadou negăsit!",
+        "gift-card-with-balance": "Card cadou cu sold:",
+        "gift-card-check": "Verificare",
+        "gift-card-placeholder": "Cod card",
+        "paypal-balance-banks-all-credit-debit-cards": "Sold PayPal, Bănci, Toate cardurile de credit/debit",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Plăți mobile, +600 Altele",
+        "all-credit-debit-cards": "Toate cardurile de credit și debit",
+        "support-or-questions": "Suport / Întrebări",
+        "support-or-questions-description": "Aveți întrebări înainte de finalizarea comenzii? Ați așteptat mai mult de 20 de minute, dar pachetul dvs. nu a sosit? Întrebați comunitatea sau personalul pe serverul nostru Discord! Suntem aici să vă ajutăm.",
+        "refund-policy": "Politica de rambursare",
+        "refund-policy-description": "Avem o politică strictă de nerambursare. Toate achizițiile sunt finale și nerambursabile. Vă rugăm să vă asigurați că achiziționați produsul corect înainte de finalizarea comenzii.",
+        "payment-processing": "Procesarea plății poate dura până la 15 minute. Dacă nu sunteți creditat nici după 15 minute, vă rugăm să contactați echipa noastră de suport pe Discord."
+    },
+    "auth": {
+        "title": "Autentificare",
+        "label": "Nume de utilizator",
+        "placeholder": "Nume de utilizator Minecraft",
+        "description": "Pentru a începe cumpărăturile, vă rugăm să introduceți numele de utilizator Minecraft",
+        "submit": "Continuare",
+        "invalid-username": "Nume de utilizator nevalid!",
+        "waiting-for-verification": "Se așteaptă verificarea 🚀",
+        "check-in-game": "Vă rugăm să verificați chatul și să vă verificați pe serverul Minecraft!",
+        "confirm": "Trebuie să confirmați că sunteți proprietarul contului!",
+        "verification-resent": "Codul de verificare a fost retrimis!",
+        "resend-verification": "Retrimiteți verificarea",
+        "wait-before-resend": "Așteptați 10 secunde înainte de a o trimite din nou..."
+    },
+    "checkout": {
+        "title": "Finalizare comandă",
+        "image": "Imagine",
+        "name": "Nume",
+        "price": "Preț",
+        "quantity": "Cantitate",
+        "actions": "Acțiuni",
+        "featured-deal": "Ofertă specială",
+        "this-item-is-popular-among-us-customers": "Acest produs este popular printre clienții noștri. Încercați-l!",
+        "empty-cart-title": "Oops! Coșul dvs. este gol",
+        "empty-cart-description": "Se pare că momentan nu aveți nimic în coș. Luați-vă timp să explorați magazinul nostru și descoperiți obiecte de joc uimitoare, ranguri și multe altele! Când găsiți ceva care vă place, adăugați-l în coș și continuați la finalizarea comenzii.",
+        "details": {
+            "your-details": "Detaliile dvs.",
+            "you-are-buying-as": "Cumpărați ca...",
+            "not-correct": "Nu este corect?",
+            "full-name": "Nume complet",
+            "email": "E-mail",
+            "address-line-1": "Adresă linia 1",
+            "address-line-2": "Adresă linia 2",
+            "city": "Oraș",
+            "zip-code": "Cod poștal",
+            "state-region": "Stat/Regiune",
+            "country": "Țară",
+            "country-placeholder": "Selectați țara dvs.",
+            "no-country-found": "Nicio țară găsită"
+        },
+        "you-are-buying-as": "Cumpărați ca",
+        "redeem-coupons-or-gift-cards": "Răscumpărați cupoane sau carduri cadou",
+        "active-gift": "Card cadou activ",
+        "remove-gift": "Eliminare",
+        "redeem": "Răscumpărați",
+        "redeem-referral": "Răscumpărați un cod de recomandare",
+        "referral-code": "Cod de recomandare",
+        "referral-code-placeholder": "Introduceți codul de recomandare",
+        "redeemed-referral": "Cod de recomandare răscumpărat",
+        "referral-code-invalid": "Cod de recomandare nevalid!",
+        "referral-code-already-redeemed": "Codul de recomandare a fost deja răscumpărat!",
+        "payment-method": "Metodă de plată",
+        "privacy-statement": "Declarație de confidențialitate",
+        "privacy-statement-description": "Toate plățile sunt finale și nerambursabile. Încercarea de a face o contestație sau de a deschide o dispută PayPal va duce la interzicerea permanentă și ireversibilă de pe toate serverele noastre și alte magazine Minecraft.",
+        "agree": "Sunt de acord cu termenii și condițiile acestei achiziții.",
+        "purchase": "Continuare la plată",
+        "only-one-coupon": "Puteți răscumpăra doar un cupon și un card cadou odată",
+        "coupon-code": "Cod cupon",
+        "coupons-redeemed": "Cupoane răscumpărate",
+        "coupon-placeholder": "Introduceți codul cuponului",
+        "coupon-savings": "economii"
+    },
+    "profile": {
+        "title": "Profil",
+        "information": "Informații",
+        "registration-date": "Data înregistrării:",
+        "money-spent": "Bani cheltuiți:",
+        "recent-purchases": "Cumpărături recente"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Nu sunt completate toate câmpurile de detaliu!",
+        "accept-privacy-statement": "Acceptați declarația de confidențialitate!",
+        "accept-terms": "Acceptați termenii!",
+        "subscription-item-should-be-alone-in-the-cart": "Articolul de abonament ar trebui să fie singur în coș!"
+    },
+    "footer": {
+        "useful-links": "Link-uri utile",
+        "about-us": "Despre noi",
+        "all-rights-reserved": "Toate drepturile rezervate.",
+        "powered-by": "Realizat de",
+        "not-affiliated": "Nu suntem afiliați cu Mojang AB.",
+        "description": "este o rețea Minecraft: Java Edition care oferă jucătorilor o experiență captivantă și unică. Acesta este singurul magazin oficial pentru rețea."
+    },
+    "success": {
+        "title": "Felicitări!",
+        "thanks": "Plata a fost efectuată cu succes!"
+    },
+    "error": {
+        "oops": "OOPS!",
+        "somethingWrong": "Ceva nu a mers bine sau serverele noastre sunt offline!",
+        "youreTheBest": "Ești cel mai bun, dar s-a întâmplat ceva 🥺",
+        "contactUs": "Vă rugăm să ne contactați pe Discord sau în alt mod!",
+        "serverIssue": "Probabil serverele noastre sunt offline sau s-a întâmplat ceva cu plata dvs.",
+        "contactWithProof": "Vă rugăm să ne contactați cu numele de utilizator și dovada de achiziție atașată.",
+        "paymentIssue": "Poate plata dvs. este marcată ca „în așteptare”. Asigurați-vă și că ați introdus numele de utilizator Minecraft corect. Dacă nu este cazul, menționați acest lucru."
+    },
+    "actions": {
+        "please-authorize": "Vă rugăm să autorizați!",
+        "item-not-found": "Produsul nu a fost găsit!",
+        "item-out-of-stock": "Produsul nu este în stoc!",
+        "reached-stock-limit": "Ați atins limita pentru acest produs!",
+        "cant-mix-normal-and-subscription": "Nu puteți combina produse normale cu produse de abonament!",
+        "cant-add-more-than-one-subscription": "Nu puteți adăuga mai mult de un abonament în coș!",
+        "item-removed-from-cart": "Produsul a fost eliminat din coș!",
+        "item-added-to-cart": "Produsul a fost adăugat în coș!"
+    }
+}

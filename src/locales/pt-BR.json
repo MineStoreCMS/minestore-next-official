@@ -1,0 +1,164 @@
+{
+    "navbar": {
+        "currency": "Moeda",
+        "language": "Idioma",
+        "cart": "Carrinho de Compras",
+        "cart-hint": "itens para",
+        "not-logged": "Não logado",
+        "logout": "Sair",
+        "empty-cart": "Esvaziar Carrinho",
+        "guest": "Visitante"
+    },
+    "staff": {
+        "title": "Membros da Equipe"
+    },
+    "header": {
+        "players-online": "Jogadores Online",
+        "members-online": "Membros Online",
+        "donation-goal": "Meta de Doação",
+        "discord-server": "Servidor do Discord",
+        "copied-to-clipboard": "Copiado para a área de transferência"
+    },
+    "sidebar": {
+        "home": "Início",
+        "top-donator": "Principal Doador",
+        "top-donator-hint": "Doou mais neste mês",
+        "no-top-donor": "Seja um Apoiador",
+        "no-top-donor-description": "Seja um apoiador para desbloquear benefícios exclusivos!"
+    },
+    "card": {
+        "buy": "Comprar",
+        "remove": "Remover",
+        "subscribe": "Inscrever-se",
+        "unavailable": "Indisponível",
+        "items-left": "itens restantes",
+        "featured": "Destaque"
+    },
+    "recent-purchases": "Pagamentos Recentes",
+    "home": {
+        "welcome": "Bem-vindo à Loja Oficial do MinestoreCMS!",
+        "welcome-description": "Para começar a comprar, selecione uma categoria na barra lateral. Observe que os cargos têm uma taxa única e são permanentes.",
+        "featured-packages": "PACOTES EM DESTAQUE",
+        "to-the-official-server-store": "para a Loja Oficial do Servidor RAviRai.",
+        "recent-purchases": "Compras Recentes",
+        "gift-card": "Cartão Presente",
+        "gift-card-not-found": "Cartão presente não encontrado!",
+        "gift-card-with-balance": "Cartão presente com saldo:",
+        "gift-card-check": "Verificar",
+        "gift-card-placeholder": "Código do Cartão",
+        "paypal-balance-banks-all-credit-debit-cards": "Saldo do PayPal, Bancos, Todos os Cartões de Crédito/Débito",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Pagamentos Móveis, +600 Mais",
+        "all-credit-debit-cards": "Todos os Cartões de Crédito e Débito",
+        "support-or-questions": "Suporte / Perguntas",
+        "support-or-questions-description": "Precisa de alguma pergunta respondida antes de finalizar a compra? Esperou mais de 20 minutos, mas seu pacote não chegou? Pergunte à comunidade ou à equipe em nosso servidor do Discord! Estamos aqui para ajudar.",
+        "refund-policy": "Política de Reembolso",
+        "refund-policy-description": "Temos uma política de não reembolso rigorosa. Todas as compras são finais e não reembolsáveis. Certifique-se de estar comprando o item correto antes de finalizar a compra.",
+        "payment-processing": "A compra pode levar até 15 minutos para ser processada. Se você ainda não for creditado após 15 minutos, entre em contato com nossa equipe de suporte no Discord."
+    },
+    "auth": {
+        "title": "Entrar",
+        "label": "Nome de Usuário",
+        "placeholder": "Nome de Usuário do Minecraft",
+        "description": "Para começar a comprar, insira seu Nome de Usuário do Minecraft",
+        "submit": "Continuar",
+        "invalid-username": "Nome de usuário inválido!",
+        "waiting-for-verification": "Aguardando verificação 🚀",
+        "check-in-game": "Por favor, verifique no chat e confirme sua identidade no Servidor do Minecraft!",
+        "confirm": "Você precisa confirmar que é o proprietário da conta!",
+        "verification-resent": "O código de verificação foi reenviado!",
+        "resend-verification": "Reenviar verificação",
+        "wait-before-resend": "Aguarde 10 segundos antes de enviar novamente..."
+    },
+    "checkout": {
+        "title": "Finalizar Compra",
+        "image": "Imagem",
+        "name": "Nome",
+        "price": "Preço",
+        "quantity": "Quantidade",
+        "actions": "Ações",
+        "featured-deal": "Oferta em Destaque",
+        "this-item-is-popular-among-us-customers": "Este item é popular entre nossos clientes. Experimente!",
+        "empty-cart-title": "Oops! Seu Carrinho está Vazio",
+        "empty-cart-description": "Parece que não há nada em seu carrinho no momento. Reserve um momento para explorar nossa loja e descobrir itens incríveis para o jogo, cargos e muito mais! Quando encontrar algo que goste, basta adicioná-lo ao carrinho e prosseguir para a finalização da compra.",
+        "details": {
+            "your-details": "Seus Detalhes",
+            "you-are-buying-as": "Você está comprando como...",
+            "not-correct": "Não está correto?",
+            "full-name": "Nome completo",
+            "email": "E-mail",
+            "address-line-1": "Endereço Linha 1",
+            "address-line-2": "Endereço Linha 2",
+            "city": "Cidade",
+            "zip-code": "CEP",
+            "state-region": "Estado/Região",
+            "country": "País",
+            "country-placeholder": "Selecione seu país",
+            "no-country-found": "Nenhum país encontrado"
+        },
+        "you-are-buying-as": "Você está comprando como",
+        "redeem-coupons-or-gift-cards": "Resgatar Cupons ou Cartões Presente",
+        "active-gift": "Cartão presente ativo",
+        "remove-gift": "Remover",
+        "redeem": "Resgatar",
+        "redeem-referral": "Resgatar um Código de Indicação",
+        "referral-code": "Código de Indicação",
+        "referral-code-placeholder": "Digite o código de indicação",
+        "redeemed-referral": "Indicação Resgatada",
+        "referral-code-invalid": "Código de indicação inválido!",
+        "referral-code-already-redeemed": "Código de indicação já resgatado!",
+        "payment-method": "Método de Pagamento",
+        "privacy-statement": "Declaração de Privacidade",
+        "privacy-statement-description": "Todos os pagamentos são finais e não reembolsáveis. Tentar fazer um estorno ou abrir uma disputa no PayPal resultará em banimento permanente e irreversível de todos os nossos servidores e outras lojas de Minecraft.",
+        "agree": "Eu concordo com os termos e condições desta compra.",
+        "purchase": "Continuar para o Pagamento",
+        "only-one-coupon": "Você só pode resgatar um cupom e um cartão presente por vez",
+        "coupon-code": "Código do Cupom",
+        "coupons-redeemed": "Cupons Resgatados",
+        "coupon-placeholder": "Digite o código do cupom",
+        "coupon-savings": "economia"
+    },
+    "profile": {
+        "title": "Perfil",
+        "information": "Informações",
+        "registration-date": "Data de Registro:",
+        "money-spent": "Dinheiro Gasto:",
+        "recent-purchases": "Compras Recentes"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Nem todos os campos de detalhes estão preenchidos!",
+        "accept-privacy-statement": "Aceite a Declaração de Privacidade!",
+        "accept-terms": "Aceite os Termos!",
+        "subscription-item-should-be-alone-in-the-cart": "O item de assinatura deve estar sozinho no carrinho!"
+    },
+    "footer": {
+        "useful-links": "Links Úteis",
+        "about-us": "Sobre Nós",
+        "all-rights-reserved": "Todos os direitos reservados.",
+        "powered-by": "Desenvolvido por",
+        "not-affiliated": "Não somos afiliados à Mojang AB.",
+        "description": "é uma rede de Minecraft: Java Edition que oferece aos jogadores uma jogabilidade cativante e única. Esta é a única loja oficial para a rede."
+    },
+    "success": {
+        "title": "Parabéns!",
+        "thanks": "Pagamento entregue com sucesso!"
+    },
+    "error": {
+        "oops": "OOPS!",
+        "somethingWrong": "Algo deu errado ou nossos servidores estão offline!",
+        "youreTheBest": "Você é o melhor, mas algo aconteceu 🥺",
+        "contactUs": "Por favor, entre em contato conosco no Discord ou de qualquer outra forma!",
+        "serverIssue": "Provavelmente nossos servidores estão offline ou algo aconteceu com seu pagamento.",
+        "contactWithProof": "Entre em contato conosco com seu nome de usuário e comprovante de compra anexado.",
+        "paymentIssue": "Talvez seu pagamento esteja marcado como 'pendente'. Certifique-se também de ter inserido corretamente seu nome de usuário do Minecraft. Se esse não for o caso, informe-nos."
+    },
+    "actions": {
+        "please-authorize": "Por favor, autorize!",
+        "item-not-found": "Item não encontrado!",
+        "item-out-of-stock": "Item fora de estoque!",
+        "reached-stock-limit": "Você atingiu o limite para este item!",
+        "cant-mix-normal-and-subscription": "Você não pode misturar itens normais com itens de assinatura!",
+        "cant-add-more-than-one-subscription": "Você não pode adicionar mais de uma assinatura ao carrinho!",
+        "item-removed-from-cart": "Item removido do carrinho!",
+        "item-added-to-cart": "Item adicionado ao carrinho!"
+    }
+}

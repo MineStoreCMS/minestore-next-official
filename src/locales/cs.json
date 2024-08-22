@@ -1,0 +1,164 @@
+{
+    "navbar": {
+        "currency": "Měna",
+        "language": "Jazyk",
+        "cart": "Nákupní košík",
+        "cart-hint": "položky za",
+        "not-logged": "Nepřihlášen",
+        "logout": "Odhlásit se",
+        "empty-cart": "Vyprázdnit košík",
+        "guest": "Host"
+    },
+    "staff": {
+        "title": "Členové týmu"
+    },
+    "header": {
+        "players-online": "Hráči online",
+        "members-online": "Členové online",
+        "donation-goal": "Cíl darování",
+        "discord-server": "Discord server",
+        "copied-to-clipboard": "Zkopírováno do schránky!"
+    },
+    "sidebar": {
+        "home": "Domů",
+        "top-donator": "Největší dárce",
+        "top-donator-hint": "Nejvíce daroval tento měsíc",
+        "no-top-donor": "Staňte se podporovatelem",
+        "no-top-donor-description": "Staňte se podporovatelem a získejte exkluzivní výhody!"
+    },
+    "card": {
+        "buy": "Přidat",
+        "remove": "Odebrat",
+        "subscribe": "Přihlásit se k odběru",
+        "unavailable": "Není k dispozici",
+        "items-left": "zbývající položky",
+        "featured": "Doporučené"
+    },
+    "recent-purchases": "Nedávné platby",
+    "home": {
+        "welcome": "Vítejte v oficiálním MinestoreCMS obchodě!",
+        "welcome-description": "Pro začátek nakupování vyberte prosím kategorii z postranního panelu. Prosím, uvědomte si, že hodnosti mají jednorázový poplatek a jsou trvalé.",
+        "featured-packages": "DOPORUČENÉ BALÍČKY",
+        "to-the-official-server-store": "do oficiálního obchodu serveru RAviRai.",
+        "recent-purchases": "Nedávné nákupy",
+        "gift-card": "Dárková karta",
+        "gift-card-not-found": "Dárková karta nenalezena!",
+        "gift-card-with-balance": "Dárková karta s dostupným zůstatkem:",
+        "gift-card-check": "Zkontrolovat",
+        "gift-card-placeholder": "Kód karty",
+        "paypal-balance-banks-all-credit-debit-cards": "PayPal zůstatek, banky, všechny kreditní/debetní karty",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, mobilní platby, +600 dalších",
+        "all-credit-debit-cards": "Všechny kreditní a debetní karty",
+        "support-or-questions": "Podpora / Otázky",
+        "support-or-questions-description": "Potřebujete odpovědi na otázky před provedením objednávky? Čekáte déle než 20 minut, ale váš balíček ještě nedorazil? Zeptejte se komunity nebo personálu na našem Discord serveru! Jsme tu, abychom vám pomohli.",
+        "refund-policy": "Politika vrácení peněz",
+        "refund-policy-description": "Máme přísnou politiku nevracení peněz. Všechny nákupy jsou konečné a nevracitelné. Před provedením objednávky se prosím ujistěte, že si kupujete správnou položku.",
+        "payment-processing": "Zpracování vašeho nákupu může trvat až 15 minut. Pokud vám po 15 minutách stále nebyly připsány peníze, kontaktujte náš tým podpory na Discordu."
+    },
+    "auth": {
+        "title": "Přihlášení",
+        "label": "Uživatelské jméno",
+        "placeholder": "Uživatelské jméno v Minecraftu",
+        "description": "Pro začátek nakupování zadejte prosím své uživatelské jméno v Minecraftu",
+        "submit": "Pokračovat",
+        "invalid-username": "Neplatné uživatelské jméno!",
+        "waiting-for-verification": "Čekání na ověření 🚀",
+        "check-in-game": "Prosím, zkontrolujte chat a ověřte se na Minecraft serveru!",
+        "confirm": "Musíte potvrdit, že jste vlastníkem účtu!",
+        "verification-resent": "Ověřovací kód byl znovu odeslán!",
+        "resend-verification": "Znovu odeslat ověřovací kód",
+        "wait-before-resend": "Pošlete ho znovu až počkáte 10 sekund..."
+    },
+    "checkout": {
+        "title": "Pokladna",
+        "image": "Obrázek",
+        "name": "Název",
+        "price": "Cena",
+        "quantity": "Množství",
+        "actions": "Akce",
+        "featured-deal": "Doporučená nabídka",
+        "this-item-is-popular-among-us-customers": "Tato položka je oblíbená mezi našimi zákazníky. Vyzkoušejte ji!",
+        "empty-cart-title": "Ups! Váš košík je prázdný",
+        "empty-cart-description": "Zdá se, že v košíku momentálně nic nemáte. Věnujte chvíli prozkoumání našeho obchodu a objevování úžasných herních předmětů, hodností a dalšího! Až najdete něco, co se vám líbí, jednoduše jej přidejte do košíku a pokračujte k pokladně.",
+        "details": {
+            "your-details": "Vaše údaje",
+            "you-are-buying-as": "Nakupujete jako...",
+            "not-correct": "Není správné?",
+            "full-name": "Celé jméno",
+            "email": "E-mail",
+            "address-line-1": "Adresa řádek 1",
+            "address-line-2": "Adresa řádek 2",
+            "city": "Město",
+            "zip-code": "PSČ",
+            "state-region": "Stát/Region",
+            "country": "Země",
+            "country-placeholder": "Vyberte svou zemi",
+            "no-country-found": "Země nenalezena"
+        },
+        "you-are-buying-as": "Nakupujete jako",
+        "redeem-coupons-or-gift-cards": "Vyměnit kupóny nebo dárkové karty",
+        "active-gift": "Aktivní dárek",
+        "remove-gift": "Odebrat",
+        "redeem": "Vyměnit",
+        "redeem-referral": "Vyměnit odkazový kód",
+        "referral-code": "Odkazový kód",
+        "referral-code-placeholder": "Zadejte odkazový kód",
+        "redeemed-referral": "Vyměněný odkaz",
+        "referral-code-invalid": "Neplatný odkazový kód!",
+        "referral-code-already-redeemed": "Odkazový kód již byl vyměněn!",
+        "payment-method": "Platební metoda",
+        "privacy-statement": "Prohlášení o ochraně osobních údajů",
+        "privacy-statement-description": "Všechny platby jsou konečné a nevracitelné. Pokus o vrácení peněz nebo otevření sporu v PayPalu povede k trvalému a nevratnému vykázání ze všech našich serverů a dalších minecraft obchodů.",
+        "agree": "Souhlasím s podmínkami této platby.",
+        "purchase": "Pokračovat k platbě",
+        "only-one-coupon": "Můžete vyměnit pouze jeden kupón a jednu dárkovou kartu najednou",
+        "coupon-code": "Kód kupónu",
+        "coupons-redeemed": "Vyměněné kupóny",
+        "coupon-placeholder": "Zadejte kód kupónu",
+        "coupon-savings": "úspory"
+    },
+    "profile": {
+        "title": "Profil",
+        "information": "Informace",
+        "registration-date": "Datum registrace:",
+        "money-spent": "Utopené peníze:",
+        "recent-purchases": "Nedávné nákupy"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Nejsou vyplněna všechna pole s údaji!",
+        "accept-privacy-statement": "Přijměte prohlášení o ochraně osobních údajů!",
+        "accept-terms": "Přijměte podmínky!",
+        "subscription-item-should-be-alone-in-the-cart": "Položka odběru by měla být v košíku samostatně!"
+    },
+    "footer": {
+        "useful-links": "Užitečné odkazy",
+        "about-us": "O nás",
+        "all-rights-reserved": "Všechna práva vyhrazena.",
+        "powered-by": "Poháněno",
+        "not-affiliated": "Nejsme spojeni s Mojang AB.",
+        "description": "je síť Minecraft: Java Edition, která hráčům poskytuje poutavou a jedinečnou hratelnost. Toto je jediný oficiální obchod sítě."
+    },
+    "success": {
+        "title": "Gratulujeme!",
+        "thanks": "Platba byla úspěšně provedena!"
+    },
+    "error": {
+        "oops": "Ouha!",
+        "somethingWrong": "Něco se pokazilo nebo naše servery jsou offline!",
+        "youreTheBest": "Jste nejlepší, ale něco se stalo 🥺",
+        "contactUs": "Prosím, kontaktujte nás na Discordu nebo jiným způsobem!",
+        "serverIssue": "Pravděpodobně jsou naše servery offline nebo se něco stalo s vaší platbou.",
+        "contactWithProof": "Kontaktujte nás prosím se svým uživatelským jménem a přiloženým dokladem o nákupu.",
+        "paymentIssue": "Možná byla vaše platba označena jako 'čekající'. Ujistěte se také, že jste zadali správné uživatelské jméno v Minecraftu. Pokud tomu tak není, uveďte to prosím."
+    },
+    "actions": {
+        "please-authorize": "Prosím, autorizujte se!",
+        "item-not-found": "Položka nenalezena!",
+        "item-out-of-stock": "Položka je vyprodaná!",
+        "reached-stock-limit": "Dosáhli jste limitu pro tuto položku!",
+        "cant-mix-normal-and-subscription": "Nemůžete kombinovat běžné položky s odběrovými položkami!",
+        "cant-add-more-than-one-subscription": "Nemůžete přidat více než jednu odběrovou položku do košíku!",
+        "item-removed-from-cart": "Položka byla odebrána z košíku!",
+        "item-added-to-cart": "Položka byla přidána do košíku!"
+    }
+}
