@@ -57,7 +57,7 @@ export const ProfileView: FC<ProfileViewProps> = ({ profile }) => {
             <hr className="mt-5 border-[3px] border-primary" />
 
             <div className="mt-8 grid grid-cols-3 gap-8">
-                {profile?.items?.map((item, index) => <Card key={index} item={item} />)}
+                {profile?.items?.map((item, index) => <Card key={index} item={item} hideButton={true} />)}
             </div>
 
             {profile?.items?.length === 0 && (

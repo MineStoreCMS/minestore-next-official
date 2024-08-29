@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 type CardActionsProps = {
+    hideButton?: boolean;
     direction?: 'row' | 'col';
     isItemInCart: boolean;
     setShowModal: (value: boolean) => void;
@@ -22,6 +23,7 @@ type CardActionButtonProps = Omit<CardActionsProps, 'direction' | 'setShowModal'
 };
 
 export function CardActions({
+    hideButton,
     direction = 'col',
     isItemInCart,
     setShowModal,
@@ -33,18 +35,21 @@ export function CardActions({
         <div
             className={joinClasses(
                 'flex items-center justify-center gap-2',
-                direction === 'col' && 'mt-auto grid grid-cols-[50px,1fr]'
+                direction === 'col' && 'mt-auto w-full',
+                hideButton && direction === 'col' && 'grid-cols-[1fr,1fr]'
             )}
         >
-            <Button
-                aria-label="Info"
-                onClick={() => setShowModal(true)}
-                variant="secondary"
-                size="icon"
-                className="h-[50px] w-[50px]"
-            >
-                <InfoIcon size={24} aria-hidden={true} />
-            </Button>
+            { !hideButton ? (
+                <Button
+                    aria-label="Info"
+                    onClick={() => setShowModal(true)}
+                    variant="secondary"
+                    size="icon"
+                    className="h-[50px] w-[50px]"
+                >
+                    <InfoIcon size={24} aria-hidden={true} />
+                </Button>
+            ) : null }
 
             <CardActionButtons
                 isItemInCart={isItemInCart}

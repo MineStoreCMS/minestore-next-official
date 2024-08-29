@@ -11,13 +11,14 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 type CardProps = {
+    hideButton?: boolean;
     item: TItem;
     direction?: 'row' | 'col';
     calledFromCheckout?: boolean;
     className?: string;
 };
 
-export function Card({ item, direction = 'col' }: CardProps) {
+export function Card({ item, direction = 'col', hideButton}: CardProps) {
     const [showModal, setShowModal] = useState(false);
 
     const { items } = useCartStore();
@@ -32,6 +33,7 @@ export function Card({ item, direction = 'col' }: CardProps) {
             <CardLayout direction={direction} className={item.featured ? 'featured-package' : ''}>
                 <CardHeader item={item} direction={direction} />
                 <CardActions
+                    hideButton={ hideButton }
                     item={item}
                     direction={direction}
                     isItemInCart={isItemInCart}

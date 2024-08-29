@@ -35,6 +35,8 @@ export const ItemDetails: FC<DetailsProps> = ({ show, onHide, id, route }) => {
     useEffect(() => {
         getItem(id, route).then((data) => {
             setDetails(data);
+        }).catch((err) => {
+            setDetails(undefined);
         });
     }, [id, route]);
 
