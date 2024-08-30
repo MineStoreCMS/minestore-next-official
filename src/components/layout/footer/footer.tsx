@@ -8,6 +8,7 @@ import { Container } from '@/components/base/container/container';
 import { useTranslations } from 'next-intl';
 import { ReactSVG } from 'react-svg';
 import { ModeToggle } from '@layout/theme-selector/theme-selector';
+import { getCacheBuster } from '@helpers/cache-buster';
 
 export type FooterProps = {
     settings: TSettings;
@@ -53,11 +54,12 @@ function UsefulLinks({ settings }: { settings: TSettings }) {
 
 function Copyright({ settings }: { settings: TSettings }) {
     const t = useTranslations('footer');
+    const cacheBuster = getCacheBuster();
     return (
         <div className="flex flex-col items-center justify-center gap-6 text-center">
             <Image
                 className="aspect-square w-[260px] object-contain"
-                src={`${process.env.NEXT_PUBLIC_API_URL}/img/logo.png`}
+                src={`${process.env.NEXT_PUBLIC_API_URL}/img/logo.png?${cacheBuster}`}
                 width={260}
                 height={231}
                 alt="Logo"

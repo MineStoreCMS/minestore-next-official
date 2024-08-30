@@ -7,6 +7,7 @@ import { TSettings } from '@/types/settings';
 import { HeroSection } from './sections/hero-section';
 import { Container } from '@/components/base/container/container';
 import { convertToLocalCurrency } from '@helpers/convert-to-local-currency';
+import { getCacheBuster } from '@helpers/cache-buster';
 import { useCurrencyStore } from '@/stores/currency';
 import { useUserStore } from '@/stores/user';
 import Link from 'next/link';
@@ -22,6 +23,7 @@ type HeaderProps = {
 
 export const Header: FC<HeaderProps> = ({ settings, particles }) => {
     const { user } = useUserStore();
+    const cacheBuster = getCacheBuster();
 
     return (
         <header className="relative">
@@ -30,7 +32,7 @@ export const Header: FC<HeaderProps> = ({ settings, particles }) => {
             <div className="absolute inset-0 -z-20 h-[525px] w-full">
                 <div className="hero-image before:bg-primary/20 dark:before:bg-transparent">
                     <Image
-                        src="/background.jpg"
+                        src={`/background.jpg?${cacheBuster}`}
                         className="absolute -z-10 h-full w-full object-cover opacity-60"
                         width={1590}
                         height={352}

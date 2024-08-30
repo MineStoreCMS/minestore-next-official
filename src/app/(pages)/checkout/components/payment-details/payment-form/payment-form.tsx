@@ -13,6 +13,7 @@ import { PaymentMethodForm } from './payment-method-form';
 import { useState } from 'react';
 import { PaymentFormSubmit } from './payment-form-submit';
 import { loadScript } from '@/lib/utils';
+import { notify } from "@/core/notifications";
 
 const { checkout } = getEndpoints(fetcher);
 
@@ -60,6 +61,10 @@ export function PaymentForm() {
                 termsAndConditions: data.termsAndConditions,
                 privacyPolicy: data.privacyPolicy
             });
+
+           if (!response.success) {
+              notify(response.message, 'red')
+           }
 
             if (response.success) {
                 if (response.data.type === 'url') {

@@ -65,12 +65,16 @@ export const RedeemCoupon = () => {
             const response = await acceptCoupon(code);
 
             setCart(await getCart());
-
             if (response.success) {
                 notify(response.message, 'green');
             } else {
                 notify(response.message, 'red');
             }
+
+            if (!response.success) {
+               notify(response.message, 'red')
+            }
+
         } catch (error) {
             notify('Something wrong happened', 'red');
             console.error('Error accepting coupon', error);

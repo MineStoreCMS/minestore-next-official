@@ -32,11 +32,13 @@ export const ItemDetails: FC<DetailsProps> = ({ show, onHide, id, route }) => {
     const [details, setDetails] = useState<TItem>();
     const [isAddingToCart, setIsAddingToCart] = useState(false);
 
-    useEffect(() => {
-        getItem(id, route).then((data) => {
-            setDetails(data);
-        });
-    }, [id, route]);
+   useEffect(() => {
+      getItem(id, route).then((data) => {
+         setDetails(data);
+      }).catch(() => {
+         setDetails(undefined);
+      });
+   }, [id, route]);
 
     return (
         <Dialog open={show} onOpenChange={onHide}>

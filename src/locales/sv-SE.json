@@ -39,7 +39,6 @@
         "welcome": "Välkommen till den officiella MinestoreCMS-webbutiken!",
         "welcome-description": "För att börja handla, välj en kategori från sidofältet. Observera att rangerna kostar en engångsavgift och är permanenta.",
         "featured-packages": "UTVALDA PAKET",
-        "to-the-official-server-store": "till den officiella RAviRai Server Store.",
         "recent-purchases": "Senaste köp",
         "gift-card": "Presentkort",
         "gift-card-not-found": "Presentkort hittades inte!",
@@ -139,8 +138,13 @@
         "description": "är ett Minecraft: Java Edition-nätverk som erbjuder spelare engagerande och unik spelupplevelse. Detta är den enda officiella butiken för nätverket."
     },
     "success": {
-        "title": "Grattis!",
-        "thanks": "Betalningen har levererats framgångsrikt!"
+        "title": "TACK!",
+        "thanks": "Tack så mycket för att du stödjer vårt servernätverk!",
+        "you-are-the-best": "Du är bäst \uD83D\uDE0E",
+        "thanks-title-1": "Tack för att du stödjer vårt servernätverk!",
+        "thanks-description": "Tack vare dig kan vi betala för våra servrar, anställa utvecklare och fortsätta arbeta för att göra våra servrar bättre och bättre varje dag!",
+        "you-will-receive": "Du kommer att få din rang och/eller paket inom cirka 30 minuter.",
+        "thanks-description-2": "Om du inte får dina föremål inom denna tidsram, vänligen kontakta oss med ditt användarnamn och bifogat köpbevis. Se också till att du har angett ditt korrekta Minecraft-användarnamn. Om så inte är fallet, vänligen nämn detta."
     },
     "error": {
         "oops": "OJ!",

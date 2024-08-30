@@ -5,9 +5,12 @@ import { DescriptionTooltip } from './item-description-tooltip';
 import { useDebounceCallback } from 'usehooks-ts';
 import { notify } from '@/core/notifications';
 import { Label } from '@/components/ui/label';
+import { useSettingsStore } from "@/stores/settings";
 
 export function InputItemCustomPrice({ item }: { item: TCart['items'][number] }) {
     const { handleSetCustomPrice } = useCartItemPreferences();
+   const { settings } = useSettingsStore();
+   const systemCurrencyName = settings?.system_currency.name || '';
 
     const debouncedHandleSetProductVariable = useDebounceCallback((id, price, min_price) => {
         if (price < min_price) {
@@ -25,7 +28,7 @@ export function InputItemCustomPrice({ item }: { item: TCart['items'][number] })
             <div className="flex items-center justify-between">
                 <Label htmlFor="custom-price">Custom Price</Label>
                 <DescriptionTooltip
-                    description={`${item.name} has a minimum price of ${item.min_price} USD `}
+                    description={`${item.name} has a minimum price of ${item.min_price} ${systemCurrencyName}`}
                 />
             </div>
             <Input

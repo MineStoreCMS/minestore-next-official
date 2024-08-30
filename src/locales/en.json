@@ -39,7 +39,6 @@
         "welcome": "Welcome to the official MinestoreCMS Webstore!",
         "welcome-description": "To begin shopping, please select a category from the sidebar. Please note that ranks cost a one-time fee and are permanent.",
         "featured-packages": "FEATURED PACKAGES",
-        "to-the-official-server-store": "to the official RAviRai Server Store.",
         "recent-purchases": "Recent Purchases",
         "gift-card": "Gift Card",
         "gift-card-not-found": "Gift card not found!",
@@ -47,7 +46,7 @@
         "gift-card-check": "Check",
         "gift-card-placeholder": "Card Code",
         "paypal-balance-banks-all-credit-debit-cards": "PayPal balance, Banks, All Credit/Debit Cards",
-        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Mobile Payments, +600 More",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Visa, Mastercard, +100 Others.",
         "all-credit-debit-cards": "All Credit & Debit Cards",
         "support-or-questions": "Support / Questions",
         "support-or-questions-description": "Need any questions answered before checkout? Waited more than 20 minutes but your package hasn't arrived? Ask the community or staff on our Discord server! We're here to help you out.",
@@ -139,8 +138,13 @@
         "description": "is a Minecraft: Java Edition network that provides players with captivating and unique gameplay. This is the only official store for the network."
     },
     "success": {
-        "title": "Congratulations!",
-        "thanks": "Payment successfully deliverer!"
+        "title": "THANK YOU!",
+        "thanks": "Thank you so much for supporting our servers network!",
+        "you-are-the-best": "You're the best \uD83D\uDE0E",
+        "thanks-title-1": "Thank you for supporting our servers network!",
+        "thanks-description": "Thanks to you, we can pay for our servers, hire developers and keep working on making our servers are better and better each day!",
+        "you-will-receive": "You will receive your rank and/or packages within approximately 30 minutes.",
+        "thanks-description-2": "If you do not receive your items within this timeframe, please contact us with your username and attached proof of purchase. Also make sure that you have submitted your correct Minecraft username. If this is not the case, please mention this."
     },
     "error": {
         "oops": "OOOPPSS!",

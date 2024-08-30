@@ -9,6 +9,7 @@ import { useCartStore } from '@/stores/cart';
 import { TableRow, TableCell } from '@/components/ui/table';
 import { InfoIcon, Trash2 } from 'lucide-react';
 import { ItemPreferences } from './item-preferences';
+import { notify } from "@/core/notifications";
 
 const { updateItemCount, removeItemFromCart, getCart } = getEndpoints(fetcher);
 
@@ -46,8 +47,12 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
     const handleQuantity = async (id: number, quantity: number) => {
         try {
             setLoading(true);
-            await updateItemCount(id, quantity);
-            setQuantity(quantity);
+            const response = await updateItemCount(id, quantity);
+            if (response.success) {
+               setQuantity(quantity);
+            } else {
+               notify(response.message ?? 'Unexpected error. Try again later.', 'red')
+            }
 
             const cart = await getCart();
             setCart(cart);

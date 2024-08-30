@@ -21,6 +21,10 @@ type PriceTagProps = {
     className?: string;
 };
 
+type VariablePriceProps = {
+   value: number;
+};
+
 const PriceTag: FC<PriceTagProps> = ({
     price,
     currency,
@@ -47,19 +51,19 @@ const PriceTag: FC<PriceTagProps> = ({
     }
 
     return (
-        <p className={className}>
-            {discountedPrice && discountedPrice !== displayPrice ? (
-                <>
-                    <s className="text-red-400 line-through">{discountedPrice}</s>
-                    <span className="text-green-400">{displayPrice}</span>
-                </>
+         <p className={className}>
+            {(discountedPrice && discountedPrice !== displayPrice) ? (
+               <>
+                  <s className="text-red-400 line-through">{discountedPrice}</s>
+                  <span className="text-green-400">{displayPrice}</span>
+               </>
             ) : (
-                <>
-                    <span className={cn('text-green-400', className)}>{displayPrice}</span>
-                </>
+               <>
+                  <span className={cn('text-green-400', className)}>{displayPrice}</span>
+               </>
             )}
-        </p>
-    );
+         </p>
+      );
 };
 
 export const Price: FC<PriceProps> = ({
@@ -83,4 +87,16 @@ export const Price: FC<PriceProps> = ({
             className={className}
         />
     );
+};
+
+export const VariablePrice: FC<VariablePriceProps> = ({ value }) => {
+   const { currency } = useCurrencyStore();
+   const localCurrencyName = currency?.name || '';
+   const localPrice = convertToLocalCurrency(value).toFixed(2);
+
+   return (
+      <span>
+         {localPrice} {localCurrencyName}
+      </span>
+   );
 };

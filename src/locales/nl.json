@@ -39,7 +39,6 @@
         "welcome": "Welkom bij de officiële MinestoreCMS Webwinkel!",
         "welcome-description": "Om te beginnen met winkelen, selecteer een categorie in de zijbalk. Houd er rekening mee dat rangen een eenmalige vergoeding kosten en permanent zijn.",
         "featured-packages": "UITGELICHTE PAKKETTEN",
-        "to-the-official-server-store": "naar de officiële RAviRai Serverwinkel.",
         "recent-purchases": "Recente Aankopen",
         "gift-card": "Cadeaubon",
         "gift-card-not-found": "Cadeaubon niet gevonden!",
@@ -139,8 +138,13 @@
         "description": "is een Minecraft: Java Edition-netwerk dat spelers boeiende en unieke gameplay biedt. Dit is de enige officiële winkel voor het netwerk."
     },
     "success": {
-        "title": "Gefeliciteerd!",
-        "thanks": "Betaling succesvol afgeleverd!"
+        "title": "DANK JE!",
+        "thanks": "Heel erg bedankt voor het ondersteunen van ons servernetwerk!",
+        "you-are-the-best": "Jij bent de beste \uD83D\uDE0E",
+        "thanks-title-1": "Bedankt voor het ondersteunen van ons servernetwerk!",
+        "thanks-description": "Dankzij jou kunnen we onze servers betalen, ontwikkelaars inhuren en blijven werken aan het elke dag beter maken van onze servers!",
+        "you-will-receive": "Je ontvangt je rang en/of pakketten binnen ongeveer 30 minuten.",
+        "thanks-description-2": "Als je je items niet binnen dit tijdsbestek ontvangt, neem dan contact met ons op met je gebruikersnaam en bijgevoegd aankoopbewijs. Zorg er ook voor dat je je correcte Minecraft-gebruikersnaam hebt ingediend. Als dit niet het geval is, vermeld dit dan."
     },
     "error": {
         "oops": "OEPS!",

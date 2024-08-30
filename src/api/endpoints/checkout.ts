@@ -13,6 +13,7 @@ type Data =
 
 type ReturnType = {
     success: boolean;
+    message: string;
     data: Data;
 };
 

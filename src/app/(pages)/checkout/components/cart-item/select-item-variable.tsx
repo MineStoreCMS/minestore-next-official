@@ -10,10 +10,14 @@ import {
 } from '@/components/ui/select';
 import { useCartItemPreferences } from '@/app/(pages)/categories/utils/use-cart-item-preferences';
 import { DescriptionTooltip } from './item-description-tooltip';
+import { VariablePrice } from '@/components/base/price/price';
+import { useSettingsStore } from '@/stores/settings';
 
 export function SelectItemVariable({ item }: { item: TCart['items'][number] }) {
     const { vars } = item;
     const { handleSetProductVariable } = useCartItemPreferences();
+    const { settings } = useSettingsStore();
+    const systemCurrencyName = settings?.system_currency.name || '';
 
     const dropdownVariables = vars.filter((v) => v.type === 0);
     if (dropdownVariables.length === 0) return null;
@@ -25,7 +29,7 @@ export function SelectItemVariable({ item }: { item: TCart['items'][number] }) {
                     (v) => v.value === variable.use
                 );
                 const placeholder = placeholderVariable
-                    ? `${placeholderVariable.name} (${placeholderVariable.price} USD)`
+                    ? `${placeholderVariable.name} (${placeholderVariable.price} ${systemCurrencyName})`
                     : variable.name;
 
                 return (
@@ -55,7 +59,7 @@ export function SelectItemVariable({ item }: { item: TCart['items'][number] }) {
                                         <SelectItem key={v.value} value={v.value}>
                                             {v.name}{' '}
                                             <span className="text-muted-foreground">
-                                                ({v.price} USD)
+                                                <VariablePrice value={+v.price} />
                                             </span>
                                         </SelectItem>
                                     ))}

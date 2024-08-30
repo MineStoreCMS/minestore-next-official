@@ -7,6 +7,7 @@ import { getEndpoints } from '@/api';
 import { TSettings } from '@/types/settings';
 import { useTranslations } from 'next-intl';
 import { notify } from '@/core/notifications';
+import { getCacheBuster } from '@helpers/cache-buster';
 
 const { discordWidget, getServerOnline } = getEndpoints(axios);
 
@@ -72,6 +73,8 @@ export const HeroSection: FC<HeroSectionProps> = ({ settings }) => {
         notify(`${t('copied-to-clipboard')}`, 'green');
     };
 
+    const cacheBuster = getCacheBuster();
+
     return (
         <div className="relative w-full flex-row items-center justify-center">
             <div
@@ -93,7 +96,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ settings }) => {
                 <Link href="/">
                     <Image
                         className="levitate mx-4 h-[338px] w-[381px]"
-                        src={`${process.env.NEXT_PUBLIC_API_URL}/img/logo.png`}
+                        src={`${process.env.NEXT_PUBLIC_API_URL}/img/logo.png?${cacheBuster}`}
                         width={381}
                         height={338}
                         alt="Logo"

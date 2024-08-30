@@ -62,7 +62,7 @@ type CartItemsVar = {
     type: 0 | 1 | 2;
     variables: Array<{
         name: string;
-        price: string;
+        price: string | number;
         value: string;
     }>;
     use: string | number;

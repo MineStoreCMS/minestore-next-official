@@ -39,7 +39,6 @@
         "welcome": "Bienvenue sur la boutique officielle de MinestoreCMS !",
         "welcome-description": "Pour commencer vos achats, veuillez sélectionner une catégorie dans la barre latérale. Veuillez noter que les grades ont un coût unique et sont permanents.",
         "featured-packages": "PACKAGES EN VEDETTE",
-        "to-the-official-server-store": "vers la boutique officielle du serveur RAviRai.",
         "recent-purchases": "Achats récents",
         "gift-card": "Carte cadeau",
         "gift-card-not-found": "Carte cadeau introuvable !",
@@ -139,8 +138,13 @@
         "description": "est un réseau Minecraft: Java Edition qui offre aux joueurs un gameplay captivant et unique. C'est la seule boutique officielle du réseau."
     },
     "success": {
-        "title": "Félicitations !",
-        "thanks": "Paiement effectué avec succès !"
+        "title": "MERCI !",
+        "thanks": "Merci beaucoup de soutenir notre réseau de serveurs !",
+        "you-are-the-best": "Tu es le meilleur \uD83D\uDE0E",
+        "thanks-title-1": "Merci de soutenir notre réseau de serveurs !",
+        "thanks-description": "Grâce à toi, nous pouvons payer nos serveurs, embaucher des développeurs et continuer à améliorer nos serveurs chaque jour !",
+        "you-will-receive": "Vous recevrez votre rang et/ou vos packages dans environ 30 minutes.",
+        "thanks-description-2": "Si vous ne recevez pas vos articles dans ce délai, veuillez nous contacter avec votre nom d'utilisateur et une preuve d'achat jointe. Assurez-vous également d'avoir soumis votre nom d'utilisateur Minecraft correct. Si ce n'est pas le cas, veuillez le mentionner."
     },
     "error": {
         "oops": "OUPS !",

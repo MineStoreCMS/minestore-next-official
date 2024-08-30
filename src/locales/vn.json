@@ -1,0 +1,168 @@
+{
+    "navbar": {
+        "currency": "Tiền tệ",
+        "language": "Ngôn ngữ",
+        "cart": "Giỏ hàng",
+        "cart-hint": "mặt hàng cho",
+        "not-logged": "Bạn chưa đăng nhập",
+        "logout": "Đăng xuất",
+        "empty-cart": "Làm trống giỏ hàng",
+        "guest": "Khách"
+    },
+    "staff": {
+        "title": "Nhân viên"
+    },
+    "header": {
+        "players-online": "Người chơi trực tuyến",
+        "members-online": "Thành viên trực tuyến",
+        "donation-goal": "Mục tiêu quyên góp",
+        "discord-server": "Máy chủ Discord",
+        "copied-to-clipboard": "Đã sao chép vào clipboard"
+    },
+    "sidebar": {
+        "home": "Trang chủ",
+        "top-donator": "Nhà tài trợ hàng đầu",
+        "top-donator-hint": "Đã quyên góp nhiều nhất trong tháng này",
+        "no-top-donor": "Trở thành nhà tài trợ",
+        "no-top-donor-description": "Hãy trở thành nhà tài trợ để mở khóa các lợi ích độc quyền!"
+    },
+    "card": {
+        "buy": "Thêm vào giỏ hàng",
+        "remove": "Gỡ bỏ",
+        "subscribe": "Đăng ký",
+        "unavailable": "Không khả dụng",
+        "items-left": "mặt hàng còn lại",
+        "featured": "Nổi bật"
+    },
+    "recent-purchases": "Mua gần đây",
+    "home": {
+        "welcome": "Chào mừng bạn đến với cửa hàng chính thức của MinestoreCMS!",
+        "welcome-description": "Để bắt đầu mua sắm, vui lòng chọn một danh mục từ thanh bên. Lưu ý rằng các hạng có phí một lần và là vĩnh viễn.",
+        "featured-packages": "GÓI NỔI BẬT",
+        "recent-purchases": "Mua gần đây",
+        "gift-card": "Thẻ quà tặng",
+        "gift-card-not-found": "Không tìm thấy thẻ quà tặng!",
+        "gift-card-with-balance": "Thẻ quà tặng với số dư:",
+        "gift-card-check": "Kiểm tra",
+        "gift-card-placeholder": "Mã thẻ",
+        "paypal-balance-banks-all-credit-debit-cards": "Số dư PayPal, Ngân hàng, Tất cả thẻ tín dụng/thẻ ghi nợ",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Thanh toán di động, +600 Khác",
+        "all-credit-debit-cards": "Tất cả thẻ tín dụng và thẻ ghi nợ",
+        "support-or-questions": "Hỗ trợ / Câu hỏi",
+        "support-or-questions-description": "Bạn có câu hỏi trước khi hoàn tất đơn hàng? Bạn đã đợi hơn 20 phút nhưng chưa nhận được gói hàng của mình? Hỏi cộng đồng hoặc nhân viên trên máy chủ Discord của chúng tôi! Chúng tôi ở đây để giúp đỡ bạn.",
+        "refund-policy": "Chính sách hoàn tiền",
+        "refund-policy-description": "Chúng tôi có chính sách không hoàn tiền nghiêm ngặt. Tất cả các giao dịch mua là cuối cùng và không hoàn lại. Vui lòng đảm bảo rằng bạn mua đúng sản phẩm trước khi hoàn tất đơn hàng.",
+        "payment-processing": "Quá trình xử lý thanh toán có thể mất tới 15 phút. Nếu sau 15 phút bạn vẫn chưa được ghi có, vui lòng liên hệ với nhóm hỗ trợ của chúng tôi trên Discord."
+    },
+    "auth": {
+        "title": "Đăng nhập",
+        "label": "Tên người dùng",
+        "placeholder": "Tên người dùng Minecraft",
+        "description": "Để bắt đầu mua sắm, vui lòng nhập tên người dùng Minecraft của bạn",
+        "submit": "Tiếp tục",
+        "invalid-username": "Tên người dùng không hợp lệ!",
+        "waiting-for-verification": "Đang chờ xác minh 🚀",
+        "check-in-game": "Vui lòng kiểm tra trò chuyện và xác minh trên máy chủ Minecraft!",
+        "confirm": "Bạn phải xác nhận rằng bạn là chủ sở hữu của tài khoản!",
+        "verification-resent": "Mã xác minh đã được gửi lại!",
+        "resend-verification": "Gửi lại xác minh",
+        "wait-before-resend": "Chờ 10 giây trước khi gửi lại..."
+    },
+    "checkout": {
+        "title": "Hoàn tất đơn hàng",
+        "image": "Hình ảnh",
+        "name": "Tên",
+        "price": "Giá",
+        "quantity": "Số lượng",
+        "actions": "Hành động",
+        "featured-deal": "Ưu đãi đặc biệt",
+        "this-item-is-popular-among-us-customers": "Sản phẩm này rất phổ biến với khách hàng của chúng tôi. Hãy thử nó!",
+        "empty-cart-title": "Oops! Giỏ hàng của bạn trống",
+        "empty-cart-description": "Có vẻ như hiện tại bạn không có gì trong giỏ hàng. Hãy dành thời gian khám phá cửa hàng của chúng tôi và khám phá các vật phẩm trò chơi tuyệt vời, hạng và nhiều hơn nữa! Khi bạn tìm thấy thứ gì đó bạn thích, hãy thêm nó vào giỏ hàng và tiếp tục đến bước hoàn tất đơn hàng.",
+        "details": {
+            "your-details": "Chi tiết của bạn",
+            "you-are-buying-as": "Bạn đang mua với tư cách là...",
+            "not-correct": "Không đúng?",
+            "full-name": "Họ và tên",
+            "email": "Email",
+            "address-line-1": "Địa chỉ dòng 1",
+            "address-line-2": "Địa chỉ dòng 2",
+            "city": "Thành phố",
+            "zip-code": "Mã bưu điện",
+            "state-region": "Bang/Khu vực",
+            "country": "Quốc gia",
+            "country-placeholder": "Chọn quốc gia của bạn",
+            "no-country-found": "Không tìm thấy quốc gia nào"
+        },
+        "you-are-buying-as": "Bạn đang mua với tư cách",
+        "redeem-coupons-or-gift-cards": "Đổi phiếu giảm giá hoặc thẻ quà tặng",
+        "active-gift": "Thẻ quà tặng đang hoạt động",
+        "remove-gift": "Gỡ bỏ",
+        "redeem": "Đổi",
+        "redeem-referral": "Đổi mã giới thiệu",
+        "referral-code": "Mã giới thiệu",
+        "referral-code-placeholder": "Nhập mã giới thiệu",
+        "redeemed-referral": "Mã giới thiệu đã được đổi",
+        "referral-code-invalid": "Mã giới thiệu không hợp lệ!",
+        "referral-code-already-redeemed": "Mã giới thiệu đã được đổi!",
+        "payment-method": "Phương thức thanh toán",
+        "privacy-statement": "Tuyên bố về quyền riêng tư",
+        "privacy-statement-description": "Tất cả các khoản thanh toán là cuối cùng và không hoàn lại. Cố gắng tranh chấp hoặc mở tranh chấp PayPal sẽ dẫn đến lệnh cấm vĩnh viễn và không thể đảo ngược khỏi tất cả các máy chủ và cửa hàng Minecraft của chúng tôi.",
+        "agree": "Tôi đồng ý với các điều khoản và điều kiện của giao dịch mua này.",
+        "purchase": "Tiếp tục đến thanh toán",
+        "only-one-coupon": "Bạn chỉ có thể đổi một phiếu giảm giá và một thẻ quà tặng cùng lúc",
+        "coupon-code": "Mã phiếu giảm giá",
+        "coupons-redeemed": "Phiếu giảm giá đã được đổi",
+        "coupon-placeholder": "Nhập mã phiếu giảm giá",
+        "coupon-savings": "tiết kiệm"
+    },
+    "profile": {
+        "title": "Hồ sơ",
+        "information": "Thông tin",
+        "registration-date": "Ngày đăng ký:",
+        "money-spent": "Số tiền đã chi:",
+        "recent-purchases": "Mua gần đây"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Không phải tất cả các trường chi tiết đều được điền!",
+        "accept-privacy-statement": "Chấp nhận tuyên bố về quyền riêng tư!",
+        "accept-terms": "Chấp nhận điều khoản!",
+        "subscription-item-should-be-alone-in-the-cart": "Mục đăng ký nên ở một mình trong giỏ hàng!"
+    },
+    "footer": {
+        "useful-links": "Liên kết hữu ích",
+        "about-us": "Về chúng tôi",
+        "all-rights-reserved": "Đã đăng ký Bản quyền.",
+        "powered-by": "Được cung cấp bởi",
+        "not-affiliated": "Chúng tôi không liên kết với Mojang AB.",
+        "description": "là một mạng lưới Minecraft: Java Edition cung cấp cho người chơi một trải nghiệm hấp dẫn và độc đáo. Đây là cửa hàng chính thức duy nhất cho mạng."
+    },
+    "success": {
+        "title": "CẢM ƠN BẠN!",
+        "thanks": "Chúng tôi rất cảm ơn sự ủng hộ của bạn đối với mạng lưới máy chủ của chúng tôi!",
+        "you-are-the-best": "Bạn là người tốt nhất \uD83D\uDE0E",
+        "thanks-title-1": "Cảm ơn bạn vì đã ủng hộ mạng lưới máy chủ của chúng tôi!",
+        "thanks-description": "Nhờ bạn, chúng tôi có thể trả tiền cho các máy chủ của mình, thuê các nhà phát triển và tiếp tục cải thiện máy chủ của chúng tôi mỗi ngày!",
+        "you-will-receive": "Bạn sẽ nhận được hạng và/hoặc các gói của mình trong khoảng 30 phút.",
+        "thanks-description-2": "Nếu bạn không nhận được các mặt hàng của mình trong thời gian này, vui lòng liên hệ với chúng tôi với tên người dùng của bạn và bằng chứng mua hàng đính kèm. Cũng đảm bảo rằng bạn đã nhập chính xác tên người dùng Minecraft của mình. Nếu không, vui lòng đề cập điều này."
+    },
+    "error": {
+        "oops": "OOPS!",
+        "somethingWrong": "Đã xảy ra sự cố hoặc các máy chủ của chúng tôi đang ngoại tuyến!",
+        "youreTheBest": "Bạn là người tốt nhất, nhưng đã xảy ra sự cố 🥺",
+        "contactUs": "Vui lòng liên hệ với chúng tôi trên Discord hoặc bằng cách khác!",
+        "serverIssue": "Có thể các máy chủ của chúng tôi đang ngoại tuyến hoặc đã xảy ra sự cố với thanh toán của bạn.",
+        "contactWithProof": "Vui lòng liên hệ với chúng tôi với tên người dùng và bằng chứng mua hàng đính kèm.",
+        "paymentIssue": "Có thể thanh toán của bạn được đánh dấu là 'đang chờ xử lý'. Đảm bảo rằng bạn đã nhập đúng tên người dùng Minecraft của mình. Nếu không, vui lòng đề cập điều này."
+    },
+    "actions": {
+        "please-authorize": "Vui lòng ủy quyền!",
+        "item-not-found": "Không tìm thấy sản phẩm!",
+        "item-out-of-stock": "Sản phẩm hết hàng!",
+        "reached-stock-limit": "Bạn đã đạt giới hạn cho sản phẩm này!",
+        "cant-mix-normal-and-subscription": "Không thể kết hợp sản phẩm thông thường với sản phẩm đăng ký!",
+        "cant-add-more-than-one-subscription": "Không thể thêm nhiều hơn một đăng ký vào giỏ hàng!",
+        "item-removed-from-cart": "Sản phẩm đã được gỡ khỏi giỏ hàng!",
+        "item-added-to-cart": "Sản phẩm đã được thêm vào giỏ hàng!"
+    }
+}

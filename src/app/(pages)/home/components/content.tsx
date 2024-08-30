@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useSettingsStore } from '@/stores/settings';
+import { getCacheBuster } from '@helpers/cache-buster';
 
 export function Content() {
     const t = useTranslations('home');
@@ -63,6 +64,7 @@ export function Content() {
 function BannerSection() {
     const t = useTranslations('home');
     const { settings } = useSettingsStore();
+    const cacheBuster = getCacheBuster();
 
     return (
         <div className="grid items-start gap-6 md:grid-cols-2">
@@ -74,7 +76,7 @@ function BannerSection() {
             </div>
             <div className="order-1 md:order-2">
                 <Image
-                    src={`${process.env.NEXT_PUBLIC_API_URL}/img/index-banner.png`}
+                    src={`${process.env.NEXT_PUBLIC_API_URL}/img/index-banner.png?${cacheBuster}`}
                     alt="Banner"
                     width={500}
                     height={300}

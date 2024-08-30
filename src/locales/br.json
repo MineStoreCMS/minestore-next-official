@@ -4,10 +4,10 @@
         "language": "Idioma",
         "cart": "Carrinho de Compras",
         "cart-hint": "itens para",
-        "not-logged": "Não autenticado",
+        "not-logged": "Não logado",
         "logout": "Sair",
         "empty-cart": "Esvaziar Carrinho",
-        "guest": "Convidado"
+        "guest": "Visitante"
     },
     "staff": {
         "title": "Membros da Equipe"
@@ -22,9 +22,9 @@
     "sidebar": {
         "home": "Início",
         "top-donator": "Principal Doador",
-        "top-donator-hint": "Doou mais este mês",
-        "no-top-donor": "Torne-se um Apoiador",
-        "no-top-donor-description": "Torne-se um apoiador para desbloquear benefícios exclusivos!"
+        "top-donator-hint": "Doou mais neste mês",
+        "no-top-donor": "Seja um Apoiador",
+        "no-top-donor-description": "Seja um apoiador para desbloquear benefícios exclusivos!"
     },
     "card": {
         "buy": "Comprar",
@@ -37,7 +37,7 @@
     "recent-purchases": "Pagamentos Recentes",
     "home": {
         "welcome": "Bem-vindo à Loja Oficial do MinestoreCMS!",
-        "welcome-description": "Para começar a comprar, selecione uma categoria na barra lateral. Observe que as patentes têm uma taxa única e são permanentes.",
+        "welcome-description": "Para começar a comprar, selecione uma categoria na barra lateral. Observe que os cargos têm uma taxa única e são permanentes.",
         "featured-packages": "PACOTES EM DESTAQUE",
         "recent-purchases": "Compras Recentes",
         "gift-card": "Cartão Presente",
@@ -49,10 +49,10 @@
         "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Pagamentos Móveis, +600 Mais",
         "all-credit-debit-cards": "Todos os Cartões de Crédito e Débito",
         "support-or-questions": "Suporte / Perguntas",
-        "support-or-questions-description": "Precisa de alguma pergunta respondida antes de finalizar a compra? Esperou mais de 20 minutos, mas seu pacote ainda não chegou? Pergunte à comunidade ou à equipe em nosso servidor do Discord! Estamos aqui para ajudar.",
+        "support-or-questions-description": "Precisa de alguma pergunta respondida antes de finalizar a compra? Esperou mais de 20 minutos, mas seu pacote não chegou? Pergunte à comunidade ou à equipe em nosso servidor do Discord! Estamos aqui para ajudar.",
         "refund-policy": "Política de Reembolso",
-        "refund-policy-description": "Temos uma política rigorosa de não reembolso. Todas as compras são finais e não reembolsáveis. Certifique-se de estar comprando o item correto antes de finalizar a compra.",
-        "payment-processing": "O processamento da sua compra pode levar até 15 minutos. Se você ainda não for creditado após 15 minutos, entre em contato com nossa equipe de suporte no Discord."
+        "refund-policy-description": "Temos uma política de não reembolso rigorosa. Todas as compras são finais e não reembolsáveis. Certifique-se de estar comprando o item correto antes de finalizar a compra.",
+        "payment-processing": "A compra pode levar até 15 minutos para ser processada. Se você ainda não for creditado após 15 minutos, entre em contato com nossa equipe de suporte no Discord."
     },
     "auth": {
         "title": "Entrar",
@@ -62,7 +62,7 @@
         "submit": "Continuar",
         "invalid-username": "Nome de usuário inválido!",
         "waiting-for-verification": "Aguardando verificação 🚀",
-        "check-in-game": "Por favor, verifique no chat e confirme sua identidade no servidor do Minecraft!",
+        "check-in-game": "Por favor, verifique no chat e confirme sua identidade no Servidor do Minecraft!",
         "confirm": "Você precisa confirmar que é o proprietário da conta!",
         "verification-resent": "O código de verificação foi reenviado!",
         "resend-verification": "Reenviar verificação",
@@ -78,7 +78,7 @@
         "featured-deal": "Oferta em Destaque",
         "this-item-is-popular-among-us-customers": "Este item é popular entre nossos clientes. Experimente!",
         "empty-cart-title": "Oops! Seu Carrinho está Vazio",
-        "empty-cart-description": "Parece que não há nada em seu carrinho no momento. Reserve um momento para explorar nossa loja e descobrir itens incríveis para o jogo, patentes e muito mais! Quando encontrar algo que goste, basta adicioná-lo ao carrinho e prosseguir para a finalização da compra.",
+        "empty-cart-description": "Parece que não há nada em seu carrinho no momento. Reserve um momento para explorar nossa loja e descobrir itens incríveis para o jogo, cargos e muito mais! Quando encontrar algo que goste, basta adicioná-lo ao carrinho e prosseguir para a finalização da compra.",
         "details": {
             "your-details": "Seus Detalhes",
             "you-are-buying-as": "Você está comprando como...",
@@ -88,7 +88,7 @@
             "address-line-1": "Endereço Linha 1",
             "address-line-2": "Endereço Linha 2",
             "city": "Cidade",
-            "zip-code": "Código Postal",
+            "zip-code": "CEP",
             "state-region": "Estado/Região",
             "country": "País",
             "country-placeholder": "Selecione seu país",
@@ -139,21 +139,21 @@
     },
     "success": {
         "title": "OBRIGADO!",
-        "thanks": "Muito obrigado por apoiar a nossa rede de servidores!",
-        "you-are-the-best": "És o melhor \uD83D\uDE0E",
-        "thanks-title-1": "Obrigado por apoiar a nossa rede de servidores!",
-        "thanks-description": "Graças a ti, podemos pagar os nossos servidores, contratar desenvolvedores e continuar a trabalhar para tornar os nossos servidores cada vez melhores!",
-        "you-will-receive": "Receberás a tua classificação e/ou pacotes dentro de aproximadamente 30 minutos.",
-        "thanks-description-2": "Se não receberes os teus itens dentro deste prazo, por favor contacta-nos com o teu nome de utilizador e prova de compra anexada. Certifica-te também de que enviaste o teu nome de utilizador correto do Minecraft. Se não for o caso, menciona isso por favor."
+        "thanks": "Muito obrigado por apoiar nossa rede de servidores!",
+        "you-are-the-best": "Você é o melhor \uD83D\uDE0E",
+        "thanks-title-1": "Obrigado por apoiar nossa rede de servidores!",
+        "thanks-description": "Graças a você, podemos pagar por nossos servidores, contratar desenvolvedores e continuar trabalhando para tornar nossos servidores cada dia melhores!",
+        "you-will-receive": "Você receberá seu ranking e/ou pacotes dentro de aproximadamente 30 minutos.",
+        "thanks-description-2": "Se você não receber seus itens dentro deste prazo, entre em contato conosco com seu nome de usuário e comprovante de compra anexado. Certifique-se também de ter enviado seu nome de usuário correto do Minecraft. Se não for o caso, por favor mencione isso."
     },
     "error": {
-        "oops": "OPS!",
+        "oops": "OOPS!",
         "somethingWrong": "Algo deu errado ou nossos servidores estão offline!",
         "youreTheBest": "Você é o melhor, mas algo aconteceu 🥺",
         "contactUs": "Por favor, entre em contato conosco no Discord ou de qualquer outra forma!",
         "serverIssue": "Provavelmente nossos servidores estão offline ou algo aconteceu com seu pagamento.",
         "contactWithProof": "Entre em contato conosco com seu nome de usuário e comprovante de compra anexado.",
-        "paymentIssue": "Talvez seu pagamento esteja marcado como 'pendente'. Certifique-se também de ter inserido corretamente seu nome de usuário do Minecraft. Se esse não for o caso, por favor, informe-nos."
+        "paymentIssue": "Talvez seu pagamento esteja marcado como 'pendente'. Certifique-se também de ter inserido corretamente seu nome de usuário do Minecraft. Se esse não for o caso, informe-nos."
     },
     "actions": {
         "please-authorize": "Por favor, autorize!",

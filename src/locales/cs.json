@@ -39,7 +39,6 @@
         "welcome": "Vítejte v oficiálním MinestoreCMS obchodě!",
         "welcome-description": "Pro začátek nakupování vyberte prosím kategorii z postranního panelu. Prosím, uvědomte si, že hodnosti mají jednorázový poplatek a jsou trvalé.",
         "featured-packages": "DOPORUČENÉ BALÍČKY",
-        "to-the-official-server-store": "do oficiálního obchodu serveru RAviRai.",
         "recent-purchases": "Nedávné nákupy",
         "gift-card": "Dárková karta",
         "gift-card-not-found": "Dárková karta nenalezena!",
@@ -139,8 +138,13 @@
         "description": "je síť Minecraft: Java Edition, která hráčům poskytuje poutavou a jedinečnou hratelnost. Toto je jediný oficiální obchod sítě."
     },
     "success": {
-        "title": "Gratulujeme!",
-        "thanks": "Platba byla úspěšně provedena!"
+        "title": "DĚKUJEME!",
+        "thanks": "Moc děkujeme za podporu naší serverové sítě!",
+        "you-are-the-best": "Jsi nejlepší \uD83D\uDE0E",
+        "thanks-title-1": "Děkujeme za podporu naší serverové sítě!",
+        "thanks-description": "Díky tobě můžeme platit za naše servery, najímat vývojáře a stále pracovat na tom, aby byly naše servery lepší a lepší každý den!",
+        "you-will-receive": "Své hodnosti a/nebo balíčky obdržíte přibližně do 30 minut.",
+        "thanks-description-2": "Pokud své položky neobdržíte v tomto časovém rámci, kontaktujte nás prosím s vaším uživatelským jménem a přiloženým dokladem o nákupu. Také se ujistěte, že jste zadali své správné uživatelské jméno v Minecraftu. Pokud tomu tak není, uveďte to prosím."
     },
     "error": {
         "oops": "Ouha!",

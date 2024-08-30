@@ -1,6 +1,8 @@
 import { TItem } from './item';
 
 export type TProfile = {
+    display_group: number | boolean;
+    uuid: string;
     username: string;
     displayname: string;
     group: string;

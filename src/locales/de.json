@@ -39,7 +39,6 @@
         "welcome": "Willkommen im offiziellen MinestoreCMS Webstore!",
         "welcome-description": "Um mit dem Einkaufen zu beginnen, wählen Sie bitte eine Kategorie aus der Seitenleiste aus. Bitte beachten Sie, dass Ränge eine einmalige Gebühr kosten und dauerhaft sind.",
         "featured-packages": "FEATURED PACKAGES",
-        "to-the-official-server-store": "zum offiziellen RAviRai Server Store.",
         "recent-purchases": "Letzte Käufe",
         "gift-card": "Geschenkkarte",
         "gift-card-not-found": "Geschenkkarte nicht gefunden!",
@@ -47,7 +46,7 @@
         "gift-card-check": "Überprüfen",
         "gift-card-placeholder": "Kartencode",
         "paypal-balance-banks-all-credit-debit-cards": "PayPal-Guthaben, Banken, Alle Kredit-/Debitkarten",
-        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Mobile Zahlungen, +600 Mehr",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Visa, Mastercard, +100 weitere.",
         "all-credit-debit-cards": "Alle Kredit- und Debitkarten",
         "support-or-questions": "Support / Fragen",
         "support-or-questions-description": "Haben Sie Fragen, die vor dem Checkout beantwortet werden müssen? Haben Sie länger als 20 Minuten gewartet, aber Ihr Paket ist nicht angekommen? Fragen Sie die Community oder das Personal auf unserem Discord-Server! Wir sind hier, um Ihnen zu helfen.",
@@ -139,8 +138,13 @@
         "description": "ist ein Minecraft: Java Edition Netzwerk, das den Spielern fesselndes und einzigartiges Gameplay bietet. Dies ist der einzige offizielle Shop für das Netzwerk."
     },
     "success": {
-        "title": "Herzlichen Glückwunsch!",
-        "thanks": "Zahlung erfolgreich durchgeführt!"
+        "title": "DANKE!",
+        "thanks": "Vielen Dank für die Unterstützung unseres Servernetzwerks!",
+        "you-are-the-best": "Du bist der Beste \uD83D\uDE0E",
+        "thanks-title-1": "Vielen Dank für die Unterstützung unseres Servernetzwerks!",
+        "thanks-description": "Dank dir können wir unsere Server bezahlen, Entwickler einstellen und daran arbeiten, unsere Server jeden Tag besser und besser zu machen!",
+        "you-will-receive": "Du wirst deinen Rang und/oder Pakete innerhalb von ca. 30 Minuten erhalten.",
+        "thanks-description-2": "Wenn du deine Artikel nicht innerhalb dieses Zeitraums erhältst, kontaktiere uns bitte mit deinem Benutzernamen und angehängtem Kaufbeleg. Stelle auch sicher, dass du deinen richtigen Minecraft-Benutzernamen angegeben hast. Wenn dies nicht der Fall ist, erwähne dies bitte."
     },
     "error": {
         "oops": "OOOPPSS!",

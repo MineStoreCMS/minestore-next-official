@@ -39,7 +39,6 @@
         "welcome": "Benvenuto nel negozio ufficiale di MinestoreCMS!",
         "welcome-description": "Per iniziare lo shopping, seleziona una categoria dalla barra laterale. Nota che i ranghi hanno un costo una tantum e sono permanenti.",
         "featured-packages": "PACKAGES IN EVIDENZA",
-        "to-the-official-server-store": "al negozio ufficiale del server RAviRai.",
         "recent-purchases": "Acquisti Recenti",
         "gift-card": "Buono Regalo",
         "gift-card-not-found": "Buono regalo non trovato!",
@@ -139,8 +138,13 @@
         "description": "è una rete di Minecraft: Java Edition che offre ai giocatori un gameplay coinvolgente e unico. Questo è l'unico negozio ufficiale per la rete."
     },
     "success": {
-        "title": "Congratulazioni!",
-        "thanks": "Pagamento consegnato con successo!"
+        "title": "GRAZIE!",
+        "thanks": "Grazie mille per supportare la nostra rete di server!",
+        "you-are-the-best": "Sei il migliore \uD83D\uDE0E",
+        "thanks-title-1": "Grazie per supportare la nostra rete di server!",
+        "thanks-description": "Grazie a te, possiamo pagare i nostri server, assumere sviluppatori e continuare a migliorare i nostri server ogni giorno!",
+        "you-will-receive": "Riceverai il tuo rango e/o pacchetti entro circa 30 minuti.",
+        "thanks-description-2": "Se non ricevi i tuoi articoli entro questo lasso di tempo, ti preghiamo di contattarci con il tuo nome utente e la prova di acquisto allegata. Assicurati anche di aver inviato il tuo corretto nome utente di Minecraft. Se non è il caso, ti preghiamo di menzionarlo."
     },
     "error": {
         "oops": "OOOPS!",

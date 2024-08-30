@@ -39,7 +39,6 @@
         "welcome": "Bine ați venit la Magazinul oficial MinestoreCMS!",
         "welcome-description": "Pentru a începe cumpărăturile, vă rugăm să selectați o categorie din bara laterală. Vă rugăm să rețineți că rangurile au o taxă unică și sunt permanente.",
         "featured-packages": "PACHETE RECOMANDATE",
-        "to-the-official-server-store": "la Magazinul oficial al serverului RAviRai.",
         "recent-purchases": "Cumpărături recente",
         "gift-card": "Card cadou",
         "gift-card-not-found": "Card cadou negăsit!",
@@ -47,7 +46,7 @@
         "gift-card-check": "Verificare",
         "gift-card-placeholder": "Cod card",
         "paypal-balance-banks-all-credit-debit-cards": "Sold PayPal, Bănci, Toate cardurile de credit/debit",
-        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Amazon Pay, Plăți mobile, +600 Altele",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Visa, Mastercard, +100 altele.",
         "all-credit-debit-cards": "Toate cardurile de credit și debit",
         "support-or-questions": "Suport / Întrebări",
         "support-or-questions-description": "Aveți întrebări înainte de finalizarea comenzii? Ați așteptat mai mult de 20 de minute, dar pachetul dvs. nu a sosit? Întrebați comunitatea sau personalul pe serverul nostru Discord! Suntem aici să vă ajutăm.",
@@ -139,8 +138,13 @@
         "description": "este o rețea Minecraft: Java Edition care oferă jucătorilor o experiență captivantă și unică. Acesta este singurul magazin oficial pentru rețea."
     },
     "success": {
-        "title": "Felicitări!",
-        "thanks": "Plata a fost efectuată cu succes!"
+        "title": "MULȚUMIM!",
+        "thanks": "Îți mulțumim foarte mult pentru sprijinirea rețelei noastre de servere!",
+        "you-are-the-best": "Ești cel mai bun \uD83D\uDE0E",
+        "thanks-title-1": "Îți mulțumim pentru sprijinirea rețelei noastre de servere!",
+        "thanks-description": "Datorită ție, putem plăti pentru serverele noastre, angaja dezvoltatori și continua să îmbunătățim serverele noastre în fiecare zi!",
+        "you-will-receive": "Vei primi rangul și/sau pachetele tale în aproximativ 30 de minute.",
+        "thanks-description-2": "Dacă nu primești articolele tale în acest interval de timp, te rugăm să ne contactezi cu numele tău de utilizator și dovada de achiziție atașată. De asemenea, asigură-te că ai trimis corect numele tău de utilizator Minecraft. Dacă nu este cazul, menționează acest lucru."
     },
     "error": {
         "oops": "OOPS!",

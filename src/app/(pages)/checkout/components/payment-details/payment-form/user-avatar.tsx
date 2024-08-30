@@ -18,7 +18,7 @@ export function UserAvatar() {
                 height={308}
                 alt=""
             />
-            <p className="mt-8 text-[20px] font-bold text-accent-foreground">{user.username}</p>
+            <p className="mt-8 text-[20px] text-center font-bold text-accent-foreground">{user.username}</p>
         </>
     );
 }

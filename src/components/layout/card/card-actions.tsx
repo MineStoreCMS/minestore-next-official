@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 type CardActionsProps = {
+    hideButton?: boolean;
     direction?: 'row' | 'col';
     isItemInCart: boolean;
     setShowModal: (value: boolean) => void;
@@ -22,6 +23,7 @@ type CardActionButtonProps = Omit<CardActionsProps, 'direction' | 'setShowModal'
 };
 
 export function CardActions({
+    hideButton,
     direction = 'col',
     isItemInCart,
     setShowModal,
@@ -30,45 +32,48 @@ export function CardActions({
 }: CardActionsProps) {
     const [addToCartPressed, setAddToCartPressed] = useState(false);
     return (
-        <div
-            className={joinClasses(
-                'flex items-center justify-center gap-2',
-                direction === 'col' && 'mt-auto grid grid-cols-[50px,1fr]'
-            )}
-        >
-            <Button
+       <div
+          className={joinClasses(
+             'flex items-center justify-center gap-2',
+             direction === 'col' && 'mt-auto grid grid-cols-[50px,1fr]',
+             hideButton && direction === 'col' && 'w-full grid-cols-[1fr]'
+          )}
+       >
+          {!hideButton ? (
+             <Button
                 aria-label="Info"
                 onClick={() => setShowModal(true)}
                 variant="secondary"
                 size="icon"
                 className="h-[50px] w-[50px]"
-            >
-                <InfoIcon size={24} aria-hidden={true} />
-            </Button>
+             >
+                <InfoIcon size={24} aria-hidden={true}/>
+             </Button>
+          ) : null}
 
-            <CardActionButtons
-                isItemInCart={isItemInCart}
-                item={item}
-                displayFull={displayFull}
-                addToCartPressed={addToCartPressed}
-                setAddToCartPressed={setAddToCartPressed}
-            />
-        </div>
+          <CardActionButtons
+             isItemInCart={isItemInCart}
+             item={item}
+             displayFull={displayFull}
+             addToCartPressed={addToCartPressed}
+             setAddToCartPressed={setAddToCartPressed}
+          />
+       </div>
     );
 }
 
 export function CardActionButtons({
-    isItemInCart,
-    item,
-    displayFull,
-    addToCartPressed,
-    setAddToCartPressed
-}: CardActionButtonProps) {
-    return (
-        <>
-            <AddToCartButton
-                isItemInCart={isItemInCart}
-                item={item}
+                                     isItemInCart,
+                                     item,
+                                     displayFull,
+                                     addToCartPressed,
+                                     setAddToCartPressed
+                                  }: CardActionButtonProps) {
+   return (
+      <>
+         <AddToCartButton
+            isItemInCart={isItemInCart}
+            item={item}
                 displayFull={displayFull}
                 addToCartPressed={addToCartPressed}
                 setAddToCartPressed={setAddToCartPressed}

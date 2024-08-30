@@ -6,6 +6,7 @@ import { TCategories } from '@/types/categories';
 import { useTranslations } from 'next-intl';
 import { imagePath } from '@helpers/image-path';
 import { useSettingsStore } from '@/stores/settings';
+import { getCacheBuster } from '@helpers/cache-buster';
 
 type CategoryMenuProps = {
     categories: TCategories;
@@ -14,6 +15,7 @@ type CategoryMenuProps = {
 export const CategoryMenu: FC<CategoryMenuProps> = ({ categories }) => {
     const t = useTranslations('sidebar');
     const { settings } = useSettingsStore();
+    const cacheBuster = getCacheBuster();
 
     return (
         <aside className="h-fit rounded-[10px] bg-card p-6">
@@ -24,7 +26,7 @@ export const CategoryMenu: FC<CategoryMenuProps> = ({ categories }) => {
                     <MenuItem
                         key={category.idx}
                         name={category.name}
-                        image={imagePath(category.img)}
+                        image={imagePath(category.img) ? `${imagePath(category.img)}?${cacheBuster}` : null}
                         url={`/categories/${category.url}`}
                         subItems={category.subcategories}
                     />
