@@ -164,5 +164,24 @@
         "cant-add-more-than-one-subscription": "Du kan inte lägga till mer än en prenumeration i korgen!",
         "item-removed-from-cart": "Objektet borttaget från korgen!",
         "item-added-to-cart": "Objektet tillagt i korgen!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Betalningsinstruktioner",
+        "scanQrCode": "Skanna QR-kod",
+        "downloadQr": "Ladda ner QR",
+        "waitingForPayment": "Väntar på betalning...",
+        "sepayModal": {
+            "option1": "Alternativ 1: Skanna QR-kod",
+            "option2": "Alternativ 2: Manuell Banköverföring",
+            "bank": "Bank:",
+            "accountHolder": "Kontoinnehavare:",
+            "accountNumber": "Kontonummer:",
+            "amount": "Belopp:",
+            "paymentReference": "Betalningsreferens:",
+            "paymentReferenceNote": "Vänligen behåll betalningsreferensen {{sepay_paycode_prefix}} för att hjälpa vårt system att automatiskt bekräfta din betalning."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Skanna QR-kod"
+        }
     }
 }

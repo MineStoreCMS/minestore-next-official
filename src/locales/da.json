@@ -164,5 +164,24 @@
         "cant-add-more-than-one-subscription": "Du kan ikke tilføje mere end ét abonnement til kurven!",
         "item-removed-from-cart": "Vare fjernet fra kurven!",
         "item-added-to-cart": "Vare tilføjet til kurven!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Betalingsinstruktioner",
+        "scanQrCode": "Scan QR-kode",
+        "downloadQr": "Download QR",
+        "waitingForPayment": "Venter på betaling...",
+        "sepayModal": {
+            "option1": "Mulighed 1: Scan QR-kode",
+            "option2": "Mulighed 2: Manuel bankoverførsel",
+            "bank": "Bank:",
+            "accountHolder": "Kontohaver:",
+            "accountNumber": "Kontonummer:",
+            "amount": "Beløb:",
+            "paymentReference": "Betalingsreference:",
+            "paymentReferenceNote": "Behold venligst betalingsreferencen {{sepay_paycode_prefix}} for at hjælpe vores system med automatisk at bekræfte din betaling."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Scan QR-kode"
+        }
     }
 }

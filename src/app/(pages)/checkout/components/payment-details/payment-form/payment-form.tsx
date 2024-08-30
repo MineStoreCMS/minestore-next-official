@@ -13,7 +13,8 @@ import { PaymentMethodForm } from './payment-method-form';
 import { useState } from 'react';
 import { PaymentFormSubmit } from './payment-form-submit';
 import { loadScript } from '@/lib/utils';
-import { notify } from "@/core/notifications";
+import { notify } from '@/core/notifications';
+import { QrDetailsProps, QrPaymentModal } from '../../qr-payment-modal';
 
 const { checkout } = getEndpoints(fetcher);
 
@@ -21,6 +22,7 @@ export function PaymentForm() {
     const { items } = useCartStore();
     const { currency } = useCurrencyStore();
 
+    const [showQrModal, setShowQrModal] = useState(false);
     const [loading, setLoading] = useState(false);
 
     const form = useForm<PaymentFormValues>({
@@ -28,6 +30,10 @@ export function PaymentForm() {
         defaultValues,
         mode: 'onSubmit'
     });
+
+    const [qrPaymentDetails, setQrPaymentDetails] = useState<QrDetailsProps['details'] | null>(
+        null
+    );
 
     async function onSubmit(data: PaymentFormValues) {
         const paymentMethod = form.getValues('paymentMethod');
@@ -62,9 +68,9 @@ export function PaymentForm() {
                 privacyPolicy: data.privacyPolicy
             });
 
-           if (!response.success) {
-              notify(response.message, 'red')
-           }
+            if (!response.success) {
+                notify(response.message, 'red');
+            }
 
             if (response.success) {
                 if (response.data.type === 'url') {
@@ -74,6 +80,9 @@ export function PaymentForm() {
                     paymentForm.innerHTML = response.data.html;
                     document.body.appendChild(paymentForm);
                     paymentForm.querySelector('form')?.submit();
+                } else if (response.data.type === 'qrcode') {
+                    setQrPaymentDetails({ ...response.data.details });
+                    setShowQrModal(true);
                 }
             }
         } catch (error) {
@@ -86,14 +95,23 @@ export function PaymentForm() {
     if (!items.length) return null;
 
     return (
-        <FormProvider {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                <UserDetailsForm />
+        <>
+            {qrPaymentDetails ? (
+                <QrPaymentModal
+                    show={showQrModal}
+                    onHide={() => setShowQrModal(false)}
+                    details={qrPaymentDetails}
+                />
+            ) : null}
+            <FormProvider {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                    <UserDetailsForm />
 
-                <PaymentMethodForm items={items} />
+                    <PaymentMethodForm items={items} />
 
-                <PaymentFormSubmit loading={loading} />
-            </form>
-        </FormProvider>
+                    <PaymentFormSubmit loading={loading} />
+                </form>
+            </FormProvider>
+        </>
     );
 }

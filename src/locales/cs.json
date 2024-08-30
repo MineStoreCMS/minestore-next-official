@@ -164,5 +164,24 @@
         "cant-add-more-than-one-subscription": "Nemůžete přidat více než jednu odběrovou položku do košíku!",
         "item-removed-from-cart": "Položka byla odebrána z košíku!",
         "item-added-to-cart": "Položka byla přidána do košíku!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Platební pokyny",
+        "scanQrCode": "Naskenovat QR kód",
+        "downloadQr": "Stáhnout QR",
+        "waitingForPayment": "Čeká se na platbu...",
+        "sepayModal": {
+            "option1": "Možnost 1: Naskenovat QR kód",
+            "option2": "Možnost 2: Manuální bankovní převod",
+            "bank": "Banka:",
+            "accountHolder": "Držitel účtu:",
+            "accountNumber": "Číslo účtu:",
+            "amount": "Částka:",
+            "paymentReference": "Referenční číslo platby:",
+            "paymentReferenceNote": "Uchovejte prosím referenční číslo platby {{sepay_paycode_prefix}}, aby náš systém mohl automaticky potvrdit vaši platbu."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Naskenovat QR kód"
+        }
     }
 }

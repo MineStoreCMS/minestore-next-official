@@ -164,5 +164,24 @@
         "cant-add-more-than-one-subscription": "You can't add more than one subscription to the cart!",
         "item-removed-from-cart": "Item removed from cart!",
         "item-added-to-cart": "Item added to cart!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Payment Instructions",
+        "scanQrCode": "Scan QR Code",
+        "downloadQr": "Download QR",
+        "waitingForPayment": "Waiting for payment...",
+        "sepayModal": {
+            "option1": "Option 1: Scan QR Code",
+            "option2": "Option 2: Manual Bank Transfer",
+            "bank": "Bank:",
+            "accountHolder": "Account Holder:",
+            "accountNumber": "Account Number:",
+            "amount": "Amount:",
+            "paymentReference": "Payment Reference:",
+            "paymentReferenceNote": "Please keep the payment reference {{sepay_paycode_prefix}} to help our system automatically confirm your payment."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Scan QR Code"
+        }
     }
 }

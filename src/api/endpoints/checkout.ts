@@ -1,5 +1,6 @@
 import { AxiosInstance } from 'axios';
 import { TCheckoutRequest } from '@/types/requests/checkout';
+import { QrDetailsProps } from '@/app/(pages)/checkout/components/qr-payment-modal';
 
 type Data =
     | {
@@ -9,7 +10,12 @@ type Data =
     | {
           type: 'html';
           html: string;
-      };
+      }
+    | ({
+          type: 'qrcode';
+      } & {
+          details: QrDetailsProps['details'];
+      });
 
 type ReturnType = {
     success: boolean;

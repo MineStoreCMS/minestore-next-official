@@ -164,5 +164,24 @@
         "cant-add-more-than-one-subscription": "Вы не можете добавить более одной подписки в корзину!",
         "item-removed-from-cart": "Товар удален из корзины!",
         "item-added-to-cart": "Товар добавлен в корзину!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Инструкции по оплате",
+        "scanQrCode": "Сканировать QR-код",
+        "downloadQr": "Скачать QR",
+        "waitingForPayment": "Ожидание оплаты...",
+        "sepayModal": {
+            "option1": "Вариант 1: Сканировать QR-код",
+            "option2": "Вариант 2: Ручной банковский перевод",
+            "bank": "Банк:",
+            "accountHolder": "Владелец счета:",
+            "accountNumber": "Номер счета:",
+            "amount": "Сумма:",
+            "paymentReference": "Платежная ссылка:",
+            "paymentReferenceNote": "Пожалуйста, сохраните ссылку на платеж {{sepay_paycode_prefix}}, чтобы помочь нашей системе автоматически подтвердить ваш платеж."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Сканировать QR-код"
+        }
     }
 }

@@ -32,13 +32,15 @@ export const ItemDetails: FC<DetailsProps> = ({ show, onHide, id, route }) => {
     const [details, setDetails] = useState<TItem>();
     const [isAddingToCart, setIsAddingToCart] = useState(false);
 
-   useEffect(() => {
-      getItem(id, route).then((data) => {
-         setDetails(data);
-      }).catch(() => {
-         setDetails(undefined);
-      });
-   }, [id, route]);
+    useEffect(() => {
+        getItem(id, route)
+            .then((data) => {
+                setDetails(data);
+            })
+            .catch(() => {
+                setDetails(undefined);
+            });
+    }, [id, route]);
 
     return (
         <Dialog open={show} onOpenChange={onHide}>
@@ -71,46 +73,5 @@ export const ItemDetails: FC<DetailsProps> = ({ show, onHide, id, route }) => {
                 </DialogFooter>
             </DialogContent>
         </Dialog>
-
-        // <Modal
-        //     show={show}
-        //     onClickOutside={onHide}
-        //     backgroundColor="rgb(0 0 0 / 0.25)"
-        //     className="fixed left-1/2 top-1/2 z-40 m-auto w-full -translate-x-1/2 -translate-y-1/2 rounded bg-card lg:w-[700px]"
-        // >
-        //     <div className="flex-row items-center rounded bg-accent px-5 py-4 font-bold">
-        //         <p className="text-accent-foreground">{details?.name}</p>
-        //         <button
-        //             aria-label="Close modal"
-        //             onClick={onHide}
-        //             className="ml-auto flex h-6 w-6 items-center justify-center rounded bg-accent-foreground/10 transition-colors duration-200 hover:bg-accent-foreground/20 focus:outline-none focus:ring-2 focus:ring-accent-foreground/50 focus:ring-offset-2 focus:ring-offset-accent-foreground/10"
-        //         >
-        //             <X size={14} />
-        //         </button>
-        //     </div>
-
-        //     <div
-        //         className="prose max-h-[600px] w-full overflow-y-auto p-4 text-muted-foreground prose-headings:text-accent-foreground"
-        //         dangerouslySetInnerHTML={{ __html: details?.description || '' }}
-        //     />
-
-        //     <div className="flex items-center justify-between border-t border-accent p-4">
-        //         <Price
-        //             value={details?.price || 0}
-        //             isVirtual={details?.is_virtual_currency_only}
-        //             className="font-bold"
-        //         />
-
-        //         <div className="flex gap-2">
-        //             <CardActionButtons
-        //                 isItemInCart={isItemInCart}
-        //                 item={details as TItem}
-        //                 displayFull={false}
-        //                 setAddToCartPressed={setIsAddingToCart}
-        //                 addToCartPressed={isAddingToCart}
-        //             />
-        //         </div>
-        //     </div>
-        // </Modal>
     );
 };

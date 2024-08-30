@@ -165,5 +165,24 @@
         "cant-add-more-than-one-subscription": "אין אפשרות להוסיף יותר מפריט מנוי אחד לעגלה!",
         "item-removed-from-cart": "הפריט הוסר מהעגלה!",
         "item-added-to-cart": "הפריט נוסף לעגלה!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "הוראות תשלום",
+        "scanQrCode": "סרוק קוד QR",
+        "downloadQr": "הורד QR",
+        "waitingForPayment": "ממתין לתשלום...",
+        "sepayModal": {
+            "option1": "אפשרות 1: סרוק קוד QR",
+            "option2": "אפשרות 2: העברה בנקאית ידנית",
+            "bank": "בנק:",
+            "accountHolder": "בעל החשבון:",
+            "accountNumber": "מספר חשבון:",
+            "amount": "סכום:",
+            "paymentReference": "אסמכתא לתשלום:",
+            "paymentReferenceNote": "אנא שמור על אסמכתא לתשלום {{sepay_paycode_prefix}} כדי לסייע למערכת שלנו לאשר את התשלום שלך באופן אוטומטי."
+        },
+        "normalQrModal": {
+            "scanQrCode": "סרוק קוד QR"
+        }
     }
 }

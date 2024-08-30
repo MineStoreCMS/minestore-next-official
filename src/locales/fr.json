@@ -165,5 +165,24 @@
         "cant-add-more-than-one-subscription": "Vous ne pouvez pas ajouter plus d'un abonnement au panier !",
         "item-removed-from-cart": "Article supprimé du panier !",
         "item-added-to-cart": "Article ajouté au panier !"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Instructions de Paiement",
+        "scanQrCode": "Scanner le Code QR",
+        "downloadQr": "Télécharger le QR",
+        "waitingForPayment": "En attente de paiement...",
+        "sepayModal": {
+            "option1": "Option 1 : Scanner le Code QR",
+            "option2": "Option 2 : Virement Bancaire Manuel",
+            "bank": "Banque :",
+            "accountHolder": "Titulaire du Compte :",
+            "accountNumber": "Numéro de Compte :",
+            "amount": "Montant :",
+            "paymentReference": "Référence de Paiement :",
+            "paymentReferenceNote": "Veuillez conserver la référence de paiement {{sepay_paycode_prefix}} pour aider notre système à confirmer automatiquement votre paiement."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Scanner le Code QR"
+        }
     }
 }

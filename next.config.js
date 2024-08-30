@@ -18,6 +18,9 @@ const nextConfig = {
             },
             {
                 hostname: 'i.imgur.com'
+            },
+            {
+                hostname: 'qr.sepay.vn'
             }
         ],
         minimumCacheTTL: 30

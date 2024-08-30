@@ -164,5 +164,24 @@
         "cant-add-more-than-one-subscription": "Nu puteți adăuga mai mult de un abonament în coș!",
         "item-removed-from-cart": "Produsul a fost eliminat din coș!",
         "item-added-to-cart": "Produsul a fost adăugat în coș!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Instrucțiuni de Plată",
+        "scanQrCode": "Scanați Codul QR",
+        "downloadQr": "Descărcați QR",
+        "waitingForPayment": "Așteptând plata...",
+        "sepayModal": {
+            "option1": "Opțiunea 1: Scanați Codul QR",
+            "option2": "Opțiunea 2: Transfer Bancar Manual",
+            "bank": "Banca:",
+            "accountHolder": "Titularul Contului:",
+            "accountNumber": "Numărul Contului:",
+            "amount": "Sumă:",
+            "paymentReference": "Referință de Plată:",
+            "paymentReferenceNote": "Vă rugăm să păstrați referința de plată {{sepay_paycode_prefix}} pentru a ajuta sistemul nostru să vă confirme automat plata."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Scanați Codul QR"
+        }
     }
 }

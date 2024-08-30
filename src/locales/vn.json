@@ -164,5 +164,24 @@
         "cant-add-more-than-one-subscription": "Không thể thêm nhiều hơn một đăng ký vào giỏ hàng!",
         "item-removed-from-cart": "Sản phẩm đã được gỡ khỏi giỏ hàng!",
         "item-added-to-cart": "Sản phẩm đã được thêm vào giỏ hàng!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Hướng dẫn Thanh toán",
+        "scanQrCode": "Quét Mã QR",
+        "downloadQr": "Tải về QR",
+        "waitingForPayment": "Đang chờ thanh toán...",
+        "sepayModal": {
+            "option1": "Tùy chọn 1: Quét Mã QR",
+            "option2": "Tùy chọn 2: Chuyển khoản Ngân hàng Thủ công",
+            "bank": "Ngân hàng:",
+            "accountHolder": "Chủ Tài khoản:",
+            "accountNumber": "Số Tài khoản:",
+            "amount": "Số Tiền:",
+            "paymentReference": "Mã Tham chiếu Thanh toán:",
+            "paymentReferenceNote": "Vui lòng giữ mã tham chiếu thanh toán {{sepay_paycode_prefix}} để giúp hệ thống của chúng tôi tự động xác nhận thanh toán của bạn."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Quét Mã QR"
+        }
     }
 }

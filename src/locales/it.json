@@ -165,5 +165,24 @@
         "cant-add-more-than-one-subscription": "Non puoi aggiungere più di un abbonamento al carrello!",
         "item-removed-from-cart": "Articolo rimosso dal carrello!",
         "item-added-to-cart": "Articolo aggiunto al carrello!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Istruzioni di Pagamento",
+        "scanQrCode": "Scansiona Codice QR",
+        "downloadQr": "Scarica QR",
+        "waitingForPayment": "In attesa di pagamento...",
+        "sepayModal": {
+            "option1": "Opzione 1: Scansiona Codice QR",
+            "option2": "Opzione 2: Bonifico Bancario Manuale",
+            "bank": "Banca:",
+            "accountHolder": "Titolare del Conto:",
+            "accountNumber": "Numero di Conto:",
+            "amount": "Importo:",
+            "paymentReference": "Riferimento del Pagamento:",
+            "paymentReferenceNote": "Si prega di conservare il riferimento di pagamento {{sepay_paycode_prefix}} per aiutare il nostro sistema a confermare automaticamente il pagamento."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Scansiona Codice QR"
+        }
     }
 }

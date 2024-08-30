@@ -164,5 +164,24 @@
         "cant-add-more-than-one-subscription": "U kunt niet meer dan één abonnement aan de winkelwagen toevoegen!",
         "item-removed-from-cart": "Item verwijderd uit winkelwagen!",
         "item-added-to-cart": "Item toegevoegd aan winkelwagen!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Betalingsinstructies",
+        "scanQrCode": "Scan QR-code",
+        "downloadQr": "Download QR",
+        "waitingForPayment": "Wachten op betaling...",
+        "sepayModal": {
+            "option1": "Optie 1: Scan QR-code",
+            "option2": "Optie 2: Handmatige Overschrijving",
+            "bank": "Bank:",
+            "accountHolder": "Rekeninghouder:",
+            "accountNumber": "Rekeningnummer:",
+            "amount": "Bedrag:",
+            "paymentReference": "Betalingsreferentie:",
+            "paymentReferenceNote": "Houd alstublieft de betalingsreferentie {{sepay_paycode_prefix}} bij om ons systeem te helpen uw betaling automatisch te bevestigen."
+        },
+        "normalQrModal": {
+            "scanQrCode": "Scan QR-code"
+        }
     }
 }
