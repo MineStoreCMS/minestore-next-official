@@ -178,7 +178,7 @@
             "accountNumber": "Rekeningnummer:",
             "amount": "Bedrag:",
             "paymentReference": "Betalingsreferentie:",
-            "paymentReferenceNote": "Houd alstublieft de betalingsreferentie {{sepay_paycode_prefix}} bij om ons systeem te helpen uw betaling automatisch te bevestigen."
+            "paymentReferenceNote": "Houd alstublieft de betalingsreferentie %code% bij om ons systeem te helpen uw betaling automatisch te bevestigen."
         },
         "normalQrModal": {
             "scanQrCode": "Scan QR-code"

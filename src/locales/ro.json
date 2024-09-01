@@ -178,7 +178,7 @@
             "accountNumber": "Numărul Contului:",
             "amount": "Sumă:",
             "paymentReference": "Referință de Plată:",
-            "paymentReferenceNote": "Vă rugăm să păstrați referința de plată {{sepay_paycode_prefix}} pentru a ajuta sistemul nostru să vă confirme automat plata."
+            "paymentReferenceNote": "Vă rugăm să păstrați referința de plată %code% pentru a ajuta sistemul nostru să vă confirme automat plata."
         },
         "normalQrModal": {
             "scanQrCode": "Scanați Codul QR"

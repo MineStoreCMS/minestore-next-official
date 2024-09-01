@@ -178,7 +178,7 @@
             "accountNumber": "Account Number:",
             "amount": "Amount:",
             "paymentReference": "Payment Reference:",
-            "paymentReferenceNote": "Please keep the payment reference {{sepay_paycode_prefix}} to help our system automatically confirm your payment."
+            "paymentReferenceNote": "Please keep the payment %code% reference to help our system automatically confirm your payment."
         },
         "normalQrModal": {
             "scanQrCode": "Scan QR Code"

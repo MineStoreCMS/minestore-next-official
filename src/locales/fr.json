@@ -179,7 +179,7 @@
             "accountNumber": "Numéro de Compte :",
             "amount": "Montant :",
             "paymentReference": "Référence de Paiement :",
-            "paymentReferenceNote": "Veuillez conserver la référence de paiement {{sepay_paycode_prefix}} pour aider notre système à confirmer automatiquement votre paiement."
+            "paymentReferenceNote": "Veuillez conserver la référence de paiement %code% pour aider notre système à confirmer automatiquement votre paiement."
         },
         "normalQrModal": {
             "scanQrCode": "Scanner le Code QR"

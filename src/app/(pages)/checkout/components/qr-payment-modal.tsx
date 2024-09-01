@@ -62,6 +62,11 @@ function SepayModal({ details }: { details: QrDetailsProps['details'] }) {
     const t = useTranslations('qrCodePayments');
     const paymentId = details.payment_id;
 
+    const replacedPaymentReferenceCode = t('sepayModal.paymentReferenceNote').replace(
+        '%code%',
+        details.sepay_paycode_prefix || ''
+    );
+
     useEffect(() => {
         if (!paymentId) return;
 
@@ -100,11 +105,12 @@ function SepayModal({ details }: { details: QrDetailsProps['details'] }) {
                     </h3>
                     <div className="flex flex-col items-center space-y-4">
                         {details.qrcode ? (
-                            <Image
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img
                                 src={details.qrcode}
                                 alt="QR Code"
-                                width={300}
-                                height={300}
+                                width="300"
+                                height="300"
                                 className="rounded-md"
                             />
                         ) : null}
@@ -170,10 +176,7 @@ function SepayModal({ details }: { details: QrDetailsProps['details'] }) {
                         ) : null}
                         <div className="rounded-md bg-muted p-4">
                             <p className="text-pretty text-sm text-muted-foreground">
-                                {t('sepayModal.paymentReferenceNote').replace(
-                                    '{{sepay_paycode_prefix}}',
-                                    details.sepay_paycode_prefix || ''
-                                )}
+                                {replacedPaymentReferenceCode}
                             </p>
                         </div>
                     </div>
@@ -196,11 +199,12 @@ function NormalQRModal({ details }: { details: QrDetailsProps['details'] }) {
                     </h3>
                     <div className="flex flex-col items-center space-y-4">
                         {details.qrcode ? (
-                            <Image
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img
                                 src={details.qrcode}
                                 alt="QR Code"
-                                width={300}
-                                height={300}
+                                width="300"
+                                height="300"
                                 className="rounded-md"
                             />
                         ) : null}

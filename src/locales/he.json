@@ -179,7 +179,7 @@
             "accountNumber": "מספר חשבון:",
             "amount": "סכום:",
             "paymentReference": "אסמכתא לתשלום:",
-            "paymentReferenceNote": "אנא שמור על אסמכתא לתשלום {{sepay_paycode_prefix}} כדי לסייע למערכת שלנו לאשר את התשלום שלך באופן אוטומטי."
+            "paymentReferenceNote": "אנא שמור על אסמכתא לתשלום %code% כדי לסייע למערכת שלנו לאשר את התשלום שלך באופן אוטומטי."
         },
         "normalQrModal": {
             "scanQrCode": "סרוק קוד QR"

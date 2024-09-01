@@ -178,7 +178,7 @@
             "accountNumber": "Số Tài khoản:",
             "amount": "Số Tiền:",
             "paymentReference": "Mã Tham chiếu Thanh toán:",
-            "paymentReferenceNote": "Vui lòng giữ mã tham chiếu thanh toán {{sepay_paycode_prefix}} để giúp hệ thống của chúng tôi tự động xác nhận thanh toán của bạn."
+            "paymentReferenceNote": "Vui lòng giữ mã tham chiếu thanh toán %code% để giúp hệ thống của chúng tôi tự động xác nhận thanh toán của bạn."
         },
         "normalQrModal": {
             "scanQrCode": "Quét Mã QR"

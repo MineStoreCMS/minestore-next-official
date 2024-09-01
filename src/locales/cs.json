@@ -178,7 +178,7 @@
             "accountNumber": "Číslo účtu:",
             "amount": "Částka:",
             "paymentReference": "Referenční číslo platby:",
-            "paymentReferenceNote": "Uchovejte prosím referenční číslo platby {{sepay_paycode_prefix}}, aby náš systém mohl automaticky potvrdit vaši platbu."
+            "paymentReferenceNote": "Uchovejte prosím referenční číslo platby %code%, aby náš systém mohl automaticky potvrdit vaši platbu."
         },
         "normalQrModal": {
             "scanQrCode": "Naskenovat QR kód"
