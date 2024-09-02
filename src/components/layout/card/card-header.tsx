@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import { TItem } from '@/types/item';
 import { imagePath } from '@helpers/image-path';
 import { joinClasses } from '@helpers/join-classes';
-import { AlertTriangle } from 'lucide-react';
+import { AlertTriangle, Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
@@ -55,21 +55,50 @@ export function CardHeader({ item, direction }: CardHeaderProps) {
 function QuantityBadge({ item, className }: { item: TItem; className?: string }) {
     const t = useTranslations('card');
 
-    if (item.quantityGlobalLimit == null || item.quantityGlobalCurrentLimit == null) return null;
+    const hasGlobalLimit =
+        item.quantityGlobalLimit != null && item.quantityGlobalCurrentLimit != null;
+    const hasUserLimit = item.quantityUserLimit != null && item.quantityUserCurrentLimit != null;
 
-    const { quantityGlobalLimit, quantityGlobalCurrentLimit } = item;
-    const quantityLeft = quantityGlobalLimit - quantityGlobalCurrentLimit;
+    if (!hasGlobalLimit && !hasUserLimit) return null;
+
+    const {
+        quantityGlobalLimit = 0,
+        quantityGlobalCurrentLimit = 0,
+        quantityUserLimit = 0,
+        quantityUserCurrentLimit = 0
+    } = item;
+
+    const globalQuantityLeft = hasGlobalLimit
+        ? quantityGlobalLimit - quantityGlobalCurrentLimit
+        : 0;
+    const userQuantityLeft = hasUserLimit ? quantityUserLimit - quantityUserCurrentLimit : 0;
+
+    const quantityLeft = hasUserLimit ? userQuantityLeft : globalQuantityLeft;
 
     return (
-        <Badge
-            variant="destructive"
-            className={joinClasses('mx-auto max-w-[220px] justify-center gap-2 p-2', className)}
-        >
-            <AlertTriangle size={16} />
-            <p>
-                {quantityLeft} {t('items-left')}
-            </p>
-        </Badge>
+        <div className="flex flex-wrap items-center gap-2">
+            {hasUserLimit && userQuantityLeft > 0 && (
+                <Badge
+                    variant="success"
+                    className={joinClasses(
+                        'mx-auto max-w-[220px] justify-center gap-2 p-2',
+                        className
+                    )}
+                >
+                    <Check size={16} />
+                    <p>{t('available-for-you')}</p>
+                </Badge>
+            )}
+            <Badge
+                variant="destructive"
+                className={joinClasses('mx-auto max-w-[220px] justify-center gap-2 p-2', className)}
+            >
+                <AlertTriangle size={16} />
+                <p>
+                    {quantityLeft} {t('items-left')}
+                </p>
+            </Badge>
+        </div>
     );
 }
 
