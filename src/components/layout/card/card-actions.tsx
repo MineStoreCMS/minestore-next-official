@@ -36,7 +36,8 @@ export function CardActions({
             className={joinClasses(
                 'flex items-center justify-center gap-2',
                 direction === 'col' && 'mt-auto grid grid-cols-[50px,1fr]',
-                hideButton && direction === 'col' && 'w-full grid-cols-[1fr]'
+                hideButton && direction === 'col' && 'w-full grid-cols-[1fr]',
+                direction === 'row' && 'grid grid-cols-[50px,1fr] md:flex'
             )}
         >
             {!hideButton ? (
