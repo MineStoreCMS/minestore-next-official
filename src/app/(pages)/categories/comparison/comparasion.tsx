@@ -52,11 +52,13 @@ export const Comparison = ({ categoryItems, category, subCategory }: ComparisonP
                                 <DescriptionTooltip description={comparison.description} />
                             )}
                         </TableCell>
-                        {comparison.comparisons.map((item) => (
-                            <TableCell key={item.comparison_id} className="text-center">
-                                <ComparisonIcon value={item.value} />
-                            </TableCell>
-                        ))}
+                        {comparison.comparisons.map((item) => {
+                            return (
+                                <TableCell key={item.comparison_id} className="text-center">
+                                    <ComparisonIcon value={item.value} type={comparison.type} />
+                                </TableCell>
+                            );
+                        })}
                     </TableRow>
                 ))}
             </TableBody>
@@ -64,10 +66,10 @@ export const Comparison = ({ categoryItems, category, subCategory }: ComparisonP
     );
 };
 
-function ComparisonIcon({ value }: { value: string }) {
+function ComparisonIcon({ value, type }: { value: string; type: number }) {
     const isNumber = !isNaN(Number(value));
 
-    if (isNumber) {
+    if (isNumber && type === 0) {
         const valueToNumber = Number(value);
 
         if (valueToNumber === 1) {

@@ -15,7 +15,7 @@ export default async function Home() {
         <>
             {settings?.is_featuredDeal ? <FeaturedDeals featuredDeals={featuredDeals} /> : null}
 
-            < div className="flex-col rounded-[10px] bg-card">
+            <div className="flex-col rounded-[10px] bg-card">
                 <div className="p-4">
                     <Alert />
 
@@ -23,7 +23,7 @@ export default async function Home() {
                 </div>
 
                 <Modules />
-            </div >
+            </div>
         </>
     );
 }

@@ -17,8 +17,6 @@ export function CardHeader({ item, direction }: CardHeaderProps) {
     const price = item.is_virtual_currency_only ? item.virtual_price || 0 : item.price;
     const isPriceVirtual = item.is_virtual_currency_only;
 
-    console.log(item);
-
     const cardHeaderClasses = joinClasses(
         'gap-4',
         direction === 'col' && 'grid mt-auto',
