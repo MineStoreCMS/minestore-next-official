@@ -1,4 +1,4 @@
-import { setCookie, deleteCookie } from 'cookies-next';
+import { setCookie, deleteCookie, getCookie } from 'cookies-next';
 import { getEndpoints } from '@/api';
 import { fetcher } from '@/api/client/fetcher';
 
@@ -22,7 +22,10 @@ export const useUser = () => {
 
             setCookie('token', token);
 
-            router.push('/');
+            const lastCategory = getCookie('lastCategoryClicked') || '/';
+
+            // window.history.replaceState({}, '', lastCategory);
+            router.push(lastCategory);
             router.refresh();
         } catch (error) {
             console.error('Error while logging in:', error);
@@ -59,8 +62,10 @@ export const useUser = () => {
 
     const logout = () => {
         deleteCookie('token');
+        deleteCookie('lastCategoryClicked');
         setUser(undefined);
         router.push('/');
+        router.refresh();
     };
 
     return {

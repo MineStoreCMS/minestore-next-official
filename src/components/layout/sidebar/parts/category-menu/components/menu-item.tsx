@@ -5,6 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { FC, useState, useRef, useEffect } from 'react';
 import { ReactSVG } from 'react-svg';
 import { SumMenuItem } from './sub-menu-item';
+import { setCookie } from 'cookies-next';
 
 type MenuItemProps = {
     name: string;
@@ -25,6 +26,8 @@ export const MenuItem: FC<MenuItemProps> = ({ name, image, url, subItems = [], i
 
     const handleClick = () => {
         if (isSubMenu === false) {
+            setCookie('lastCategoryClicked', url);
+
             router.push(url, { scroll: false });
         }
 

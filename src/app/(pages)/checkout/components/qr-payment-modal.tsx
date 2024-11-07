@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { DownloadCloud, Loader2 } from 'lucide-react';
 import { FC, useEffect } from 'react';
-import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { fetcher } from '@/api/client/fetcher';
 import { useTranslations } from 'next-intl';

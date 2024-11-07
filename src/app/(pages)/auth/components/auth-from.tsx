@@ -22,13 +22,13 @@ import { Loader2Icon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 const authFormSchema = z.object({
-   username: z
-      .string({
-         invalid_type_error: 'Invalid Username'
-      })
-      .regex(/^([*_BP\.]{0,1}[a-zA-Z0-9_]{3,15}(-[a-zA-Z0-9_]{1,15})?)$/, {
-         message: 'Invalid Username'
-      })
+    username: z
+        .string({
+            invalid_type_error: 'Invalid Username'
+        })
+        .regex(/^([*_BP\.]{0,1}[a-zA-Z0-9_]{3,15}(-[a-zA-Z0-9_]{1,15})?)$/, {
+            message: 'Invalid Username'
+        })
 });
 
 type AuthFormValues = z.infer<typeof authFormSchema>;
