@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { TItem } from '@/types/item';
 import { imagePath } from '@helpers/image-path';
 import { joinClasses } from '@helpers/join-classes';
+import { getModifiedCacheBuster } from '@helpers/cache-buster';
 import { AlertTriangle, Check } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -43,7 +44,7 @@ export function CardHeader({ item, direction }: CardHeaderProps) {
                     discount={item.discount}
                     value={price}
                     isVirtual={isPriceVirtual}
-                    className="flex items-center justify-center gap-2 text-base font-bold"
+                    className={`flex items-center gap-2 text-base font-bold ${direction === 'col' ? 'justify-center' : ''}`}
                 />
             </div>
         </div>
@@ -112,12 +113,15 @@ function CardHeaderImage({
     const image = imagePath(item.image);
     if (!image) return null;
 
+    const cacheBuster = getModifiedCacheBuster(5);
+    const imageWithCacheBuster = `${image}?${cacheBuster}`;
+
     const imageSize = direction === 'row' ? 64 : 140;
 
     return (
         <div>
             <Image
-                src={image}
+                src={imageWithCacheBuster}
                 alt={item.name}
                 width={imageSize}
                 height={imageSize}

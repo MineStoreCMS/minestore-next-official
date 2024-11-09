@@ -1,0 +1,188 @@
+{
+    "navbar": {
+        "currency": "Pénznem",
+        "language": "Nyelv",
+        "cart": "Kosár",
+        "cart-hint": "termékek összesen",
+        "not-logged": "Nincs bejelentkezve",
+        "logout": "Kijelentkezés",
+        "empty-cart": "Üres kosár",
+        "guest": "Vendég"
+    },
+    "staff": {
+        "title": "Csapattagok"
+    },
+    "header": {
+        "players-online": "Játékosok online",
+        "members-online": "Tagok online",
+        "donation-goal": "Adománycél",
+        "discord-server": "Discord szerver",
+        "copied-to-clipboard": "Vágólapra másolva"
+    },
+    "sidebar": {
+        "home": "Főoldal",
+        "top-donator": "Legnagyobb támogató",
+        "top-donator-hint": "E hónapban a legtöbbet adományozott",
+        "no-top-donor": "Legyél támogató",
+        "no-top-donor-description": "Legyél támogató, hogy exkluzív előnyökhöz juss!"
+    },
+    "card": {
+        "buy": "Kosárba",
+        "remove": "Eltávolítás",
+        "subscribe": "Feliratkozás",
+        "unavailable": "Nem elérhető",
+        "items-left": "darab maradt",
+        "available-for-you": "Elérhető számodra",
+        "featured": "Kiemelt"
+    },
+    "recent-purchases": "Legutóbbi vásárlások",
+    "home": {
+        "welcome": "Üdvözöljük a MinestoreCMS hivatalos webáruházában!",
+        "welcome-description": "A vásárlás megkezdéséhez válasszon kategóriát az oldalsávból. Kérjük, vegye figyelembe, hogy a rangok egyszeri fizetésűek és állandóak.",
+        "featured-packages": "KIEMELT CSOMAGOK",
+        "recent-purchases": "Legutóbbi vásárlások",
+        "gift-card": "Ajándékkártya",
+        "gift-card-not-found": "Ajándékkártya nem található!",
+        "gift-card-with-balance": "Ajándékkártya egyenleggel:",
+        "gift-card-check": "Ellenőrzés",
+        "gift-card-placeholder": "Kártyakód",
+        "paypal-balance-banks-all-credit-debit-cards": "PayPal egyenleg, Bankok, Összes Hitel-/Bankkártya",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Visa, Mastercard, +100 Egyéb.",
+        "all-credit-debit-cards": "Összes Hitel-/Bankkártya",
+        "support-or-questions": "Támogatás / Kérdések",
+        "support-or-questions-description": "Van kérdésed a vásárlás előtt? Több mint 20 percet vártál, de a csomagod még nem érkezett meg? Kérdezz a közösségtől vagy a személyzettől a Discord szerverünkön! Itt vagyunk, hogy segítsünk neked.",
+        "refund-policy": "Visszatérítési szabályzat",
+        "refund-policy-description": "Szigorú visszatérítési szabályzatunk van. Minden vásárlás végleges és nem visszatéríthető. Kérjük, győződjön meg róla, hogy a megfelelő terméket vásárolja meg a fizetés előtt.",
+        "payment-processing": "A vásárlás feldolgozása akár 15 percet is igénybe vehet. Ha 15 perc elteltével sem kapja meg a vásárolt termékeket, kérjük, lépjen kapcsolatba támogatásunkkal a Discordon."
+    },
+    "auth": {
+        "title": "Bejelentkezés",
+        "label": "Felhasználónév",
+        "placeholder": "Minecraft Felhasználónév",
+        "description": "A vásárlás megkezdéséhez kérjük, adja meg Minecraft felhasználónevét",
+        "submit": "Folytatás",
+        "invalid-username": "Érvénytelen felhasználónév!",
+        "waiting-for-verification": "Várakozás hitelesítésre 🚀",
+        "check-in-game": "Kérjük, nézzen be a játékba, és hitelesítse magát a Minecraft szerveren!",
+        "confirm": "Erősítse meg, hogy Ön a fiók tulajdonosa!",
+        "verification-resent": "Hitelesítő kód újraküldve!",
+        "resend-verification": "Hitelesítő kód újraküldése",
+        "wait-before-resend": "Várjon 10 másodpercet, mielőtt újra küldi..."
+    },
+    "checkout": {
+        "title": "Fizetés",
+        "image": "Kép",
+        "name": "Név",
+        "price": "Ár",
+        "quantity": "Mennyiség",
+        "actions": "Műveletek",
+        "featured-deal": "Kiemelt Ajánlat",
+        "this-item-is-popular-among-us-customers": "Ez a termék népszerű vásárlóink körében. Próbálja ki!",
+        "empty-cart-title": "Hoppá! A kosarad üres",
+        "empty-cart-description": "Úgy tűnik, jelenleg nincs semmi a kosaradban. Fedezd fel webáruházunkat, és találd meg az izgalmas játékbeli tárgyakat, rangokat és egyebeket! Amint találsz valamit, ami tetszik, add hozzá a kosaradhoz és haladj tovább a fizetéssel.",
+        "details": {
+            "your-details": "Adatok",
+            "you-are-buying-as": "Vásárlóként szerepel",
+            "not-correct": "Nem megfelelő?",
+            "full-name": "Teljes név",
+            "email": "E-mail",
+            "address-line-1": "Cím 1. sor",
+            "address-line-2": "Cím 2. sor",
+            "city": "Város",
+            "zip-code": "Irányítószám",
+            "state-region": "Megye/Régió",
+            "country": "Ország",
+            "country-placeholder": "Válassza ki az országát",
+            "no-country-found": "Nem található ország"
+        },
+        "you-are-buying-as": "Vásárlóként szerepel",
+        "redeem-coupons-or-gift-cards": "Kupon vagy Ajándékkártya beváltása",
+        "active-gift": "Aktív ajándék",
+        "remove-gift": "Eltávolítás",
+        "redeem": "Beváltás",
+        "redeem-referral": "Ajánlókód beváltása",
+        "referral-code": "Ajánlókód",
+        "referral-code-placeholder": "Ajánlókód megadása",
+        "redeemed-referral": "Ajánlókód beváltva",
+        "referral-code-invalid": "Érvénytelen ajánlókód!",
+        "referral-code-already-redeemed": "Az ajánlókód már beváltva!",
+        "payment-method": "Fizetési mód",
+        "privacy-statement": "Adatvédelmi nyilatkozat",
+        "privacy-statement-description": "Minden fizetés végleges és nem visszatéríthető. Chargeback kísérlete vagy PayPal vitanyitás a szervereinkről és más Minecraft boltokból való végleges és visszafordíthatatlan kitiltást eredményezhet.",
+        "agree": "Egyetértek a vásárlás feltételeivel.",
+        "purchase": "Tovább a Fizetéshez",
+        "only-one-coupon": "Egyszerre csak egy kupont és egy ajándékkártyát válthatsz be",
+        "coupon-code": "Kuponkód",
+        "coupons-redeemed": "Beváltott kuponok",
+        "coupon-placeholder": "Kuponkód megadása",
+        "coupon-savings": "megtakarítás"
+    },
+    "profile": {
+        "title": "Profil",
+        "information": "Információk",
+        "registration-date": "Regisztráció dátuma:",
+        "money-spent": "Elköltött összeg:",
+        "recent-purchases": "Legutóbbi vásárlások"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Nem minden adatmező van kitöltve!",
+        "accept-privacy-statement": "Fogadd el az Adatvédelmi Nyilatkozatot!",
+        "accept-terms": "Fogadd el a feltételeket!",
+        "subscription-item-should-be-alone-in-the-cart": "Az előfizetéses tételnek egyedül kell lennie a kosárban!"
+    },
+    "footer": {
+        "useful-links": "Hasznos linkek",
+        "about-us": "Rólunk",
+        "all-rights-reserved": "Minden jog fenntartva.",
+        "powered-by": "Powered by",
+        "not-affiliated": "Nem állunk kapcsolatban a Mojang AB-vel.",
+        "description": "egy Minecraft: Java Edition hálózat, amely egyedülálló és lenyűgöző játékmenetet kínál a játékosoknak. Ez a hálózat hivatalos áruháza."
+    },
+    "success": {
+        "title": "KÖSZÖNJÜK!",
+        "thanks": "Nagyon köszönjük, hogy támogattad a szervereinket!",
+        "you-are-the-best": "Te vagy a legjobb \uD83D\uDE0E",
+        "thanks-title-1": "Köszönjük, hogy támogattad szervereinket!",
+        "thanks-description": "Hála neked, tudjuk fizetni a szervereinket, fejlesztőket foglalkoztatni, és folyamatosan fejleszteni a szervereket.",
+        "you-will-receive": "A rangodat és/vagy csomagjaidat körülbelül 30 percen belül megkapod.",
+        "thanks-description-2": "Ha 30 percen belül sem kaptad meg a tárgyaidat, kérjük, lépj kapcsolatba velünk felhasználóneveddel és a vásárlás igazolásával. Ügyelj arra is, hogy a helyes Minecraft felhasználónevet adtad meg."
+    },
+    "error": {
+        "oops": "HOPPÁ!",
+        "somethingWrong": "Valami rosszul sült el vagy a szervereink leálltak!",
+        "youreTheBest": "Te vagy a legjobb, de valami történt 🥺",
+        "contactUs": "Kérjük, lépj kapcsolatba velünk Discordon vagy más módon!",
+        "serverIssue": "Valószínűleg a szervereink leálltak vagy probléma adódott a fizetéssel.",
+        "contactWithProof": "Kérjük, lépj kapcsolatba velünk felhasználóneveddel és a vásárlás igazolásával.",
+        "paymentIssue": "Lehet, hogy a fizetésed 'függőben' van. Győződj meg arról is, hogy helyesen adtad meg a Minecraft felhasználónevedet. Ha nem, kérjük, jelezd."
+    },
+    "actions": {
+        "please-authorize": "Kérjük, jelentkezz be!",
+        "item-not-found": "A tétel nem található!",
+        "item-out-of-stock": "A tétel elfogyott!",
+        "reached-stock-limit": "Elérted a készlet limitjét ennél a terméknél!",
+        "cant-mix-normal-and-subscription": "Nem keverheted a normál termékeket előfizetéses termékekkel!",
+        "cant-add-more-than-one-subscription": "Nem adhatsz hozzá több mint egy előfizetést a kosárhoz!",
+        "item-removed-from-cart": "Tétel eltávolítva a kosárból!",
+        "item-added-to-cart": "Tétel hozzáadva a kosárhoz!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Fizetési utasítások",
+        "scanQrCode": "QR-kód beolvasása",
+        "downloadQr": "QR letöltése",
+        "waitingForPayment": "Várakozás a fizetésre...",
+        "sepayModal": {
+            "option1": "1. opció: QR-kód beolvasása",
+            "option2": "2. opció: Manuális banki átutalás",
+            "bank": "Bank:",
+            "accountHolder": "Számlatulajdonos:",
+            "accountNumber": "Számlaszám:",
+            "amount": "Összeg:",
+            "paymentReference": "Fizetési hivatkozás:",
+            "paymentReferenceNote": "Kérjük, őrizze meg a fizetési %code% hivatkozást, hogy rendszerünk automatikusan megerősíthesse a fizetését."
+        },
+        "normalQrModal": {
+            "scanQrCode": "QR-kód beolvasása"
+        }
+    }
+}

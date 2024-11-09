@@ -20,8 +20,6 @@ export async function middleware(request: NextRequest) {
 
     const token = request.cookies.get('token')?.value;
 
-    console.log('Token:', token);
-
     const checkAccessibilityURL = `${process.env.NEXT_PUBLIC_API_URL}/api/checkAccessibility`;
 
     if (!request.url.startsWith('/maintenance') && !request.url.startsWith('/banned')) {
@@ -54,24 +52,20 @@ export async function middleware(request: NextRequest) {
     }
 
     // Base redirects:
-    // if (!token && !request.url.endsWith('/auth')) {
-    //     console.log('Redirecting to /auth first');
-    //     return NextResponse.redirect(new URL('/auth', request.url));
-    // }
+    if (!token && !request.url.endsWith('/auth')) {
+        return NextResponse.redirect(new URL('/auth', request.url));
+    }
 
     // Handle token on /auth:
-    // if (request.url.endsWith('/auth') && token) {
-    //     console.log('Redirecting to / second');
-    //     const lastCategoryClicked = request.cookies.get('lastCategoryClicked')?.value || '/';
-    //     console.log('Last category clicked:', lastCategoryClicked);
-    //     return NextResponse.redirect(new URL(lastCategoryClicked, request.nextUrl.origin));
-    // }
+    if (request.url.endsWith('/auth') && token) {
+        const lastCategoryClicked = request.cookies.get('lastCategoryClicked')?.value || '/';
+        return NextResponse.redirect(new URL(lastCategoryClicked, request.nextUrl.origin));
+    }
 
-    // Protected routes check:
-    // if (request.url.match(/^\/(categories|checkout|profile)(\?.*)?$/) && !token) {
-    //     console.log('Redirecting to /auth third');
-    //     return NextResponse.redirect(new URL('/auth', request.url));
-    // }
+    //Protected routes check:
+    if (request.url.match(/^\/(categories|checkout|profile)(\?.*)?$/) && !token) {
+        return NextResponse.redirect(new URL('/auth', request.url));
+    }
 
     return NextResponse.next();
 }

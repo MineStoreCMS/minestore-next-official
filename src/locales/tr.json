@@ -1,0 +1,188 @@
+{
+    "navbar": {
+        "currency": "Para Birimi",
+        "language": "Dil",
+        "cart": "Alışveriş Sepeti",
+        "cart-hint": "ürün için",
+        "not-logged": "Giriş yapılmadı",
+        "logout": "Çıkış Yap",
+        "empty-cart": "Sepet Boş",
+        "guest": "Misafir"
+    },
+    "staff": {
+        "title": "Personel Üyeleri"
+    },
+    "header": {
+        "players-online": "Çevrimiçi Oyuncular",
+        "members-online": "Çevrimiçi Üyeler",
+        "donation-goal": "Bağış Hedefi",
+        "discord-server": "Discord Sunucusu",
+        "copied-to-clipboard": "Panoya kopyalandı"
+    },
+    "sidebar": {
+        "home": "Anasayfa",
+        "top-donator": "En Çok Bağış Yapan",
+        "top-donator-hint": "Bu ay en çok bağış yapan",
+        "no-top-donor": "Destekçi Olun",
+        "no-top-donor-description": "Özel avantajların kilidini açmak için destekçi olun!"
+    },
+    "card": {
+        "buy": "Sepete Ekle",
+        "remove": "Kaldır",
+        "subscribe": "Abone Ol",
+        "unavailable": "Mevcut Değil",
+        "items-left": "ürün kaldı",
+        "available-for-you": "Sizin İçin Mevcut",
+        "featured": "Öne Çıkan"
+    },
+    "recent-purchases": "Son Ödemeler",
+    "home": {
+        "welcome": "Resmi MinestoreCMS Web Mağazasına Hoş Geldiniz!",
+        "welcome-description": "Alışverişe başlamak için lütfen kenar çubuğundan bir kategori seçin. Rütbelerin tek seferlik bir ücret olduğunu ve kalıcı olduğunu unutmayın.",
+        "featured-packages": "ÖNE ÇIKAN PAKETLER",
+        "recent-purchases": "Son Satın Almalar",
+        "gift-card": "Hediye Kartı",
+        "gift-card-not-found": "Hediye kartı bulunamadı!",
+        "gift-card-with-balance": "Bakiye içeren hediye kartı:",
+        "gift-card-check": "Kontrol Et",
+        "gift-card-placeholder": "Kart Kodu",
+        "paypal-balance-banks-all-credit-debit-cards": "PayPal bakiyesi, Bankalar, Tüm Kredi/Debit Kartlar",
+        "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Visa, Mastercard, +100 Diğerleri.",
+        "all-credit-debit-cards": "Tüm Kredi & Debit Kartlar",
+        "support-or-questions": "Destek / Sorular",
+        "support-or-questions-description": "Ödeme yapmadan önce sorularınız var mı? 20 dakikadan fazla beklediniz ama paketiniz gelmedi mi? Topluluğa veya Discord sunucumuzdaki personele sorun! Size yardımcı olmak için buradayız.",
+        "refund-policy": "İade Politikası",
+        "refund-policy-description": "Katı bir iade politikamız var. Tüm satın alımlar nihai ve geri ödemesizdir. Ödeme yapmadan önce doğru öğeyi satın aldığınızdan emin olun.",
+        "payment-processing": "Satın almanızın işlenmesi 15 dakikaya kadar sürebilir. 15 dakika sonra hala kredilendirilmediyseniz, lütfen Discord'daki destek ekibimizle iletişime geçin."
+    },
+    "auth": {
+        "title": "Giriş Yap",
+        "label": "Kullanıcı Adı",
+        "placeholder": "Minecraft Kullanıcı Adı",
+        "description": "Alışverişe başlamak için lütfen Minecraft Kullanıcı Adınızı girin",
+        "submit": "Devam Et",
+        "invalid-username": "Geçersiz kullanıcı adı!",
+        "waiting-for-verification": "Doğrulama bekleniyor 🚀",
+        "check-in-game": "Lütfen, sohbete bakın ve Minecraft Sunucusunda kendinizi doğrulayın!",
+        "confirm": "Hesabın sahibi olduğunuzu onaylamanız gerekiyor!",
+        "verification-resent": "Doğrulama kodu yeniden gönderildi!",
+        "resend-verification": "Doğrulamayı yeniden gönder",
+        "wait-before-resend": "Tekrar göndermeden önce 10 saniye bekleyin..."
+    },
+    "checkout": {
+        "title": "Ödeme",
+        "image": "Görsel",
+        "name": "Ad",
+        "price": "Fiyat",
+        "quantity": "Miktar",
+        "actions": "İşlemler",
+        "featured-deal": "Öne Çıkan Fırsat",
+        "this-item-is-popular-among-us-customers": "Bu ürün bizim müşterilerimiz arasında popüler. Bir deneyin!",
+        "empty-cart-title": "Oops! Sepetiniz Boş",
+        "empty-cart-description": "Şu anda sepetinizde hiçbir şey yok gibi görünüyor. Mağazamızı keşfetmek ve harika oyun içi öğeler, rütbeler ve daha fazlasını keşfetmek için biraz zaman ayırın! Beğendiğiniz bir şey bulduğunuzda, onu sepete ekleyin ve ödeme işlemine devam edin.",
+        "details": {
+            "your-details": "Detaylarınız",
+            "you-are-buying-as": "Şu olarak satın alıyorsunuz...",
+            "not-correct": "Doğru değil mi?",
+            "full-name": "Tam Ad",
+            "email": "E-posta",
+            "address-line-1": "Adres Satırı 1",
+            "address-line-2": "Adres Satırı 2",
+            "city": "Şehir",
+            "zip-code": "Posta Kodu",
+            "state-region": "Eyalet/Bölge",
+            "country": "Ülke",
+            "country-placeholder": "Ülkenizi seçin",
+            "no-country-found": "Ülke bulunamadı"
+        },
+        "you-are-buying-as": "Şu olarak satın alıyorsunuz",
+        "redeem-coupons-or-gift-cards": "Kuponları veya Hediye Kartlarını Kullan",
+        "active-gift": "Aktif hediye",
+        "remove-gift": "Kaldır",
+        "redeem": "Kullan",
+        "redeem-referral": "Referans Kodu Kullan",
+        "referral-code": "Referans Kodu",
+        "referral-code-placeholder": "Referans kodunu girin",
+        "redeemed-referral": "Kullanılan Referans",
+        "referral-code-invalid": "Geçersiz referans kodu!",
+        "referral-code-already-redeemed": "Referans kodu zaten kullanıldı!",
+        "payment-method": "Ödeme Yöntemi",
+        "privacy-statement": "Gizlilik Bildirimi",
+        "privacy-statement-description": "Tüm ödemeler nihai ve geri ödemesizdir. Geri ödeme talep etmek veya PayPal anlaşmazlığı açmak, tüm sunucularımızdan ve diğer Minecraft mağazalarından kalıcı ve geri dönüşü olmayan bir yasakla sonuçlanacaktır.",
+        "agree": "Bu satın alımın şartlarını kabul ediyorum.",
+        "purchase": "Ödemeye Devam Et",
+        "only-one-coupon": "Aynı anda yalnızca bir kupon ve bir hediye kartı kullanabilirsiniz",
+        "coupon-code": "Kupon Kodu",
+        "coupons-redeemed": "Kullanılan Kuponlar",
+        "coupon-placeholder": "Kupon kodunu girin",
+        "coupon-savings": "tasarruf"
+    },
+    "profile": {
+        "title": "Profil",
+        "information": "Bilgi",
+        "registration-date": "Kayıt Tarihi:",
+        "money-spent": "Harcanan Para:",
+        "recent-purchases": "Son satın almalar"
+    },
+    "notifications": {
+        "not-all-detail-fields-are-filled-in": "Tüm detay alanları doldurulmadı!",
+        "accept-privacy-statement": "Gizlilik Bildirimini Kabul Edin!",
+        "accept-terms": "Şartları Kabul Edin!",
+        "subscription-item-should-be-alone-in-the-cart": "Abonelik öğesi sepette tek başına olmalıdır!"
+    },
+    "footer": {
+        "useful-links": "Faydalı Bağlantılar",
+        "about-us": "Hakkımızda",
+        "all-rights-reserved": "Tüm hakları saklıdır.",
+        "powered-by": "Tarafından Desteklenmektedir",
+        "not-affiliated": "Mojang AB ile bağlantımız yoktur.",
+        "description": "Minecraft: Java Edition ağı, oyunculara etkileyici ve benzersiz bir oyun deneyimi sunar. Bu, ağ için tek resmi mağazadır."
+    },
+    "success": {
+        "title": "TEŞEKKÜRLER!",
+        "thanks": "Sunucu ağımızı desteklediğiniz için çok teşekkür ederiz!",
+        "you-are-the-best": "En iyisisiniz \uD83D\uDE0E",
+        "thanks-title-1": "Sunucu ağımızı desteklediğiniz için teşekkür ederiz!",
+        "thanks-description": "Sayenizde sunucularımızı finanse edebilir, geliştiriciler kiralayabilir ve sunucularımızı her geçen gün daha iyi hale getirmeye devam edebiliriz!",
+        "you-will-receive": "Rütbenizi ve/veya paketlerinizi yaklaşık 30 dakika içinde alacaksınız.",
+        "thanks-description-2": "Bu süre içinde ürünlerinizi alamazsanız, lütfen kullanıcı adınızla ve satın alma belgenizle birlikte bizimle iletişime geçin. Ayrıca doğru Minecraft kullanıcı adınızı gönderdiğinizden emin olun. Durum böyle değilse, lütfen bunu belirtin."
+    },
+    "error": {
+        "oops": "AAAH!",
+        "somethingWrong": "Bir şeyler yanlış gitti veya sunucularımız kapalı!",
+        "youreTheBest": "En iyisisiniz, ama bir şey oldu 🥺",
+        "contactUs": "Lütfen, Discord'dan ya da başka bir şekilde bizimle iletişime geçin!",
+        "serverIssue": "Muhtemelen sunucularımız kapalı ya da ödemenizle ilgili bir sorun var.",
+        "contactWithProof": "Lütfen kullanıcı adınızla ve satın alma belgenizle bizimle iletişime geçin.",
+        "paymentIssue": "Belki ödemeniz 'beklemede' olarak işaretlenmiştir. Ayrıca doğru Minecraft kullanıcı adınızı gönderdiğinizden emin olun. Durum böyle değilse, lütfen bunu belirtin."
+    },
+    "actions": {
+        "please-authorize": "Lütfen, yetkilendirin!",
+        "item-not-found": "Öğe bulunamadı!",
+        "item-out-of-stock": "Öğe tükendi!",
+        "reached-stock-limit": "Bu ürün için limite ulaştınız!",
+        "cant-mix-normal-and-subscription": "Normal ürünlerle abonelik ürünlerini karıştıramazsınız!",
+        "cant-add-more-than-one-subscription": "Sepete birden fazla abonelik ekleyemezsiniz!",
+        "item-removed-from-cart": "Ürün sepetten kaldırıldı!",
+        "item-added-to-cart": "Ürün sepete eklendi!"
+    },
+    "qrCodePayments": {
+        "paymentInstructions": "Ödeme Talimatları",
+        "scanQrCode": "QR Kodunu Tara",
+        "downloadQr": "QR'ı İndir",
+        "waitingForPayment": "Ödeme bekleniyor...",
+        "sepayModal": {
+            "option1": "Seçenek 1: QR Kodunu Tara",
+            "option2": "Seçenek 2: Manuel Banka Transferi",
+            "bank": "Banka:",
+            "accountHolder": "Hesap Sahibi:",
+            "accountNumber": "Hesap Numarası:",
+            "amount": "Tutar:",
+            "paymentReference": "Ödeme Referansı:",
+            "paymentReferenceNote": "Sistemimizin ödemenizi otomatik olarak onaylamasına yardımcı olmak için lütfen ödeme %code% referansını saklayın."
+        },
+        "normalQrModal": {
+            "scanQrCode": "QR Kodunu Tara"
+        }
+    }
+}

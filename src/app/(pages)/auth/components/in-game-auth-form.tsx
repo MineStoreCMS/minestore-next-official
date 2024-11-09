@@ -28,7 +28,7 @@ const authFormSchema = z.object({
         .string({
             invalid_type_error: 'Invalid Username'
         })
-        .regex(/^([*_BP\.]{0,1}[a-zA-Z_]{1}[a-zA-Z0-9_]{3,15}(-[a-zA-Z0-9_]{1,15})?)$/, {
+        .regex(/^([*_BP\.]{0,1}[a-zA-Z0-9_]{3,24}(-[a-zA-Z0-9_]{1,24})?)$/, {
             message: 'Invalid Username'
         })
 });

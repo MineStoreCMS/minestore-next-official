@@ -25,8 +25,9 @@ export const useUser = () => {
             const lastCategory = getCookie('lastCategoryClicked') || '/';
 
             // window.history.replaceState({}, '', lastCategory);
-            router.push(lastCategory);
-            router.refresh();
+            // router.replace(lastCategory);
+            // router.refresh();
+            window.location.replace(lastCategory);
         } catch (error) {
             console.error('Error while logging in:', error);
         } finally {

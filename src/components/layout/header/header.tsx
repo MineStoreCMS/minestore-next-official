@@ -7,7 +7,7 @@ import { TSettings } from '@/types/settings';
 import { HeroSection } from './sections/hero-section';
 import { Container } from '@/components/base/container/container';
 import { convertToLocalCurrency } from '@helpers/convert-to-local-currency';
-import { getCacheBuster } from '@helpers/cache-buster';
+import { getModifiedCacheBuster } from '@helpers/cache-buster';
 import { useCurrencyStore } from '@/stores/currency';
 import { useUserStore } from '@/stores/user';
 import Link from 'next/link';
@@ -23,7 +23,7 @@ type HeaderProps = {
 
 export const Header: FC<HeaderProps> = ({ settings, particles }) => {
     const { user } = useUserStore();
-    const cacheBuster = getCacheBuster();
+    const cacheBuster = getModifiedCacheBuster(5);
 
     return (
         <header className="relative">
@@ -78,9 +78,11 @@ export const Header: FC<HeaderProps> = ({ settings, particles }) => {
                                 <span className="text-base font-bold text-white sm:text-2xl dark:text-accent-foreground">
                                     {user.username}
                                 </span>
-                                <span className="ml-4 text-sm text-accent-foreground/80 sm:text-base">
+                               {settings.is_virtual_currency === 1 && (
+                                 <span className="ml-4 text-sm text-accent-foreground/80 sm:text-base">
                                     {user.virtual_currency} {settings.virtual_currency}
-                                </span>
+                                 </span>
+                               )}
                             </div>
 
                             <div className="relative top-[-45px] hidden h-[200px] overflow-hidden md:block">

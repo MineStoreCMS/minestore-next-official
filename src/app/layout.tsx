@@ -5,6 +5,7 @@ import { fetcher } from '@/api/server/fetcher';
 import type { Metadata } from 'next';
 import { App } from './app';
 import { Montserrat } from 'next/font/google';
+import 'react-quill/dist/quill.snow.css';
 
 const { getSettings } = getEndpoints(fetcher);
 

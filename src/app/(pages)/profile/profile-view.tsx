@@ -39,10 +39,11 @@ export const ProfileView: FC<ProfileViewProps> = ({ profile }) => {
                   height={475}
                   width={198}
                   alt={profile.username}
+                  quality={100}
                />
                <div className="mt-4 rounded bg-accent px-4 text-xl font-bold leading-10 text-accent-foreground">
                   {renderDisplayText(profile.displayname)}
-                  {profile.display_group && (
+                  {profile.display_group !== 0 && profile.display_group && (
                      <div style={{textAlign: 'center'}}>
                         {renderDisplayText(profile.group)}
                      </div>

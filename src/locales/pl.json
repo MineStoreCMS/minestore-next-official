@@ -1,0 +1,188 @@
+{
+  "navbar": {
+    "currency": "Waluta",
+    "language": "Język",
+    "cart": "Koszyk",
+    "cart-hint": "przedmioty za",
+    "not-logged": "Nie zalogowany",
+    "logout": "Wyloguj się",
+    "empty-cart": "Pusty koszyk",
+    "guest": "Gość"
+  },
+  "staff": {
+    "title": "Członkowie Zespołu"
+  },
+  "header": {
+    "players-online": "Gracze Online",
+    "members-online": "Członkowie Online",
+    "donation-goal": "Cel Dotacji",
+    "discord-server": "Serwer Discord",
+    "copied-to-clipboard": "Skopiowano do schowka"
+  },
+  "sidebar": {
+    "home": "Strona główna",
+    "top-donator": "Największy darczyńca",
+    "top-donator-hint": "Najwięcej wpłacił w tym miesiącu",
+    "no-top-donor": "Zostań Wspierającym",
+    "no-top-donor-description": "Zostań wspierającym, aby odblokować ekskluzywne korzyści!"
+  },
+  "card": {
+    "buy": "Dodaj do koszyka",
+    "remove": "Usuń",
+    "subscribe": "Subskrybuj",
+    "unavailable": "Niedostępne",
+    "items-left": "pozostało przedmiotów",
+    "available-for-you": "Dostępne dla ciebie",
+    "featured": "Polecane"
+  },
+  "recent-purchases": "Najnowsze Płatności",
+  "home": {
+    "welcome": "Witamy w oficjalnym sklepie MinestoreCMS!",
+    "welcome-description": "Aby rozpocząć zakupy, wybierz kategorię z paska bocznego. Pamiętaj, że rangi są jednorazową opłatą i są trwałe.",
+    "featured-packages": "POLECANE PAKIETY",
+    "recent-purchases": "Najnowsze Zakupy",
+    "gift-card": "Karta Podarunkowa",
+    "gift-card-not-found": "Karta podarunkowa nie znaleziona!",
+    "gift-card-with-balance": "Karta podarunkowa z saldem:",
+    "gift-card-check": "Sprawdź",
+    "gift-card-placeholder": "Kod Karty",
+    "paypal-balance-banks-all-credit-debit-cards": "Saldo PayPal, Banki, Wszystkie Karty Kredytowe/Debetowe",
+    "paysafecard-amazon-pay-mobile-payments-600-more": "Paysafecard, Visa, Mastercard, +100 Innych.",
+    "all-credit-debit-cards": "Wszystkie Karty Kredytowe i Debetowe",
+    "support-or-questions": "Wsparcie / Pytania",
+    "support-or-questions-description": "Masz pytania przed zakupem? Czekasz ponad 20 minut, a twój pakiet nie dotarł? Zapytaj społeczność lub personel na naszym serwerze Discord! Jesteśmy tu, aby ci pomóc.",
+    "refund-policy": "Polityka Zwrotów",
+    "refund-policy-description": "Mamy ścisłą politykę braku zwrotów. Wszystkie zakupy są ostateczne i nie podlegają zwrotowi. Upewnij się, że kupujesz odpowiedni przedmiot przed dokonaniem płatności.",
+    "payment-processing": "Przetworzenie zakupu może potrwać do 15 minut. Jeśli po 15 minutach nie otrzymasz swojego zakupu, skontaktuj się z naszym zespołem wsparcia na Discordzie."
+  },
+  "auth": {
+    "title": "Zaloguj się",
+    "label": "Nazwa Użytkownika",
+    "placeholder": "Nazwa użytkownika Minecraft",
+    "description": "Aby rozpocząć zakupy, wpisz swoją nazwę użytkownika Minecraft",
+    "submit": "Kontynuuj",
+    "invalid-username": "Nieprawidłowa nazwa użytkownika!",
+    "waiting-for-verification": "Czekamy na weryfikację 🚀",
+    "check-in-game": "Sprawdź czat i zweryfikuj się na serwerze Minecraft!",
+    "confirm": "Musisz potwierdzić, że jesteś właścicielem konta!",
+    "verification-resent": "Kod weryfikacyjny został ponownie wysłany!",
+    "resend-verification": "Wyślij kod weryfikacyjny ponownie",
+    "wait-before-resend": "Poczekaj 10 sekund przed ponownym wysłaniem..."
+  },
+  "checkout": {
+    "title": "Zamówienie",
+    "image": "Obraz",
+    "name": "Nazwa",
+    "price": "Cena",
+    "quantity": "Ilość",
+    "actions": "Akcje",
+    "featured-deal": "Polecana Oferta",
+    "this-item-is-popular-among-us-customers": "Ten przedmiot jest popularny wśród naszych klientów. Spróbuj go!",
+    "empty-cart-title": "Ups! Twój Koszyk jest Pusty",
+    "empty-cart-description": "Wygląda na to, że obecnie nie masz nic w koszyku. Przejrzyj nasz sklep i odkryj niesamowite przedmioty, rangi i inne! Kiedy znajdziesz coś, co ci się spodoba, dodaj to do koszyka i przejdź do zamówienia.",
+    "details": {
+      "your-details": "Twoje Dane",
+      "you-are-buying-as": "Kupujesz jako...",
+      "not-correct": "Niepoprawne?",
+      "full-name": "Pełne imię",
+      "email": "E-mail",
+      "address-line-1": "Linia adresowa 1",
+      "address-line-2": "Linia adresowa 2",
+      "city": "Miasto",
+      "zip-code": "Kod Pocztowy",
+      "state-region": "Stan/Region",
+      "country": "Kraj",
+      "country-placeholder": "Wybierz swój kraj",
+      "no-country-found": "Nie znaleziono kraju"
+    },
+    "you-are-buying-as": "Kupujesz jako",
+    "redeem-coupons-or-gift-cards": "Zrealizuj Kupony lub Karty Podarunkowe",
+    "active-gift": "Aktywna karta podarunkowa",
+    "remove-gift": "Usuń",
+    "redeem": "Zrealizuj",
+    "redeem-referral": "Zrealizuj Kod Polecający",
+    "referral-code": "Kod Polecający",
+    "referral-code-placeholder": "Wpisz kod polecający",
+    "redeemed-referral": "Kod Polecający Zrealizowany",
+    "referral-code-invalid": "Nieprawidłowy kod polecający!",
+    "referral-code-already-redeemed": "Kod polecający już zrealizowany!",
+    "payment-method": "Metoda płatności",
+    "privacy-statement": "Oświadczenie o Prywatności",
+    "privacy-statement-description": "Wszystkie płatności są ostateczne i nie podlegają zwrotowi. Próba chargebacku lub otwarcie sporu PayPal spowoduje trwałe i nieodwracalne zbanowanie na naszych serwerach i w innych sklepach Minecraft.",
+    "agree": "Zgadzam się z warunkami zakupu.",
+    "purchase": "Przejdź do Płatności",
+    "only-one-coupon": "Możesz zrealizować tylko jeden kupon i jedną kartę podarunkową jednocześnie",
+    "coupon-code": "Kod Kuponu",
+    "coupons-redeemed": "Zrealizowane Kupony",
+    "coupon-placeholder": "Wpisz kod kuponu",
+    "coupon-savings": "oszczędności"
+  },
+  "profile": {
+    "title": "Profil",
+    "information": "Informacje",
+    "registration-date": "Data rejestracji:",
+    "money-spent": "Wydane pieniądze:",
+    "recent-purchases": "Najnowsze zakupy"
+  },
+  "notifications": {
+    "not-all-detail-fields-are-filled-in": "Nie wszystkie pola szczegółów są wypełnione!",
+    "accept-privacy-statement": "Zaakceptuj Oświadczenie o Prywatności!",
+    "accept-terms": "Zaakceptuj Warunki!",
+    "subscription-item-should-be-alone-in-the-cart": "Przedmiot subskrypcyjny powinien być sam w koszyku!"
+  },
+  "footer": {
+    "useful-links": "Przydatne Linki",
+    "about-us": "O Nas",
+    "all-rights-reserved": "Wszelkie prawa zastrzeżone.",
+    "powered-by": "Zasilany przez",
+    "not-affiliated": "Nie jesteśmy powiązani z Mojang AB.",
+    "description": "jest siecią Minecraft: Java Edition, która zapewnia graczom angażującą i unikalną rozgrywkę. To jedyny oficjalny sklep sieci."
+  },
+  "success": {
+    "title": "DZIĘKUJEMY!",
+    "thanks": "Bardzo dziękujemy za wsparcie naszej sieci serwerów!",
+    "you-are-the-best": "Jesteś najlepszy \uD83D\uDE0E",
+    "thanks-title-1": "Dziękujemy za wsparcie naszej sieci serwerów!",
+    "thanks-description": "Dzięki tobie możemy opłacić nasze serwery, zatrudnić deweloperów i nadal pracować nad tym, aby nasze serwery stawały się coraz lepsze każdego dnia!",
+    "you-will-receive": "Otrzymasz swoją rangę i/lub pakiety w ciągu około 30 minut.",
+    "thanks-description-2": "Jeśli nie otrzymasz swoich przedmiotów w tym czasie, skontaktuj się z nami, podając swoją nazwę użytkownika i dołączając dowód zakupu. Upewnij się również, że podałeś poprawną nazwę użytkownika Minecraft. Jeśli tak nie jest, wspomnij o tym."
+  },
+  "error": {
+    "oops": "OOPS!",
+    "somethingWrong": "Coś poszło nie tak lub nasze serwery są offline!",
+    "youreTheBest": "Jesteś najlepszy, ale coś się wydarzyło 🥺",
+    "contactUs": "Proszę, skontaktuj się z nami na Discordzie lub inną drogą!",
+    "serverIssue": "Prawdopodobnie nasze serwery są offline lub coś się stało z twoją płatnością.",
+    "contactWithProof": "Skontaktuj się z nami, podając swoją nazwę użytkownika i załączając dowód zakupu.",
+    "paymentIssue": "Może twoja płatność została oznaczona jako 'oczekująca'. Upewnij się także, że podałeś poprawną nazwę użytkownika Minecraft. Jeśli tak nie jest, wspomnij o tym."
+  },
+  "actions": {
+    "please-authorize": "Proszę, autoryzuj się!",
+    "item-not-found": "Przedmiot nie znaleziony!",
+    "item-out-of-stock": "Przedmiot niedostępny!",
+    "reached-stock-limit": "Osiągnąłeś limit tego przedmiotu!",
+    "cant-mix-normal-and-subscription": "Nie można mieszać zwykłych przedmiotów z subskrypcyjnymi!",
+    "cant-add-more-than-one-subscription": "Nie można dodać więcej niż jedną subskrypcję do koszyka!",
+    "item-removed-from-cart": "Przedmiot usunięty z koszyka!",
+    "item-added-to-cart": "Przedmiot dodany do koszyka!"
+  },
+  "qrCodePayments": {
+    "paymentInstructions": "Instrukcje płatności",
+    "scanQrCode": "Skanuj kod QR",
+    "downloadQr": "Pobierz kod QR",
+    "waitingForPayment": "Czekamy na płatność...",
+    "sepayModal": {
+      "option1": "Opcja 1: Skanuj kod QR",
+      "option2": "Opcja 2: Ręczny przelew bankowy",
+      "bank": "Bank:",
+      "accountHolder": "Właściciel Konta:",
+      "accountNumber": "Numer Konta:",
+      "amount": "Kwota:",
+      "paymentReference": "Referencja płatności:",
+      "paymentReferenceNote": "Proszę zachować referencję %code% płatności, aby nasz system mógł automatycznie potwierdzić twoją płatność."
+    },
+    "normalQrModal": {
+      "scanQrCode": "Skanuj kod QR"
+    }
+  }
+}
