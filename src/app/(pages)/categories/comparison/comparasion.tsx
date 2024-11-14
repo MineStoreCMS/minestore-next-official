@@ -21,51 +21,58 @@ type ComparisonProps = {
 };
 
 export const Comparison = ({ categoryItems, category, subCategory }: ComparisonProps) => {
-   const selectedItems = subCategory?.items || categoryItems;
+    const selectedItems = subCategory?.items || categoryItems;
 
-   const subCategoryComparisons = extractSubCategoryComparisons(subCategory) || [];
-   const categoryComparisons = extractCategoryComparisons(category, categoryItems) || [];
+    const subCategoryComparisons = extractSubCategoryComparisons(subCategory) || [];
+    const categoryComparisons = extractCategoryComparisons(category, categoryItems) || [];
 
-   const comparisons = subCategory ? subCategoryComparisons : categoryComparisons;
+    const comparisons = subCategory ? subCategoryComparisons : categoryComparisons;
 
-   return (
-      <Table className="w-full table-fixed text-muted-foreground overflow-x-auto">
-         <TableCaption hidden>A list with all the comparisons</TableCaption>
-         <TableHeader>
-            <TableRow>
-               <TableHead className="sticky left-0 w-[200px] z-10">
-                  <span className="sr-only">Features</span>
-               </TableHead>
-               {selectedItems.map((item) => (
-                  <TableHead key={item.id} className="w-[270px] py-4">
-                     <Card item={item} />
-                  </TableHead>
-               ))}
-            </TableRow>
-         </TableHeader>
-         <TableBody>
-            {comparisons.map((comparison, index) => {
-               const bgColor = index % 2 === 0 ? 'bg-card' : 'bg-muted';
+    return (
+        <Table className="w-full table-fixed overflow-x-auto text-muted-foreground">
+            <TableCaption hidden>A list with all the comparisons</TableCaption>
+            <TableHeader>
+                <TableRow>
+                    <TableHead className="sticky left-0 z-10 w-[200px]">
+                        <span className="sr-only">Features</span>
+                    </TableHead>
+                    {selectedItems.map((item) => (
+                        <TableHead key={item.id} className="w-[270px] py-4">
+                            <Card item={item} />
+                        </TableHead>
+                    ))}
+                </TableRow>
+            </TableHeader>
+            <TableBody>
+                {comparisons.map((comparison, index) => {
+                    const bgColor = index % 2 === 0 ? 'bg-card' : 'bg-accent';
 
-               return (
-                  <TableRow key={comparison.id} className={'divide-x divide-accent even:bg-accent'}>
-                     <TableCell className={`sticky left-0 flex items-center justify-between w-[200px] z-10 ${bgColor}`}>
-                        <p>{comparison.name}</p>
-                        {comparison.description && (
-                           <DescriptionTooltip description={comparison.description} />
-                        )}
-                     </TableCell>
-                     {comparison.comparisons.map((item) => (
-                        <TableCell key={item.comparison_id} className="text-center">
-                           <ComparisonIcon value={item.value} type={comparison.type} />
-                        </TableCell>
-                     ))}
-                  </TableRow>
-               );
-            })}
-         </TableBody>
-      </Table>
-   );
+                    return (
+                        <TableRow
+                            key={comparison.id}
+                            className={
+                                'hover:bg-accent2 group divide-x divide-accent even:bg-accent'
+                            }
+                        >
+                            <TableCell
+                                className={`sticky left-0 z-10 flex w-[200px] items-center justify-between ${bgColor} group-hover:bg-accent2 transition-colors`}
+                            >
+                                <p>{comparison.name}</p>
+                                {comparison.description && (
+                                    <DescriptionTooltip description={comparison.description} />
+                                )}
+                            </TableCell>
+                            {comparison.comparisons.map((item) => (
+                                <TableCell key={item.comparison_id} className="text-center">
+                                    <ComparisonIcon value={item.value} type={comparison.type} />
+                                </TableCell>
+                            ))}
+                        </TableRow>
+                    );
+                })}
+            </TableBody>
+        </Table>
+    );
 };
 
 function ComparisonIcon({ value, type }: { value: string; type: number }) {

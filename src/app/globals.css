@@ -34,6 +34,7 @@
         --muted: 60 4.8% 95.9%;
         --muted-foreground: 25 5.3% 44.7%;
         --accent: 60 4.8% 95.9%;
+        --accent-2: 60 4.8% 90.9%;
         --accent-foreground: 24 9.8% 10%;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 60 9.1% 97.8%;
@@ -69,6 +70,8 @@
 
         --accent: var(--hue) 41% 13%;
         --accent-foreground: var(--hue) 10% 97.5%;
+
+        --accent-2: var(--hue) 41% 15%;
 
         --destructive: 0 62.8% 30.6%;
         --destructive-foreground: var(--hue) 10% 97.5%;
