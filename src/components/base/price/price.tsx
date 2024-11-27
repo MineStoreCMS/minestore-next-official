@@ -76,6 +76,7 @@ export const Price: FC<PriceProps> = ({
     const { currency } = useCurrencyStore();
     const localCurrencyName = currency?.name || '';
     const localPrice = convertToLocalCurrency(value);
+    const localDiscount = discount ? convertToLocalCurrency(discount) : 0;
 
     return (
         <PriceTag
@@ -83,7 +84,7 @@ export const Price: FC<PriceProps> = ({
             price={localPrice}
             currency={localCurrencyName}
             isVirtual={isVirtual}
-            discount={discount}
+            discount={localDiscount}
             className={className}
         />
     );
