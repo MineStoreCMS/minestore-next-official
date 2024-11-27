@@ -77,10 +77,11 @@ export const Price: FC<PriceProps> = ({
     const localCurrencyName = currency?.name || '';
     const localPrice = convertToLocalCurrency(value);
     const localDiscount = discount ? convertToLocalCurrency(discount) : 0;
+    const localOriginalPrice = originalPrice ? convertToLocalCurrency(originalPrice) : 0;
 
     return (
         <PriceTag
-            originalPrice={originalPrice}
+            originalPrice={localOriginalPrice}
             price={localPrice}
             currency={localCurrencyName}
             isVirtual={isVirtual}
