@@ -33,11 +33,11 @@ export const Comparison = ({ categoryItems, category, subCategory }: ComparisonP
             <TableCaption hidden>A list with all the comparisons</TableCaption>
             <TableHeader>
                 <TableRow>
-                    <TableHead className="sticky left-0 z-10 w-[200px]">
+                    <TableHead className="sticky left-0 z-10 w-[200px] h-full">
                         <span className="sr-only">Features</span>
                     </TableHead>
                     {selectedItems.map((item) => (
-                        <TableHead key={item.id} className="w-[270px] py-4">
+                        <TableHead key={item.id} className="w-[270px] py-4 h-full">
                             <Card item={item} />
                         </TableHead>
                     ))}
