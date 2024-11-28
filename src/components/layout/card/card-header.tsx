@@ -38,10 +38,10 @@ export function CardHeader({ item, direction }: CardHeaderProps) {
             />
             <div className={direction === 'col' ? 'text-center' : 'text-center md:text-start'}>
                 {direction === 'row' ? <QuantityBadge item={item} className="mb-2" /> : null}
-                <h3 className="text-xl font-bold text-accent-foreground">{item.name}</h3>
-                <Price
-                    originalPrice={item.original_price}
-                    discount={item.discount}
+                <h3 className="text-xl break-words break-all font-bold text-accent-foreground">{item.name}</h3>
+               <Price
+                  originalPrice={item.original_price}
+                  discount={item.discount}
                     value={price}
                     isVirtual={isPriceVirtual}
                     className={`flex items-center gap-2 text-base font-bold ${direction === 'col' ? 'justify-center' : ''}`}
