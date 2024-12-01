@@ -31,7 +31,7 @@ export const Comparison = ({ categoryItems, category, subCategory }: ComparisonP
 
    const comparisons = subCategory ? subCategoryComparisons : categoryComparisons;
 
-   const tableHeadContainerRef = useRef<HTMLDivElement>(null);
+   const tableHeadContainerRef = useRef<HTMLTableRowElement>(null);
 
    useEffect(() => {
       const adjustHeights = () => {
