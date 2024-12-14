@@ -112,7 +112,7 @@ function SocialIcons({ settings }: { settings: TSettings }) {
     return (
         <div className="flex flex-wrap items-center gap-4">
             {Object.entries(socials).map(([key, value], index) => (
-                <Link key={index} href={value}>
+                <Link key={index} href={value} target="_blank" rel="noopener noreferrer">
                     <ReactSVG
                         src={`/icons/${key}.svg`}
                         width={32}

@@ -75,6 +75,7 @@ export type TSettings = {
         twitter?: string;
         steam?: string;
         tiktok?: string;
+        youtube?: string;
     };
     is_virtual_currency: number;
     virtual_currency: string;
