@@ -30,6 +30,7 @@ import { getCustomPage } from './endpoints/get-custom-page';
 import { removeGiftcard } from './endpoints/remove-giftcard';
 import { acceptReferral } from './endpoints/accept-referral';
 import { removeReferral } from './endpoints/remove-referral';
+import { getPaymentStatus } from './endpoints/check-payment-status';
 
 export const getEndpoints = (fetcher: AxiosInstance) => {
     return {
@@ -62,6 +63,7 @@ export const getEndpoints = (fetcher: AxiosInstance) => {
         setProductVariable: setProductVariable(fetcher),
         setSelectedServer: setSelectedServer(fetcher),
         setCustomPrice: setCustomPrice(fetcher),
-        getCustomPage: getCustomPage(fetcher)
+        getCustomPage: getCustomPage(fetcher),
+        getPaymentStatus: getPaymentStatus(fetcher)
     };
 };
