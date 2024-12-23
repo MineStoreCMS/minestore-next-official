@@ -26,17 +26,17 @@ export const Cart: FC = () => {
                       ? ` / ${cart.virtual_price} ${settings?.virtual_currency}`
                       : ''}
                     {cart?.tax ? (
-                       <span className="flex gap-2">
-                            {' '}
-                          + <Price value={cart.tax}/> (tax)
-                        </span>
+                       <span className="flex gap-2 text-lg">
+                          {' '}
+                          (+ <Price value={cart.tax} /> tax)
+                       </span>
                     ) : (
                        ''
                     )}
                 </span>
             </div>
 
-            <CartItems items={items} />
+           <CartItems items={items} />
         </>
     );
 };
