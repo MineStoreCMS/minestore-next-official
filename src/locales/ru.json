@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "Сканировать QR-код"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Способ оплаты",
+      "checkingPaymentStatus": "Проверка статуса оплаты...",
+      "paymentSuccessful": "Оплата успешно выполнена!",
+      "paymentError": "Платеж не найден или произошла ошибка",
+      "paymentCancelled": "Оплата отменена",
+      "pleaseWaitChecking": "Проверяем оплату, пожалуйста, подождите...",
+      "paymentFailed": "Оплата не удалась",
+      "accessDenied": "Доступ к оплате запрещен",
+      "paymentNotFound": "Платеж не найден",
+      "loginAndTryAgain": "Пожалуйста, войдите в систему и попробуйте снова.",
+      "paymentNotFoundError": "Платеж не найден. Попробуйте снова.",
+      "paymentErrorOccurred": "Произошла ошибка во время обработки платежа. Попробуйте снова.",
+      "paymentCancelledMessage": "Ваш платеж был отменен. Проверьте оплату и попробуйте снова.",
+      "orderNumber": "Заказ №",
+      "orderId": "ID заказа",
+      "orderStatus": "Статус",
+      "orderStatusPaid": "Оплачено",
+      "orderStatusPending": "В ожидании",
+      "price": "Цена",
+      "paymentGateway": "Платежный шлюз",
+      "orderCreatedAt": "Заказ создан",
+      "pleaseWaitMessage": "Пожалуйста, подождите, мы проверяем статус оплаты."
     }
 }

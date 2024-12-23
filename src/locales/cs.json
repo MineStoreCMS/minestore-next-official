@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "Naskenovat QR kód"
         }
+    },
+    "paymentFlow": {
+        "paymentMethod": "Platební metoda",
+        "checkingPaymentStatus": "Kontrola stavu platby...",
+        "paymentSuccessful": "Platba úspěšná!",
+        "paymentError": "Platba nebyla nalezena nebo došlo k chybě",
+        "paymentCancelled": "Platba zrušena",
+        "pleaseWaitChecking": "Kontrolujeme platbu, prosím, čekejte...",
+        "paymentFailed": "Platba selhala",
+        "accessDenied": "Přístup k platbě odepřen",
+        "paymentNotFound": "Platba nebyla nalezena",
+        "loginAndTryAgain": "Prosím, přihlaste se a zkuste to znovu.",
+        "paymentNotFoundError": "Platba nebyla nalezena. Zkuste to prosím znovu.",
+        "paymentErrorOccurred": "Během procesu platby došlo k chybě. Zkuste to prosím znovu.",
+        "paymentCancelledMessage": "Vaše platba byla zrušena. Zkontrolujte prosím způsob platby a zkuste to znovu.",
+        "orderNumber": "Objednávka #",
+        "orderId": "ID objednávky",
+        "orderStatus": "Stav",
+        "orderStatusPaid": "Zaplatil",
+        "orderStatusPending": "Čekající",
+        "price": "Cena",
+        "paymentGateway": "Platební brána",
+        "orderCreatedAt": "Objednávka vytvořena dne",
+        "pleaseWaitMessage": "Čekejte prosím, kontrolujeme stav platby."
     }
 }

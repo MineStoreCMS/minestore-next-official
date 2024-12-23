@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "QR Kodunu Tara"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Ödeme Yöntemi",
+      "checkingPaymentStatus": "Ödeme durumu kontrol ediliyor...",
+      "paymentSuccessful": "Ödeme başarılı!",
+      "paymentError": "Ödeme bulunamadı veya bir hata oluştu",
+      "paymentCancelled": "Ödeme iptal edildi",
+      "pleaseWaitChecking": "Ödeme kontrol ediliyor, lütfen bekleyin...",
+      "paymentFailed": "Ödeme başarısız",
+      "accessDenied": "Ödemeye erişim reddedildi",
+      "paymentNotFound": "Ödeme bulunamadı",
+      "loginAndTryAgain": "Lütfen giriş yapın ve tekrar deneyin.",
+      "paymentNotFoundError": "Ödeme bulunamadı. Lütfen tekrar deneyin.",
+      "paymentErrorOccurred": "Ödeme işlemi sırasında bir hata oluştu. Lütfen tekrar deneyin.",
+      "paymentCancelledMessage": "Ödemeniz iptal edildi. Lütfen ödeme yöntemini kontrol edin ve tekrar deneyin.",
+      "orderNumber": "Sipariş No",
+      "orderId": "Sipariş ID",
+      "orderStatus": "Durum",
+      "orderStatusPaid": "Ödendi",
+      "orderStatusPending": "Beklemede",
+      "price": "Fiyat",
+      "paymentGateway": "Ödeme Geçidi",
+      "orderCreatedAt": "Sipariş Oluşturuldu",
+      "pleaseWaitMessage": "Lütfen bekleyin, ödeme durumu kontrol ediliyor."
     }
 }

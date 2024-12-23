@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "Skann QR-kode"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Betalingsmetode",
+      "checkingPaymentStatus": "Sjekker betalingsstatus...",
+      "paymentSuccessful": "Betaling vellykket!",
+      "paymentError": "Betalingen ble ikke funnet, eller en feil oppsto",
+      "paymentCancelled": "Betalingen ble kansellert",
+      "pleaseWaitChecking": "Sjekker betalingen, vennligst vent...",
+      "paymentFailed": "Betaling mislyktes",
+      "accessDenied": "Tilgang til betalingen ble nektet",
+      "paymentNotFound": "Betalingen ble ikke funnet",
+      "loginAndTryAgain": "Vennligst logg inn og prøv igjen.",
+      "paymentNotFoundError": "Betalingen ble ikke funnet. Vennligst prøv igjen.",
+      "paymentErrorOccurred": "En feil oppsto under betalingsprosessen. Vennligst prøv igjen.",
+      "paymentCancelledMessage": "Betalingen din ble kansellert. Vennligst sjekk betalingsmetoden din og prøv igjen.",
+      "orderNumber": "Bestillingsnummer",
+      "orderId": "Bestillings-ID",
+      "orderStatus": "Status",
+      "orderStatusPaid": "Betalt",
+      "orderStatusPending": "Venter",
+      "price": "Pris",
+      "paymentGateway": "Betalingsløsning",
+      "orderCreatedAt": "Bestilling opprettet",
+      "pleaseWaitMessage": "Vennligst vent, vi sjekker betalingsstatusen."
     }
 }

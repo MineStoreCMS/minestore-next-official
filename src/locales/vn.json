@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "Quét Mã QR"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Phương thức thanh toán",
+      "checkingPaymentStatus": "Đang kiểm tra trạng thái thanh toán...",
+      "paymentSuccessful": "Thanh toán thành công!",
+      "paymentError": "Thanh toán không được tìm thấy hoặc đã xảy ra lỗi",
+      "paymentCancelled": "Thanh toán bị hủy",
+      "pleaseWaitChecking": "Đang kiểm tra thanh toán, vui lòng đợi...",
+      "paymentFailed": "Thanh toán không thành công",
+      "accessDenied": "Từ chối quyền truy cập vào thanh toán",
+      "paymentNotFound": "Không tìm thấy thanh toán",
+      "loginAndTryAgain": "Vui lòng đăng nhập và thử lại.",
+      "paymentNotFoundError": "Thanh toán không được tìm thấy. Vui lòng thử lại.",
+      "paymentErrorOccurred": "Đã xảy ra lỗi trong quá trình thanh toán. Vui lòng thử lại.",
+      "paymentCancelledMessage": "Thanh toán của bạn đã bị hủy. Vui lòng kiểm tra phương thức thanh toán và thử lại.",
+      "orderNumber": "Số đơn hàng",
+      "orderId": "ID đơn hàng",
+      "orderStatus": "Trạng thái",
+      "orderStatusPaid": "Đã thanh toán",
+      "orderStatusPending": "Đang chờ xử lý",
+      "price": "Giá",
+      "paymentGateway": "Cổng thanh toán",
+      "orderCreatedAt": "Đơn hàng được tạo vào",
+      "pleaseWaitMessage": "Vui lòng đợi, chúng tôi đang kiểm tra trạng thái thanh toán."
     }
 }

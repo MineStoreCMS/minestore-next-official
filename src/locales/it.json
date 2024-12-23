@@ -185,5 +185,29 @@
         "normalQrModal": {
             "scanQrCode": "Scansiona Codice QR"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Metodo di pagamento",
+      "checkingPaymentStatus": "Verifica dello stato del pagamento...",
+      "paymentSuccessful": "Pagamento riuscito!",
+      "paymentError": "Pagamento non trovato o si è verificato un errore",
+      "paymentCancelled": "Pagamento annullato",
+      "pleaseWaitChecking": "Controllo del pagamento in corso, attendere prego...",
+      "paymentFailed": "Pagamento non riuscito",
+      "accessDenied": "Accesso al pagamento negato",
+      "paymentNotFound": "Pagamento non trovato",
+      "loginAndTryAgain": "Effettua il login e riprova.",
+      "paymentNotFoundError": "Il pagamento non è stato trovato. Riprova.",
+      "paymentErrorOccurred": "Si è verificato un errore durante il processo di pagamento. Riprova.",
+      "paymentCancelledMessage": "Il tuo pagamento è stato annullato. Verifica il metodo di pagamento e riprova.",
+      "orderNumber": "Ordine n.",
+      "orderId": "ID ordine",
+      "orderStatus": "Stato",
+      "orderStatusPaid": "Pagato",
+      "orderStatusPending": "In sospeso",
+      "price": "Prezzo",
+      "paymentGateway": "Gateway di pagamento",
+      "orderCreatedAt": "Ordine creato il",
+      "pleaseWaitMessage": "Attendere prego, stiamo verificando lo stato del pagamento."
     }
 }

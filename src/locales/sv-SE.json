@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "Skanna QR-kod"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Betalningsmetod",
+      "checkingPaymentStatus": "Kontrollerar betalningsstatus...",
+      "paymentSuccessful": "Betalning lyckades!",
+      "paymentError": "Betalning inte funnen eller ett fel inträffade",
+      "paymentCancelled": "Betalning avbröts",
+      "pleaseWaitChecking": "Kontrollerar betalningen, vänligen vänta...",
+      "paymentFailed": "Betalning misslyckades",
+      "accessDenied": "Åtkomst till betalning nekad",
+      "paymentNotFound": "Betalning inte funnen",
+      "loginAndTryAgain": "Vänligen logga in och försök igen.",
+      "paymentNotFoundError": "Betalningen kunde inte hittas. Försök igen.",
+      "paymentErrorOccurred": "Ett fel inträffade under betalningsprocessen. Försök igen.",
+      "paymentCancelledMessage": "Din betalning har avbrutits. Kontrollera din betalningsmetod och försök igen.",
+      "orderNumber": "Ordernummer",
+      "orderId": "Order-ID",
+      "orderStatus": "Status",
+      "orderStatusPaid": "Betald",
+      "orderStatusPending": "Väntande",
+      "price": "Pris",
+      "paymentGateway": "Betalningsgateway",
+      "orderCreatedAt": "Order skapad den",
+      "pleaseWaitMessage": "Vänligen vänta, vi kontrollerar betalningsstatusen."
     }
 }

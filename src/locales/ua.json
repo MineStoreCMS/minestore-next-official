@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "Сканувати QR-код"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Метод оплати",
+      "checkingPaymentStatus": "Перевірка статусу оплати...",
+      "paymentSuccessful": "Оплата успішна!",
+      "paymentError": "Платіж не знайдено або сталася помилка",
+      "paymentCancelled": "Оплата скасована",
+      "pleaseWaitChecking": "Перевіряємо платіж, будь ласка, зачекайте...",
+      "paymentFailed": "Оплата не вдалася",
+      "accessDenied": "Доступ до сторінки заборонено",
+      "paymentNotFound": "Платіж не знайдено",
+      "loginAndTryAgain": "Будь ласка, увійдіть в систему та спробуйте знову.",
+      "paymentNotFoundError": "Платіж не знайдено. Будь ласка, спробуйте знову.",
+      "paymentErrorOccurred": "Сталася помилка під час обробки платежу. Будь ласка, спробуйте знову.",
+      "paymentCancelledMessage": "Ваша оплата була скасована. Перевірте метод оплати та спробуйте знову.",
+      "orderNumber": "Номер замовлення",
+      "orderId": "ID замовлення",
+      "orderStatus": "Статус",
+      "orderStatusPaid": "Оплачено",
+      "orderStatusPending": "В очікуванні",
+      "price": "Ціна",
+      "paymentGateway": "Спосіб оплати",
+      "orderCreatedAt": "Замовлення створено",
+      "pleaseWaitMessage": "Будь ласка, зачекайте, ми перевіряємо статус оплати."
     }
 }

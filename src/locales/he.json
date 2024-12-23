@@ -185,5 +185,29 @@
         "normalQrModal": {
             "scanQrCode": "סרוק קוד QR"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "שיטת תשלום",
+      "checkingPaymentStatus": "בודק את מצב התשלום...",
+      "paymentSuccessful": "התשלום הצליח!",
+      "paymentError": "התשלום לא נמצא או שגיאה התרחשה",
+      "paymentCancelled": "התשלום בוטל",
+      "pleaseWaitChecking": "בודק את התשלום, אנא המתן...",
+      "paymentFailed": "התשלום נכשל",
+      "accessDenied": "הגישה לתשלום נדחתה",
+      "paymentNotFound": "התשלום לא נמצא",
+      "loginAndTryAgain": "אנא התחבר ונסה שוב.",
+      "paymentNotFoundError": "התשלום לא נמצא. אנא נסה שוב.",
+      "paymentErrorOccurred": "שגיאה התרחשה במהלך תהליך התשלום. אנא נסה שוב.",
+      "paymentCancelledMessage": "התשלום שלך בוטל. אנא בדוק את שיטת התשלום ונסה שוב.",
+      "orderNumber": "מספר הזמנה",
+      "orderId": "מזהה הזמנה",
+      "orderStatus": "סטטוס",
+      "orderStatusPaid": "שולם",
+      "orderStatusPending": "ממתין",
+      "price": "מחיר",
+      "paymentGateway": "שער תשלום",
+      "orderCreatedAt": "הזמנה נוצרה ב-",
+      "pleaseWaitMessage": "אנא המתן, אנו בודקים את מצב התשלום."
     }
 }

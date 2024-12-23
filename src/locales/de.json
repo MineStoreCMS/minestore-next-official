@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "QR-Code scannen"
         }
+    },
+    "paymentFlow": {
+        "paymentMethod": "Zahlungsmethode",
+        "checkingPaymentStatus": "Überprüfung des Zahlungsstatus...",
+        "paymentSuccessful": "Zahlung erfolgreich!",
+        "paymentError": "Zahlung nicht gefunden oder ein Fehler ist aufgetreten",
+        "paymentCancelled": "Zahlung abgebrochen",
+        "pleaseWaitChecking": "Überprüfung der Zahlung, bitte warten...",
+        "paymentFailed": "Zahlung fehlgeschlagen",
+        "accessDenied": "Zugriff auf die Zahlung verweigert",
+        "paymentNotFound": "Zahlung nicht gefunden",
+        "loginAndTryAgain": "Bitte melden Sie sich an und versuchen Sie es erneut.",
+        "paymentNotFoundError": "Die Zahlung wurde nicht gefunden. Bitte versuchen Sie es erneut.",
+        "paymentErrorOccurred": "Ein Fehler ist während des Zahlungsvorgangs aufgetreten. Bitte versuchen Sie es erneut.",
+        "paymentCancelledMessage": "Ihre Zahlung wurde storniert. Bitte überprüfen Sie Ihre Zahlungsmethode und versuchen Sie es erneut.",
+        "orderNumber": "Bestellung #",
+        "orderId": "Bestell-ID",
+        "orderStatus": "Status",
+        "orderStatusPaid": "Bezahlt",
+        "orderStatusPending": "Ausstehend",
+        "price": "Preis",
+        "paymentGateway": "Zahlungsgateway",
+        "orderCreatedAt": "Bestellung erstellt am",
+        "pleaseWaitMessage": "Bitte warten Sie, wir überprüfen den Zahlungsstatus."
     }
 }

@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "Scan QR Code"
         }
+    },
+    "paymentFlow": {
+        "paymentMethod": "Payment Method",
+        "checkingPaymentStatus": "Checking payment status...",
+        "paymentSuccessful": "Payment successful!",
+        "paymentError": "Payment not found or an error occurred",
+        "paymentCancelled": "Payment cancelled",
+        "pleaseWaitChecking": "Checking the payment, please wait...",
+        "paymentFailed": "Payment failed",
+        "accessDenied": "Access denied to the payment",
+        "paymentNotFound": "Payment not found",
+        "loginAndTryAgain": "Please login and try again.",
+        "paymentNotFoundError": "The payment was not found. Please try again.",
+        "paymentErrorOccurred": "An error occurred during the payment process. Please try again.",
+        "paymentCancelledMessage": "Your payment was cancelled. Please check your payment method and try again.",
+        "orderNumber": "Order #",
+        "orderId": "Order ID",
+        "orderStatus": "Status",
+        "orderStatusPaid": "Paid",
+        "orderStatusPending": "Pending",
+        "price": "Price",
+        "paymentGateway": "Payment Gateway",
+        "orderCreatedAt": "Order Created At",
+        "pleaseWaitMessage": "Please wait, we are checking the payment status."
     }
 }

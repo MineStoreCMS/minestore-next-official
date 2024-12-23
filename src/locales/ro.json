@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "Scanați Codul QR"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Metodă de plată",
+      "checkingPaymentStatus": "Se verifică statusul plății...",
+      "paymentSuccessful": "Plata a fost efectuată cu succes!",
+      "paymentError": "Plata nu a fost găsită sau a apărut o eroare",
+      "paymentCancelled": "Plata a fost anulată",
+      "pleaseWaitChecking": "Se verifică plata, vă rugăm să așteptați...",
+      "paymentFailed": "Plata a eșuat",
+      "accessDenied": "Acces refuzat la plată",
+      "paymentNotFound": "Plata nu a fost găsită",
+      "loginAndTryAgain": "Vă rugăm să vă autentificați și să încercați din nou.",
+      "paymentNotFoundError": "Plata nu a fost găsită. Vă rugăm să încercați din nou.",
+      "paymentErrorOccurred": "A apărut o eroare în timpul procesului de plată. Vă rugăm să încercați din nou.",
+      "paymentCancelledMessage": "Plata dumneavoastră a fost anulată. Vă rugăm să verificați metoda de plată și să încercați din nou.",
+      "orderNumber": "Comandă nr.",
+      "orderId": "ID comandă",
+      "orderStatus": "Status",
+      "orderStatusPaid": "Plătit",
+      "orderStatusPending": "În așteptare",
+      "price": "Preț",
+      "paymentGateway": "Gateway de plată",
+      "orderCreatedAt": "Comandă creată la",
+      "pleaseWaitMessage": "Vă rugăm să așteptați, verificăm statusul plății."
     }
 }

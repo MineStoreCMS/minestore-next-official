@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "Scan QR-code"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Betalingsmethode",
+      "checkingPaymentStatus": "Betalingsstatus controleren...",
+      "paymentSuccessful": "Betaling geslaagd!",
+      "paymentError": "Betaling niet gevonden of er is een fout opgetreden",
+      "paymentCancelled": "Betaling geannuleerd",
+      "pleaseWaitChecking": "Bezig met controleren van de betaling, even geduld alstublieft...",
+      "paymentFailed": "Betaling mislukt",
+      "accessDenied": "Toegang tot de betaling geweigerd",
+      "paymentNotFound": "Betaling niet gevonden",
+      "loginAndTryAgain": "Log in en probeer het opnieuw.",
+      "paymentNotFoundError": "De betaling is niet gevonden. Probeer het opnieuw.",
+      "paymentErrorOccurred": "Er is een fout opgetreden tijdens het betalingsproces. Probeer het opnieuw.",
+      "paymentCancelledMessage": "Uw betaling is geannuleerd. Controleer uw betalingsmethode en probeer het opnieuw.",
+      "orderNumber": "Bestelling nr.",
+      "orderId": "Bestel-ID",
+      "orderStatus": "Status",
+      "orderStatusPaid": "Betaald",
+      "orderStatusPending": "In afwachting",
+      "price": "Prijs",
+      "paymentGateway": "Betaalgateway",
+      "orderCreatedAt": "Bestelling aangemaakt op",
+      "pleaseWaitMessage": "Even geduld alstublieft, we controleren de betalingsstatus."
     }
 }

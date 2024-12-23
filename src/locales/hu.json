@@ -184,5 +184,29 @@
         "normalQrModal": {
             "scanQrCode": "QR-kód beolvasása"
         }
+    },
+    "paymentFlow": {
+      "paymentMethod": "Fizetési mód",
+      "checkingPaymentStatus": "Fizetési státusz ellenőrzése...",
+      "paymentSuccessful": "Sikeres fizetés!",
+      "paymentError": "A fizetés nem található, vagy hiba történt",
+      "paymentCancelled": "A fizetés törölve lett",
+      "pleaseWaitChecking": "A fizetés ellenőrzése folyamatban, kérem várjon...",
+      "paymentFailed": "A fizetés sikertelen",
+      "accessDenied": "Hozzáférés megtagadva a fizetéshez",
+      "paymentNotFound": "A fizetés nem található",
+      "loginAndTryAgain": "Kérjük, jelentkezzen be, és próbálja újra.",
+      "paymentNotFoundError": "A fizetés nem található. Kérjük, próbálja újra.",
+      "paymentErrorOccurred": "Hiba történt a fizetési folyamat során. Kérjük, próbálja újra.",
+      "paymentCancelledMessage": "A fizetését törölték. Kérjük, ellenőrizze a fizetési módot, és próbálja újra.",
+      "orderNumber": "Rendelés száma",
+      "orderId": "Rendelés azonosító",
+      "orderStatus": "Állapot",
+      "orderStatusPaid": "Fizetve",
+      "orderStatusPending": "Függőben",
+      "price": "Ár",
+      "paymentGateway": "Fizetési átjáró",
+      "orderCreatedAt": "Rendelés létrehozva",
+      "pleaseWaitMessage": "Kérjük, várjon, ellenőrizzük a fizetés állapotát."
     }
 }
