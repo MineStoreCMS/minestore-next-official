@@ -115,7 +115,9 @@
         "coupon-code": "Kupongkod",
         "coupons-redeemed": "Inlösta kuponger",
         "coupon-placeholder": "Ange kupongkod",
-        "coupon-savings": "besparingar"
+        "coupon-savings": "besparingar",
+        "discord_linked": "Länkad",
+        "discord_not_linked": "Länk Discord"
     },
     "profile": {
         "title": "Profil",

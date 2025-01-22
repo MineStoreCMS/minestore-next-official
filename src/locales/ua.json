@@ -115,7 +115,9 @@
         "coupon-code": "Код купона",
         "coupons-redeemed": "Використані купони",
         "coupon-placeholder": "Введіть код купона",
-        "coupon-savings": "зекономлено"
+        "coupon-savings": "зекономлено",
+        "discord_linked": "Прив'язано",
+        "discord_not_linked": "Прив'язати Discord"
     },
     "profile": {
         "title": "Профіль",

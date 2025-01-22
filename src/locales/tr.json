@@ -115,7 +115,9 @@
         "coupon-code": "Kupon Kodu",
         "coupons-redeemed": "Kullanılan Kuponlar",
         "coupon-placeholder": "Kupon kodunu girin",
-        "coupon-savings": "tasarruf"
+        "coupon-savings": "tasarruf",
+        "discord_linked": "Bağlantılı",
+        "discord_not_linked": "Bağlantı Discord"
     },
     "profile": {
         "title": "Profil",

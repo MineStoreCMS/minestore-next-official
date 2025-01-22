@@ -115,7 +115,9 @@
         "coupon-code": "Kuponkode",
         "coupons-redeemed": "Indløste kuponer",
         "coupon-placeholder": "Indtast kuponkode",
-        "coupon-savings": "besparelser"
+        "coupon-savings": "besparelser",
+        "discord_linked": "Forbundet",
+        "discord_not_linked": "Link til Discord"
     },
     "profile": {
         "title": "Profil",

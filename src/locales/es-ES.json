@@ -115,7 +115,9 @@
         "coupon-code": "Código de Cupón",
         "coupons-redeemed": "Cupones Canjeados",
         "coupon-placeholder": "Ingresa el código de cupón",
-        "coupon-savings": "ahorro"
+        "coupon-savings": "ahorro",
+        "discord_linked": "Enlace",
+        "discord_not_linked": "Enlace Discordia"
     },
     "profile": {
         "title": "Perfil",

@@ -115,7 +115,9 @@
         "coupon-code": "קוד קופון",
         "coupons-redeemed": "קופונים ממומשים",
         "coupon-placeholder": "הזן קוד קופון",
-        "coupon-savings": "חיסכון"
+        "coupon-savings": "חיסכון",
+        "discord_linked": "צָמוּד",
+        "discord_not_linked": "קישור דיסקורד"
     },
     "profile": {
         "title": "פרופיל",

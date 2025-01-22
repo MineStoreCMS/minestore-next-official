@@ -115,7 +115,9 @@
         "coupon-code": "Kód kupónu",
         "coupons-redeemed": "Vyměněné kupóny",
         "coupon-placeholder": "Zadejte kód kupónu",
-        "coupon-savings": "úspory"
+        "coupon-savings": "úspory",
+        "discord_linked": "Propojené",
+        "discord_not_linked": "Propojit s Discordem"
     },
     "profile": {
         "title": "Profil",

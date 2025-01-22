@@ -115,7 +115,9 @@
         "coupon-code": "Mã phiếu giảm giá",
         "coupons-redeemed": "Phiếu giảm giá đã được đổi",
         "coupon-placeholder": "Nhập mã phiếu giảm giá",
-        "coupon-savings": "tiết kiệm"
+        "coupon-savings": "tiết kiệm",
+        "discord_linked": "Liên kết",
+        "discord_not_linked": "Liên kết Discord"
     },
     "profile": {
         "title": "Hồ sơ",

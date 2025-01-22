@@ -13,4 +13,5 @@ export type TCheckoutRequest = {
     };
     termsAndConditions: boolean;
     privacyPolicy: boolean;
+    discordId?: string | null;
 };

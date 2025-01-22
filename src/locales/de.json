@@ -115,7 +115,9 @@
         "coupon-code": "Gutscheincode",
         "coupons-redeemed": "Eingelöste Gutscheine",
         "coupon-placeholder": "Gutscheincode eingeben",
-        "coupon-savings": "Ersparnis"
+        "coupon-savings": "Ersparnis",
+        "discord_linked": "Verknüpft",
+        "discord_not_linked": "Link Diskord"
     },
     "profile": {
         "title": "Profil",

@@ -64,6 +64,7 @@ export type TSettings = {
     }>;
     discord_url: string;
     discord_id: string;
+    discord_sync: number;
     is_ref: number;
     block_1: string;
     block_2: string;

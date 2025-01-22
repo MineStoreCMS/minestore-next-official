@@ -116,7 +116,9 @@
         "coupon-code": "Código do Cupom",
         "coupons-redeemed": "Cupons Resgatados",
         "coupon-placeholder": "Digite o código do cupom",
-        "coupon-savings": "economia"
+        "coupon-savings": "economia",
+        "discord_linked": "Vinculados",
+        "discord_not_linked": "Link Discord"
     },
     "profile": {
         "title": "Perfil",

@@ -115,7 +115,9 @@
         "coupon-code": "Kuponkód",
         "coupons-redeemed": "Beváltott kuponok",
         "coupon-placeholder": "Kuponkód megadása",
-        "coupon-savings": "megtakarítás"
+        "coupon-savings": "megtakarítás",
+        "discord_linked": "Kapcsolódó",
+        "discord_not_linked": "Link Discord"
     },
     "profile": {
         "title": "Profil",

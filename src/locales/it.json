@@ -115,7 +115,9 @@
         "coupon-code": "Codice Coupon",
         "coupons-redeemed": "Coupon Riscattati",
         "coupon-placeholder": "Inserisci il codice coupon",
-        "coupon-savings": "risparmio"
+        "coupon-savings": "risparmio",
+        "discord_linked": "Collegato",
+        "discord_not_linked": "Link Discord"
     },
     "profile": {
         "title": "Profilo",

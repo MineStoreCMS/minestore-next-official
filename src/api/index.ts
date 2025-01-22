@@ -31,6 +31,7 @@ import { removeGiftcard } from './endpoints/remove-giftcard';
 import { acceptReferral } from './endpoints/accept-referral';
 import { removeReferral } from './endpoints/remove-referral';
 import { getPaymentStatus } from './endpoints/check-payment-status';
+import { getDiscordAuth } from '@/api/endpoints/discord-auth';
 
 export const getEndpoints = (fetcher: AxiosInstance) => {
     return {
@@ -64,6 +65,7 @@ export const getEndpoints = (fetcher: AxiosInstance) => {
         setSelectedServer: setSelectedServer(fetcher),
         setCustomPrice: setCustomPrice(fetcher),
         getCustomPage: getCustomPage(fetcher),
-        getPaymentStatus: getPaymentStatus(fetcher)
+        getPaymentStatus: getPaymentStatus(fetcher),
+        getDiscordAuth: getDiscordAuth(fetcher)
     };
 };

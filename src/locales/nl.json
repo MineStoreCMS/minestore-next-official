@@ -115,7 +115,9 @@
         "coupon-code": "Couponcode",
         "coupons-redeemed": "Ingewisselde Coupons",
         "coupon-placeholder": "Voer couponcode in",
-        "coupon-savings": "besparing"
+        "coupon-savings": "besparing",
+        "discord_linked": "Gekoppeld",
+        "discord_not_linked": "Link Discord"
     },
     "profile": {
         "title": "Profiel",

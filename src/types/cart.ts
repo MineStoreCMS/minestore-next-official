@@ -25,6 +25,7 @@ export type TCart = {
         updated_at: string;
         user_id: number;
         virtual_price: number;
+        discord_sync: 0 | 1;
     };
     items: Array<{
         name: string;

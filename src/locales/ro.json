@@ -115,7 +115,9 @@
         "coupon-code": "Cod cupon",
         "coupons-redeemed": "Cupoane răscumpărate",
         "coupon-placeholder": "Introduceți codul cuponului",
-        "coupon-savings": "economii"
+        "coupon-savings": "economii",
+        "discord_linked": "Asociat",
+        "discord_not_linked": "Asociază Discord-ul"
     },
     "profile": {
         "title": "Profil",

@@ -115,7 +115,9 @@
         "coupon-code": "Kupongkode",
         "coupons-redeemed": "Løste inn kuponger",
         "coupon-placeholder": "Skriv inn kupongkode",
-        "coupon-savings": "besparelser"
+        "coupon-savings": "besparelser",
+        "discord_linked": "Koblet",
+        "discord_not_linked": "Link Discord"
     },
     "profile": {
         "title": "Profil",

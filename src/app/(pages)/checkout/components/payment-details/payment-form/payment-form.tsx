@@ -15,6 +15,7 @@ import { PaymentFormSubmit } from './payment-form-submit';
 import { loadScript } from '@/lib/utils';
 import { notify } from '@/core/notifications';
 import { QrDetailsProps, QrPaymentModal } from '../../qr-payment-modal';
+import { getCookie } from 'cookies-next';
 
 const { checkout } = getEndpoints(fetcher);
 
@@ -60,12 +61,15 @@ export function PaymentForm() {
         try {
             setLoading(true);
 
+            const discordId = getCookie('discord_id');
+
             const response = await checkout({
                 currency: currency?.name || 'USD',
                 paymentMethod: paymentMethod || 'PayPal',
                 details: data.details,
                 termsAndConditions: data.termsAndConditions,
-                privacyPolicy: data.privacyPolicy
+                privacyPolicy: data.privacyPolicy,
+                discordId: discordId || null
             });
 
             if (!response.success) {
