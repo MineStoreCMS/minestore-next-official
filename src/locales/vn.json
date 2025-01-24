@@ -173,6 +173,8 @@
         "scanQrCode": "Quét Mã QR",
         "downloadQr": "Tải về QR",
         "waitingForPayment": "Đang chờ thanh toán...",
+        "copyQrCode": "Sao chép Mã QR",
+        "qrCodeCopied": "Đã sao chép Mã QR!",
         "sepayModal": {
             "option1": "Tùy chọn 1: Quét Mã QR",
             "option2": "Tùy chọn 2: Chuyển khoản Ngân hàng Thủ công",

@@ -173,6 +173,8 @@
         "scanQrCode": "QR Kodunu Tara",
         "downloadQr": "QR'ı İndir",
         "waitingForPayment": "Ödeme bekleniyor...",
+        "copyQrCode": "QR Kodunu Kopyala",
+        "qrCodeCopied": "QR kodu panoya kopyalandı",
         "sepayModal": {
             "option1": "Seçenek 1: QR Kodunu Tara",
             "option2": "Seçenek 2: Manuel Banka Transferi",

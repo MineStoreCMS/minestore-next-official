@@ -173,6 +173,8 @@
         "scanQrCode": "Skann QR-kode",
         "downloadQr": "Last ned QR",
         "waitingForPayment": "Venter på betaling...",
+        "copyQrCode": "Kopier QR-kode",
+        "qrCodeCopied": "QR-kode kopiert til utklippstavlen",
         "sepayModal": {
             "option1": "Alternativ 1: Skann QR-kode",
             "option2": "Alternativ 2: Manuell Bankoverføring",

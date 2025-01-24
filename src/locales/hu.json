@@ -173,6 +173,8 @@
         "scanQrCode": "QR-kód beolvasása",
         "downloadQr": "QR letöltése",
         "waitingForPayment": "Várakozás a fizetésre...",
+        "copyQrCode": "QR-kód másolása",
+        "qrCodeCopied": "QR-kód másolása a vágólapra",
         "sepayModal": {
             "option1": "1. opció: QR-kód beolvasása",
             "option2": "2. opció: Manuális banki átutalás",

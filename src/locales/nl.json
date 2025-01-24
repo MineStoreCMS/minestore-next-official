@@ -173,6 +173,8 @@
         "scanQrCode": "Scan QR-code",
         "downloadQr": "Download QR",
         "waitingForPayment": "Wachten op betaling...",
+        "copyQrCode": "QR-code kopiëren",
+        "qrCodeCopied": "QR-code gekopieerd naar klembord",
         "sepayModal": {
             "option1": "Optie 1: Scan QR-code",
             "option2": "Optie 2: Handmatige Overschrijving",

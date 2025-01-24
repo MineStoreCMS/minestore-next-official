@@ -174,6 +174,8 @@
         "scanQrCode": "סרוק קוד QR",
         "downloadQr": "הורד QR",
         "waitingForPayment": "ממתין לתשלום...",
+        "copyQrCode": "העתק QR-Code",
+        "qrCodeCopied": "קוד QR הועתק ללוח",
         "sepayModal": {
             "option1": "אפשרות 1: סרוק קוד QR",
             "option2": "אפשרות 2: העברה בנקאית ידנית",

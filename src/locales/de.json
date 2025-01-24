@@ -173,6 +173,8 @@
         "scanQrCode": "QR-Code scannen",
         "downloadQr": "QR herunterladen",
         "waitingForPayment": "Warten auf Zahlung...",
+        "copyQrCode": "QR-Code kopieren",
+        "qrCodeCopied": "QR-Code in die Zwischenablage kopiert",
         "sepayModal": {
             "option1": "Option 1: QR-Code scannen",
             "option2": "Option 2: Manuelle Banküberweisung",

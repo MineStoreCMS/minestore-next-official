@@ -2,60 +2,146 @@
 
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
-import { DownloadCloud, Loader2 } from 'lucide-react';
+import { DownloadCloud, Loader2, Clipboard } from 'lucide-react';
 import { FC, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { fetcher } from '@/api/client/fetcher';
 import { useTranslations } from 'next-intl';
+import { notify } from '@/core/notifications';
 
 export type QrDetailsProps = {
-    show: boolean;
-    onHide(): void;
-    details: {
-        payment_method: string;
-        sepay_bank?: string | null;
-        sepay_bank_owner?: string | null;
-        sepay_bank_account?: string | null;
-        sepay_paycode_prefix?: string | null;
-        payment_price?: string | null;
-        payment_id?: number | null;
-        qrcode: string;
-    };
+   show: boolean;
+   onHide(): void;
+   details: {
+      payment_method: string;
+      sepay_bank?: string | null;
+      sepay_bank_owner?: string | null;
+      sepay_bank_account?: string | null;
+      sepay_paycode_prefix?: string | null;
+      payment_price?: string | null;
+      payment_id?: number | null;
+      qrcode: string;
+      qr_code_base64?: string | null;
+   };
 };
 
 const downloadQR = async (url: string) => {
-    if (!url) return;
-    try {
-        const response = await fetch(url);
-        const blob = await response.blob();
-        const urlObject = window.URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = urlObject;
-        link.download = 'qrcode.png';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        window.URL.revokeObjectURL(urlObject);
-    } catch (error) {
-        console.error('Error downloading the QR code:', error);
-    }
+   if (!url) return;
+   try {
+      const response = await fetch(url);
+      const blob = await response.blob();
+      const urlObject = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = urlObject;
+      link.download = 'qrcode.png';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(urlObject);
+   } catch (error) {
+      console.error('Error downloading the QR code:', error);
+   }
 };
 
 export const QrPaymentModal: FC<QrDetailsProps> = ({ show, onHide, details }) => {
-    const isSePay = details.payment_method.toLocaleLowerCase() === 'sepay';
+   const isSePay = details.payment_method.toLowerCase() === 'sepay';
+   const isPix = details.payment_method.toLowerCase() === 'pix';
 
-    return (
-        <Dialog open={show} onOpenChange={onHide}>
-            <DialogContent
-                className={cn('w-full max-w-[500px] p-0', {
-                    'max-w-[820px]': isSePay
-                })}
-            >
-                {isSePay ? <SepayModal details={details} /> : <NormalQRModal details={details} />}
-            </DialogContent>
-        </Dialog>
-    );
+   return (
+      <Dialog open={show} onOpenChange={onHide}>
+         <DialogContent
+            className={cn('w-full max-w-[500px] p-0', {
+               'max-w-[820px]': isSePay
+            })}
+         >
+            {isSePay ? <SepayModal details={details} /> :
+               isPix ? <PixModal details={details} /> :
+                  <NormalQRModal details={details} />}
+         </DialogContent>
+      </Dialog>
+   );
 };
+
+function PixModal({ details }: { details: QrDetailsProps['details'] }) {
+   const t = useTranslations('qrCodePayments');
+   const paymentId = details.payment_id;
+
+   const handleCopyQrCode = async () => {
+      try {
+         await window.navigator.clipboard.writeText(details.qrcode);
+         notify(t('qrCodeCopied'), 'green');
+      } catch (error) {
+         notify('Error copying QR code', 'red');
+         console.error('Error copying QR code:', error);
+      }
+   };
+
+   useEffect(() => {
+      if (!paymentId) return;
+
+      const repeatCheck = setInterval(async () => {
+         try {
+            const res = await fetcher.post('/payments/handle/pix/check', {
+               order_id: paymentId
+            });
+            if (res.data.success === true && res.data.status === 'approved') {
+               clearInterval(repeatCheck);
+               window.location.href = '/success';
+            }
+         } catch (error) {
+            console.error('Error checking Pix payment:', error);
+         }
+      }, 3000);
+
+      const timeoutId = setTimeout(() => {
+         clearInterval(repeatCheck);
+         console.error('Pix payment check timeout');
+      }, 600000);
+
+      return () => {
+         clearInterval(repeatCheck);
+         clearTimeout(timeoutId);
+      };
+   }, [paymentId]);
+
+   return (
+      <div className="flex flex-col items-center space-y-6 p-6">
+         <h2 className="text-2xl font-bold text-card-foreground">{t('paymentInstructions')}</h2>
+         <div className="w-full">
+            <div>
+               <h3 className="mb-4 text-center text-base font-semibold text-card-foreground">
+                  {t('scanQrCode')}
+               </h3>
+               <div className="flex flex-col items-center space-y-4">
+                  {(details.qrcode || details.qr_code_base64) ? (
+                     // eslint-disable-next-line @next/next/no-img-element
+                     <img
+                        src={`data:image/png;base64,${details.qr_code_base64}`}
+                        alt="Pix QR Code"
+                        width="300"
+                        height="300"
+                        className="rounded-md"
+                     />
+                  ) : null}
+
+                  <Button
+                     variant="outline"
+                     size="sm"
+                     onClick={handleCopyQrCode}
+                  >
+                     <Clipboard className="mr-2" />
+                     {t('copyQrCode')}
+                  </Button>
+                  <div className="flex items-center space-x-2 text-muted-foreground">
+                     <Loader2 className="h-5 w-5 animate-spin" />
+                     <span>{t('waitingForPayment')}</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   );
+}
 
 function SepayModal({ details }: { details: QrDetailsProps['details'] }) {
     const t = useTranslations('qrCodePayments');

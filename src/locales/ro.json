@@ -173,6 +173,8 @@
         "scanQrCode": "Scanați Codul QR",
         "downloadQr": "Descărcați QR",
         "waitingForPayment": "Așteptând plata...",
+        "copyQrCode": "Copierea codului QR",
+        "qrCodeCopied": "Codul QR copiat în clipboard",
         "sepayModal": {
             "option1": "Opțiunea 1: Scanați Codul QR",
             "option2": "Opțiunea 2: Transfer Bancar Manual",

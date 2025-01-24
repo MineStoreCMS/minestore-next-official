@@ -173,6 +173,8 @@
         "scanQrCode": "Сканувати QR-код",
         "downloadQr": "Завантажити QR",
         "waitingForPayment": "Очікування оплати...",
+        "copyQrCode": "Скопіювати QR-код",
+        "qrCodeCopied": "QR-код скопійовано",
         "sepayModal": {
             "option1": "Варіант 1: Сканувати QR-код",
             "option2": "Варіант 2: Ручний банківський переказ",

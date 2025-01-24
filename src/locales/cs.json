@@ -173,6 +173,8 @@
         "scanQrCode": "Naskenovat QR kód",
         "downloadQr": "Stáhnout QR",
         "waitingForPayment": "Čeká se na platbu...",
+        "copyQrCode": "Kopírování kódu QR",
+        "qrCodeCopied": "Zkopírování QR-kódu do schránky",
         "sepayModal": {
             "option1": "Možnost 1: Naskenovat QR kód",
             "option2": "Možnost 2: Manuální bankovní převod",
