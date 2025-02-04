@@ -23,7 +23,7 @@ type TProductListContainer = {
 };
 
 export default async function Page({ params }: { params: { name: string[] } }) {
-    const [categoryPath] = params.name;
+   const categoryPath = params.name.join('/');
 
     const response = await getCategoryDetails(categoryPath).catch((error) => {
         console.error('Error fetching category details:', error);
