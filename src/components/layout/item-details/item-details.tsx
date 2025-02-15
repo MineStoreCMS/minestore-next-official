@@ -48,7 +48,7 @@ export const ItemDetails: FC<DetailsProps> = ({ show, onHide, id, route }) => {
                 <DialogHeader className="border-b border-accent p-4 py-6">
                     <DialogTitle className="text-card-foreground">{details?.name}</DialogTitle>
                 </DialogHeader>
-                <ScrollArea className="prose max-h-[500px] w-full p-4">
+                <ScrollArea className="ql-editor prose max-h-[500px] w-full p-4">
                     <div
                         className="prose w-full overflow-y-auto text-muted-foreground prose-headings:text-accent-foreground"
                         dangerouslySetInnerHTML={{ __html: details?.description || '' }}
