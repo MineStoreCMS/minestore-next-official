@@ -54,6 +54,8 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
                notify(response.message ?? 'Unexpected error. Try again later.', 'red')
             }
 
+            // Adding a delay to prevent the cart from updating too quickly with not final values
+            await new Promise(resolve => setTimeout(resolve, 500));
             const cart = await getCart();
             setCart(cart);
         } catch (e) {
