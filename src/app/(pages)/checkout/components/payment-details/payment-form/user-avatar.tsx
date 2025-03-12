@@ -13,7 +13,7 @@ export function UserAvatar() {
             <span className="font-medium">{t('you-are-buying-as')}</span>
             <Image
                 src={user.avatar}
-                className="mt-4 h-auto w-auto flex-1"
+                className="mt-4 h-auto w-auto mx-auto flex-1"
                 width={128}
                 height={308}
                 alt=""
