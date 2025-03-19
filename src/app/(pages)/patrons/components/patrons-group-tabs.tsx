@@ -1,23 +1,25 @@
 "use client";
 
-import { useEffect, useState, useRef, useMemo } from 'react';
+import { useEffect, useState, useRef, useMemo, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 import PatronsCategory from './patrons-category';
 
 export default function PatronsGroupTabs({
-                                            patronGroups,
-                                            topPatrons,
-                                            currencyCode,
-                                         }: {
+   patronGroups,
+   topPatrons,
+   currencyCode,
+}: {
    patronGroups: [string, string[]][];
    topPatrons?: { username: string; amount: number }[];
    currencyCode?: string;
 }) {
-   const sortedGroups = [...patronGroups].sort((a, b) => {
-      const amountA = parseFloat(a[0]);
-      const amountB = parseFloat(b[0]);
-      return amountA - amountB;
-   });
+   const sortedGroups = useMemo(() => {
+      return [...patronGroups].sort((a, b) => {
+         const amountA = parseFloat(a[0]);
+         const amountB = parseFloat(b[0]);
+         return amountA - amountB;
+      });
+   }, [patronGroups]);
 
    const t = useTranslations('patrons');
 
@@ -45,18 +47,20 @@ export default function PatronsGroupTabs({
       [topPatrons, sortedGroups, currencyCode, t]
    );
 
-   const [activeTab, setActiveTab] = useState<string>(
-      topPatrons && topPatrons.length > 0 ? 'top' : sortedGroups[0]?.[0] || 'top'
-   );
+   const [activeTab, setActiveTab] = useState<string>(() => {
+      return topPatrons && topPatrons.length > 0 ? 'top' : sortedGroups[0]?.[0] || 'top';
+   });
+
    const tabRefs = useRef<(HTMLDivElement | null)[]>([]);
    const [underlineStyle, setUnderlineStyle] = useState<{ left: number; width: number }>({
       left: 0,
       width: 0,
    });
 
-   useEffect(() => {
+   const updateUnderline = useCallback(() => {
       const activeIndex = tabOptions.findIndex((tab) => tab.value === activeTab);
       const activeTabElement = tabRefs.current[activeIndex];
+
       if (activeTabElement) {
          const { offsetLeft, offsetWidth } = activeTabElement;
          setUnderlineStyle({
@@ -65,6 +69,19 @@ export default function PatronsGroupTabs({
          });
       }
    }, [activeTab, tabOptions]);
+
+   useEffect(() => {
+      updateUnderline();
+
+      window.addEventListener('resize', updateUnderline);
+      return () => {
+         window.removeEventListener('resize', updateUnderline);
+      };
+   }, [updateUnderline]);
+
+   const handleTabClick = (value: string) => {
+      setActiveTab(value);
+   };
 
    return (
       <div className="w-full">
@@ -79,7 +96,7 @@ export default function PatronsGroupTabs({
                      }}
                   >
                      <button
-                        onClick={() => setActiveTab(tab.value)}
+                        onClick={() => handleTabClick(tab.value)}
                         className="px-4 py-1 font-bold transition-all duration-200 text-white hover:opacity-90"
                      >
                         <div className="flex flex-col items-center">
