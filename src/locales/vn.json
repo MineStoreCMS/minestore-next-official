@@ -212,5 +212,17 @@
       "paymentGateway": "Cổng thanh toán",
       "orderCreatedAt": "Đơn hàng được tạo vào",
       "pleaseWaitMessage": "Vui lòng đợi, chúng tôi đang kiểm tra trạng thái thanh toán."
+    },
+    "top-patrons": "Top Patrons",
+    "patrons": {
+      "patrons": "Patrons",
+      "top-patrons": "Top Patrons",
+      "patron": "Patron",
+      "top": "Top",
+      "show-more": "Show More",
+      "show-less": "Show Less",
+      "spent": "Spent",
+      "error-loading": "Error Loading Patrons",
+      "unable-to-load": "Unable to load patrons at this time. Please try again later."
     }
 }

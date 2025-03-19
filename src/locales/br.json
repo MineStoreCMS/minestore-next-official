@@ -212,5 +212,17 @@
         "paymentGateway": "Gateway de Pagamento",
         "orderCreatedAt": "Pedido Criado Em",
         "pleaseWaitMessage": "Por favor, aguarde, estamos verificando o status do pagamento."
+    },
+    "top-patrons": "Top Patronos",
+    "patrons": {
+      "patrons": "Patronos",
+      "top-patrons": "Top Patronos",
+      "patron": "Patrono",
+      "top": "Top",
+      "show-more": "Mostrar Mais",
+      "show-less": "Mostrar Menos",
+      "spent": "Gasto",
+      "error-loading": "Erro ao Carregar Patronos",
+      "unable-to-load": "Não foi possível carregar os patronos no momento. Por favor, tente novamente mais tarde."
     }
 }

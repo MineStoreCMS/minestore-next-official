@@ -212,5 +212,17 @@
         "paymentGateway": "Betalingsgateway",
         "orderCreatedAt": "Ordre oprettet den",
         "pleaseWaitMessage": "Vent venligst, vi kontrollerer betalingsstatus."
+    },
+    "top-patrons": "Topbidragydere",
+    "patrons": {
+      "patrons": "Bidragydere",
+      "top-patrons": "Topbidragydere",
+      "patron": "Bidragyder",
+      "top": "Top",
+      "show-more": "Vis Mere",
+      "show-less": "Vis Mindre",
+      "spent": "Brugt",
+      "error-loading": "Fejl ved indlæsning af bidragydere",
+      "unable-to-load": "Kan ikke indlæse bidragydere i øjeblikket. Prøv venligst igen senere."
     }
 }

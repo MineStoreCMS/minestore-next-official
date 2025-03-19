@@ -212,5 +212,17 @@
       "paymentGateway": "Betalningsgateway",
       "orderCreatedAt": "Order skapad den",
       "pleaseWaitMessage": "Vänligen vänta, vi kontrollerar betalningsstatusen."
+    },
+    "top-patrons": "Toppdonatorer",
+    "patrons": {
+      "patrons": "Donatorer",
+      "top-patrons": "Toppdonatorer",
+      "patron": "Donator",
+      "top": "Topp",
+      "show-more": "Visa Mer",
+      "show-less": "Visa Mindre",
+      "spent": "Spenderat",
+      "error-loading": "Fel vid inläsning av donatorer",
+      "unable-to-load": "Det går inte att ladda donatorer just nu. Försök igen senare."
     }
 }

@@ -212,5 +212,17 @@
     "paymentGateway": "Bramka płatności",
     "orderCreatedAt": "Zamówienie utworzone",
     "pleaseWaitMessage": "Proszę czekać, sprawdzamy status płatności."
+  },
+  "top-patrons": "Najwięksi Patroni",
+  "patrons": {
+    "patrons": "Patroni",
+    "top-patrons": "Najwięksi Patroni",
+    "patron": "Patron",
+    "top": "Największy",
+    "show-more": "Pokaż Więcej",
+    "show-less": "Pokaż Mniej",
+    "spent": "Wydane",
+    "error-loading": "Błąd ładowania patronów",
+    "unable-to-load": "Nie można załadować patronów w tej chwili. Spróbuj ponownie później."
   }
 }

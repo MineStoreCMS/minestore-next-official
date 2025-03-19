@@ -212,5 +212,17 @@
       "paymentGateway": "Fizetési átjáró",
       "orderCreatedAt": "Rendelés létrehozva",
       "pleaseWaitMessage": "Kérjük, várjon, ellenőrizzük a fizetés állapotát."
+    },
+    "top-patrons": "Legfőbb Támogatók",
+    "patrons": {
+      "patrons": "Támogatók",
+      "top-patrons": "Legfőbb Támogatók",
+      "patron": "Támogató",
+      "top": "Legfőbb",
+      "show-more": "Több Megjelenítése",
+      "show-less": "Kevesebb Megjelenítése",
+      "spent": "Elköltött Összeg",
+      "error-loading": "Hiba a Támogatók Betöltésekor",
+      "unable-to-load": "A támogatók betöltése jelenleg nem lehetséges. Kérlek, próbáld meg később újra."
     }
 }

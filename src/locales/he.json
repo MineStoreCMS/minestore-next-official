@@ -213,5 +213,17 @@
       "paymentGateway": "שער תשלום",
       "orderCreatedAt": "הזמנה נוצרה ב-",
       "pleaseWaitMessage": "אנא המתן, אנו בודקים את מצב התשלום."
+    },
+    "top-patrons": "תומכים מובילים",
+    "patrons": {
+      "patrons": "תומכים",
+      "top-patrons": "תומכים מובילים",
+      "patron": "תומך",
+      "top": "מוביל",
+      "show-more": "הצג עוד",
+      "show-less": "הצג פחות",
+      "spent": "הוצא",
+      "error-loading": "שגיאה בטעינת התומכים",
+      "unable-to-load": "לא ניתן לטעון את רשימת התומכים כעת. אנא נסה שוב מאוחר יותר."
     }
 }

@@ -212,5 +212,17 @@
       "paymentGateway": "Betalingsløsning",
       "orderCreatedAt": "Bestilling opprettet",
       "pleaseWaitMessage": "Vennligst vent, vi sjekker betalingsstatusen."
+    },
+    "top-patrons": "Toppbidragsytere",
+    "patrons": {
+      "patrons": "Bidragsytere",
+      "top-patrons": "Toppbidragsytere",
+      "patron": "Bidragsyter",
+      "top": "Topp",
+      "show-more": "Vis Mer",
+      "show-less": "Vis Mindre",
+      "spent": "Brukt",
+      "error-loading": "Feil ved lasting av bidragsytere",
+      "unable-to-load": "Kan ikke laste inn bidragsytere akkurat nå. Vennligst prøv igjen senere."
     }
 }

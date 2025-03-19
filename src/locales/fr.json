@@ -213,5 +213,17 @@
       "paymentGateway": "Passerelle de paiement",
       "orderCreatedAt": "Commande créée le",
       "pleaseWaitMessage": "Veuillez patienter, nous vérifions le statut du paiement."
+    },
+    "top-patrons": "Mécènes Principaux",
+    "patrons": {
+      "patrons": "Mécènes",
+      "top-patrons": "Mécènes Principaux",
+      "patron": "Mécène",
+      "top": "Principal",
+      "show-more": "Afficher Plus",
+      "show-less": "Afficher Moins",
+      "spent": "Dépensé",
+      "error-loading": "Erreur de Chargement des Mécènes",
+      "unable-to-load": "Impossible de charger les mécènes pour le moment. Veuillez réessayer plus tard."
     }
 }

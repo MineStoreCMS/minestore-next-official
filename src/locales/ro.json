@@ -212,5 +212,17 @@
       "paymentGateway": "Gateway de plată",
       "orderCreatedAt": "Comandă creată la",
       "pleaseWaitMessage": "Vă rugăm să așteptați, verificăm statusul plății."
+    },
+    "top-patrons": "Top Donatori",
+    "patrons": {
+      "patrons": "Donatori",
+      "top-patrons": "Top Donatori",
+      "patron": "Donator",
+      "top": "Top",
+      "show-more": "Arata mai mult",
+      "show-less": "Arata mai putin",
+      "spent": "A cheltuit:",
+      "error-loading": "Eroare la incarcarea Donatori",
+      "unable-to-load": "Clientii nu au putut fi incarcati in acest moment. Incearca mai tarziu"
     }
 }

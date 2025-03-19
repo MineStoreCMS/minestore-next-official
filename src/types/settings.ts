@@ -24,6 +24,7 @@ export type TSettings = {
     };
     is_featuredDeal: number | boolean;
     is_profile_enabled: number | boolean;
+    is_patrons_enabled: number | boolean;
     featuredDeal_items: Array<{
         name: string;
         price: number;

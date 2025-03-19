@@ -212,5 +212,17 @@
         "paymentGateway": "Platební brána",
         "orderCreatedAt": "Objednávka vytvořena dne",
         "pleaseWaitMessage": "Čekejte prosím, kontrolujeme stav platby."
+    },
+    "top-patrons": "Nejlepší patroni",
+    "patrons": {
+      "patrons": "Patroni",
+      "top-patrons": "Top Patrons",
+      "patron": "Patron",
+      "top": "Nejlepší",
+      "show-more": "Zobrazit Více",
+      "show-less": "Zobrazit Méně",
+      "spent": "Utraceno",
+      "error-loading": "Chyba při načítání patronů",
+      "unable-to-load": "Nelze načíst patrony. Prosím zkuste to později."
     }
 }

@@ -212,5 +212,17 @@
         "paymentGateway": "Zahlungsgateway",
         "orderCreatedAt": "Bestellung erstellt am",
         "pleaseWaitMessage": "Bitte warten Sie, wir überprüfen den Zahlungsstatus."
+    },
+    "top-patrons": "Top-Gönner",
+    "patrons": {
+      "patrons": "Gönner",
+      "top-patrons": "Top-Gönner",
+      "patron": "Gönner",
+      "top": "Top",
+      "show-more": "Mehr anzeigen",
+      "show-less": "Weniger anzeigen",
+      "spent": "Ausgegeben",
+      "error-loading": "Fehler beim Laden der Gönner",
+      "unable-to-load": "Die Gönner können derzeit nicht geladen werden. Bitte versuche es später erneut."
     }
 }

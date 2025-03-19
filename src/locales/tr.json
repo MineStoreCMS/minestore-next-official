@@ -212,5 +212,17 @@
       "paymentGateway": "Ödeme Geçidi",
       "orderCreatedAt": "Sipariş Oluşturuldu",
       "pleaseWaitMessage": "Lütfen bekleyin, ödeme durumu kontrol ediliyor."
+    },
+    "top-patrons": "En İyi Destekçiler",
+    "patrons": {
+      "patrons": "Destekçiler",
+      "top-patrons": "En İyi Destekçiler",
+      "patron": "Destekçi",
+      "top": "En İyi",
+      "show-more": "Daha Fazla Göster",
+      "show-less": "Daha Az Göster",
+      "spent": "Harcanan",
+      "error-loading": "Destekçiler Yüklenirken Hata",
+      "unable-to-load": "Şu anda destekçiler yüklenemiyor. Lütfen daha sonra tekrar deneyin."
     }
 }

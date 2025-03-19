@@ -32,6 +32,7 @@ import { acceptReferral } from './endpoints/accept-referral';
 import { removeReferral } from './endpoints/remove-referral';
 import { getPaymentStatus } from './endpoints/check-payment-status';
 import { getDiscordAuth } from '@/api/endpoints/discord-auth';
+import { getPatrons } from '@/api/endpoints/get-patrons';
 
 export const getEndpoints = (fetcher: AxiosInstance) => {
     return {
@@ -66,6 +67,7 @@ export const getEndpoints = (fetcher: AxiosInstance) => {
         setCustomPrice: setCustomPrice(fetcher),
         getCustomPage: getCustomPage(fetcher),
         getPaymentStatus: getPaymentStatus(fetcher),
-        getDiscordAuth: getDiscordAuth(fetcher)
+        getDiscordAuth: getDiscordAuth(fetcher),
+        getPatrons: getPatrons(fetcher)
     };
 };

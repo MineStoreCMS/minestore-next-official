@@ -212,5 +212,17 @@
       "paymentGateway": "Betaalgateway",
       "orderCreatedAt": "Bestelling aangemaakt op",
       "pleaseWaitMessage": "Even geduld alstublieft, we controleren de betalingsstatus."
+    },
+    "top-patrons": "Topbegunstigers",
+    "patrons": {
+      "patrons": "Begunstigers",
+      "top-patrons": "Topbegunstigers",
+      "patron": "Begunstiger",
+      "top": "Top",
+      "show-more": "Meer Weergeven",
+      "show-less": "Minder Weergeven",
+      "spent": "Uitgegeven",
+      "error-loading": "Fout bij Laden van Begunstigers",
+      "unable-to-load": "Kan de begunstigers op dit moment niet laden. Probeer het later opnieuw."
     }
 }

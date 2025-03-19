@@ -212,5 +212,17 @@
         "paymentGateway": "Pasarela de Pago",
         "orderCreatedAt": "Pedido creado el",
         "pleaseWaitMessage": "Por favor, espere, estamos comprobando el estado del pago."
+    },
+    "top-patrons": "Patrocinadores Destacados",
+    "patrons": {
+      "patrons": "Patrocinadores",
+      "top-patrons": "Patrocinadores Destacados",
+      "patron": "Patrocinador",
+      "top": "Destacado",
+      "show-more": "Mostrar Más",
+      "show-less": "Mostrar Menos",
+      "spent": "Gastado",
+      "error-loading": "Error al Cargar los Patrocinadores",
+      "unable-to-load": "No se pueden cargar los patrocinadores en este momento. Por favor, inténtalo de nuevo más tarde."
     }
 }
