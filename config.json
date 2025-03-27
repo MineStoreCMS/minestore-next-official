@@ -22,6 +22,14 @@
                     "value": "dark"
                 },
                 {
+                    "id": "background.jpg",
+                    "name": "Header Background",
+                    "description": "Upload the header for your website. Supported formats: JPG.",
+                    "type": "image-uploader",
+                    "default": "\/public\/background.jpg",
+                    "value": "\/public\/background.jpg"
+                },
+                {
                     "id": "particles",
                     "name": "Header Particles Animation",
                     "description": "Display header particles animation in your webstore header?",
