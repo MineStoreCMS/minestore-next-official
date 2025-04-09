@@ -20,7 +20,7 @@ export const useUser = () => {
             const response = await auth(username);
             const token = response;
 
-            setCookie('token', token);
+            setCookie('token', token, { maxAge: 21600 });
 
             const lastCategory = getCookie('lastCategoryClicked') || '/';
 
