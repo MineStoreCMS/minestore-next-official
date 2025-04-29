@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { useUserStore } from '@/stores/user';
 import { notify } from '@/core/notifications';
 import { imagePath } from '@helpers/image-path';
+import { useRouter } from 'next/navigation';
 
 type FeaturedDealProps = {
     item: TSettings['featuredDeal_items'][number];
@@ -15,13 +16,14 @@ type FeaturedDealProps = {
 
 export const FeaturedDeal: FC<FeaturedDealProps> = ({ item }) => {
     const [show, setShow] = useState(false);
-
+    const router = useRouter();
     const { user } = useUserStore();
 
     const handleClick = () => {
         if (!user) {
-            notify('Please authorize!', 'red');
-            return;
+           notify('Please authorize!', 'red');
+           router.push('/auth');
+           return;
         }
         setShow(true);
     };
