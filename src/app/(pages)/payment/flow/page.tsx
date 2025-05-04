@@ -12,6 +12,7 @@ export default function PaymentStatus() {
    const [status, setStatus] = useState<TPaymentStatus>('pending');
    const [message, setMessage] = useState<string>('');
    const [orderData, setOrderData] = useState<OrderData | null>(null);
+   const [isPnTransaction, setIsPnTransaction] = useState<boolean>(false);
    const router = useRouter();
    const searchParams = useSearchParams();
    const orderId = searchParams.get('order_id');
@@ -21,6 +22,11 @@ export default function PaymentStatus() {
          setStatus('error');
          router.replace('/error');
          return;
+      }
+
+      // Check if this is a pn_ (PayNow) transaction
+      if (orderId.startsWith('pn_')) {
+         setIsPnTransaction(true);
       }
 
       const { getPaymentStatus } = getEndpoints(fetcher);
@@ -45,22 +51,29 @@ export default function PaymentStatus() {
                router.replace('/success');
             } else if (response.status === 'error' || response.status === 'cancelled' || response.status === 'failed') {
                router.replace('/error');
+            } else if (response.status === 'not_found' && !isPnTransaction) {
+               router.replace('/error');
             }
          } catch (error) {
-            setStatus('error');
-            setMessage(t('paymentErrorOccurred'));
-            router.replace('/error');
+            if (isPnTransaction) {
+               setStatus('pending');
+               setMessage(t('pleaseWaitChecking'));
+            } else {
+               setStatus('error');
+               setMessage(t('paymentErrorOccurred'));
+               router.replace('/error');
+            }
          }
       };
 
       checkPayment();
 
-      if (status === 'pending' || status === 'checking') {
+      if (status === 'pending' || status === 'checking' || (isPnTransaction && status === 'not_found')) {
          const intervalId = setInterval(checkPayment, 4000);
          return () => clearInterval(intervalId);
       }
 
-   }, [orderId, status, router, t]);
+   }, [orderId, status, router, t, isPnTransaction]);
 
    const statusMessages: Record<TPaymentStatus, string> = {
       checking: t('checkingPaymentStatus'),
@@ -81,6 +94,10 @@ export default function PaymentStatus() {
    );
 
    const StatusMessage = ({ status }: { status: TPaymentStatus }) => {
+      if (isPnTransaction && status === 'not_found') {
+         return <p>{t('pleaseWaitChecking')}</p>;
+      }
+
       if (status === 'forbidden') {
          return <p>{t('loginAndTryAgain')}</p>;
       }
@@ -109,7 +126,7 @@ export default function PaymentStatus() {
    const OrderDetails = ({ orderData }: { orderData: OrderData }) => (
       <div className="mt-3 mb-4 text-center border-t border-accent pt-4">
          <div className="mt-4 text-gray-400">
-            <p><span className="font-bold text-white">{t('orderNumber')}{orderData.id}</span></p>
+            <p><span className="font-bold text-white">{t('orderNumber')}</span> {orderData.id}</p>
             <p><span className="font-bold text-white">{t('orderId')}:</span> {orderData.internal_id}</p>
             <p><span className="font-bold text-white">{t('orderStatus')}:</span> {orderData.status === 1 ? t('orderStatusPaid') : t('orderStatusPending')}</p>
             <p><span className="font-bold text-white">{t('price')}:</span> {orderData.price} {orderData.currency}</p>
@@ -124,23 +141,31 @@ export default function PaymentStatus() {
       </div>
    );
 
+   const shouldShowSpinner = status === 'checking' || status === 'pending' ||
+      (isPnTransaction && status === 'not_found');
+
+   const displayMessage = isPnTransaction && status === 'not_found'
+      ? t('checkingPaymentStatus')
+      : (message || statusMessages[status]);
+
    return (
       <div className="flex-col rounded-[10px] bg-card p-6">
          <span className="text-center text-[28px] text-primary">
-         {message || statusMessages[status]}
+         {displayMessage}
          </span>
          <hr className="mt-2 border-[2.5px] border-accent" />
          <div className="mt-8 text-gray-400">
-            {(status === 'checking' || status === 'pending') && <LoadingSpinner />}
+            {shouldShowSpinner && <LoadingSpinner />}
          </div>
          <span className="mt-3 text-center">
-            {(status === 'checking' || status === 'pending') && t('pleaseWaitMessage')}
+            {shouldShowSpinner && t('pleaseWaitMessage')}
          </span>
          <div className="text-center">
             <StatusMessage status={status} />
          </div>
          {(status === 'pending' || status === 'paid' || status === 'success' ||
-            status === 'error' || status === 'cancelled') && orderData && (
+            status === 'error' || status === 'cancelled' ||
+            (isPnTransaction && status === 'not_found')) && orderData && (
             <OrderDetails orderData={orderData} />
          )}
       </div>
