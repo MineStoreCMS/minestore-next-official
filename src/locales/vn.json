@@ -109,7 +109,7 @@
         "payment-method": "Phương thức thanh toán",
         "privacy-statement": "Tuyên bố về quyền riêng tư",
         "privacy-statement-description": "Tất cả các khoản thanh toán là cuối cùng và không hoàn lại. Cố gắng tranh chấp hoặc mở tranh chấp PayPal sẽ dẫn đến lệnh cấm vĩnh viễn và không thể đảo ngược khỏi tất cả các máy chủ và cửa hàng Minecraft của chúng tôi.",
-        "agree": "Tôi đồng ý với các điều khoản và điều kiện của giao dịch mua này.",
+        "agree": "Tôi đồng ý với %Điều khoản và Điều kiện% và $Chính sách Bảo mật$ của giao dịch này.",
         "purchase": "Tiếp tục đến thanh toán",
         "only-one-coupon": "Bạn chỉ có thể đổi một phiếu giảm giá và một thẻ quà tặng cùng lúc",
         "coupon-code": "Mã phiếu giảm giá",

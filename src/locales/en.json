@@ -109,7 +109,7 @@
         "payment-method": "Payment method",
         "privacy-statement": "Privacy Statement",
         "privacy-statement-description": "All payments are final and non-refundable. Attempting a chargeback or opening a PayPal dispute will result in permanent and irreversible banishment from all of our servers, and other minecraft stores.",
-        "agree": "I agree to the terms & conditions of this purchase.",
+        "agree": "I agree to the %Terms & Conditions% and $Privacy Policy$ of this purchase.",
         "purchase": "Continue to Payment",
         "only-one-coupon": "You can only redeem one coupon and one gift card at a time",
         "coupon-code": "Coupon Code",

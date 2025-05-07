@@ -109,7 +109,7 @@
         "payment-method": "Metodo di Pagamento",
         "privacy-statement": "Informativa sulla Privacy",
         "privacy-statement-description": "Tutti i pagamenti sono definitivi e non rimborsabili. Tentare un chargeback o aprire una disputa PayPal comporterà un ban permanente e irreversibile da tutti i nostri server e altri negozi Minecraft.",
-        "agree": "Accetto i termini e le condizioni di questo acquisto.",
+        "agree": "Accetto i %Termini e Condizioni% e la $Politica sulla Privacy$ di questo acquisto.",
         "purchase": "Continua al Pagamento",
         "only-one-coupon": "Puoi riscattare solo un coupon e una carta regalo alla volta",
         "coupon-code": "Codice Coupon",

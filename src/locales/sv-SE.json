@@ -109,7 +109,7 @@
         "payment-method": "Betalningsmetod",
         "privacy-statement": "Integritetspolicy",
         "privacy-statement-description": "Alla betalningar är slutgiltiga och kan inte återbetalas. Om du försöker göra en återbetalning eller öppna en tvist via PayPal kommer du att bli permanent och oåterkalleligt förvisad från alla våra servrar och andra Minecraft-butiker.",
-        "agree": "Jag godkänner villkoren för denna köp.",
+        "agree": "Jag godkänner %Allmänna villkor% och $Integritetspolicy$ för detta köp.",
         "purchase": "Fortsätt till betalning",
         "only-one-coupon": "Du kan bara lösa in en kupong och ett presentkort åt gången",
         "coupon-code": "Kupongkod",

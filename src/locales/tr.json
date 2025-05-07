@@ -109,7 +109,7 @@
         "payment-method": "Ödeme Yöntemi",
         "privacy-statement": "Gizlilik Bildirimi",
         "privacy-statement-description": "Tüm ödemeler nihai ve geri ödemesizdir. Geri ödeme talep etmek veya PayPal anlaşmazlığı açmak, tüm sunucularımızdan ve diğer Minecraft mağazalarından kalıcı ve geri dönüşü olmayan bir yasakla sonuçlanacaktır.",
-        "agree": "Bu satın alımın şartlarını kabul ediyorum.",
+        "agree": "%Şartlar ve Koşullar%'ı ve $Gizlilik Politikasını$ bu alışveriş için kabul ediyorum.",
         "purchase": "Ödemeye Devam Et",
         "only-one-coupon": "Aynı anda yalnızca bir kupon ve bir hediye kartı kullanabilirsiniz",
         "coupon-code": "Kupon Kodu",

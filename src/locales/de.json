@@ -109,7 +109,7 @@
         "payment-method": "Zahlungsmethode",
         "privacy-statement": "Datenschutzerklärung",
         "privacy-statement-description": "Alle Zahlungen sind endgültig und nicht erstattungsfähig. Ein Versuch einer Rückbuchung oder das Eröffnen eines PayPal-Konflikts führt zu einer dauerhaften und unwiderruflichen Verbannung von all unseren Servern und anderen Minecraft-Shops.",
-        "agree": "Ich stimme den Geschäftsbedingungen dieses Kaufs zu.",
+        "agree": "Ich stimme den %Allgemeinen Geschäftsbedingungen% und der $Datenschutzerklärung$ dieses Kaufs zu.",
         "purchase": "Weiter zur Zahlung",
         "only-one-coupon": "Sie können nur einen Gutschein und eine Geschenkkarte gleichzeitig einlösen",
         "coupon-code": "Gutscheincode",

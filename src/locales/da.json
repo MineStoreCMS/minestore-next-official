@@ -109,7 +109,7 @@
         "payment-method": "Betalingsmetode",
         "privacy-statement": "Fortrolighedserklæring",
         "privacy-statement-description": "Alle betalinger er endelige og kan ikke refunderes. Forsøg på at lave en tilbageførsel eller åbne en PayPal tvist vil resultere i permanent og uigenkaldelig udelukkelse fra alle vores servere og andre Minecraft-butikker.",
-        "agree": "Jeg accepterer vilkårene og betingelserne for dette køb.",
+        "agree": "Jeg accepterer %Vilkår og betingelser% og $Privatlivspolitik$ for dette køb.",
         "purchase": "Fortsæt til betaling",
         "only-one-coupon": "Du kan kun indløse én kupon og ét gavekort ad gangen",
         "coupon-code": "Kuponkode",

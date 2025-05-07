@@ -109,7 +109,7 @@
         "payment-method": "Fizetési mód",
         "privacy-statement": "Adatvédelmi nyilatkozat",
         "privacy-statement-description": "Minden fizetés végleges és nem visszatéríthető. Chargeback kísérlete vagy PayPal vitanyitás a szervereinkről és más Minecraft boltokból való végleges és visszafordíthatatlan kitiltást eredményezhet.",
-        "agree": "Egyetértek a vásárlás feltételeivel.",
+        "agree": "Elfogadom a(z) %Felhasználási feltételeket% és az $Adatvédelmi szabályzatot$ ehhez a vásárláshoz.",
         "purchase": "Tovább a Fizetéshez",
         "only-one-coupon": "Egyszerre csak egy kupont és egy ajándékkártyát válthatsz be",
         "coupon-code": "Kuponkód",

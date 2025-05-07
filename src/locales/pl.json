@@ -109,7 +109,7 @@
     "payment-method": "Metoda płatności",
     "privacy-statement": "Oświadczenie o Prywatności",
     "privacy-statement-description": "Wszystkie płatności są ostateczne i nie podlegają zwrotowi. Próba chargebacku lub otwarcie sporu PayPal spowoduje trwałe i nieodwracalne zbanowanie na naszych serwerach i w innych sklepach Minecraft.",
-    "agree": "Zgadzam się z warunkami zakupu.",
+    "agree": "Zgadzam się z %Warunkami i zasadami% oraz $Polityką prywatności$ tej transakcji.",
     "purchase": "Przejdź do Płatności",
     "only-one-coupon": "Możesz zrealizować tylko jeden kupon i jedną kartę podarunkową jednocześnie",
     "coupon-code": "Kod Kuponu",

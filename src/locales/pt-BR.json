@@ -110,7 +110,7 @@
         "payment-method": "Método de Pagamento",
         "privacy-statement": "Declaração de Privacidade",
         "privacy-statement-description": "Todos os pagamentos são finais e não reembolsáveis. Tentar fazer um estorno ou abrir uma disputa no PayPal resultará em banimento permanente e irreversível de todos os nossos servidores e outras lojas de Minecraft.",
-        "agree": "Eu concordo com os termos e condições desta compra.",
+        "agree": "Eu concordo com os %Termos e Condições% e a $Política de Privacidade$ desta compra.",
         "purchase": "Continuar para o Pagamento",
         "only-one-coupon": "Você só pode resgatar um cupom e um cartão presente por vez",
         "coupon-code": "Código do Cupom",

@@ -109,7 +109,7 @@
         "payment-method": "Méthode de paiement",
         "privacy-statement": "Déclaration de confidentialité",
         "privacy-statement-description": "Tous les paiements sont définitifs et non remboursables. Toute tentative de rétrofacturation ou d'ouverture d'un litige PayPal entraînera une interdiction permanente et irréversible de tous nos serveurs, ainsi que d'autres boutiques Minecraft.",
-        "agree": "J'accepte les conditions générales de cette commande.",
+        "agree": "J'accepte les %Conditions générales% et la $Politique de confidentialité$ de cet achat.",
         "purchase": "Continuer vers le paiement",
         "only-one-coupon": "Vous ne pouvez utiliser qu'un seul coupon et une seule carte cadeau à la fois",
         "coupon-code": "Code coupon",

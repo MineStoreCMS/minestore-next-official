@@ -109,7 +109,7 @@
         "payment-method": "Betalingsmethode",
         "privacy-statement": "Privacyverklaring",
         "privacy-statement-description": "Alle betalingen zijn definitief en niet-restitueerbaar. Een chargeback proberen of een PayPal-geschil openen zal resulteren in permanente en onomkeerbare verbanning van al onze servers en andere Minecraft-winkels.",
-        "agree": "Ik ga akkoord met de voorwaarden van deze aankoop.",
+        "agree": "Ik ga akkoord met de %Algemene voorwaarden% en het $Privacybeleid$ van deze aankoop.",
         "purchase": "Doorgaan naar Betaling",
         "only-one-coupon": "U kunt slechts één coupon en één cadeaubon tegelijk inwisselen",
         "coupon-code": "Couponcode",

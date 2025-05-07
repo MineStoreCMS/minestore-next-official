@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, JSX } from 'react';
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Button } from '@/components/ui/button';
@@ -23,6 +23,65 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
    const discordWindowRef = useRef<Window | null>(null);
 
    const isDiscordRequired = Boolean(settings?.discord_sync) && Boolean(cart?.discord_sync);
+
+   const renderTermsLink = () => {
+      const agreeText = t('agree');
+
+      const payNow = settings?.footer?.find(item => item.url === "https://paynow.gg/terms-of-use")?.url;
+
+      if (!payNow) {
+         return agreeText
+            .replace(/%([^%]+)%/, '$1') // Removes %...% from translation, since we don't need it
+            .replace(/\$([^$]+)\$/, '$1'); // Removes $...$ from translation, since we don't need it
+      }
+
+      const parts: (string | JSX.Element)[] = [];
+      let remainingText = agreeText;
+
+      // Processing text inside %...% (Terms and Conditions)
+      const termsMatch = remainingText.match(/%([^%]+)%/);
+      if (termsMatch) {
+         const [before, after] = remainingText.split(termsMatch[0]);
+         const termsText = termsMatch[1];
+         parts.push(before);
+         parts.push(
+            <a
+               href="https://paynow.gg/terms-of-use"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-primary"
+            >
+               {termsText}
+            </a>
+         );
+         remainingText = after;
+      }
+
+      // Processing text inside $...$ (Privacy Policy)
+      const privacyMatch = remainingText.match(/\$([^$]+)\$/);
+      if (privacyMatch) {
+         const [before, after] = remainingText.split(privacyMatch[0]);
+         const privacyText = privacyMatch[1];
+         parts.push(before);
+         parts.push(
+            <a
+               href="https://paynow.gg/privacy-policy"
+               target="_blank"
+               rel="noopener noreferrer"
+               className="text-primary"
+            >
+               {privacyText}
+            </a>
+         );
+         remainingText = after;
+      }
+
+      if (remainingText) {
+         parts.push(remainingText);
+      }
+
+      return <>{parts}</>;
+   };
 
    useEffect(() => {
       const discordStatus = getCookie('discord_linked');
@@ -144,7 +203,7 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
                         <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                      </FormControl>
                      <div className="space-y-1 leading-none">
-                        <FormLabel>{t('agree')}</FormLabel>
+                        <FormLabel>{renderTermsLink()}</FormLabel>
                         <FormMessage />
                      </div>
                   </FormItem>

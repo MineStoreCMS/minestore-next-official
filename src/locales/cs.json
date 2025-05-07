@@ -109,7 +109,7 @@
         "payment-method": "Platební metoda",
         "privacy-statement": "Prohlášení o ochraně osobních údajů",
         "privacy-statement-description": "Všechny platby jsou konečné a nevracitelné. Pokus o vrácení peněz nebo otevření sporu v PayPalu povede k trvalému a nevratnému vykázání ze všech našich serverů a dalších minecraft obchodů.",
-        "agree": "Souhlasím s podmínkami této platby.",
+        "agree": "Souhlasím s %Všeobecnými smluvními podmínkami% a $Zásadami ochrany osobních údajů$ tohoto nákupu.",
         "purchase": "Pokračovat k platbě",
         "only-one-coupon": "Můžete vyměnit pouze jeden kupón a jednu dárkovou kartu najednou",
         "coupon-code": "Kód kupónu",

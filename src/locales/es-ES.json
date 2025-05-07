@@ -109,7 +109,7 @@
         "payment-method": "Método de Pago",
         "privacy-statement": "Declaración de Privacidad",
         "privacy-statement-description": "Todos los pagos son finales y no reembolsables. Intentar un contracargo o abrir una disputa en PayPal resultará en un baneo permanente e irreversible de todos nuestros servidores y otras tiendas de Minecraft.",
-        "agree": "Acepto los términos y condiciones de esta compra.",
+        "agree": "Acepto los %Términos y Condiciones% y la $Política de Privacidad$ de esta compra.",
         "purchase": "Continuar al Pago",
         "only-one-coupon": "Solo puedes canjear un cupón y una tarjeta de regalo a la vez",
         "coupon-code": "Código de Cupón",

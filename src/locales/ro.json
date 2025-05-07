@@ -109,7 +109,7 @@
         "payment-method": "Metodă de plată",
         "privacy-statement": "Declarație de confidențialitate",
         "privacy-statement-description": "Toate plățile sunt finale și nerambursabile. Încercarea de a face o contestație sau de a deschide o dispută PayPal va duce la interzicerea permanentă și ireversibilă de pe toate serverele noastre și alte magazine Minecraft.",
-        "agree": "Sunt de acord cu termenii și condițiile acestei achiziții.",
+        "agree": "Sunt de acord cu %Termenii și condițiile% și cu $Politica de confidențialitate$ acestei achiziții.",
         "purchase": "Continuare la plată",
         "only-one-coupon": "Puteți răscumpăra doar un cupon și un card cadou odată",
         "coupon-code": "Cod cupon",
