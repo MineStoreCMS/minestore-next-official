@@ -50,6 +50,13 @@ export function Content() {
                      Terms & Conditions
                   </Link>
                </Button>
+               {settings?.footer?.some(item => item.url === "https://paynow.gg/terms-of-use") && (
+                  <Button asChild>
+                     <Link href={'https://checkout.paynow.gg/subscriptions'} target="_blank">
+                        Manage Subscriptions
+                     </Link>
+                  </Button>
+               )}
                <Button asChild>
                   <Link href={settings?.discord_url || "https://google.com"} target="_blank">
                      Contact Us

@@ -12,6 +12,7 @@ import { getCookie, setCookie, deleteCookie } from 'cookies-next';
 import { ReactSVG } from 'react-svg';
 import { notify } from '@/core/notifications';
 import { TDiscordAuth } from '@/types/discord-auth';
+import { useFormContext, useWatch } from 'react-hook-form';
 
 export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
    const t = useTranslations('checkout');
@@ -21,13 +22,20 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
    const [isDiscordLinked, setIsDiscordLinked] = useState(false);
    const [discordUsername, setDiscordUsername] = useState<string>('');
    const discordWindowRef = useRef<Window | null>(null);
+   const form = useFormContext();
 
+   const paymentMethod = useWatch({
+      control: form.control,
+      name: 'paymentMethod'
+   });
+
+   const isPayNowSelected = paymentMethod === 'PayNow';
    const isDiscordRequired = Boolean(settings?.discord_sync) && Boolean(cart?.discord_sync);
 
    const renderTermsLink = () => {
       const agreeText = t('agree');
 
-      const payNow = settings?.footer?.find(item => item.url === "https://paynow.gg/terms-of-use")?.url;
+      const payNow = isPayNowSelected && settings?.footer?.find(item => item.url === "https://paynow.gg/terms-of-use")?.url;
 
       if (!payNow) {
          return agreeText
@@ -57,7 +65,6 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
          remainingText = after;
       }
 
-      // Processing text inside $...$ (Privacy Policy)
       const privacyMatch = remainingText.match(/\$([^$]+)\$/);
       if (privacyMatch) {
          const [before, after] = remainingText.split(privacyMatch[0]);
@@ -89,6 +96,10 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
       setIsDiscordLinked(discordStatus === 'true');
       if (username) {
          setDiscordUsername(username.toString());
+      }
+
+      if (isPayNowSelected) {
+         form.setValue('privacyPolicy', true);
       }
 
       const handleAuthMessage = (event: MessageEvent) => {
@@ -142,7 +153,15 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
       return () => {
          window.removeEventListener('message', handleAuthMessage);
       };
-   }, []);
+   }, [form, isPayNowSelected]);
+
+   useEffect(() => {
+      if (isPayNowSelected) {
+         form.setValue('privacyPolicy', true);
+      } else {
+         form.setValue('privacyPolicy', false);
+      }
+   }, [isPayNowSelected, form]);
 
    const handleDiscordAuth = async () => {
       console.log('[Discord Auth] Starting auth process');
@@ -195,20 +214,31 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
    return (
       <div className="flex flex-col w-full">
          <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
-            <FormField
-               name="privacyPolicy"
-               render={({ field }) => (
-                  <FormItem className="flex flex-row items-start space-x-3 space-y-0">
-                     <FormControl>
-                        <Checkbox checked={field.value} onCheckedChange={field.onChange} />
-                     </FormControl>
-                     <div className="space-y-1 leading-none">
-                        <FormLabel>{renderTermsLink()}</FormLabel>
-                        <FormMessage />
-                     </div>
-                  </FormItem>
+            <div className="flex flex-col">
+               {!isPayNowSelected ? (
+                  <FormField
+                     name="privacyPolicy"
+                     render={({ field }) => (
+                        <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                           <FormControl>
+                              <Checkbox checked={field.value} onCheckedChange={field.onChange} />
+                           </FormControl>
+                           <div className="space-y-1 leading-none">
+                              <FormLabel>{renderTermsLink()}</FormLabel>
+                              <FormMessage />
+                           </div>
+                        </FormItem>
+                     )}
+                  />
+               ) : (
+                  <div className="flex flex-col">
+                     <p className="text-sm mb-1">
+                        All products are sold by PayNow.gg, our authorized reseller and official Merchant of Record.
+                        They handle all sales, payments, and order fulfillment.
+                     </p>
+                  </div>
                )}
-            />
+            </div>
 
             <div className="flex flex-row gap-2 items-center">
                {isDiscordRequired && (
