@@ -78,6 +78,7 @@ export type TSettings = {
         steam?: string;
         tiktok?: string;
         youtube?: string;
+        telegram?: string;
     };
     is_virtual_currency: number;
     virtual_currency: string;
