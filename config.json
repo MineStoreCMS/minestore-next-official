@@ -37,6 +37,15 @@
                     "default": "Enabled",
                     "values": ["Enabled", "Disabled"],
                     "value": "Enabled"
+                },
+                {
+                    "id": "discord-auth",
+                    "name": "Require Discord Auth for Discord Role Packages?",
+                    "description": "Require users to authenticate with Discord to purchase Discord role packages?",
+                    "type": "select",
+                    "default": "Enabled",
+                    "values": ["Enabled", "Disabled"],
+                    "value": "Enabled"
                 }
             ]
         }

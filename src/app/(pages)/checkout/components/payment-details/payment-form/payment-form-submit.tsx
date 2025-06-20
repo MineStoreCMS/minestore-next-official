@@ -13,6 +13,8 @@ import { ReactSVG } from 'react-svg';
 import { notify } from '@/core/notifications';
 import { TDiscordAuth } from '@/types/discord-auth';
 import { useFormContext, useWatch } from 'react-hook-form';
+import { useConfig } from '@/app/providers/config-provider';
+import { extractConfigValue } from '@/helpers/extract-config-value';
 
 export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
    const t = useTranslations('checkout');
@@ -23,6 +25,7 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
    const [discordUsername, setDiscordUsername] = useState<string>('');
    const discordWindowRef = useRef<Window | null>(null);
    const form = useFormContext();
+   const config = useConfig();
 
    const paymentMethod = useWatch({
       control: form.control,
@@ -30,6 +33,8 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
    });
 
    const isPayNowSelected = paymentMethod === 'PayNow';
+   const discordAuthSetting = extractConfigValue('discord-auth', config);
+   const isDiscordAuthEnabled = discordAuthSetting === 'Enabled';
    const isDiscordRequired = Boolean(settings?.discord_sync) && Boolean(cart?.discord_sync);
 
    const renderTermsLink = () => {
@@ -271,7 +276,7 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
 
                <Button
                   type="submit"
-                  disabled={loading || (isDiscordRequired && !isDiscordLinked)}
+                  disabled={loading || (isDiscordRequired && !isDiscordLinked && isDiscordAuthEnabled)}
                   className="flex items-center justify-center gap-2 w-auto"
                >
                   {loading && <Loader2 className="animate-spin" size={24} />}

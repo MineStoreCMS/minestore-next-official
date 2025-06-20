@@ -3,6 +3,7 @@
 import { extractConfigValue } from '@helpers/extract-config-value';
 import { hexToHsl } from '@helpers/hex-to-hsl';
 import * as React from 'react';
+import { createContext, useContext } from 'react';
 
 type ConfigProviderProps = {
     children: React.ReactNode;
@@ -25,6 +26,8 @@ export type Config = {
     }[];
 };
 
+const ConfigContext = createContext<Config | undefined>(undefined);
+
 export function ConfigProvider({ children, config }: ConfigProviderProps) {
     const configData = config as Config;
 
@@ -32,7 +35,7 @@ export function ConfigProvider({ children, config }: ConfigProviderProps) {
     const { h, l, s } = hexToHsl(mainColor as string);
 
     return (
-        <>
+        <ConfigContext.Provider value={configData}>
             <style jsx global>{`
                 .dark {
                     --primary: ${h} ${s}% ${l}%;
@@ -44,6 +47,14 @@ export function ConfigProvider({ children, config }: ConfigProviderProps) {
                 }
             `}</style>
             {children}
-        </>
+        </ConfigContext.Provider>
     );
 }
+
+export const useConfig = () => {
+    const context = useContext(ConfigContext);
+    if (context === undefined) {
+        throw new Error('useConfig must be used within a ConfigProvider');
+    }
+    return context;
+};
