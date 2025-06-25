@@ -1,53 +1,53 @@
 {
-    "author": "TripleZone & MineStoreCMS",
-    "config": [
+  "author": "TripleZone & MineStoreCMS",
+  "config": [
+    {
+      "header": "General Settings",
+      "options": [
         {
-            "header": "General Settings",
-            "options": [
-                {
-                    "id": "main-color",
-                    "name": "Main Color",
-                    "default": "#ff7300",
-                    "description": "Enter the main color used on your website.",
-                    "type": "color",
-                    "value": "#ff7300"
-                },
-                {
-                    "id": "theme",
-                    "name": "Theme",
-                    "description": "Select the default theme for your website.",
-                    "type": "select",
-                    "default": "system",
-                    "values": ["system", "light", "dark"],
-                    "value": "dark"
-                },
-                {
-                    "id": "background.jpg",
-                    "name": "Header Background",
-                    "description": "Upload the header for your website. Supported formats: JPG.",
-                    "type": "image-uploader",
-                    "default": "\/public\/background.jpg",
-                    "value": "\/public\/background.jpg"
-                },
-                {
-                    "id": "particles",
-                    "name": "Header Particles Animation",
-                    "description": "Display header particles animation in your webstore header?",
-                    "type": "select",
-                    "default": "Enabled",
-                    "values": ["Enabled", "Disabled"],
-                    "value": "Enabled"
-                },
-                {
-                    "id": "discord-auth",
-                    "name": "Require Discord Auth for Discord Role Packages?",
-                    "description": "Require users to authenticate with Discord to purchase Discord role packages?",
-                    "type": "select",
-                    "default": "Enabled",
-                    "values": ["Enabled", "Disabled"],
-                    "value": "Enabled"
-                }
-            ]
+          "id": "main-color",
+          "name": "Main Color",
+          "default": "#ff7300",
+          "description": "Enter the main color used on your website.",
+          "type": "color",
+          "value": "#ff7300"
+        },
+        {
+          "id": "theme",
+          "name": "Theme",
+          "description": "Select the default theme for your website.",
+          "type": "select",
+          "default": "system",
+          "values": ["system", "light", "dark"],
+          "value": "dark"
+        },
+        {
+          "id": "background.jpg",
+          "name": "Header Background",
+          "description": "Upload the header for your website. Supported formats: JPG.",
+          "type": "image-uploader",
+          "default": "\/public\/background.jpg",
+          "value": "\/public\/background.jpg"
+        },
+        {
+          "id": "particles",
+          "name": "Header Particles Animation",
+          "description": "Display header particles animation in your webstore header?",
+          "type": "select",
+          "default": "Enabled",
+          "values": ["Enabled", "Disabled"],
+          "value": "Enabled"
+        },
+        {
+          "id": "discord-auth",
+          "name": "Require Discord Auth for Discord Role Packages?",
+          "description": "Require users to authenticate with Discord to purchase Discord role packages?",
+          "type": "select",
+          "default": "Enabled",
+          "values": ["Enabled", "Disabled"],
+          "value": "Enabled"
         }
-    ]
+      ]
+    }
+  ]
 }
