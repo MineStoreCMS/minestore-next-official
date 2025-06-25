@@ -67,7 +67,11 @@
         "confirm": "Trebuie să confirmați că sunteți proprietarul contului!",
         "verification-resent": "Codul de verificare a fost retrimis!",
         "resend-verification": "Retrimiteți verificarea",
-        "wait-before-resend": "Așteptați 10 secunde înainte de a o trimite din nou..."
+        "wait-before-resend": "Așteaptă 10 secunde înainte să trimiți din nou...",
+        "register": "Înregistrare",
+        "password": "Parolă",
+        "forgot-password": "Ai uitat parola?",
+        "register-title": "Înregistrare"
     },
     "checkout": {
         "title": "Finalizare comandă",
@@ -224,5 +228,35 @@
       "spent": "A cheltuit:",
       "error-loading": "Eroare la incarcarea Donatori",
       "unable-to-load": "Clientii nu au putut fi incarcati in acest moment. Incearca mai tarziu"
+    },
+    "register": {
+      "title": "Înregistrare",
+      "username": "Nume de utilizator",
+      "email": "Email",
+      "password": "Parolă",
+      "confirm-password": "Confirmă parola",
+      "terms-and-privacy": "Sunt de acord cu %Termenii și condițiile% și $Politica de confidențialitate$ acestui magazin.",
+      "submit": "Înregistrare",
+      "already-have-account": "Ai deja un cont? %Autentificare%",
+      "invalid-username": "Nume de utilizator invalid!",
+      "invalid-email": "Email invalid!",
+      "passwords-not-match": "Parolele nu coincid!",
+      "registration-successful": "Înregistrare reușită! Redirecționare...",
+      "registration-failed": "Înregistrarea a eșuat! Te rugăm să încerci din nou.",
+      "optional": "opțional",
+      "login": "Autentificare",
+      "forgot-password": "Ai uitat parola?"
+    },
+    "reset-password": {
+      "title": "Resetează parola",
+      "email": "Email",
+      "check-email": "Verifică email-ul pentru link-ul de resetare",
+      "send-reset-link": "Trimite link-ul de resetare",
+      "new-password": "Parolă nouă",
+      "confirm-password": "Confirmă parola",
+      "success": "Parolă resetată! Redirecționare...",
+      "invalid-link": "Link de resetare invalid",
+      "login": "Autentificare",
+      "register": "Înregistrare"
     }
 }

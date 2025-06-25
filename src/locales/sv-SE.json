@@ -67,7 +67,11 @@
         "confirm": "Du måste bekräfta att du äger kontot!",
         "verification-resent": "Verifieringskoden har skickats igen!",
         "resend-verification": "Skicka verifiering igen",
-        "wait-before-resend": "Vänta 10 sekunder innan du skickar igen..."
+        "wait-before-resend": "Vänta 10 sekunder innan du skickar igen...",
+        "register": "Registrera",
+        "password": "Lösenord",
+        "forgot-password": "Glömt lösenord?",
+        "register-title": "Registrera"
     },
     "checkout": {
         "title": "Kassa",
@@ -224,5 +228,35 @@
       "spent": "Spenderat",
       "error-loading": "Fel vid inläsning av donatorer",
       "unable-to-load": "Det går inte att ladda donatorer just nu. Försök igen senare."
+    },
+    "register": {
+      "title": "Registrera",
+      "username": "Användarnamn",
+      "email": "E-post",
+      "password": "Lösenord",
+      "confirm-password": "Bekräfta lösenord",
+      "terms-and-privacy": "Jag godkänner %Villkor och regler% och $Integritetspolicy$ för denna butik.",
+      "submit": "Registrera",
+      "already-have-account": "Har du redan ett konto? %Logga in%",
+      "invalid-username": "Ogiltigt användarnamn!",
+      "invalid-email": "Ogiltig e-post!",
+      "passwords-not-match": "Lösenorden matchar inte!",
+      "registration-successful": "Registrering lyckades! Omdirigerar...",
+      "registration-failed": "Registreringen misslyckades! Försök igen.",
+      "optional": "valfritt",
+      "login": "Logga in",
+      "forgot-password": "Glömt lösenord?"
+    },
+    "reset-password": {
+      "title": "Återställ lösenord",
+      "email": "E-post",
+      "check-email": "Kolla din e-post för återställningslänk",
+      "send-reset-link": "Skicka återställningslänk",
+      "new-password": "Nytt lösenord",
+      "confirm-password": "Bekräfta lösenord",
+      "success": "Lösenord återställt! Omdirigerar...",
+      "invalid-link": "Ogiltig återställningslänk",
+      "login": "Logga in",
+      "register": "Registrera"
     }
 }

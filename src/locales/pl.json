@@ -67,7 +67,11 @@
     "confirm": "Musisz potwierdzić, że jesteś właścicielem konta!",
     "verification-resent": "Kod weryfikacyjny został ponownie wysłany!",
     "resend-verification": "Wyślij kod weryfikacyjny ponownie",
-    "wait-before-resend": "Poczekaj 10 sekund przed ponownym wysłaniem..."
+    "wait-before-resend": "Poczekaj 10 sekund przed ponownym wysłaniem...",
+    "register": "Zarejestruj się",
+    "password": "Hasło",
+    "forgot-password": "Zapomniałeś hasła?",
+    "register-title": "Rejestracja"
   },
   "checkout": {
     "title": "Zamówienie",
@@ -224,5 +228,35 @@
     "spent": "Wydane",
     "error-loading": "Błąd ładowania patronów",
     "unable-to-load": "Nie można załadować patronów w tej chwili. Spróbuj ponownie później."
+  },
+  "register": {
+    "title": "Rejestracja",
+    "username": "Nazwa użytkownika",
+    "email": "E-mail",
+    "password": "Hasło",
+    "confirm-password": "Potwierdź hasło",
+    "terms-and-privacy": "Akceptuję %Regulamin% oraz $Politykę prywatności$ tego sklepu.",
+    "submit": "Zarejestruj się",
+    "already-have-account": "Masz już konto? %Zaloguj się%",
+    "invalid-username": "Nieprawidłowa nazwa użytkownika!",
+    "invalid-email": "Nieprawidłowy e-mail!",
+    "passwords-not-match": "Hasła nie są zgodne!",
+    "registration-successful": "Rejestracja zakończona sukcesem! Przekierowanie...",
+    "registration-failed": "Rejestracja nie powiodła się! Spróbuj ponownie.",
+    "optional": "opcjonalne",
+    "login": "Zaloguj się",
+    "forgot-password": "Zapomniałeś hasła?"
+  },
+  "reset-password": {
+    "title": "Resetowanie hasła",
+    "email": "E-mail",
+    "check-email": "Sprawdź swoją skrzynkę mailową, aby uzyskać link do resetowania",
+    "send-reset-link": "Wyślij link do resetowania",
+    "new-password": "Nowe hasło",
+    "confirm-password": "Potwierdź hasło",
+    "success": "Hasło zostało zresetowane! Przekierowanie...",
+    "invalid-link": "Nieprawidłowy link do resetowania",
+    "login": "Zaloguj się",
+    "register": "Zarejestruj się"
   }
 }

@@ -67,7 +67,11 @@
         "confirm": "Du må bekrefte at du er eieren av kontoen!",
         "verification-resent": "Verifiseringskoden er sendt på nytt!",
         "resend-verification": "Send verifisering på nytt",
-        "wait-before-resend": "Vent 10 sekunder før du sender den på nytt..."
+        "wait-before-resend": "Vent 10 sekunder før du sender det igjen...",
+        "register": "Registrer",
+        "password": "Passord",
+        "forgot-password": "Glemt passord?",
+        "register-title": "Registrer"
     },
     "checkout": {
         "title": "Betal",
@@ -224,5 +228,35 @@
       "spent": "Brukt",
       "error-loading": "Feil ved lasting av bidragsytere",
       "unable-to-load": "Kan ikke laste inn bidragsytere akkurat nå. Vennligst prøv igjen senere."
+    },
+    "register": {
+      "title": "Registrer",
+      "username": "Brukernavn",
+      "email": "E-post",
+      "password": "Passord",
+      "confirm-password": "Bekreft passord",
+      "terms-and-privacy": "Jeg godtar %Vilkår og betingelser% og $Personvernerklæringen$ til denne butikken.",
+      "submit": "Registrer",
+      "already-have-account": "Har du allerede en konto? %Logg inn%",
+      "invalid-username": "Ugyldig brukernavn!",
+      "invalid-email": "Ugyldig e-post!",
+      "passwords-not-match": "Passordene samsvarer ikke!",
+      "registration-successful": "Registrering vellykket! Viderefører...",
+      "registration-failed": "Registrering mislyktes! Vennligst prøv igjen.",
+      "optional": "valgfritt",
+      "login": "Logg inn",
+      "forgot-password": "Glemt passord?"
+    },
+    "reset-password": {
+      "title": "Tilbakestill passord",
+      "email": "E-post",
+      "check-email": "Sjekk e-posten din for tilbakestillingslenke",
+      "send-reset-link": "Send tilbakestillingslenke",
+      "new-password": "Nytt passord",
+      "confirm-password": "Bekreft passord",
+      "success": "Passord tilbakestilt! Viderefører...",
+      "invalid-link": "Ugyldig tilbakestillingslenke",
+      "login": "Logg inn",
+      "register": "Registrer"
     }
 }

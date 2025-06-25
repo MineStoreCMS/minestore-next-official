@@ -67,7 +67,11 @@
         "confirm": "Erősítse meg, hogy Ön a fiók tulajdonosa!",
         "verification-resent": "Hitelesítő kód újraküldve!",
         "resend-verification": "Hitelesítő kód újraküldése",
-        "wait-before-resend": "Várjon 10 másodpercet, mielőtt újra küldi..."
+        "wait-before-resend": "Várj 10 másodpercet, mielőtt újra elküldenéd...",
+        "register": "Regisztráció",
+        "password": "Jelszó",
+        "forgot-password": "Elfelejtetted a jelszavad?",
+        "register-title": "Regisztráció"
     },
     "checkout": {
         "title": "Fizetés",
@@ -224,5 +228,35 @@
       "spent": "Elköltött Összeg",
       "error-loading": "Hiba a Támogatók Betöltésekor",
       "unable-to-load": "A támogatók betöltése jelenleg nem lehetséges. Kérlek, próbáld meg később újra."
+    },
+    "register": {
+      "title": "Regisztráció",
+      "username": "Felhasználónév",
+      "email": "E-mail",
+      "password": "Jelszó",
+      "confirm-password": "Jelszó megerősítése",
+      "terms-and-privacy": "Elfogadom az %Általános Szerződési Feltételeket% és az $Adatvédelmi Szabályzatot$ ezen az áruházon belül.",
+      "submit": "Regisztráció",
+      "already-have-account": "Már van fiókod? %Bejelentkezés%",
+      "invalid-username": "Érvénytelen felhasználónév!",
+      "invalid-email": "Érvénytelen e-mail!",
+      "passwords-not-match": "A jelszavak nem egyeznek!",
+      "registration-successful": "Sikeres regisztráció! Átirányítás...",
+      "registration-failed": "Sikertelen regisztráció! Kérjük, próbáld újra.",
+      "optional": "opcionális",
+      "login": "Bejelentkezés",
+      "forgot-password": "Elfelejtetted a jelszavad?"
+    },
+    "reset-password": {
+      "title": "Jelszó visszaállítása",
+      "email": "E-mail",
+      "check-email": "Ellenőrizd az e-mail címed a visszaállító linkért",
+      "send-reset-link": "Visszaállító link küldése",
+      "new-password": "Új jelszó",
+      "confirm-password": "Jelszó megerősítése",
+      "success": "A jelszó visszaállítva! Átirányítás...",
+      "invalid-link": "Érvénytelen visszaállító link",
+      "login": "Bejelentkezés",
+      "register": "Regisztráció"
     }
 }

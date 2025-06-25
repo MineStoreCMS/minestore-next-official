@@ -67,7 +67,11 @@
         "confirm": "Vous devez confirmer que vous êtes le propriétaire du compte !",
         "verification-resent": "Le code de vérification a été renvoyé !",
         "resend-verification": "Renvoyer la vérification",
-        "wait-before-resend": "Attendez 10 secondes avant de l'envoyer à nouveau..."
+        "wait-before-resend": "Attendez 10 secondes avant de le renvoyer...",
+        "register": "S'inscrire",
+        "password": "Mot de passe",
+        "forgot-password": "Mot de passe oublié ?",
+        "register-title": "S'inscrire"
     },
     "checkout": {
         "title": "Paiement",
@@ -225,5 +229,35 @@
       "spent": "Dépensé",
       "error-loading": "Erreur de Chargement des Mécènes",
       "unable-to-load": "Impossible de charger les mécènes pour le moment. Veuillez réessayer plus tard."
+    },
+    "register": {
+      "title": "S'inscrire",
+      "username": "Nom d'utilisateur",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "confirm-password": "Confirmer le mot de passe",
+      "terms-and-privacy": "J'accepte les %Conditions générales% et la $Politique de confidentialité$ de cette boutique.",
+      "submit": "S'inscrire",
+      "already-have-account": "Vous avez déjà un compte ? %Se connecter%",
+      "invalid-username": "Nom d'utilisateur invalide !",
+      "invalid-email": "E-mail invalide !",
+      "passwords-not-match": "Les mots de passe ne correspondent pas !",
+      "registration-successful": "Inscription réussie ! Redirection...",
+      "registration-failed": "Échec de l'inscription ! Veuillez réessayer.",
+      "optional": "optionnel",
+      "login": "Se connecter",
+      "forgot-password": "Mot de passe oublié ?"
+    },
+    "reset-password": {
+      "title": "Réinitialiser le mot de passe",
+      "email": "E-mail",
+      "check-email": "Vérifiez votre e-mail pour le lien de réinitialisation",
+      "send-reset-link": "Envoyer le lien de réinitialisation",
+      "new-password": "Nouveau mot de passe",
+      "confirm-password": "Confirmer le mot de passe",
+      "success": "Mot de passe réinitialisé ! Redirection...",
+      "invalid-link": "Lien de réinitialisation invalide",
+      "login": "Se connecter",
+      "register": "S'inscrire"
     }
 }

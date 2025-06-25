@@ -67,7 +67,11 @@
         "confirm": "Bạn phải xác nhận rằng bạn là chủ sở hữu của tài khoản!",
         "verification-resent": "Mã xác minh đã được gửi lại!",
         "resend-verification": "Gửi lại xác minh",
-        "wait-before-resend": "Chờ 10 giây trước khi gửi lại..."
+        "wait-before-resend": "Chờ 10 giây trước khi gửi lại...",
+        "register": "Đăng ký",
+        "password": "Mật khẩu",
+        "forgot-password": "Quên mật khẩu?",
+        "register-title": "Đăng ký"
     },
     "checkout": {
         "title": "Hoàn tất đơn hàng",
@@ -224,5 +228,35 @@
       "spent": "Spent",
       "error-loading": "Error Loading Patrons",
       "unable-to-load": "Unable to load patrons at this time. Please try again later."
+    },
+    "register": {
+      "title": "Đăng ký",
+      "username": "Tên đăng nhập",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "confirm-password": "Xác nhận mật khẩu",
+      "terms-and-privacy": "Tôi đồng ý với %Điều khoản & Điều kiện% và $Chính sách bảo mật$ của cửa hàng này.",
+      "submit": "Đăng ký",
+      "already-have-account": "Đã có tài khoản? %Đăng nhập%",
+      "invalid-username": "Tên đăng nhập không hợp lệ!",
+      "invalid-email": "Email không hợp lệ!",
+      "passwords-not-match": "Mật khẩu không khớp!",
+      "registration-successful": "Đăng ký thành công! Đang chuyển hướng...",
+      "registration-failed": "Đăng ký thất bại! Vui lòng thử lại.",
+      "optional": "tùy chọn",
+      "login": "Đăng nhập",
+      "forgot-password": "Quên mật khẩu?"
+    },
+    "reset-password": {
+      "title": "Đặt lại mật khẩu",
+      "email": "Email",
+      "check-email": "Kiểm tra email của bạn để lấy liên kết đặt lại",
+      "send-reset-link": "Gửi liên kết đặt lại",
+      "new-password": "Mật khẩu mới",
+      "confirm-password": "Xác nhận mật khẩu",
+      "success": "Đặt lại mật khẩu thành công! Đang chuyển hướng...",
+      "invalid-link": "Liên kết đặt lại không hợp lệ",
+      "login": "Đăng nhập",
+      "register": "Đăng ký"
     }
 }

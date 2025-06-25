@@ -67,7 +67,11 @@
         "confirm": "עליך לאשר שאתה בעל החשבון!",
         "verification-resent": "קוד האימות נשלח מחדש!",
         "resend-verification": "שלח אימות מחדש",
-        "wait-before-resend": "חכה 10 שניות לפני שתשלח שוב..."
+        "wait-before-resend": "המתן 10 שניות לפני שליחה חוזרת...",
+        "register": "הרשמה",
+        "password": "סיסמה",
+        "forgot-password": "שכחת סיסמה?",
+        "register-title": "הרשמה"
     },
     "checkout": {
         "title": "תשלום",
@@ -225,5 +229,35 @@
       "spent": "הוצא",
       "error-loading": "שגיאה בטעינת התומכים",
       "unable-to-load": "לא ניתן לטעון את רשימת התומכים כעת. אנא נסה שוב מאוחר יותר."
+    },
+    "register": {
+      "title": "הרשמה",
+      "username": "שם משתמש",
+      "email": "דוא\"ל",
+      "password": "סיסמה",
+      "confirm-password": "אשר סיסמה",
+      "terms-and-privacy": "אני מסכים ל%תנאים והגבלות% ול$מדיניות הפרטיות$ של החנות.",
+      "submit": "הרשמה",
+      "already-have-account": "כבר יש לך חשבון? %התחבר%",
+      "invalid-username": "שם משתמש לא חוקי!",
+      "invalid-email": "דוא\"ל לא חוקי!",
+      "passwords-not-match": "הסיסמאות אינן תואמות!",
+      "registration-successful": "ההרשמה הצליחה! מעביר...",
+      "registration-failed": "ההרשמה נכשלה! אנא נסה שוב.",
+      "optional": "לא חובה",
+      "login": "התחבר",
+      "forgot-password": "שכחת סיסמה?"
+    },
+    "reset-password": {
+      "title": "איפוס סיסמה",
+      "email": "דוא\"ל",
+      "check-email": "בדוק את הדוא\"ל שלך עבור קישור לאיפוס",
+      "send-reset-link": "שלח קישור לאיפוס",
+      "new-password": "סיסמה חדשה",
+      "confirm-password": "אשר סיסמה",
+      "success": "הסיסמה אופסה! מעביר...",
+      "invalid-link": "קישור איפוס לא חוקי",
+      "login": "התחבר",
+      "register": "הרשמה"
     }
 }

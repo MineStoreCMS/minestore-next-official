@@ -67,7 +67,11 @@
         "confirm": "U moet bevestigen dat u de eigenaar van het account bent!",
         "verification-resent": "Verificatiecode is opnieuw verzonden!",
         "resend-verification": "Verificatie opnieuw verzenden",
-        "wait-before-resend": "Wacht 10 seconden voordat u het opnieuw verzendt..."
+        "wait-before-resend": "Wacht 10 seconden voordat je het opnieuw verzendt...",
+        "register": "Registreren",
+        "password": "Wachtwoord",
+        "forgot-password": "Wachtwoord vergeten?",
+        "register-title": "Registreren"
     },
     "checkout": {
         "title": "Afrekenen",
@@ -224,5 +228,35 @@
       "spent": "Uitgegeven",
       "error-loading": "Fout bij Laden van Begunstigers",
       "unable-to-load": "Kan de begunstigers op dit moment niet laden. Probeer het later opnieuw."
+    },
+    "register": {
+      "title": "Registreren",
+      "username": "Gebruikersnaam",
+      "email": "E-mail",
+      "password": "Wachtwoord",
+      "confirm-password": "Bevestig wachtwoord",
+      "terms-and-privacy": "Ik ga akkoord met de %Algemene Voorwaarden% en het $Privacybeleid$ van deze winkel.",
+      "submit": "Registreren",
+      "already-have-account": "Heb je al een account? %Inloggen%",
+      "invalid-username": "Ongeldige gebruikersnaam!",
+      "invalid-email": "Ongeldig e-mailadres!",
+      "passwords-not-match": "Wachtwoorden komen niet overeen!",
+      "registration-successful": "Registratie geslaagd! Doorverwijzen...",
+      "registration-failed": "Registratie mislukt! Probeer het opnieuw.",
+      "optional": "optioneel",
+      "login": "Inloggen",
+      "forgot-password": "Wachtwoord vergeten?"
+    },
+    "reset-password": {
+      "title": "Wachtwoord opnieuw instellen",
+      "email": "E-mail",
+      "check-email": "Controleer je e-mail voor de resetlink",
+      "send-reset-link": "Verzend resetlink",
+      "new-password": "Nieuw wachtwoord",
+      "confirm-password": "Bevestig wachtwoord",
+      "success": "Wachtwoord gereset! Doorverwijzen...",
+      "invalid-link": "Ongeldige resetlink",
+      "login": "Inloggen",
+      "register": "Registreren"
     }
 }

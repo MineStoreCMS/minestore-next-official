@@ -68,7 +68,11 @@
         "confirm": "Você precisa confirmar que é o proprietário da conta!",
         "verification-resent": "O código de verificação foi reenviado!",
         "resend-verification": "Reenviar verificação",
-        "wait-before-resend": "Aguarde 10 segundos antes de enviar novamente..."
+        "wait-before-resend": "Aguarde 10 segundos antes de enviar novamente...",
+        "register": "Registrar",
+        "password": "Senha",
+        "forgot-password": "Esqueceu a senha?",
+        "register-title": "Registrar"
     },
     "checkout": {
         "title": "Finalizar Compra",
@@ -220,5 +224,35 @@
       "spent": "Gasto",
       "error-loading": "Erro ao Carregar Patronos",
       "unable-to-load": "Não foi possível carregar os patronos no momento. Por favor, tente novamente mais tarde."
+    },
+    "register": {
+      "title": "Registrar",
+      "username": "Nome de usuário",
+      "email": "Email",
+      "password": "Senha",
+      "confirm-password": "Confirmar senha",
+      "terms-and-privacy": "Eu concordo com os %Termos e Condições% e a $Política de Privacidade$ desta loja.",
+      "submit": "Registrar",
+      "already-have-account": "Já tem uma conta? %Entrar%",
+      "invalid-username": "Nome de usuário inválido!",
+      "invalid-email": "Email inválido!",
+      "passwords-not-match": "As senhas não coincidem!",
+      "registration-successful": "Registro bem-sucedido! Redirecionando...",
+      "registration-failed": "Falha no registro! Por favor, tente novamente.",
+      "optional": "opcional",
+      "login": "Entrar",
+      "forgot-password": "Esqueceu a senha?"
+    },
+    "reset-password": {
+      "title": "Redefinir senha",
+      "email": "Email",
+      "check-email": "Verifique seu email para o link de redefinição",
+      "send-reset-link": "Enviar link de redefinição",
+      "new-password": "Nova senha",
+      "confirm-password": "Confirmar senha",
+      "success": "Senha redefinida! Redirecionando...",
+      "invalid-link": "Link de redefinição inválido",
+      "login": "Entrar",
+      "register": "Registrar"
     }
 }

@@ -67,7 +67,11 @@
         "confirm": "Du skal bekræfte, at du er ejeren af kontoen!",
         "verification-resent": "Verifikationskoden er blevet gensendt!",
         "resend-verification": "Gensend verifikation",
-        "wait-before-resend": "Vent 10 sekunder, før du sender den igen..."
+        "wait-before-resend": "Vent 10 sekunder før du sender igen...",
+        "register": "Registrér",
+        "password": "Adgangskode",
+        "forgot-password": "Har du glemt din adgangskode?",
+        "register-title": "Registrér"
     },
     "checkout": {
         "title": "Betaling",
@@ -224,5 +228,35 @@
       "spent": "Brugt",
       "error-loading": "Fejl ved indlæsning af bidragydere",
       "unable-to-load": "Kan ikke indlæse bidragydere i øjeblikket. Prøv venligst igen senere."
+    },
+    "register": {
+      "title": "Registrer",
+      "username": "Brugernavn",
+      "email": "Email",
+      "password": "Adgangskode",
+      "confirm-password": "Bekræft adgangskode",
+      "terms-and-privacy": "Jeg accepterer %Vilkår og betingelser% og $Privatlivspolitik$ for denne butik.",
+      "submit": "Registrer",
+      "already-have-account": "Har du allerede en konto? %Log ind%",
+      "invalid-username": "Ugyldigt brugernavn!",
+      "invalid-email": "Ugyldig email!",
+      "passwords-not-match": "Adgangskoderne matcher ikke!",
+      "registration-successful": "Registrering gennemført! Omdirigerer...",
+      "registration-failed": "Registrering mislykkedes! Prøv venligst igen.",
+      "optional": "valgfri",
+      "login": "Log ind",
+      "forgot-password": "Glemt adgangskode?"
+    },
+    "reset-password": {
+      "title": "Nulstil adgangskode",
+      "email": "Email",
+      "check-email": "Tjek din email for et link til nulstilling",
+      "send-reset-link": "Send nulstillingslink",
+      "new-password": "Ny adgangskode",
+      "confirm-password": "Bekræft adgangskode",
+      "success": "Adgangskode nulstillet! Omdirigerer...",
+      "invalid-link": "Ugyldigt nulstillingslink",
+      "login": "Log ind",
+      "register": "Registrer"
     }
 }

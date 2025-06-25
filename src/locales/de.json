@@ -67,7 +67,11 @@
         "confirm": "Sie müssen bestätigen, dass Sie der Eigentümer des Kontos sind!",
         "verification-resent": "Bestätigungscode wurde erneut gesendet!",
         "resend-verification": "Bestätigung erneut senden",
-        "wait-before-resend": "Warten Sie 10 Sekunden, bevor Sie es erneut senden..."
+        "wait-before-resend": "Bitte warte 10 Sekunden, bevor du es erneut sendest...",
+        "register": "Registrieren",
+        "password": "Passwort",
+        "forgot-password": "Passwort vergessen?",
+        "register-title": "Registrieren"
     },
     "checkout": {
         "title": "Kasse",
@@ -224,5 +228,35 @@
       "spent": "Ausgegeben",
       "error-loading": "Fehler beim Laden der Gönner",
       "unable-to-load": "Die Gönner können derzeit nicht geladen werden. Bitte versuche es später erneut."
+    },
+    "register": {
+      "title": "Registrieren",
+      "username": "Benutzername",
+      "email": "E-Mail",
+      "password": "Passwort",
+      "confirm-password": "Passwort bestätigen",
+      "terms-and-privacy": "Ich stimme den %Allgemeinen Geschäftsbedingungen% und der $Datenschutzerklärung$ dieses Shops zu.",
+      "submit": "Registrieren",
+      "already-have-account": "Du hast bereits ein Konto? %Anmelden%",
+      "invalid-username": "Ungültiger Benutzername!",
+      "invalid-email": "Ungültige E-Mail!",
+      "passwords-not-match": "Passwörter stimmen nicht überein!",
+      "registration-successful": "Registrierung erfolgreich! Weiterleitung...",
+      "registration-failed": "Registrierung fehlgeschlagen! Bitte versuche es erneut.",
+      "optional": "optional",
+      "login": "Anmelden",
+      "forgot-password": "Passwort vergessen?"
+    },
+    "reset-password": {
+      "title": "Passwort zurücksetzen",
+      "email": "E-Mail",
+      "check-email": "Prüfe deine E-Mails auf den Link zum Zurücksetzen",
+      "send-reset-link": "Link zum Zurücksetzen senden",
+      "new-password": "Neues Passwort",
+      "confirm-password": "Passwort bestätigen",
+      "success": "Passwort wurde zurückgesetzt! Weiterleitung...",
+      "invalid-link": "Ungültiger Zurücksetzungslink",
+      "login": "Anmelden",
+      "register": "Registrieren"
     }
 }

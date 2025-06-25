@@ -67,7 +67,11 @@
         "confirm": "Musíte potvrdit, že jste vlastníkem účtu!",
         "verification-resent": "Ověřovací kód byl znovu odeslán!",
         "resend-verification": "Znovu odeslat ověřovací kód",
-        "wait-before-resend": "Pošlete ho znovu až počkáte 10 sekund..."
+        "wait-before-resend": "Počkejte 10 sekund před opětovným odesláním...",
+        "register": "Registrovat",
+        "password": "Heslo",
+        "forgot-password": "Zapomněli jste heslo?",
+        "register-title": "Registrovat"
     },
     "checkout": {
         "title": "Pokladna",
@@ -224,5 +228,35 @@
       "spent": "Utraceno",
       "error-loading": "Chyba při načítání patronů",
       "unable-to-load": "Nelze načíst patrony. Prosím zkuste to později."
+    },
+    "register": {
+      "title": "Registrovat",
+      "username": "Uživatelské jméno",
+      "email": "Email",
+      "password": "Heslo",
+      "confirm-password": "Potvrďte heslo",
+      "terms-and-privacy": "Souhlasím s %Podmínkami použití% a $Zásadami ochrany osobních údajů$ tohoto obchodu.",
+      "submit": "Registrovat",
+      "already-have-account": "Už máte účet? %Přihlásit se%",
+      "invalid-username": "Neplatné uživatelské jméno!",
+      "invalid-email": "Neplatný email!",
+      "passwords-not-match": "Hesla se neshodují!",
+      "registration-successful": "Registrace byla úspěšná! Přesměrování...",
+      "registration-failed": "Registrace se nezdařila! Zkuste to prosím znovu.",
+      "optional": "volitelné",
+      "login": "Přihlásit se",
+      "forgot-password": "Zapomněli jste heslo?"
+    },
+    "reset-password": {
+      "title": "Obnovit heslo",
+      "email": "Email",
+      "check-email": "Zkontrolujte svůj email pro odkaz na obnovení",
+      "send-reset-link": "Odeslat odkaz na obnovení",
+      "new-password": "Nové heslo",
+      "confirm-password": "Potvrďte heslo",
+      "success": "Heslo bylo obnoveno! Přesměrování...",
+      "invalid-link": "Neplatný odkaz na obnovení",
+      "login": "Přihlásit se",
+      "register": "Registrovat"
     }
 }

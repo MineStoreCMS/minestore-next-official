@@ -67,7 +67,11 @@
         "confirm": "Devi confermare di essere il proprietario dell'account!",
         "verification-resent": "Il codice di verifica è stato inviato nuovamente!",
         "resend-verification": "Invia nuovamente la verifica",
-        "wait-before-resend": "Attendi 10 secondi prima di inviarlo di nuovo..."
+        "wait-before-resend": "Attendi 10 secondi prima di inviarlo di nuovo...",
+        "register": "Registrati",
+        "password": "Password",
+        "forgot-password": "Password dimenticata?",
+        "register-title": "Registrati"
     },
     "checkout": {
         "title": "Checkout",
@@ -225,5 +229,35 @@
       "spent": "Speso",
       "error-loading": "Errore nel Caricamento dei Patrons",
       "unable-to-load": "Impossibile caricare i patrons in questo momento. Riprova più tardi."
+    },
+    "register": {
+      "title": "Registrati",
+      "username": "Nome utente",
+      "email": "Email",
+      "password": "Password",
+      "confirm-password": "Conferma password",
+      "terms-and-privacy": "Accetto i %Termini e Condizioni% e la $Politica sulla Privacy$ di questo negozio.",
+      "submit": "Registrati",
+      "already-have-account": "Hai già un account? %Accedi%",
+      "invalid-username": "Nome utente non valido!",
+      "invalid-email": "Email non valida!",
+      "passwords-not-match": "Le password non corrispondono!",
+      "registration-successful": "Registrazione riuscita! Reindirizzamento...",
+      "registration-failed": "Registrazione fallita! Per favore riprova.",
+      "optional": "opzionale",
+      "login": "Accedi",
+      "forgot-password": "Password dimenticata?"
+    },
+    "reset-password": {
+      "title": "Reimposta password",
+      "email": "Email",
+      "check-email": "Controlla la tua email per il link di reimpostazione",
+      "send-reset-link": "Invia link di reimpostazione",
+      "new-password": "Nuova password",
+      "confirm-password": "Conferma password",
+      "success": "Password reimpostata! Reindirizzamento...",
+      "invalid-link": "Link di reimpostazione non valido",
+      "login": "Accedi",
+      "register": "Registrati"
     }
 }

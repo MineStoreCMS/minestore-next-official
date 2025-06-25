@@ -67,7 +67,11 @@
         "confirm": "Hesabın sahibi olduğunuzu onaylamanız gerekiyor!",
         "verification-resent": "Doğrulama kodu yeniden gönderildi!",
         "resend-verification": "Doğrulamayı yeniden gönder",
-        "wait-before-resend": "Tekrar göndermeden önce 10 saniye bekleyin..."
+        "wait-before-resend": "Tekrar göndermeden önce 10 saniye bekleyin...",
+        "register": "Kayıt Ol",
+        "password": "Şifre",
+        "forgot-password": "Şifrenizi mi unuttunuz?",
+        "register-title": "Kayıt Ol"
     },
     "checkout": {
         "title": "Ödeme",
@@ -224,5 +228,35 @@
       "spent": "Harcanan",
       "error-loading": "Destekçiler Yüklenirken Hata",
       "unable-to-load": "Şu anda destekçiler yüklenemiyor. Lütfen daha sonra tekrar deneyin."
+    },
+    "register": {
+      "title": "Kayıt Ol",
+      "username": "Kullanıcı Adı",
+      "email": "E-posta",
+      "password": "Şifre",
+      "confirm-password": "Şifreyi Onayla",
+      "terms-and-privacy": "Bu mağazanın %Şartlar ve Koşullarını% ve $Gizlilik Politikasını$ kabul ediyorum.",
+      "submit": "Kayıt Ol",
+      "already-have-account": "Zaten hesabınız var mı? %Giriş Yap%",
+      "invalid-username": "Geçersiz kullanıcı adı!",
+      "invalid-email": "Geçersiz e-posta!",
+      "passwords-not-match": "Şifreler uyuşmuyor!",
+      "registration-successful": "Kayıt başarılı! Yönlendiriliyor...",
+      "registration-failed": "Kayıt başarısız oldu! Lütfen tekrar deneyin.",
+      "optional": "opsiyonel",
+      "login": "Giriş Yap",
+      "forgot-password": "Şifrenizi mi unuttunuz?"
+    },
+    "reset-password": {
+      "title": "Şifreyi Sıfırla",
+      "email": "E-posta",
+      "check-email": "Sıfırlama linki için e-postanızı kontrol edin",
+      "send-reset-link": "Sıfırlama Linki Gönder",
+      "new-password": "Yeni Şifre",
+      "confirm-password": "Şifreyi Onayla",
+      "success": "Şifre sıfırlandı! Yönlendiriliyor...",
+      "invalid-link": "Geçersiz sıfırlama linki",
+      "login": "Giriş Yap",
+      "register": "Kayıt Ol"
     }
 }

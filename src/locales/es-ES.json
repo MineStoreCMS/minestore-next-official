@@ -67,7 +67,11 @@
         "confirm": "¡Debes confirmar que eres el propietario de la cuenta!",
         "verification-resent": "¡Se ha reenviado el código de verificación!",
         "resend-verification": "Reenviar verificación",
-        "wait-before-resend": "Espera 10 segundos antes de enviarlo nuevamente..."
+        "wait-before-resend": "Espera 10 segundos antes de volver a enviarlo...",
+        "register": "Registrarse",
+        "password": "Contraseña",
+        "forgot-password": "¿Olvidaste tu contraseña?",
+        "register-title": "Registrarse"
     },
     "checkout": {
         "title": "Finalizar Compra",
@@ -224,5 +228,35 @@
       "spent": "Gastado",
       "error-loading": "Error al Cargar los Patrocinadores",
       "unable-to-load": "No se pueden cargar los patrocinadores en este momento. Por favor, inténtalo de nuevo más tarde."
+    },
+    "register": {
+      "title": "Registrarse",
+      "username": "Nombre de usuario",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "confirm-password": "Confirmar contraseña",
+      "terms-and-privacy": "Acepto los %Términos y Condiciones% y la $Política de Privacidad$ de esta tienda.",
+      "submit": "Registrarse",
+      "already-have-account": "¿Ya tienes una cuenta? %Iniciar sesión%",
+      "invalid-username": "¡Nombre de usuario no válido!",
+      "invalid-email": "¡Correo electrónico no válido!",
+      "passwords-not-match": "¡Las contraseñas no coinciden!",
+      "registration-successful": "¡Registro exitoso! Redirigiendo...",
+      "registration-failed": "¡Error en el registro! Por favor, inténtalo de nuevo.",
+      "optional": "opcional",
+      "login": "Iniciar sesión",
+      "forgot-password": "¿Olvidaste tu contraseña?"
+    },
+    "reset-password": {
+      "title": "Restablecer contraseña",
+      "email": "Correo electrónico",
+      "check-email": "Revisa tu correo electrónico para el enlace de restablecimiento",
+      "send-reset-link": "Enviar enlace de restablecimiento",
+      "new-password": "Nueva contraseña",
+      "confirm-password": "Confirmar contraseña",
+      "success": "¡Contraseña restablecida! Redirigiendo...",
+      "invalid-link": "Enlace de restablecimiento no válido",
+      "login": "Iniciar sesión",
+      "register": "Registrarse"
     }
 }

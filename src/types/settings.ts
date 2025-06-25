@@ -1,6 +1,6 @@
 import { TCurrency } from './currency';
 
-type AuthType = 'username' | 'ingame';
+type AuthType = 'username' | 'ingame' | 'register';
 
 export type TSettings = {
     auth_type: AuthType;
