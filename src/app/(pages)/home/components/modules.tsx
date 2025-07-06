@@ -15,7 +15,7 @@ export function Modules() {
                         {t('recent-purchases')}
                         <hr className="mt-2 h-1 w-12 rounded border-0 bg-accent" />
                     </h3>
-                    <RecentPurchases limit={7} />
+                   <RecentPurchases limit={7} mobileLimit={5} />
                 </div>
             </div>
         </div>

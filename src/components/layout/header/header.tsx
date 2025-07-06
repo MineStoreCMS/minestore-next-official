@@ -17,128 +17,128 @@ import { Progress } from '@/components/ui/progress';
 import HeroParticles from './particles';
 
 type HeaderProps = {
-    settings: TSettings;
-    particles: string;
+   settings: TSettings;
+   particles: string;
 };
 
 export const Header: FC<HeaderProps> = ({ settings, particles }) => {
-    const { user } = useUserStore();
-    const cacheBuster = getModifiedCacheBuster(5);
+   const { user } = useUserStore();
+   const cacheBuster = getModifiedCacheBuster(5);
 
-    return (
-        <header className="relative">
-            {particles === 'Enabled' ? <HeroParticles /> : null}
+   return (
+      <header className="relative">
+         {particles === 'Enabled' ? <HeroParticles /> : null}
 
-            <div className="absolute inset-0 -z-20 h-[525px] w-full">
-                <div className="hero-image before:bg-primary/20 dark:before:bg-transparent">
-                    <Image
-                        src={`/background.jpg?${cacheBuster}`}
-                        className="absolute -z-10 h-full w-full object-cover opacity-60"
-                        width={1590}
-                        height={352}
-                        alt=""
-                    />
-                    <svg
-                        className="absolute inset-0 top-[280px] z-[-1] h-full w-full"
-                        viewBox="0 0 1440 224"
-                        fill="none"
-                        preserveAspectRatio="xMidYMid slice"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M720 90.7C960 85 1200 43 1320 21.3L1440 0V224H1320C1200 224 960 224 720 224V90.7Z"
-                            fill="hsl(var(--background))"
-                            fillOpacity="1"
-                        />
-                        <path
-                            d="M720 90.7C480 85 240 43 120 21.3L0 0V224H120C240 224 480 224 720 224V90.7Z"
-                            fill="hsl(var(--background))"
-                            fillOpacity="1"
-                        />
-                    </svg>
-                </div>
+         <div className="absolute inset-0 -z-20 h-[525px] w-full">
+            <div className="hero-image before:bg-primary/20 dark:before:bg-transparent">
+               <Image
+                  src={`/background.jpg?${cacheBuster}`}
+                  className="absolute -z-10 h-full w-full object-cover opacity-60"
+                  width={1590}
+                  height={352}
+                  alt=""
+               />
+               <svg
+                  className="absolute inset-0 top-[280px] z-[-1] h-full w-full"
+                  viewBox="0 0 1440 224"
+                  fill="none"
+                  preserveAspectRatio="xMidYMid slice"
+                  xmlns="http://www.w3.org/2000/svg"
+               >
+                  <path
+                     d="M720 90.7C960 85 1200 43 1320 21.3L1440 0V224H1320C1200 224 960 224 720 224V90.7Z"
+                     fill="hsl(var(--background))"
+                     fillOpacity="1"
+                  />
+                  <path
+                     d="M720 90.7C480 85 240 43 120 21.3L0 0V224H120C240 224 480 224 720 224V90.7Z"
+                     fill="hsl(var(--background))"
+                     fillOpacity="1"
+                  />
+               </svg>
             </div>
+         </div>
 
-            <div className="relative">
-                <Navbar settings={settings} />
+         <div className="relative">
+            <Navbar settings={settings} />
 
-                <HeroSection settings={settings} />
-            </div>
+            <HeroSection settings={settings} />
+         </div>
 
-            <Container>
-                <div className="relative flex h-[110px] items-center bg-primary/20 px-5">
-                    <div className="absolute inset-0 -z-10 size-full rounded-md bg-primary"></div>
-                    <div className="absolute inset-0 -z-10 size-full rounded-md bg-[url(/bg.jpg)] bg-cover opacity-20"></div>
+         <Container>
+            <div className="relative flex h-[90px] sm:h-[110px] items-center bg-primary/20 px-3 sm:px-5">
+               <div className="absolute inset-0 -z-10 size-full rounded-md bg-primary"></div>
+               <div className="absolute inset-0 -z-10 size-full rounded-md bg-[url(/bg.jpg)] bg-cover opacity-20"></div>
 
-                    <DonationGoal goal={settings.goals} />
+               <DonationGoal goal={settings.goals} />
 
-                    {user && (
-                        <>
-                            <div className="relative ml-auto mr-8 flex-col text-right">
-                                <span className="text-base font-bold text-white sm:text-2xl dark:text-accent-foreground">
+               {user && (
+                  <>
+                     <div className="relative ml-auto mr-2 sm:mr-8 flex-col text-right">
+                                <span className="text-sm font-bold text-white sm:text-base md:text-2xl dark:text-accent-foreground">
                                     {user.username}
                                 </span>
-                               {settings.is_virtual_currency === 1 && (
-                                 <span className="ml-4 text-sm text-accent-foreground/80 sm:text-base">
+                        {settings.is_virtual_currency === 1 && (
+                           <span className="ml-2 sm:ml-4 text-xs text-accent-foreground/80 sm:text-sm md:text-base">
                                     {user.virtual_currency} {settings.virtual_currency}
                                  </span>
-                               )}
-                            </div>
+                        )}
+                     </div>
 
-                            <div className="relative top-[-45px] hidden h-[200px] overflow-hidden md:block">
-                                <Link href="/profile">
-                                    <Image
-                                        src={user.avatar || ''}
-                                        alt="Avatar"
-                                        className="h-[270px] w-[111px] -scale-x-100"
-                                        width={111}
-                                        height={270}
-                                    />
-                                </Link>
-                            </div>
-                        </>
-                    )}
-                </div>
-            </Container>
-        </header>
-    );
+                     <div className="relative top-[-45px] hidden h-[200px] overflow-hidden md:block">
+                        <Link href="/profile">
+                           <Image
+                              src={user.avatar || ''}
+                              alt="Avatar"
+                              className="h-[270px] w-[111px] -scale-x-100"
+                              width={111}
+                              height={270}
+                           />
+                        </Link>
+                     </div>
+                  </>
+               )}
+            </div>
+         </Container>
+      </header>
+   );
 };
 
 function DonationGoal({ goal }: { goal: TSettings['goals'] }) {
-    const { currency } = useCurrencyStore();
+   const { currency } = useCurrencyStore();
 
-    if (!goal.length) return null;
+   if (!goal.length) return null;
 
-    const { current_amount, goal_amount, name } = goal[0];
+   const { current_amount, goal_amount, name } = goal[0];
 
-    const filled = convertToLocalCurrency(current_amount).toFixed(2);
-    const goalValue = convertToLocalCurrency(goal_amount).toFixed(2);
+   const filled = convertToLocalCurrency(current_amount).toFixed(2);
+   const goalValue = convertToLocalCurrency(goal_amount).toFixed(2);
 
-    const percent = (current_amount / goal_amount) * 100;
+   const percent = (current_amount / goal_amount) * 100;
 
-    return (
-        <div className="relative flex-col gap-2">
-            <div className="flex items-center gap-6">
-                <div>
-                    <p className="text-lg font-bold text-white sm:text-2xl dark:text-accent-foreground">
-                        <span className="sr-only">Donation Goal</span>
-                        {name}
-                    </p>
-                    <p className="text-sm text-accent-foreground/80 sm:text-base">
+   return (
+      <div className="relative flex-col gap-2">
+         <div className="flex items-center gap-6">
+            <div>
+               <p className="text-lg font-bold text-white sm:text-2xl dark:text-accent-foreground">
+                  <span className="sr-only">Donation Goal</span>
+                  {name}
+               </p>
+               <p className="text-sm text-accent-foreground/80 sm:text-base">
                         <span className="sr-only">
                             The goal is {name} and the current amount is {filled} out of {goalValue}{' '}
-                            {currency?.name || 'USD'}
+                           {currency?.name || 'USD'}
                         </span>
-                        {filled} / {goalValue} {currency?.name || ''}
-                    </p>
-                </div>
-                <p className="font-bold text-white dark:text-accent-foreground">
-                    <span className="sr-only">Progress</span>
-                    {percent.toFixed(2)}%
-                </p>
+                  {filled} / {goalValue} {currency?.name || ''}
+               </p>
             </div>
+            <p className="font-bold text-white dark:text-accent-foreground">
+               <span className="sr-only">Progress</span>
+               {percent.toFixed(2)}%
+            </p>
+         </div>
 
-            <Progress value={percent} className="h-2" />
-        </div>
-    );
+         <Progress value={percent} className="h-2" />
+      </div>
+   );
 }

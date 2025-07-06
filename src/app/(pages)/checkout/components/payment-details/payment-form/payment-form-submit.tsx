@@ -163,8 +163,6 @@ export const PaymentFormSubmit = ({ loading }: { loading: boolean }) => {
    useEffect(() => {
       if (isPayNowSelected) {
          form.setValue('privacyPolicy', true);
-      } else {
-         form.setValue('privacyPolicy', false);
       }
    }, [isPayNowSelected, form]);
 
