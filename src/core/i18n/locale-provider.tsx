@@ -1,55 +1,61 @@
 'use client';
 
-import { FC, useEffect, useLayoutEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { useLangStore } from '@/stores/lang';
 import { getDictionary } from '.';
 
+const dictionaryCache: Record<string, Record<string, string>> = {};
+
 interface LocaleProviderProps {
-    children: React.ReactNode;
-    initialMessages: Record<string, string>;
-    systemLanguage: string;
+   children: React.ReactNode;
+   initialMessages: Record<string, string>;
+   systemLanguage: string;
 }
 
 export const LocaleProvider: FC<LocaleProviderProps> = ({
-    children,
-    initialMessages,
-    systemLanguage
-}) => {
-    const { lang, setLang } = useLangStore();
+                                                           children,
+                                                           initialMessages,
+                                                           systemLanguage,
+                                                        }) => {
+   const { lang, setLang } = useLangStore();
+   const [messages, setMessages] = useState(initialMessages);
+   const [isMounted, setIsMounted] = useState(false);
 
-    const [messages, setMessages] = useState(initialMessages);
-    const [isMounted, setIsMounted] = useState(false);
+   useEffect(() => {
+      setIsMounted(true);
+      const defaultLang = lang || systemLanguage || navigator.language || 'en';
 
-    if (!lang) {
-        setLang(systemLanguage);
-    }
+      if (!lang) {
+         setLang(defaultLang);
+      }
 
-    useLayoutEffect(() => {
-        const load = async () => {
-            try {
-                const messages = await getDictionary(lang as string);
-                setMessages(messages);
-            } catch (err) {
-                console.error('Error loading dictionary', err);
+      const loadDictionary = async () => {
+         const currentLang = lang || defaultLang;
+         if (dictionaryCache[currentLang]) {
+            setMessages(dictionaryCache[currentLang]);
+            return;
+         }
 
-                const messages = await getDictionary('en');
-                setMessages(messages);
-            }
-        };
+         try {
+            const dictionary = await getDictionary(currentLang);
+            dictionaryCache[currentLang] = dictionary;
+            setMessages(dictionary);
+         } catch (err) {
+            const fallbackDictionary = await getDictionary('en');
+            dictionaryCache['en'] = fallbackDictionary;
+            setMessages(fallbackDictionary);
+         }
+      };
 
-        load();
-    }, [lang]);
+      loadDictionary();
+   }, [lang, setLang, systemLanguage]);
 
-    useEffect(() => {
-        setIsMounted(true);
-    }, []);
+   if (!isMounted) return null;
 
-    if (!isMounted) return null;
-
-    return (
-        <NextIntlClientProvider locale={lang} messages={messages}>
-            {children}
-        </NextIntlClientProvider>
-    );
+   return (
+      <NextIntlClientProvider locale={lang || 'en'} messages={messages}>
+         {children}
+      </NextIntlClientProvider>
+   );
 };
