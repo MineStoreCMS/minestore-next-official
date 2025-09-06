@@ -33,7 +33,10 @@
         "unavailable": "Không khả dụng",
         "items-left": "mặt hàng còn lại",
         "available-for-you": "Có sẵn cho bạn",
-        "featured": "Nổi bật"
+        "featured": "Nổi bật",
+        "gift-this-package": "Tặng gói này",
+        "gift-username-placeholder": "Nhập tên người dùng để tặng",
+        "gift": "Quà tặng"
     },
     "recent-purchases": "Mua gần đây",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Sản phẩm này rất phổ biến với khách hàng của chúng tôi. Hãy thử nó!",
         "empty-cart-title": "Oops! Giỏ hàng của bạn trống",
         "empty-cart-description": "Có vẻ như hiện tại bạn không có gì trong giỏ hàng. Hãy dành thời gian khám phá cửa hàng của chúng tôi và khám phá các vật phẩm trò chơi tuyệt vời, hạng và nhiều hơn nữa! Khi bạn tìm thấy thứ gì đó bạn thích, hãy thêm nó vào giỏ hàng và tiếp tục đến bước hoàn tất đơn hàng.",
+        "gift-to": "Tặng cho",
         "details": {
             "your-details": "Chi tiết của bạn",
             "you-are-buying-as": "Bạn đang mua với tư cách là...",

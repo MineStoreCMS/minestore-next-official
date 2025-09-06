@@ -7,9 +7,10 @@ import { Price } from '@/components/base/price/price';
 import { ItemDetails } from '@layout/item-details/item-details';
 import { useCartStore } from '@/stores/cart';
 import { TableRow, TableCell } from '@/components/ui/table';
-import { InfoIcon, Trash2 } from 'lucide-react';
+import { InfoIcon, Trash2, Gift } from 'lucide-react';
 import { ItemPreferences } from './item-preferences';
 import { notify } from "@/core/notifications";
+import { useTranslations } from 'next-intl';
 
 const { updateItemCount, removeItemFromCart, getCart } = getEndpoints(fetcher);
 
@@ -30,6 +31,7 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
 
     const isPriceVirtual = item.is_virtual_currency_only === 1;
     const price = isPriceVirtual ? item.virtual_price : item.price;
+    const t = useTranslations('checkout');
 
     const handleRemoveItemFromCart = async (id: number) => {
         try {
@@ -83,6 +85,23 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
                 </TableCell>
                 <TableCell className="text-balance text-sm font-bold text-card-foreground md:text-lg">
                     {item.name}
+                    {item.gift && (
+                        <div className="mt-1 flex flex-wrap items-center gap-1 text-xs md:text-sm text-muted-foreground">
+                            <Gift className="h-4 w-4 md:h-5 md:w-5" />
+                            <span className="hidden md:inline mr-1">{ t('gift-to') }</span>
+                            <Image
+                              src={item.gift.avatar}
+                              alt={item.gift.gifted_to}
+                              width={20}
+                              height={20}
+                              className="inline-block h-4 w-4 md:h-5 md:w-5 rounded object-cover border border-accent"
+                              onError={(e) => {
+                                 (e.target as HTMLImageElement).src = '/steve-icon.png';
+                              }}
+                            />
+                            <span className="text-primary break-all">{item.gift.gifted_to}</span>
+                        </div>
+                    )}
                 </TableCell>
                 <TableCell>
                     <Price

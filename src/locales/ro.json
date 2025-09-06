@@ -33,7 +33,10 @@
         "unavailable": "Indisponibil",
         "items-left": "articole rămase",
         "available-for-you": "Disponibil pentru tine",
-        "featured": "Recomandat"
+        "featured": "Recomandat",
+        "gift-this-package": "Oferă acest pachet cadou",
+        "gift-username-placeholder": "Introdu numele de utilizator pentru a oferi cadou",
+        "gift": "Cadou"
     },
     "recent-purchases": "Plăți recente",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Acest produs este popular printre clienții noștri. Încercați-l!",
         "empty-cart-title": "Oops! Coșul dvs. este gol",
         "empty-cart-description": "Se pare că momentan nu aveți nimic în coș. Luați-vă timp să explorați magazinul nostru și descoperiți obiecte de joc uimitoare, ranguri și multe altele! Când găsiți ceva care vă place, adăugați-l în coș și continuați la finalizarea comenzii.",
+        "gift-to": "Oferă",
         "details": {
             "your-details": "Detaliile dvs.",
             "you-are-buying-as": "Cumpărați ca...",

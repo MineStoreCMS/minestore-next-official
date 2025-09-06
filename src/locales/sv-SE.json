@@ -33,7 +33,10 @@
         "unavailable": "Ej tillgänglig",
         "items-left": "artiklar kvar",
         "available-for-you": "Tillgänglig för dig",
-        "featured": "Utvald"
+        "featured": "Utvald",
+        "gift-this-package": "Ge detta paket som gåva",
+        "gift-username-placeholder": "Ange användarnamn för att ge gåva",
+        "gift": "Gåva"
     },
     "recent-purchases": "Senaste betalningar",
     "home": {

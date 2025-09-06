@@ -33,7 +33,10 @@
         "unavailable": "Utilgængelig",
         "items-left": "varer tilbage",
         "available-for-you": "Tilgængelig for dig",
-        "featured": "Udvalgt"
+        "featured": "Udvalgt",
+        "gift-this-package": "Giv denne pakke som gave",
+        "gift-username-placeholder": "Indtast brugernavn for at give gave",
+        "gift": "Gave"
     },
     "recent-purchases": "Seneste betalinger",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Dette produkt er populært blandt vores kunder. Prøv det!",
         "empty-cart-title": "Ups! Din kurv er tom",
         "empty-cart-description": "Det ser ud til, at der ikke er noget i din kurv i øjeblikket. Tag dig tid til at udforske vores butik og opdag fantastiske in-game genstande, rang og meget mere! Når du finder noget, du kan lide, skal du blot tilføje det til din kurv og gå til betaling.",
+        "gift-to": "Giv til",
         "details": {
             "your-details": "Dine detaljer",
             "you-are-buying-as": "Du køber som...",

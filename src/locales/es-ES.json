@@ -33,7 +33,10 @@
         "unavailable": "No disponible",
         "items-left": "artículos restantes",
         "available-for-you": "Disponible para ti",
-        "featured": "Destacado"
+        "featured": "Destacado",
+        "gift-this-package": "Regalar este paquete",
+        "gift-username-placeholder": "Ingresa el nombre de usuario para regalar",
+        "gift": "Regalo"
     },
     "recent-purchases": "Pagos Recientes",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Este artículo es popular entre nuestros clientes. ¡Pruébalo!",
         "empty-cart-title": "¡Oops! Tu Carrito está Vacío",
         "empty-cart-description": "Parece que no tienes nada en tu carrito en este momento. Tómate un momento para explorar nuestra tienda y descubrir increíbles objetos dentro del juego, rangos y más. Cuando encuentres algo que te guste, simplemente agrégalo a tu carrito y procede al pago.",
+        "gift-to": "Regalar a",
         "details": {
             "your-details": "Tus Datos",
             "you-are-buying-as": "Estás comprando como...",

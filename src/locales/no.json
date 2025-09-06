@@ -33,7 +33,10 @@
         "unavailable": "Utilgjengelig",
         "items-left": "ting igjen",
         "available-for-you": "Tilgjengelig for deg",
-        "featured": "Utvalgt"
+        "featured": "Utvalgt",
+        "gift-this-package": "Gi denne pakken som gave",
+        "gift-username-placeholder": "Skriv inn brukernavn for å gi gave",
+        "gift": "Gave"
     },
     "recent-purchases": "Nylige betalinger",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Denne varen er populær blant våre kunder. Prøv den!",
         "empty-cart-title": "Oops! Handlekurven din er tom",
         "empty-cart-description": "Det ser ut som det ikke er noe i handlekurven din for øyeblikket. Ta deg tid til å utforske butikken vår og oppdag fantastiske in-game-ting, rangsystemer og mer! Når du finner noe du liker, legger du det bare til i handlekurven og går videre til betaling.",
+        "gift-to": "Gi til",
         "details": {
             "your-details": "Dine detaljer",
             "you-are-buying-as": "Du kjøper som...",

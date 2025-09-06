@@ -33,7 +33,10 @@
         "unavailable": "Indisponible",
         "items-left": "articles restants",
         "available-for-you": "Disponible pour vous",
-        "featured": "En vedette"
+        "featured": "En vedette",
+        "gift-this-package": "Offrir ce paquet",
+        "gift-username-placeholder": "Entrez le nom d'utilisateur à qui offrir",
+        "gift": "Cadeau"
     },
     "recent-purchases": "Paiements récents",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Cet article est populaire parmi nos clients. Essayez-le !",
         "empty-cart-title": "Oops ! Votre panier est vide",
         "empty-cart-description": "Il semble qu'il n'y ait rien dans votre panier pour le moment. Prenez un moment pour explorer notre boutique et découvrir des objets de jeu incroyables, des grades, et plus encore ! Lorsque vous trouvez quelque chose qui vous plaît, ajoutez-le simplement à votre panier et passez à la caisse.",
+        "gift-to": "Offrir à",
         "details": {
             "your-details": "Vos coordonnées",
             "you-are-buying-as": "Vous achetez en tant que...",

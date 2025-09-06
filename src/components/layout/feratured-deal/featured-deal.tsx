@@ -21,9 +21,9 @@ export const FeaturedDeal: FC<FeaturedDealProps> = ({ item }) => {
 
     const handleClick = () => {
         if (!user) {
-           notify('Please authorize!', 'red');
-           router.push('/auth');
-           return;
+            notify('Please authorize!', 'red');
+            router.push('/auth');
+            return;
         }
         setShow(true);
     };

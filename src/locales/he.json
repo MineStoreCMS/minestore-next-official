@@ -33,7 +33,10 @@
         "unavailable": "לא זמין",
         "items-left": "פריטים נותרים",
         "available-for-you": "זמין עבורך",
-        "featured": "מומלץ"
+        "featured": "מומלץ",
+        "gift-this-package": "לשלוח את החבילה כמתנה",
+        "gift-username-placeholder": "הכנס שם משתמש לשליחה במתנה",
+        "gift": "מתנה"
     },
     "recent-purchases": "תשלומים אחרונים",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "פריט זה פופולרי בקרב לקוחותינו. נסה אותו!",
         "empty-cart-title": "אופס! העגלה שלך ריקה",
         "empty-cart-description": "נראה שאין כרגע פריטים בעגלת הקניות שלך. תן רגע לחקור את החנות שלנו ולגלות פריטים מדהימים במשחק, דרגות ועוד! כשתמצא משהו שאתה אוהב, פשוט הוסף אותו לעגלה והמשך לתשלום.",
+        "gift-to": "שלח מתנה ל",
         "details": {
             "your-details": "הפרטים שלך",
             "you-are-buying-as": "אתה קונה כ...",

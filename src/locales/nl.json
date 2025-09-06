@@ -33,7 +33,10 @@
         "unavailable": "Niet beschikbaar",
         "items-left": "artikelen over",
         "available-for-you": "Beschikbaar voor jou",
-        "featured": "Uitgelicht"
+        "featured": "Uitgelicht",
+        "gift-this-package": "Geef een pakket",
+        "gift-username-placeholder": "Voer gebruikersnaam in om cadeau te doen",
+        "gift": "Cadeau"
     },
     "recent-purchases": "Recente Betalingen",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Dit item is populair onder onze klanten. Probeer het eens!",
         "empty-cart-title": "Oeps! Uw winkelwagen is leeg",
         "empty-cart-description": "Het lijkt erop dat er op dit moment niets in uw winkelwagen zit. Neem even de tijd om onze winkel te verkennen en ontdek geweldige in-game items, rangen en meer! Wanneer u iets leuks vindt, voeg het dan eenvoudig toe aan uw winkelwagen en ga verder met afrekenen.",
+        "gift-to": "Cadeau aan",
         "details": {
             "your-details": "Uw Gegevens",
             "you-are-buying-as": "U koopt als...",

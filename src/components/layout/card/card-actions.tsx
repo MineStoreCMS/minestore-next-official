@@ -1,5 +1,6 @@
 import { useCartActions } from '@/app/(pages)/categories/utils/use-cart-actions';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import { TItem } from '@/types/item';
 import { joinClasses } from '@helpers/join-classes';
 import { InfoIcon, Trash2, ShoppingCart, Loader2 } from 'lucide-react';
@@ -116,55 +117,123 @@ export function CardActionButtons({
                                      displayFull,
                                      addToCartPressed,
                                      setAddToCartPressed,
-                                     is_subs_only
-                                  }: CardActionButtonProps) {
-   if (is_subs_only) {
-      return isItemInCart ? (
-         <RemoveFromCartButton
-            isItemInCart={isItemInCart}
-            item={item}
-            displayFull={displayFull}
-            addToCartPressed={addToCartPressed}
-            setAddToCartPressed={setAddToCartPressed}
-            wide={true}
-         />
-      ) : (
-         <SubscriptionsButton
-            isItemInCart={isItemInCart}
-            item={item}
-            displayFull={displayFull}
-            addToCartPressed={addToCartPressed}
-            setAddToCartPressed={setAddToCartPressed}
-            wide={true}
-         />
-      );
-   }
+                                     is_subs_only,
+                                     showGiftButton = false
+                                  }: CardActionButtonProps & { showGiftButton?: boolean }) {
+    const [showGiftInput, setShowGiftInput] = useState(false);
+    const [giftTo, setGiftTo] = useState('');
+    const [giftLoading, setGiftLoading] = useState(false);
+    const { handleAddItem } = useCartActions();
+    const t = useTranslations('card');
+    const path = usePathname();
 
-   return (
-      <>
-         <AddToCartButton
-            isItemInCart={isItemInCart}
-            item={item}
-            displayFull={displayFull}
-            addToCartPressed={addToCartPressed}
-            setAddToCartPressed={setAddToCartPressed}
-         />
-         <SubscriptionsButton
-            isItemInCart={isItemInCart}
-            item={item}
-            displayFull={displayFull}
-            addToCartPressed={addToCartPressed}
-            setAddToCartPressed={setAddToCartPressed}
-         />
-         <RemoveFromCartButton
-            isItemInCart={isItemInCart}
-            item={item}
-            displayFull={displayFull}
-            addToCartPressed={false}
-            setAddToCartPressed={setAddToCartPressed}
-         />
-      </>
-   );
+    const handleGift = async () => {
+        if (!giftTo) return;
+        try {
+            setGiftLoading(true);
+            setAddToCartPressed(true);
+            await handleAddItem({
+                id: item.id,
+                calledFromCheckout: path === '/checkout',
+                payment_type: 'gift',
+                itemType: 'regular',
+                gift_to: giftTo
+            });
+            setShowGiftInput(false);
+            setGiftTo('');
+        } catch (error) {
+            console.error('Error while gifting item:', error);
+        } finally {
+            setGiftLoading(false);
+            setAddToCartPressed(false);
+        }
+    };
+
+    if (is_subs_only) {
+        return isItemInCart ? (
+            <RemoveFromCartButton
+                isItemInCart={isItemInCart}
+                item={item}
+                displayFull={displayFull}
+                addToCartPressed={addToCartPressed}
+                setAddToCartPressed={setAddToCartPressed}
+                wide={true}
+            />
+        ) : (
+            <SubscriptionsButton
+                isItemInCart={isItemInCart}
+                item={item}
+                displayFull={displayFull}
+                addToCartPressed={addToCartPressed}
+                setAddToCartPressed={setAddToCartPressed}
+                wide={true}
+            />
+        );
+    }
+
+    return (
+        <>
+            {showGiftButton && !isItemInCart && (
+                <div className={joinClasses('flex flex-col gap-2', displayFull ? 'min-w-[180px]' : '')}>
+                    {!showGiftInput ? (
+                        <Button
+                            variant="outline"
+                            className="h-[50px] gap-2"
+                            onClick={() => setShowGiftInput(true)}
+                            disabled={addToCartPressed}
+                        >
+                            🎁 { t('gift-this-package') }
+                        </Button>
+                    ) : (
+                        <div className="flex gap-2">
+                            <Input
+                                placeholder={t('gift-username-placeholder', { defaultValue: 'Recipient username' })}
+                                value={giftTo}
+                                onChange={e => setGiftTo(e.target.value)}
+                                className="h-[50px]"
+                                disabled={giftLoading}
+                            />
+                            <Button
+                                onClick={handleGift}
+                                disabled={!giftTo || giftLoading}
+                                className="h-[50px]"
+                            >
+                                {giftLoading ? <Loader2 className="animate-spin" size={24} /> : t('gift', { defaultValue: 'Gift' })}
+                            </Button>
+                            <Button
+                                variant="ghost"
+                                onClick={() => { setShowGiftInput(false); setGiftTo(''); }}
+                                className="h-[50px]"
+                            >
+                                ✖
+                            </Button>
+                        </div>
+                    )}
+                </div>
+            )}
+            <AddToCartButton
+                isItemInCart={isItemInCart}
+                item={item}
+                displayFull={displayFull}
+                addToCartPressed={addToCartPressed}
+                setAddToCartPressed={setAddToCartPressed}
+            />
+            <SubscriptionsButton
+                isItemInCart={isItemInCart}
+                item={item}
+                displayFull={displayFull}
+                addToCartPressed={addToCartPressed}
+                setAddToCartPressed={setAddToCartPressed}
+            />
+            <RemoveFromCartButton
+                isItemInCart={isItemInCart}
+                item={item}
+                displayFull={displayFull}
+                addToCartPressed={false}
+                setAddToCartPressed={setAddToCartPressed}
+            />
+        </>
+    );
 }
 
 function AddToCartButton({
@@ -174,7 +243,7 @@ function AddToCartButton({
                             addToCartPressed,
                             setAddToCartPressed
                          }: CardActionButtonProps) {
-   const isAvailable = item.is_unavailable ? false : true;
+   const isAvailable = !item.is_unavailable;
 
    const [loading, setLoading] = useState(false);
    const { handleAddItem } = useCartActions();

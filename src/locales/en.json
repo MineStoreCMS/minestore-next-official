@@ -33,7 +33,10 @@
         "unavailable": "Unavailable",
         "items-left": "items left",
         "available-for-you": "Available for you",
-        "featured": "Featured"
+        "featured": "Featured",
+        "gift-this-package": "Gift this package",
+        "gift-username-placeholder": "Enter username to gift",
+        "gift": "Gift"
     },
     "recent-purchases": "Recent Payments",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "This item is popular among us customers. Give it a try!",
         "empty-cart-title": "Oops! Your Cart is Empty",
         "empty-cart-description": "Looks like there is nothing in your cart at the moment. Take a moment to explore our store and discover amazing in-game items, ranks, and more! When you find something you like, simply add it to your cart and proceed to checkout.",
+        "gift-to": "Gift to",
         "details": {
             "your-details": "Your Details",
             "you-are-buying-as": "You are buying as...",

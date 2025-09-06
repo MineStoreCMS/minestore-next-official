@@ -33,7 +33,10 @@
         "unavailable": "Nicht verfügbar",
         "items-left": "Artikel übrig",
         "available-for-you": "Verfügbar für dich",
-        "featured": "Empfohlen"
+        "featured": "Empfohlen",
+        "gift-this-package": "Dieses Paket verschenken",
+        "gift-username-placeholder": "Benutzernamen eingeben, um zu verschenken",
+        "gift": "Geschenk"
     },
     "recent-purchases": "Letzte Zahlungen",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Dieser Artikel ist bei unseren Kunden beliebt. Probieren Sie es aus!",
         "empty-cart-title": "Oops! Ihr Warenkorb ist leer",
         "empty-cart-description": "Es scheint, dass sich derzeit nichts in Ihrem Warenkorb befindet. Nehmen Sie sich einen Moment Zeit, um unseren Shop zu erkunden und erstaunliche Ingame-Items, Ränge und mehr zu entdecken! Wenn Sie etwas finden, das Ihnen gefällt, fügen Sie es einfach Ihrem Warenkorb hinzu und gehen Sie zur Kasse.",
+        "gift-to": "Verschenken an",
         "details": {
             "your-details": "Ihre Angaben",
             "you-are-buying-as": "Sie kaufen als...",

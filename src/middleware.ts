@@ -35,30 +35,30 @@ export async function middleware(request: NextRequest) {
         ).json()) as TCheckAccessibilityResponse;
 
         if (!data.success) {
-           if (data.status === 'maintenance') {
-              // Create a response with a maintenance cookie and redirect
-              const response = NextResponse.redirect(new URL('/maintenance', request.url));
-              response.cookies.set('maintenance', 'true', {
-                 maxAge: 60 * 10,
-              });
-              return response;
-           }
+            if (data.status === 'maintenance') {
+                // Create a response with a maintenance cookie and redirect
+                const response = NextResponse.redirect(new URL('/maintenance', request.url));
+                response.cookies.set('maintenance', 'true', {
+                   maxAge: 60 * 10,
+                });
+                return response;
+            }
 
-           if (data.status === 'banned') {
-              // Create a response with a banned cookie and redirect
-              const response = NextResponse.redirect(new URL('/banned', request.url));
-              response.cookies.set('banned', 'true', {
-                 maxAge: 60 * 10,
-              });
-              return response;
-           }
+            if (data.status === 'banned') {
+                // Create a response with a banned cookie and redirect
+                const response = NextResponse.redirect(new URL('/banned', request.url));
+                response.cookies.set('banned', 'true', {
+                   maxAge: 60 * 10,
+                });
+                return response;
+            }
 
-           if (data.status === 'invalid_token') {
-              // Remove token cookie and refresh the page
-              const response = NextResponse.redirect(new URL('/', request.url));
-              response.cookies.delete('token');
-              return response;
-           }
+            if (data.status === 'invalid_token') {
+               // Remove token cookie and refresh the page
+               const response = NextResponse.redirect(new URL('/', request.url));
+               response.cookies.delete('token');
+               return response;
+            }
         }
     }
 

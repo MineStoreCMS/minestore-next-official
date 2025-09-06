@@ -33,7 +33,10 @@
     "unavailable": "Niedostępne",
     "items-left": "pozostało przedmiotów",
     "available-for-you": "Dostępne dla ciebie",
-    "featured": "Polecane"
+    "featured": "Polecane",
+    "gift-this-package": "Podaruj ten pakiet",
+    "gift-username-placeholder": "Wpisz nazwę użytkownika, któremu chcesz podarować",
+    "gift": "Prezent"
   },
   "recent-purchases": "Najnowsze Płatności",
   "home": {
@@ -84,6 +87,7 @@
     "this-item-is-popular-among-us-customers": "Ten przedmiot jest popularny wśród naszych klientów. Spróbuj go!",
     "empty-cart-title": "Ups! Twój Koszyk jest Pusty",
     "empty-cart-description": "Wygląda na to, że obecnie nie masz nic w koszyku. Przejrzyj nasz sklep i odkryj niesamowite przedmioty, rangi i inne! Kiedy znajdziesz coś, co ci się spodoba, dodaj to do koszyka i przejdź do zamówienia.",
+    "gift-to": "Prezent dla",
     "details": {
       "your-details": "Twoje Dane",
       "you-are-buying-as": "Kupujesz jako...",

@@ -149,3 +149,162 @@ body {
     initial-value: 0deg;
     inherits: false;
 }
+
+.ql-editor h1 {
+   font-size: 2em !important;
+   font-weight: bold !important;
+   margin: 0.67em 0 !important;
+   display: block !important;
+}
+
+.ql-editor h2 {
+   font-size: 1.5em !important;
+   font-weight: bold !important;
+   margin: 0.83em 0 !important;
+   display: block !important;
+}
+
+.ql-editor h3 {
+   font-size: 1.17em !important;
+   font-weight: bold !important;
+   margin: 1em 0 !important;
+   display: block !important;
+}
+
+.ql-editor h4 {
+   font-size: 1em !important;
+   font-weight: bold !important;
+   margin: 1.33em 0 !important;
+   display: block !important;
+}
+
+.ql-editor h5 {
+   font-size: 0.83em !important;
+   font-weight: bold !important;
+   margin: 1.67em 0 !important;
+   display: block !important;
+}
+
+.ql-editor h6 {
+   font-size: 0.67em !important;
+   font-weight: bold !important;
+   margin: 2.33em 0 !important;
+   display: block !important;
+}
+
+/* Emphasis and strong elements */
+.ql-editor em {
+   font-style: italic !important;
+}
+
+.ql-editor strong {
+   font-weight: bold !important;
+}
+
+.ql-editor b {
+   font-weight: bold !important;
+}
+
+.ql-editor i {
+   font-style: italic !important;
+}
+
+/* Paragraph styles */
+.ql-editor p {
+   margin: 1em 0 !important;
+   display: block !important;
+}
+
+/* List styles */
+.ql-editor ul {
+   margin: 1em 0 !important;
+   padding-left: 40px !important;
+   display: block !important;
+   list-style-type: disc !important;
+}
+
+.ql-editor ol {
+   margin: 1em 0 !important;
+   padding-left: 40px !important;
+   display: block !important;
+   list-style-type: decimal !important;
+}
+
+.ql-editor li {
+   display: list-item !important;
+   margin: 0 !important;
+}
+
+/* Blockquote styles */
+.ql-editor blockquote {
+   margin: 1em 10px !important;
+   display: block !important;
+   padding-left: 1em !important;
+   border-left: 4px solid #ccc !important;
+   font-style: italic !important;
+}
+
+/* Code styles */
+.ql-editor code {
+   font-family: monospace !important;
+   background-color: #f4f4f4 !important;
+   padding: 2px 4px !important;
+   border-radius: 3px !important;
+}
+
+.ql-editor pre {
+   font-family: monospace !important;
+   white-space: pre !important;
+   margin: 1em 0 !important;
+   display: block !important;
+   background-color: #f4f4f4 !important;
+   padding: 1em !important;
+   border-radius: 4px !important;
+   overflow-x: auto !important;
+}
+
+/* Table styles */
+.ql-editor table {
+   border-collapse: collapse !important;
+   border-spacing: 0 !important;
+   margin: 1em 0 !important;
+}
+
+.ql-editor th,
+.ql-editor td {
+   border: 1px solid #ccc !important;
+   padding: 8px !important;
+   text-align: left !important;
+}
+
+.ql-editor th {
+   font-weight: bold !important;
+   background-color: #f5f5f5 !important;
+}
+
+/* Horizontal rule */
+.ql-editor hr {
+   border: none !important;
+   border-top: 1px solid #ccc !important;
+   margin: 1em 0 !important;
+   display: block !important;
+}
+
+/* Text formatting */
+.ql-editor small {
+   font-size: 0.83em !important;
+}
+
+.ql-editor big {
+   font-size: 1.17em !important;
+}
+
+.ql-editor sub {
+   font-size: 0.83em !important;
+   vertical-align: sub !important;
+}
+
+.ql-editor sup {
+   font-size: 0.83em !important;
+   vertical-align: super !important;
+}

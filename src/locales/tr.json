@@ -33,7 +33,10 @@
         "unavailable": "Mevcut Değil",
         "items-left": "ürün kaldı",
         "available-for-you": "Sizin İçin Mevcut",
-        "featured": "Öne Çıkan"
+        "featured": "Öne Çıkan",
+        "gift-this-package": "Hediye",
+        "gift-username-placeholder": "Hediye etmek için kullanıcı adını gir",
+        "gift": "Hediye"
     },
     "recent-purchases": "Son Ödemeler",
     "home": {

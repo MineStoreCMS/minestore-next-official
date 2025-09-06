@@ -12,8 +12,9 @@ const { addToCart, getCart, removeItemFromCart, getItem } = getEndpoints(fetcher
 type THandleAddItem = {
     id: number;
     calledFromCheckout: boolean;
-    payment_type: 'regular' | 'subscription';
+    payment_type: 'regular' | 'subscription' | 'gift';
     itemType: 'regular' | 'subscription';
+    gift_to?: string;
 };
 
 export const useCartActions = () => {
@@ -27,7 +28,8 @@ export const useCartActions = () => {
         id,
         calledFromCheckout,
         payment_type,
-        itemType
+        itemType,
+        gift_to
     }: THandleAddItem) => {
         const currentItem = await getItem(id);
 
@@ -44,7 +46,8 @@ export const useCartActions = () => {
             await addToCart({
                 id,
                 payment_type,
-                promoted: calledFromCheckout
+                promoted: calledFromCheckout,
+                ...(payment_type === 'gift' && gift_to ? { gift_to } : {})
             });
 
             const response = await getCart();

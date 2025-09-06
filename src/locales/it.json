@@ -33,7 +33,10 @@
         "unavailable": "Non disponibile",
         "items-left": "articoli rimasti",
         "available-for-you": "Disponibile per te",
-        "featured": "In Evidenza"
+        "featured": "In Evidenza",
+        "gift-this-package": "Regala",
+        "gift-username-placeholder": "Inserisci il nome utente a cui regalare",
+        "gift": "Regalo"
     },
     "recent-purchases": "Pagamenti Recenti",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Questo articolo è popolare tra i nostri clienti. Provalo!",
         "empty-cart-title": "Oops! Il tuo Carrello è Vuoto",
         "empty-cart-description": "Sembra che al momento non ci sia nulla nel tuo carrello. Dedica un momento per esplorare il nostro negozio e scoprire fantastici oggetti di gioco, ranghi e altro! Quando trovi qualcosa che ti piace, aggiungilo al carrello e procedi al pagamento.",
+        "gift-to": "Regala a",
         "details": {
             "your-details": "I Tuoi Dati",
             "you-are-buying-as": "Stai acquistando come...",

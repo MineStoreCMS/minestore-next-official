@@ -33,7 +33,10 @@
         "unavailable": "Nem elérhető",
         "items-left": "darab maradt",
         "available-for-you": "Elérhető számodra",
-        "featured": "Kiemelt"
+        "featured": "Kiemelt",
+        "gift-this-package": "Ajándékozd",
+        "gift-username-placeholder": "Add meg a felhasználónevet az ajándékozáshoz",
+        "gift": "Ajándék"
     },
     "recent-purchases": "Legutóbbi vásárlások",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Ez a termék népszerű vásárlóink körében. Próbálja ki!",
         "empty-cart-title": "Hoppá! A kosarad üres",
         "empty-cart-description": "Úgy tűnik, jelenleg nincs semmi a kosaradban. Fedezd fel webáruházunkat, és találd meg az izgalmas játékbeli tárgyakat, rangokat és egyebeket! Amint találsz valamit, ami tetszik, add hozzá a kosaradhoz és haladj tovább a fizetéssel.",
+        "gift-to": "Ajándék neki",
         "details": {
             "your-details": "Adatok",
             "you-are-buying-as": "Vásárlóként szerepel",

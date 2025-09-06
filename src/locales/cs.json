@@ -33,7 +33,10 @@
         "unavailable": "Není k dispozici",
         "items-left": "zbývající položky",
         "available-for-you": "Dostupné pro vás",
-        "featured": "Doporučené"
+        "featured": "Doporučené",
+        "gift-this-package": "Darovat tento balíček",
+        "gift-username-placeholder": "Zadejte uživatelské jméno pro obdarování",
+        "gift": "Dárek"
     },
     "recent-purchases": "Nedávné platby",
     "home": {
@@ -84,6 +87,7 @@
         "this-item-is-popular-among-us-customers": "Tato položka je oblíbená mezi našimi zákazníky. Vyzkoušejte ji!",
         "empty-cart-title": "Ups! Váš košík je prázdný",
         "empty-cart-description": "Zdá se, že v košíku momentálně nic nemáte. Věnujte chvíli prozkoumání našeho obchodu a objevování úžasných herních předmětů, hodností a dalšího! Až najdete něco, co se vám líbí, jednoduše jej přidejte do košíku a pokračujte k pokladně.",
+        "gift-to": "Darovat komu",
         "details": {
             "your-details": "Vaše údaje",
             "you-are-buying-as": "Nakupujete jako...",
