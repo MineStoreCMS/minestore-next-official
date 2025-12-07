@@ -4,8 +4,9 @@ import { config } from '../config';
 
 export const fetcher = axios.create(config);
 
-fetcher.interceptors.request.use((request) => {
-   const headersList = headers();
+fetcher.interceptors.request.use(async (request) => {
+   const headersList = await headers();
+   const cookieStore = await cookies();
 
    const clientIP =
       headersList.get('x-forwarded-for')?.split(',')[0].trim() || // Most common
@@ -17,7 +18,7 @@ fetcher.interceptors.request.use((request) => {
       headersList.get('x-vercel-proxied-for') || // Vercel-specific
       '127.0.0.1'; // Fallback to localhost
 
-   request.headers.Authorization = `Bearer ${cookies().get('token')?.value}`;
+   request.headers.Authorization = `Bearer ${cookieStore.get('token')?.value}`;
    request.headers['X-Forwarded-For'] = clientIP;
    return request;
 });

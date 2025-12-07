@@ -6,12 +6,13 @@ import { handleUnauthorized } from '@/api/server/handlers';
 const { getProfile, getUser } = getEndpoints(fetcher);
 
 interface PageProps {
-    params: { name?: string };
+    params: Promise<{ name?: string }>;
 }
 
 export default async function Page({ params }: PageProps) {
     try {
-        const profile = await fetchProfile(params.name);
+        const { name } = await params;
+        const profile = await fetchProfile(name);
         if (!profile || profile.status === 'error') {
             const errorMessage =
                 profile?.status === 'error'

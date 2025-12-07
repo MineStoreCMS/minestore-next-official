@@ -15,7 +15,6 @@ export async function middleware(request: NextRequest) {
         request.headers.get('x-client-ip') || // Less common
         request.headers.get('x-forwarded') || // General header
         request.headers.get('forwarded-for') || // Another variation
-        request.ip || // Fallback to server IP
         'Unknown IP';
 
     const token = request.cookies.get('token')?.value;

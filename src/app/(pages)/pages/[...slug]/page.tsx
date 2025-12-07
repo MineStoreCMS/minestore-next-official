@@ -4,13 +4,12 @@ import { redirect } from 'next/navigation';
 
 const { getCustomPage } = getEndpoints(fetcher);
 
-export default async function Page({
-    params
-}: {
-    params: {
+export default async function Page(props: {
+    params: Promise<{
         slug: string[];
-    };
+    }>;
 }) {
+    const params = await props.params;
     const slug = params.slug.join('/');
 
     const response = await getCustomPage(slug);

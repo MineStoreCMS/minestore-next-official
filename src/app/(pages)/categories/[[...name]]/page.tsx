@@ -22,7 +22,8 @@ type TProductListContainer = {
     subcategory?: TSubCategory;
 };
 
-export default async function Page({ params }: { params: { name: string[] } }) {
+export default async function Page(props: { params: Promise<{ name: string[] }> }) {
+   const params = await props.params;
    const categoryPath = params.name.join('/');
 
     const response = await getCategoryDetails(categoryPath).catch((error) => {
