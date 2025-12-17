@@ -1,12 +1,9 @@
-'use client';
-
 import { FC } from 'react';
 import { TSettings } from '@/types/settings';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Container } from '@/components/base/container/container';
-import { useTranslations } from 'next-intl';
-import { ReactSVG } from 'react-svg';
+import { getServerTranslations } from '@/core/i18n/server';
 import { ModeToggle } from '@layout/theme-selector/theme-selector';
 import { getCacheBuster } from '@helpers/cache-buster';
 
@@ -14,21 +11,25 @@ export type FooterProps = {
     settings: TSettings;
 };
 
-export const Footer: FC<FooterProps> = ({ settings }) => {
+export const Footer: FC<FooterProps> = async ({ settings }) => {
+    const t = await getServerTranslations('footer');
+
     return (
         <div className="bg-card/60">
             <Container className="-mt-8 grid grid-cols-1 items-start gap-8 py-20 lg:grid-cols-3">
-                <UsefulLinks settings={settings} />
-                <Copyright settings={settings} />
-                <AboutUs settings={settings} />
+                <UsefulLinks settings={settings} t={t} />
+                <Copyright settings={settings} t={t} />
+                <AboutUs settings={settings} t={t} />
             </Container>
         </div>
     );
 };
 
-function UsefulLinks({ settings }: { settings: TSettings }) {
-    const t = useTranslations('footer');
+type TranslatorProps = {
+    t: (key: string) => string;
+};
 
+function UsefulLinks({ settings, t }: { settings: TSettings } & TranslatorProps) {
     if (!settings.footer) {
         return null;
     }
@@ -52,8 +53,7 @@ function UsefulLinks({ settings }: { settings: TSettings }) {
     );
 }
 
-function Copyright({ settings }: { settings: TSettings }) {
-    const t = useTranslations('footer');
+function Copyright({ settings, t }: { settings: TSettings } & TranslatorProps) {
     const cacheBuster = getCacheBuster();
     return (
         <div className="flex flex-col items-center justify-center gap-6 text-center">
@@ -86,9 +86,7 @@ function Copyright({ settings }: { settings: TSettings }) {
     );
 }
 
-function AboutUs({ settings }: { settings: TSettings }) {
-    const t = useTranslations('footer');
-
+function AboutUs({ settings, t }: { settings: TSettings } & TranslatorProps) {
     const { website_name } = settings;
 
     return (
@@ -113,13 +111,12 @@ function SocialIcons({ settings }: { settings: TSettings }) {
         <div className="flex flex-wrap items-center gap-4">
             {Object.entries(socials).map(([key, value], index) => (
                 <Link key={index} href={value} target="_blank" rel="noopener noreferrer">
-                    <ReactSVG
+                    <Image
                         src={`/icons/${key}.svg`}
                         width={32}
                         height={32}
-                        beforeInjection={(svg) => {
-                            svg.classList.add('w-8', 'h-8');
-                        }}
+                        alt={key}
+                        className="w-8 h-8"
                     />
                 </Link>
             ))}

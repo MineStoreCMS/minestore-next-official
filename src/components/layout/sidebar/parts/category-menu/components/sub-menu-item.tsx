@@ -1,3 +1,5 @@
+'use client';
+
 import { FC } from 'react';
 import { joinClasses } from '@helpers/join-classes';
 import Link from 'next/link';

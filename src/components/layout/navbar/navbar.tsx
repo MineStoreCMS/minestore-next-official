@@ -12,9 +12,10 @@ import { Divider } from './components/divider';
 
 type NavbarProps = {
     settings: TSettings;
+    initialLang: string;
 };
 
-export const Navbar: FC<NavbarProps> = ({ settings }) => {
+export const Navbar: FC<NavbarProps> = ({ settings, initialLang }) => {
     return (
         <nav className="z-20 h-[63px] w-full flex-row items-center justify-center bg-[url(/navbar.png)] px-9 md:mx-auto md:w-fit md:rounded-[10px]">
             <div className="hidden items-center md:flex">
@@ -22,7 +23,7 @@ export const Navbar: FC<NavbarProps> = ({ settings }) => {
                 <Divider />
             </div>
             <div className="hidden items-center lg:flex">
-                <LanguageSection settings={settings} />
+                <LanguageSection settings={settings} initialLang={initialLang} />
                 <Divider />
             </div>
             <ShoppingCartSection />

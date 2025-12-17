@@ -1,20 +1,18 @@
-'use client';
-
 import { FC } from 'react';
 import { MenuItem } from './components/menu-item';
 import { TCategories } from '@/types/categories';
-import { useTranslations } from 'next-intl';
+import { getServerTranslations } from '@/core/i18n/server';
 import { imagePath } from '@helpers/image-path';
-import { useSettingsStore } from '@/stores/settings';
 import { getCacheBuster } from '@helpers/cache-buster';
+import { TSettings } from '@/types/settings';
 
 type CategoryMenuProps = {
     categories: TCategories;
+    headerItems?: TSettings['header'];
 };
 
-export const CategoryMenu: FC<CategoryMenuProps> = ({ categories }) => {
-    const t = useTranslations('sidebar');
-    const { settings } = useSettingsStore();
+export const CategoryMenu: FC<CategoryMenuProps> = async ({ categories, headerItems = [] }) => {
+    const t = await getServerTranslations('sidebar');
     const cacheBuster = getCacheBuster();
 
     return (
@@ -32,7 +30,7 @@ export const CategoryMenu: FC<CategoryMenuProps> = ({ categories }) => {
                     />
                 ))}
 
-                {settings?.header.map((item) => (
+                {headerItems.map((item) => (
                     <MenuItem
                         key={item.id}
                         name={item.name}

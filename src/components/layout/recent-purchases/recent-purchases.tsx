@@ -1,62 +1,79 @@
-'use client';
-
 import { DescriptionTooltip } from '@/app/(pages)/checkout/components/cart-item/item-description-tooltip';
-import { useSettingsStore } from '@/stores/settings';
-import { joinClasses } from '@helpers/join-classes';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { TSettings } from '@/types/settings';
+
+type RecentPurchasesProps = {
+    limit?: number;
+    mobileLimit?: number;
+    recentDonators?: TSettings['recentDonators'];
+    isProfileEnabled?: boolean;
+};
 
 export const RecentPurchases = ({ 
     limit = 10, 
-    mobileLimit = 5 
-}: { 
-    limit: number;
-    mobileLimit?: number;
-}) => {
-    const { settings } = useSettingsStore();
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const checkIsMobile = () => {
-            setIsMobile(window.innerWidth < 768);
-        };
-
-        checkIsMobile();
-        window.addEventListener('resize', checkIsMobile);
-
-        return () => window.removeEventListener('resize', checkIsMobile);
-    }, []);
-
-    const currentLimit = isMobile ? mobileLimit : limit;
-    const recentDonators = settings?.recentDonators.slice(0, currentLimit) || [];
-    const remainingDonators = currentLimit - recentDonators.length;
+    mobileLimit = 5,
+    recentDonators = [],
+    isProfileEnabled = false
+}: RecentPurchasesProps) => {
+    // Server-rendered with desktop limit, client can hide on mobile with CSS
+    const displayedDonators = recentDonators.slice(0, limit);
+    const mobileDonators = recentDonators.slice(0, mobileLimit);
+    const remainingDesktop = limit - displayedDonators.length;
+    const remainingMobile = mobileLimit - mobileDonators.length;
 
     return (
         <div>
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(min(57px,100%),1fr))] gap-2">
-                {recentDonators?.length ? (
+            {/* Desktop view */}
+            <div className="hidden md:grid grid-cols-[repeat(auto-fill,minmax(min(57px,100%),1fr))] gap-2">
+                {displayedDonators.length > 0 ? (
                     <>
-                        {recentDonators.map((item, index) => (
-                            <Donor key={index} username={item.username} avatar={item.avatar} />
+                        {displayedDonators.map((item, index) => (
+                            <Donor 
+                                key={index} 
+                                username={item.username} 
+                                avatar={item.avatar} 
+                                isProfileEnabled={isProfileEnabled}
+                            />
                         ))}
-                        {remainingDonators > 0 &&
-                            Array.from({ length: remainingDonators }).map((_, index) => (
-                                <SkeletonDonor key={index} />
+                        {remainingDesktop > 0 &&
+                            Array.from({ length: remainingDesktop }).map((_, index) => (
+                                <SkeletonDonor key={`skeleton-${index}`} />
                             ))}
                     </>
                 ) : (
-                    Array.from({ length: currentLimit }).map((_, index) => <SkeletonDonor key={index} />)
+                    Array.from({ length: limit }).map((_, index) => <SkeletonDonor key={index} />)
+                )}
+            </div>
+            {/* Mobile view */}
+            <div className="grid md:hidden grid-cols-[repeat(auto-fill,minmax(min(57px,100%),1fr))] gap-2">
+                {mobileDonators.length > 0 ? (
+                    <>
+                        {mobileDonators.map((item, index) => (
+                            <Donor 
+                                key={index} 
+                                username={item.username} 
+                                avatar={item.avatar}
+                                isProfileEnabled={isProfileEnabled}
+                            />
+                        ))}
+                        {remainingMobile > 0 &&
+                            Array.from({ length: remainingMobile }).map((_, index) => (
+                                <SkeletonDonor key={`skeleton-mobile-${index}`} />
+                            ))}
+                    </>
+                ) : (
+                    Array.from({ length: mobileLimit }).map((_, index) => <SkeletonDonor key={index} />)
                 )}
             </div>
         </div>
     );
 };
 
-function Donor({ username, avatar }: { username: string; avatar: string }) {
+function Donor({ username, avatar, isProfileEnabled }: { username: string; avatar: string; isProfileEnabled?: boolean }) {
     return (
         <DescriptionTooltip description={username} html={false}>
-            <DonorProfileLink username={username}>
+            <DonorProfileLink username={username} isProfileEnabled={isProfileEnabled}>
                 <Image
                     src={avatar}
                     alt={username}
@@ -69,10 +86,7 @@ function Donor({ username, avatar }: { username: string; avatar: string }) {
     );
 }
 
-function DonorProfileLink({ username, children }: { username: string; children: React.ReactNode }) {
-    const { settings } = useSettingsStore();
-    const isProfileEnabled = settings?.is_profile_enabled;
-
+function DonorProfileLink({ username, children, isProfileEnabled }: { username: string; children: React.ReactNode; isProfileEnabled?: boolean }) {
     if (isProfileEnabled) {
         return (
             <Link
@@ -84,17 +98,13 @@ function DonorProfileLink({ username, children }: { username: string; children: 
         );
     }
 
-    return <>{children}</>;
+    return <div className="h-[60px] w-[60px] overflow-hidden rounded-md">{children}</div>;
 }
 
-type SkeletonDonorProps = {
-    className?: string;
-} & React.ComponentPropsWithoutRef<'div'>;
-
-function SkeletonDonor({ className, ...props }: SkeletonDonorProps) {
+function SkeletonDonor({ className, ...props }: React.ComponentPropsWithoutRef<'div'> & { className?: string }) {
     return (
         <div
-            className={joinClasses('h-[60px] w-[60px] rounded-md bg-accent', className)}
+            className={`h-[60px] w-[60px] rounded-md bg-accent ${className || ''}`}
             {...props}
         />
     );

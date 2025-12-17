@@ -1,8 +1,11 @@
+'use client';
+
 import { FC } from 'react';
 import { useCurrencyStore } from '@/stores/currency';
 import { useSettingsStore } from '@/stores/settings';
 import { convertToLocalCurrency } from '@helpers/convert-to-local-currency';
 import { cn } from '@/lib/utils';
+import { TCurrency } from '@/types/currency';
 
 type PriceProps = {
     value: number;
@@ -10,6 +13,9 @@ type PriceProps = {
     className?: string;
     discount?: number;
     originalPrice?: number;
+    // SSR-friendly: optional currency prop
+    currency?: TCurrency;
+    virtualCurrencyName?: string;
 };
 
 type PriceTagProps = {
@@ -19,10 +25,12 @@ type PriceTagProps = {
     discount?: number;
     originalPrice?: number;
     className?: string;
+    virtualCurrencyName?: string;
 };
 
 type VariablePriceProps = {
    value: number;
+   currency?: TCurrency;
 };
 
 const PriceTag: FC<PriceTagProps> = ({
@@ -31,10 +39,9 @@ const PriceTag: FC<PriceTagProps> = ({
     isVirtual,
     discount,
     originalPrice,
-    className
+    className,
+    virtualCurrencyName
 }) => {
-    const { settings } = useSettingsStore();
-
     let displayPrice = 'Free';
     let discountedPrice: string | null = null;
 
@@ -42,7 +49,7 @@ const PriceTag: FC<PriceTagProps> = ({
     const effectivePrice = originalPrice || price + (discount || 0);
 
     if (isVirtual) {
-        displayPrice = `${price} ${settings?.virtual_currency}`;
+        displayPrice = `${price} ${virtualCurrencyName || ''}`;
     } else if (price > 0) {
         displayPrice = `${price.toFixed(2)} ${currency}`;
         discountedPrice = hasDiscountOrOriginalPrice
@@ -71,13 +78,21 @@ export const Price: FC<PriceProps> = ({
     isVirtual = false,
     className,
     discount,
-    originalPrice
+    originalPrice,
+    currency: currencyProp,
+    virtualCurrencyName: virtualCurrencyNameProp
 }) => {
-    const { currency } = useCurrencyStore();
+    const { currency: storeCurrency } = useCurrencyStore();
+    const { settings } = useSettingsStore();
+    
+    // Use prop if provided (SSR), otherwise fall back to store (client)
+    const currency = currencyProp || storeCurrency;
+    const virtualCurrencyName = virtualCurrencyNameProp || settings?.virtual_currency;
+    
     const localCurrencyName = currency?.name || '';
-    const localPrice = convertToLocalCurrency(value);
-    const localDiscount = discount ? convertToLocalCurrency(discount) : 0;
-    const localOriginalPrice = originalPrice ? convertToLocalCurrency(originalPrice) : 0;
+    const localPrice = convertToLocalCurrency(value, currency);
+    const localDiscount = discount ? convertToLocalCurrency(discount, currency) : 0;
+    const localOriginalPrice = originalPrice ? convertToLocalCurrency(originalPrice, currency) : 0;
 
     return (
         <PriceTag
@@ -87,14 +102,16 @@ export const Price: FC<PriceProps> = ({
             isVirtual={isVirtual}
             discount={localDiscount}
             className={className}
+            virtualCurrencyName={virtualCurrencyName}
         />
     );
 };
 
-export const VariablePrice: FC<VariablePriceProps> = ({ value }) => {
-   const { currency } = useCurrencyStore();
+export const VariablePrice: FC<VariablePriceProps> = ({ value, currency: currencyProp }) => {
+   const { currency: storeCurrency } = useCurrencyStore();
+   const currency = currencyProp || storeCurrency;
    const localCurrencyName = currency?.name || '';
-   const localPrice = convertToLocalCurrency(value).toFixed(2);
+   const localPrice = convertToLocalCurrency(value, currency).toFixed(2);
 
    return (
       <span>

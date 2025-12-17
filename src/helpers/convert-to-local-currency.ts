@@ -1,18 +1,22 @@
 import { useCurrencyStore } from "@/stores/currency"
 import { useSettingsStore } from "@/stores/settings"
+import { TCurrency } from "@/types/currency"
 
-export const convertToLocalCurrency = (value: number) => {
+export const convertToLocalCurrency = (value: number, currencyOverride?: TCurrency) => {
 
-   const { currency } = useCurrencyStore.getState()
+   const { currency: storeCurrency } = useCurrencyStore.getState()
    const { settings } = useSettingsStore.getState()
 
+   // Use override if provided (for SSR), otherwise use store
+   const currency = currencyOverride || storeCurrency
+
    if (!currency) {
-      console.debug("⚠️ Currency is empty")
+      // For SSR or initial render, return value as-is
       return value
    }
 
    if (!settings) {
-      console.debug("⚠️ Settings is empty")
+      // For SSR or initial render, return value as-is
       return value
    }
 

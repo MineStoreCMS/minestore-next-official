@@ -1,11 +1,13 @@
-'use client';
-import { useTranslations } from 'next-intl';
+import { getServerTranslations } from '@/core/i18n/server';
 import Image from 'next/image';
-import { useSettingsStore } from '@/stores/settings';
+import { TSettings } from '@/types/settings';
 
-export function PaymentMethods() {
-   const t = useTranslations('home');
-   const { settings } = useSettingsStore();
+type PaymentMethodsProps = {
+   settings: TSettings;
+};
+
+export async function PaymentMethods({ settings }: PaymentMethodsProps) {
+   const t = await getServerTranslations('home');
 
    const payNow = settings?.footer?.find(item => item.url === "https://paynow.gg/terms-of-use")?.url;
 

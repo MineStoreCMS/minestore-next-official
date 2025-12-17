@@ -1,3 +1,5 @@
+'use client';
+
 import { TSubCategories } from '@/types/categories';
 import { joinClasses } from '@helpers/join-classes';
 import Image from 'next/image';

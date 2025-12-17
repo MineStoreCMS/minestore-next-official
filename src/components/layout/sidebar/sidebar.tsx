@@ -12,7 +12,7 @@ type SidebarProps = {
 export const Sidebar: FC<SidebarProps> = ({ settings, categories }) => {
     return (
         <div className="w-full flex-col lg:w-[320px] xl:w-[400px]">
-            <CategoryMenu categories={categories} />
+            <CategoryMenu categories={categories} headerItems={settings.header} />
             <ExtraWidget settings={settings} />
         </div>
     );

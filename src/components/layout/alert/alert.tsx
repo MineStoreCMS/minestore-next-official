@@ -1,18 +1,19 @@
-'use client';
-
 import { getEndpoints } from '@/api';
-import { fetcher } from '@/api/client/fetcher';
+import { fetcher } from '@/api/server/fetcher';
 import { TAnnouncement } from '@/types/announcement';
 import Link from 'next/link';
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
+
 const { getAnnouncement } = getEndpoints(fetcher);
 
-export const Alert: FC = () => {
-    const [details, setDetails] = useState<TAnnouncement>();
-
-    useEffect(() => {
-        getAnnouncement().then(setDetails);
-    }, []);
+export const Alert: FC = async () => {
+    let details: TAnnouncement | undefined;
+    
+    try {
+        details = await getAnnouncement();
+    } catch {
+        return null;
+    }
 
     if (!details?.is_index) return null;
 

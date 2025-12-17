@@ -1,10 +1,14 @@
-'use client';
 import { GiftCard } from '@layout/gift-card/giftcard';
 import { RecentPurchases } from '@layout/recent-purchases/recent-purchases';
-import { useTranslations } from 'next-intl';
+import { getServerTranslations } from '@/core/i18n/server';
+import { TSettings } from '@/types/settings';
 
-export function Modules() {
-    const t = useTranslations('home');
+type ModulesProps = {
+    settings: TSettings;
+};
+
+export async function Modules({ settings }: ModulesProps) {
+    const t = await getServerTranslations('home');
 
     return (
         <div className="mt-4 border-t border-t-accent px-4 py-6 @container">
@@ -15,7 +19,12 @@ export function Modules() {
                         {t('recent-purchases')}
                         <hr className="mt-2 h-1 w-12 rounded border-0 bg-accent" />
                     </h3>
-                   <RecentPurchases limit={7} mobileLimit={5} />
+                   <RecentPurchases 
+                       limit={7} 
+                       mobileLimit={5}
+                       recentDonators={settings.recentDonators}
+                       isProfileEnabled={settings.is_profile_enabled === 1}
+                   />
                 </div>
             </div>
         </div>

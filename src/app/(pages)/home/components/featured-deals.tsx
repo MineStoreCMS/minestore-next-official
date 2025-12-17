@@ -1,10 +1,13 @@
-'use client';
 import { TFeaturedDeal } from '@/api/endpoints/get-featured-deals';
 import { FeaturedDeal } from '@layout/feratured-deal/featured-deal';
-import { useTranslations } from 'next-intl';
+import { getServerTranslations } from '@/core/i18n/server';
 
-export function FeaturedDeals({ featuredDeals }: { featuredDeals: TFeaturedDeal }) {
-    const t = useTranslations('home');
+type FeaturedDealsProps = {
+    featuredDeals: TFeaturedDeal;
+};
+
+export async function FeaturedDeals({ featuredDeals }: FeaturedDealsProps) {
+    const t = await getServerTranslations('home');
 
     if (!featuredDeals) return null;
 
