@@ -37,7 +37,7 @@ export function InputItemCustomPrice({ item }: { item: TCart['items'][number] })
                 placeholder={item.price.toString()}
                 min={item.min_price}
                 onChange={(e) =>
-                    debouncedHandleSetProductVariable(item.id, e.target.value, item.min_price)
+                    debouncedHandleSetProductVariable(item.cid, e.target.value, item.min_price)
                 }
             />
         </div>

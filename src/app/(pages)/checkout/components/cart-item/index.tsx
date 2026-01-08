@@ -24,14 +24,15 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        updateItemCount(item.id, quantity);
-    }, [quantity, item.id]);
+        setQuantity(item.count);
+    }, [item.count]);
 
     const [show, setShow] = useState(false);
 
     const isPriceVirtual = item.is_virtual_currency_only === 1;
     const price = isPriceVirtual ? item.virtual_price : item.price;
     const t = useTranslations('checkout');
+    const tActions = useTranslations('actions');
 
     const handleRemoveItemFromCart = async (id: number) => {
         try {
@@ -39,6 +40,7 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
             await removeItemFromCart(id);
             const cart = await getCart();
             setCart(cart);
+            notify(tActions('item-removed-from-cart'), 'red');
         } catch (e) {
             console.error('Error removing item from cart', e);
         } finally {
@@ -52,16 +54,27 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
             const response = await updateItemCount(id, quantity);
             if (response.success) {
                setQuantity(quantity);
+               await new Promise(resolve => setTimeout(resolve, 500));
             } else {
-               notify(response.message ?? 'Unexpected error. Try again later.', 'red')
+               if (response.message?.includes('does not exist')) {
+                  const cart = await getCart();
+                  setCart(cart);
+               }
+               notify(response.message ?? 'Unexpected error. Try again later.', 'red');
+               return;
             }
 
-            // Adding a delay to prevent the cart from updating too quickly with not final values
-            await new Promise(resolve => setTimeout(resolve, 500));
             const cart = await getCart();
             setCart(cart);
         } catch (e) {
             console.error(e);
+
+            try {
+                const cart = await getCart();
+                setCart(cart);
+            } catch (refreshError) {
+                console.error('Error refreshing cart:', refreshError);
+            }
         } finally {
             setLoading(false);
         }
@@ -84,7 +97,14 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
                     )}
                 </TableCell>
                 <TableCell className="text-balance text-sm font-bold text-card-foreground md:text-lg">
-                    {item.name}
+                    <div className="flex items-center gap-2 flex-wrap">
+                        <span>{item.name}</span>
+                        {item.tier_quantity && (
+                            <span className="rounded-md bg-primary px-2 py-0.5 text-xs font-semibold text-primary-foreground md:text-sm">
+                                x{item.tier_quantity}
+                            </span>
+                        )}
+                    </div>
                     {item.gift && (
                         <div className="mt-1 flex flex-wrap items-center gap-1 text-xs md:text-sm text-muted-foreground">
                             <Gift className="h-4 w-4 md:h-5 md:w-5" />
@@ -120,7 +140,7 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
                                 disabled={quantity === 1 || loading}
                                 onClick={() => {
                                     if (quantity === 1) return;
-                                    handleQuantity(item.id, quantity - 1);
+                                    handleQuantity(item.cid, quantity - 1);
                                 }}
                             >
                                 -
@@ -135,7 +155,7 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
                                 hidden={!!item.is_subs}
                                 className="h-4 w-4 rounded text-xl font-bold leading-6 text-primary transition disabled:cursor-not-allowed disabled:opacity-50 md:h-8 md:w-8"
                                 disabled={loading}
-                                onClick={() => handleQuantity(item.id, quantity + 1)}
+                                onClick={() => handleQuantity(item.cid, quantity + 1)}
                             >
                                 +
                             </button>
@@ -152,7 +172,7 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
                             <InfoIcon aria-hidden={true} size={20} />
                         </button>
                         <button
-                            onClick={() => handleRemoveItemFromCart(item.id)}
+                            onClick={() => handleRemoveItemFromCart(item.cid)}
                             aria-label="Remove item from cart"
                             className="flex h-6 w-6 items-center justify-center rounded bg-red-500 text-base font-bold text-red-900 transition disabled:cursor-not-allowed disabled:opacity-50 md:h-8 md:w-8 md:text-lg"
                             disabled={loading}

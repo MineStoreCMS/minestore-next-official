@@ -26,13 +26,13 @@ export function SelectItemServer({ item }: { item: TCart['items'][number] }) {
    useEffect(() => {
       if (isFirstRender.current && uniqueServers.length > 0 && item.selected_server === undefined) {
          handleSelectServer({
-            id: item.id,
+            id: item.cid,
             server_id: uniqueServers[0].server_id
          });
       }
 
       isFirstRender.current = false;
-   }, [uniqueServers, item.id, item.selected_server, handleSelectServer]);
+   }, [uniqueServers, item.cid, item.selected_server, handleSelectServer]);
 
    if (uniqueServers.length === 0) return null;
 
@@ -55,7 +55,7 @@ export function SelectItemServer({ item }: { item: TCart['items'][number] }) {
          </div>
          <Select
             onValueChange={(value) =>
-               handleSelectServer({ id: item.id, server_id: Number(value) })
+               handleSelectServer({ id: item.cid, server_id: Number(value) })
             }
             required={isRequired}
             value={item.selected_server ? `${item.selected_server}` : undefined}

@@ -37,7 +37,7 @@ export function InputItemVariable({ item }: { item: TCart['items'][number] }) {
                             placeholder={variable.use.toString() || variable.name}
                             onChange={(e) =>
                                 debouncedHandleSetProductVariable(
-                                    item.id,
+                                    item.cid,
                                     variable.id,
                                     e.target.value
                                 )

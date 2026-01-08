@@ -43,7 +43,7 @@ export function SelectItemVariable({ item }: { item: TCart['items'][number] }) {
                         <Select
                             onValueChange={(value) =>
                                 handleSetProductVariable({
-                                    id: item.id,
+                                    id: item.cid,
                                     var_id: variable.id,
                                     var_value: value
                                 })
