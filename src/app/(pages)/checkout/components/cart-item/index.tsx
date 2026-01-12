@@ -9,7 +9,7 @@ import { useCartStore } from '@/stores/cart';
 import { TableRow, TableCell } from '@/components/ui/table';
 import { InfoIcon, Trash2, Gift } from 'lucide-react';
 import { ItemPreferences } from './item-preferences';
-import { notify } from "@/core/notifications";
+import { notify } from '@/core/notifications';
 import { useTranslations } from 'next-intl';
 
 const { updateItemCount, removeItemFromCart, getCart } = getEndpoints(fetcher);
@@ -24,8 +24,8 @@ export const CartItem: FC<CartItemProps> = ({ item }) => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        setQuantity(item.count);
-    }, [item.count]);
+        updateItemCount(item.cid, quantity);
+    }, [quantity, item.cid]);
 
     const [show, setShow] = useState(false);
 

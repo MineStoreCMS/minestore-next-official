@@ -14,7 +14,8 @@ import { promises as fs } from 'fs';
 import { ConfigProvider } from './providers/config-provider';
 import { ThemeProvider } from './providers/theme-provider';
 import { extractConfigValue } from '@helpers/extract-config-value';
-import { cookies } from 'next/headers';
+import { langStorage } from '@helpers/lang-storage';
+import { AnalyticsTracker } from '@/components/analytics';
 
 const { getUser, getSettings, getCategories } = getEndpoints(fetcher);
 
@@ -24,19 +25,15 @@ export const App: FC<PropsWithChildren> = async ({ children }) => {
 
     const user = await getUser().catch(() => undefined);
 
-    // Read language from cookies on server
-    const cookieStore = await cookies();
-    const userLang = cookieStore.get('lang')?.value;
-    const systemLanguage = settings.system_language.code || 'en';
-    const effectiveLang = userLang || systemLanguage;
-    
-    const messages = await getDictionary(effectiveLang);
+    const messages = await getDictionary(langStorage.get() || 'en');
 
     const file = await fs.readFile(process.cwd() + '/config.json', 'utf8');
     const data = JSON.parse(file);
 
     const defaultTheme = extractConfigValue('theme', data) || ('system' as string);
     const particles = extractConfigValue('particles', data) || ('Enabled' as string);
+
+    const systemLanguage = settings.system_language.code || 'en';
 
     return (
         <ConfigProvider config={data}>
@@ -47,15 +44,16 @@ export const App: FC<PropsWithChildren> = async ({ children }) => {
                 disableTransitionOnChange
             >
                 <AuthProvider initialUser={user}>
-                    <LocaleProvider initialMessages={messages} initialLang={effectiveLang}>
+                    <LocaleProvider initialMessages={messages} systemLanguage={systemLanguage}>
                         <Suspense>
-                            <Header settings={settings} particles={particles} initialLang={effectiveLang} />
+                            <Header settings={settings} particles={particles} />
                             <Container className="mt-4 flex-col items-start gap-5 lg:flex-row">
                                 <Sidebar settings={settings} categories={categories} />
                                 <main className="w-full flex-1 overflow-x-auto">{children}</main>
                             </Container>
                             <Footer settings={settings} />
                             <Init settings={settings} />
+                            <AnalyticsTracker />
                             <Toaster position="top-right" reverseOrder={false} />
                         </Suspense>
                     </LocaleProvider>

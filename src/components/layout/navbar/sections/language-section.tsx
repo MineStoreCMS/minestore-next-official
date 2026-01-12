@@ -16,17 +16,13 @@ import { cn } from '@/lib/utils';
 
 type LanguageSectionProps = {
     settings: TSettings;
-    initialLang: string;
 };
 
-export const LanguageSection: FC<LanguageSectionProps> = ({ settings, initialLang }) => {
+export const LanguageSection: FC<LanguageSectionProps> = ({ settings }) => {
     const [expanded, setExpanded] = useState(false);
     const { languages } = settings;
 
-    const { lang: storeLang, setLang } = useLangStore();
-    
-    // Use store lang if available, otherwise use initialLang from server
-    const lang = storeLang || initialLang;
+    const { lang, setLang } = useLangStore();
 
     const t = useTranslations('navbar');
 
@@ -41,7 +37,7 @@ export const LanguageSection: FC<LanguageSectionProps> = ({ settings, initialLan
             >
                 <DropdownMenuTrigger>
                     <div className="flex-row items-center">
-                        <CountryFlag lang={lang} />
+                        <CountryFlag lang={lang as string} />
                         <div className="flex-row items-center gap-1 text-white dark:text-accent-foreground">
                             <span className="ml-1 font-bold uppercase">
                                 {languages?.find((x) => x.code === lang)?.name}

@@ -61,20 +61,41 @@ export async function middleware(request: NextRequest) {
         }
     }
 
-    // Base redirects:
-    if (!token && !request.url.endsWith('/auth')) {
+    // Fetch settings to check guest mode
+    let guestModeEnabled = false;
+    try {
+        const settingsURL = `${process.env.NEXT_PUBLIC_API_URL}/api/settings/get`;
+        const settingsResponse = await fetch(settingsURL, {
+            next: { revalidate: 60 }
+        });
+        const settings = await settingsResponse.json();
+        guestModeEnabled = settings.guest_mode_enabled ?? false;
+    } catch (error) {
+        console.error('Failed to fetch settings for guest mode check:', error);
+    }
+
+    if (!token && !request.url.endsWith('/auth') && !guestModeEnabled) {
         return NextResponse.redirect(new URL('/auth', request.url));
     }
 
-    // Handle token on /auth:
+    // Handle token on /auth
     if (request.url.endsWith('/auth') && token) {
         const lastCategoryClicked = request.cookies.get('lastCategoryClicked')?.value || '/';
         return NextResponse.redirect(new URL(lastCategoryClicked, request.nextUrl.origin));
     }
 
-    //Protected routes check:
-    if (request.url.match(/^\/(categories|checkout|profile)(\?.*)?$/) && !token) {
-        return NextResponse.redirect(new URL('/auth', request.url));
+    // Protected routes check
+    const isCategories = request.nextUrl.pathname.startsWith('/categories');
+    const isCheckoutOrProfile = request.nextUrl.pathname.startsWith('/checkout') ||
+                                request.nextUrl.pathname.startsWith('/profile');
+
+    if (!token) {
+        if (isCheckoutOrProfile) {
+            return NextResponse.redirect(new URL('/auth?returnUrl=' + encodeURIComponent(request.nextUrl.pathname), request.url));
+        }
+        if (isCategories && !guestModeEnabled) {
+            return NextResponse.redirect(new URL('/auth', request.url));
+        }
     }
 
     return NextResponse.next();

@@ -20,6 +20,7 @@ export type TCategory = {
     is_cumulative: number | boolean;
     is_listing: number | boolean;
     is_comparison: number | boolean;
+    is_stacked: number | boolean;
     created_at: string;
     updated_at: string;
     comparison: TComparison[];

@@ -10,9 +10,9 @@ interface PageProps {
 }
 
 export default async function Page({ params }: PageProps) {
+    const resolvedParams = await params;
     try {
-        const { name } = await params;
-        const profile = await fetchProfile(name);
+        const profile = await fetchProfile(resolvedParams.name);
         if (!profile || profile.status === 'error') {
             const errorMessage =
                 profile?.status === 'error'

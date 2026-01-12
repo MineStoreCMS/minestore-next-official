@@ -1,21 +1,20 @@
+'use client';
+
 import Image from 'next/image';
 import { PaymentMethods } from './payment-methods';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { getServerTranslations } from '@/core/i18n/server';
+import { useTranslations } from 'next-intl';
+import { useSettingsStore } from '@/stores/settings';
 import { getCacheBuster } from '@helpers/cache-buster';
-import { TSettings } from '@/types/settings';
 
-type ContentProps = {
-    settings: TSettings;
-};
-
-export async function Content({ settings }: ContentProps) {
-    const t = await getServerTranslations('home');
+export function Content() {
+    const t = useTranslations('home');
+    const { settings } = useSettingsStore();
 
     return (
         <div className="mt-8 space-y-6">
-            <BannerSection settings={settings} t={t} />
+            <BannerSection />
 
             <div className="space-y-6">
                 <div className="grid gap-6 md:grid-cols-2">
@@ -66,17 +65,14 @@ export async function Content({ settings }: ContentProps) {
                 </div>
             </div>
 
-            <PaymentMethods settings={settings} />
+            <PaymentMethods />
         </div>
     );
 }
 
-type BannerSectionProps = {
-    settings: TSettings;
-    t: (key: string) => string;
-};
-
-function BannerSection({ settings, t }: BannerSectionProps) {
+function BannerSection() {
+    const t = useTranslations('home');
+    const { settings } = useSettingsStore();
     const cacheBuster = getCacheBuster();
 
     return (
@@ -94,6 +90,9 @@ function BannerSection({ settings, t }: BannerSectionProps) {
                     width={500}
                     height={300}
                     className="object-contain"
+                    onError={(e) => {
+                        e.currentTarget.remove();
+                    }}
                 />
             </div>
         </div>

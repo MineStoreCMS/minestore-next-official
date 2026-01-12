@@ -36,7 +36,7 @@ export const Cart: FC = () => {
                 </span>
             </div>
 
-           <CartItems items={items} />
+            <CartItems items={items} />
         </>
     );
 };
@@ -75,7 +75,7 @@ function CartItems({ items }: { items: TCart['items'] }) {
                 </TableRow>
             </TableHeader>
             <TableBody className="[&_tr]:border-b-4">
-                {items?.map((item) => <CartItem key={item.id} item={item} />)}
+                {items?.map((item) => <CartItem key={item.cid} item={item} />)}
             </TableBody>
         </Table>
     );

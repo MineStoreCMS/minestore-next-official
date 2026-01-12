@@ -8,6 +8,7 @@ import { TItem } from '@/types/item';
 import { Card } from '@layout/card/card';
 import { Suspense } from 'react';
 import { SkeletonCategory } from '../components/skeleton-category';
+import { StackedCategory } from '../stacked/stacked-category';
 
 const { getCategoryDetails } = getEndpoints(fetcher);
 
@@ -22,9 +23,9 @@ type TProductListContainer = {
     subcategory?: TSubCategory;
 };
 
-export default async function Page(props: { params: Promise<{ name: string[] }> }) {
-   const params = await props.params;
-   const categoryPath = params.name.join('/');
+export default async function Page({ params }: { params: Promise<{ name: string[] }> }) {
+    const resolvedParams = await params;
+    const categoryPath = resolvedParams.name.join('/');
 
     const response = await getCategoryDetails(categoryPath).catch((error) => {
         console.error('Error fetching category details:', error);
@@ -37,9 +38,10 @@ export default async function Page(props: { params: Promise<{ name: string[] }> 
 
     const { category, items, subcategories } = response;
 
-    const subCategory = subcategories?.find((x) => x.category.url === params.name.join('/'));
+    const subCategory = subcategories?.find((x) => x.category.url === resolvedParams.name.join('/'));
 
     const isComparison = subCategory?.category.is_comparison || category.is_comparison;
+    const isStacked = subCategory?.category.is_stacked || category.is_stacked;
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -68,6 +70,8 @@ export default async function Page(props: { params: Promise<{ name: string[] }> 
                         category={category}
                         subCategory={subCategory}
                     />
+                ) : isStacked ? (
+                    <StackedCategory items={items} />
                 ) : (
                     <ProductListContainer
                         items={items}

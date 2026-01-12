@@ -38,6 +38,7 @@ export type TCart = {
         payment_type: number;
         vars: Array<CartItemsVar>;
         count: number;
+        tier_quantity?: number | null;
         quantityGlobalLimit: number | null;
         quantityGlobalCurrentLimit: number | null;
         quantityUserLimit: number | null;

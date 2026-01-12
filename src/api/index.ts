@@ -68,6 +68,6 @@ export const getEndpoints = (fetcher: AxiosInstance) => {
         getCustomPage: getCustomPage(fetcher),
         getPaymentStatus: getPaymentStatus(fetcher),
         getDiscordAuth: getDiscordAuth(fetcher),
-        getPatrons: getPatrons(fetcher)
+        getPatrons: getPatrons(fetcher),
     };
 };

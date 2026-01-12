@@ -7,11 +7,12 @@ type RequestParams = {
     payment_type: 'regular' | 'subscription' | 'gift';
     promoted?: number | boolean;
     gift_to?: string;
+    tier_quantity?: number;
 };
 
 export const addToCart =
     (fetcher: AxiosInstance) =>
-    async ({ id, payment_type, promoted, gift_to }: RequestParams) => {
+    async ({ id, payment_type, promoted, gift_to, tier_quantity }: RequestParams) => {
         const url = `/cart/add/${id}`;
         let paymentTypeValue: number;
         if (payment_type === 'regular') paymentTypeValue = 0;
@@ -23,6 +24,9 @@ export const addToCart =
         };
         if (paymentTypeValue === 2 && gift_to) {
             data.gift_to = gift_to;
+        }
+        if (tier_quantity !== undefined) {
+            data.tier_quantity = tier_quantity;
         }
         return (
             await fetcher.post<ReturnType>(url, data)

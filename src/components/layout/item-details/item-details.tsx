@@ -55,25 +55,27 @@ export const ItemDetails: FC<DetailsProps> = ({ show, onHide, id, route }) => {
                         dangerouslySetInnerHTML={{ __html: details?.description || '' }}
                     />
                 </ScrollArea>
-                <DialogFooter className="items-center justify-between gap-2 border-t border-accent p-4 sm:justify-between">
-                    <Price
-                        value={details?.price || 0}
-                        isVirtual={details?.is_virtual_currency_only}
-                        className="font-bold"
-                    />
-
-                    <div className="flex gap-2">
-                        <CardActionButtons
-                            isItemInCart={isItemInCart}
-                            item={details as TItem}
-                            displayFull={false}
-                            setAddToCartPressed={setIsAddingToCart}
-                            addToCartPressed={isAddingToCart}
-                            is_subs_only={details?.is_subs_only}
-                            showGiftButton={showGiftButton}
+                {details && (
+                    <DialogFooter className="items-center justify-between gap-2 border-t border-accent p-4 sm:justify-between">
+                        <Price
+                            value={details.price || 0}
+                            isVirtual={details.is_virtual_currency_only}
+                            className="font-bold"
                         />
-                    </div>
-                </DialogFooter>
+
+                        <div className="flex gap-2">
+                            <CardActionButtons
+                                isItemInCart={isItemInCart}
+                                item={details}
+                                displayFull={false}
+                                setAddToCartPressed={setIsAddingToCart}
+                                addToCartPressed={isAddingToCart}
+                                is_subs_only={details.is_subs_only}
+                                showGiftButton={showGiftButton}
+                            />
+                        </div>
+                    </DialogFooter>
+                )}
             </DialogContent>
         </Dialog>
     );

@@ -1,3 +1,9 @@
+export type TItemTier = {
+    quantity: number;
+    price: number;
+    discount: number;
+};
+
 export type TItem = {
     // Required properties
     name: string;
@@ -31,4 +37,9 @@ export type TItem = {
         comparison_id: number;
         value: string;
     }[];
+
+    // Stacked tiers support
+    stacked_tiers?: {
+        tiers: TItemTier[];
+    } | null;
 };

@@ -15,6 +15,7 @@ type THandleAddItem = {
     payment_type: 'regular' | 'subscription' | 'gift';
     itemType: 'regular' | 'subscription';
     gift_to?: string;
+    tier_quantity?: number;
 };
 
 export const useCartActions = () => {
@@ -29,12 +30,15 @@ export const useCartActions = () => {
         calledFromCheckout,
         payment_type,
         itemType,
-        gift_to
+        gift_to,
+        tier_quantity
     }: THandleAddItem) => {
         const currentItem = await getItem(id);
 
         if (!user) {
             notify(t('please-authorize'), 'red');
+            const currentPath = window.location.pathname;
+            router.push(`/auth?returnUrl=${encodeURIComponent(currentPath)}`);
             return;
         }
 
@@ -47,7 +51,8 @@ export const useCartActions = () => {
                 id,
                 payment_type,
                 promoted: calledFromCheckout,
-                ...(payment_type === 'gift' && gift_to ? { gift_to } : {})
+                ...(payment_type === 'gift' && gift_to ? { gift_to } : {}),
+                ...(tier_quantity !== undefined ? { tier_quantity } : {})
             });
 
             const response = await getCart();
@@ -120,7 +125,16 @@ export const useCartActions = () => {
 
     const handleRemoveItem = async (id: number) => {
         try {
-            await removeItemFromCart(id);
+            // If id is an item.id (from catalog), find the cart item's cid
+            // If id is already a cid (from cart), use it directly
+            const cartItem = items.find((x) => x.id === id || x.cid === id);
+
+            if (!cartItem) {
+                console.error('Item not found in cart');
+                return;
+            }
+
+            await removeItemFromCart(cartItem.cid);
 
             const response = await getCart();
 

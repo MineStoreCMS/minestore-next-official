@@ -8,10 +8,8 @@ import { Modules } from './components/modules';
 const { getFeaturedDeals, getSettings } = getEndpoints(fetcher);
 
 export default async function Home() {
-    const [featuredDeals, settings] = await Promise.all([
-        getFeaturedDeals(),
-        getSettings()
-    ]);
+    const featuredDeals = await getFeaturedDeals();
+    const settings = await getSettings();
 
     return (
         <>
@@ -21,10 +19,10 @@ export default async function Home() {
                 <div className="p-4">
                     <Alert />
 
-                    <Content settings={settings} />
+                    <Content />
                 </div>
 
-                <Modules settings={settings} />
+                <Modules />
             </div>
         </>
     );

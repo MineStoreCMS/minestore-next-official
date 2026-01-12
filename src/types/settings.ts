@@ -4,6 +4,7 @@ type AuthType = 'username' | 'ingame' | 'register';
 
 export type TSettings = {
     auth_type: AuthType;
+    guest_mode_enabled: boolean;
     header: Array<{
         id: number;
         name: string;

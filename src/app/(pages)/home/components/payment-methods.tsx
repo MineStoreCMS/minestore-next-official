@@ -1,31 +1,31 @@
-import { getServerTranslations } from '@/core/i18n/server';
+'use client';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { TSettings } from '@/types/settings';
+import { useSettingsStore } from '@/stores/settings';
 
-type PaymentMethodsProps = {
-   settings: TSettings;
-};
-
-export async function PaymentMethods({ settings }: PaymentMethodsProps) {
-   const t = await getServerTranslations('home');
+export function PaymentMethods() {
+   const t = useTranslations('home');
+   const { settings } = useSettingsStore();
 
    const payNow = settings?.footer?.find(item => item.url === "https://paynow.gg/terms-of-use")?.url;
 
    return (
       <div className="mt-10">
          {payNow && (
-            <div className="flex-row py-4">
-               <div className="w-32">
-                  <Image
-                     className="h-[29px] w-28 object-contain"
-                     src={`/media/home/paynow.svg`}
-                     alt="PayNow Logo"
-                     width={112}
-                     height={29}
-                  />
-               </div>
-               <span className="ml-12">PayPal, Cards, Bank Transfers & 75+ More Ways to Pay.</span>
+            <div>
             </div>
+            // <div className="flex-row py-4">
+            //    <div className="w-32">
+            //       <Image
+            //          className="h-[29px] w-28 object-contain"
+            //          src={`/media/home/paynow.svg`}
+            //          alt="PayNow Logo"
+            //          width={112}
+            //          height={29}
+            //       />
+            //    </div>
+            //    <span className="ml-12">PayPal, Cards, Bank Transfers & 75+ More Ways to Pay.</span>
+            // </div>
          )}
 
          {!payNow && (

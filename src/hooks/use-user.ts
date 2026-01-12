@@ -4,6 +4,7 @@ import { fetcher } from '@/api/client/fetcher';
 
 import { useRouter } from 'next/navigation';
 import { useUserStore } from '@/stores/user';
+import { useCartStore } from '@/stores/cart';
 import { useCallback, useState } from 'react';
 
 const { auth, attemptAuthInGame, inGameAuth } = getEndpoints(fetcher);
@@ -13,6 +14,7 @@ export const useUser = () => {
     const [error, setError] = useState<string | null>(null);
     const [resetSuccess, setResetSuccess] = useState(false);
     const { setUser } = useUserStore();
+    const { clearCart } = useCartStore();
     const router = useRouter();
 
     const login = async (username: string) => {
@@ -23,12 +25,14 @@ export const useUser = () => {
 
             setCookie('token', token, { maxAge: 21600 });
 
-            const lastCategory = getCookie('lastCategoryClicked') || '/';
+            const params = new URLSearchParams(window.location.search);
+            const returnUrl = params.get('returnUrl');
+            const redirectTo = returnUrl || getCookie('lastCategoryClicked') || '/';
 
-            // window.history.replaceState({}, '', lastCategory);
-            // router.replace(lastCategory);
+            // window.history.replaceState({}, '', redirectTo);
+            // router.replace(redirectTo);
             // router.refresh();
-            window.location.replace(lastCategory);
+            window.location.replace(redirectTo);
         } catch (error) {
             console.error('Error while logging in:', error);
         } finally {
@@ -52,7 +56,12 @@ export const useUser = () => {
 
             if (status) {
                 setCookie('token', token);
-                router.push('/');
+
+                const params = new URLSearchParams(window.location.search);
+                const returnUrl = params.get('returnUrl');
+                const redirectTo = returnUrl || '/';
+
+                router.push(redirectTo);
                 router.refresh();
             }
 
@@ -70,6 +79,7 @@ export const useUser = () => {
         deleteCookie('discord_username');
         deleteCookie('discord_id');
         setUser(undefined);
+        clearCart();
         router.push('/');
         router.refresh();
     };
@@ -81,7 +91,12 @@ export const useUser = () => {
          const response = await fetcher.post('/auth/login', { username, password });
          if (typeof response.data === 'string') {
             setCookie('token', response.data, { maxAge: 21600 });
-            window.location.replace(getCookie('lastCategoryClicked') || '/');
+
+            const params = new URLSearchParams(window.location.search);
+            const returnUrl = params.get('returnUrl');
+            const redirectTo = returnUrl || getCookie('lastCategoryClicked') || '/';
+
+            window.location.replace(redirectTo);
          } else if (response.data.status === 'error') {
             setError(response.data.message || 'Login failed');
          } else if (response.data === 'ban') {
@@ -116,7 +131,12 @@ export const useUser = () => {
          const response = await fetcher.post('/auth/register', { username, password, password_confirmation, email });
          if (response.data.status === 'success') {
             setCookie('token', response.data.data.token, { maxAge: 21600 });
-            window.location.replace('/');
+
+            const params = new URLSearchParams(window.location.search);
+            const returnUrl = params.get('returnUrl');
+            const redirectTo = returnUrl || '/';
+
+            window.location.replace(redirectTo);
          } else {
             setError(response.data.message || 'Registration failed');
          }

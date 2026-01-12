@@ -1,5 +1,3 @@
-'use client';
-
 import { FC, useCallback, useEffect, useState } from 'react';
 import { ReactSVG } from 'react-svg';
 import Image from 'next/image';
@@ -102,9 +100,6 @@ export const HeroSection: FC<HeroSectionProps> = ({ settings }) => {
                         width={381}
                         height={338}
                         alt="Logo"
-                        fetchPriority="high"
-                        priority
-                        loading="eager"
                     />
                 </Link>
             </div>
