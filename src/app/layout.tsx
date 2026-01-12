@@ -5,7 +5,7 @@ import { fetcher } from '@/api/server/fetcher';
 import type { Metadata, Viewport } from 'next';
 import { App } from './app';
 import { Montserrat } from 'next/font/google';
-import 'react-quill/dist/quill.snow.css';
+import 'react-quill-new/dist/quill.snow.css';
 import { readFileSync } from 'fs';
 import { extractConfigValue } from '@helpers/extract-config-value';
 import { Config } from '@/app/providers/config-provider';
